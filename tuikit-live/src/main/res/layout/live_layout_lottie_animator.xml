@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        app:layout_constraintHeight_percent="0.4"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:id="@+id/gift_bullet_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </RelativeLayout>
+
+    <com.tencent.qcloud.tim.tuikit.live.component.gift.XmLottieAnimationView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:background="#66cf"
+        android:id="@+id/lottie_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintWidth_percent="1"
+        android:layout_gravity="center"
+        tools:visibility="visible"
+        android:visibility="gone" />
+
+
+    <com.opensource.svgaplayer.SVGAImageView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/svga_view"
+        android:layout_width="0dp"
+        app:layout_constraintDimensionRatio="720:1280"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:visibility="visible"
+        android:visibility="visible" />
+
+</android.support.constraint.ConstraintLayout>

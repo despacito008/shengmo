@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--Copyright (c) 2018-2020 拓幻科技 - tillusory.cn. All rights reserved.-->
+<resources>
+    <color name="ti_bg_panel_tab">#FFFFFF</color>
+    <color name="ti_bg_panel_content">#FFFFFF</color>
+    <color name="ti_bg_cute">#992D2D2D</color>
+    <color name="ti_bg_cute2">#2D2D2D</color>
+    <color name="ti_selected">#58DDDD</color>
+    <color name="ti_selected_filter">#FFFFFF</color>
+    <color name="ti_unselected">#444444</color>
+    <color name="ti_unselected_tab">#666666</color>
+    <color name="ti_divider">#EEEEEE</color>
+    <color name="ti_divider_full">#80EEEEEE</color>
+    <color name="ti_bubble_gray">#2D2D2D</color>
+    <color name="ti_category">#6658DDDD</color>
+    <color name="white">#FFFFFF</color>
+</resources>

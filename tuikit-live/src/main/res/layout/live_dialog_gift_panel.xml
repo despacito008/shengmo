@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/giftLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="SpUsage,HardcodedText,ObsoleteLayoutParam"
+    android:background="@drawable/send_gift_panel_view">
+
+    <LinearLayout
+        android:id="@+id/giftBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_panel_tab_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="礼物"
+                    android:textColor="@color/colorGiftPanel"
+                    android:textSize="15dp"
+                    android:includeFontPadding="false"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/tv_panel_tab_fans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:textSize="15dp"
+                    android:includeFontPadding="false"
+                    android:text="粉丝"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/tv_panel_tab_package"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:textSize="15dp"
+                    android:includeFontPadding="false"
+                    android:text="背包"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/tv_panel_tab_red_envelopes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:textSize="15dp"
+                    android:includeFontPadding="false"
+                    android:text="红包"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/tv_panel_tab_blind_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:textSize="15dp"
+                    android:includeFontPadding="false"
+                    android:text="盲盒"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical|right"
+            android:paddingRight="1dp"
+            android:id="@+id/ll_gift_public_screen"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/cb_live_gift_is_show"
+                android:button="@null"
+                android:background="@drawable/item_filter_gift_button_bg"
+                android:layout_marginRight="3dp"
+                android:checked="true"
+                android:layout_width="16dp"
+                android:layout_height="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_live_gift_is_show"
+                android:text="@string/gift_panel_tip"
+                android:textSize="8dp"
+                android:textColor="#999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            tools:visibility="gone"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dp"
+            android:id="@+id/ll_live_gift_rule"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_live_gift_rule"
+                android:src="@drawable/ic_live_normal_rule"
+                android:padding="5dp"
+                android:layout_width="26dp"
+                android:layout_height="26dp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_live_gift_level_process"
+        android:layout_marginHorizontal="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_gift_current_level"
+            android:src="@drawable/ic_live_audience_level"
+            android:layout_width="14dp"
+            android:layout_height="11dp"/>
+
+        <TextView
+            android:id="@+id/tv_gift_current_level"
+            android:layout_marginLeft="3dp"
+            tools:text="0"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ProgressBar
+            android:id="@+id/pb_gift_level_progress"
+            tools:progress="90"
+            android:progressDrawable="@drawable/pg_audience_level"
+            android:layout_marginHorizontal="10dp"
+            style="@style/mLevelProgressBarStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="5dp"/>
+
+        <ImageView
+            android:id="@+id/iv_gift_next_level"
+            android:src="@drawable/ic_live_audience_level"
+            android:layout_width="14dp"
+            android:layout_height="11dp"/>
+
+        <TextView
+            android:id="@+id/tv_gift_next_level"
+            android:layout_marginLeft="3dp"
+            tools:text="0"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_gift_next_level_tips"
+            android:layout_marginLeft="6dp"
+            tools:text="需9000魔豆升级"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:visibility="invisible"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="12dp"
+        android:background="@color/live_color_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <include layout="@layout/live_layout_gift_panel_container" android:visibility="gone" />
+
+    <android.support.v4.view.ViewPager
+        android:visibility="visible"
+        android:id="@+id/view_pager_gift"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"/>
+
+    <LinearLayout
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ranking_beans"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tv_coin_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_coin"
+                android:layout_width="35dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/bg_border_gift_recharge"
+                android:text="充值"
+                android:textColor="@color/live_gift_dark_orange"
+                android:textSize="12sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_send_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_audience_level_process_bg"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_show_gift_array"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/tv_show_gift_array"
+                        android:layout_width="33dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="3.5dp"
+                        android:textColor="@color/white"/>
+
+                    <ImageView
+                        android:id="@+id/iv_show_gift_array"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:background="@drawable/send_number_nor"
+                        android:layout_gravity="center_vertical"
+                        android:paddingRight="@dimen/page_margin"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_marginLeft="@dimen/page_margin"
+                    android:id="@+id/btn_send_gift"
+                    android:layout_width="64dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/live_confirm_btn_red_bg"
+                    android:text="赠送"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <Button
+                android:visibility="gone"
+                tools:visibility="gone"
+                android:layout_marginLeft="@dimen/page_margin"
+                android:id="@+id/btn_send_blind_box"
+                android:layout_width="64dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/live_confirm_btn_red_bg"
+                android:text="赠送"
+                android:textColor="@color/white"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

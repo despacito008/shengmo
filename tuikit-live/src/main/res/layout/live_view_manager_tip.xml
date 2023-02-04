@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/view_live_pk_stop"
+        android:background="@drawable/bg_rb_top_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="2:1" />
+
+
+    <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+        android:id="@+id/iv_item_live_manager_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        tools:src="@drawable/beauty_ic_effect_constellation"
+        app:layout_constraintWidth_percent="0.18"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_live_pk_stop_title"
+        tools:text="请选择"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:textColor="#131415"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_item_live_manager_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_live_manager_mute"
+            style="@style/mConfirmText"
+            android:gravity="center"
+            android:paddingVertical="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="禁言"
+            android:textSize="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/tv_live_manager_kick"
+            style="@style/mConfirmText"
+            android:gravity="center"
+            android:paddingVertical="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="下麦"
+            android:textSize="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

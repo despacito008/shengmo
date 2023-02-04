@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="31dp"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:background="@android:color/transparent">
+    
+
+
+
+
+
+    <View
+        android:id="@+id/view_audience_bg"
+        tools:background="@drawable/bg_round_audience_top_3"
+        app:layout_constraintLeft_toLeftOf="@id/iv_audience_head"
+        app:layout_constraintRight_toRightOf="@id/iv_audience_head"
+        app:layout_constraintBottom_toBottomOf="@id/iv_audience_head"
+        app:layout_constraintTop_toTopOf="@id/iv_audience_head"
+        android:layout_width="27.5dp"
+        android:layout_height="27.5dp"/>
+
+    <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/iv_audience_head"
+        android:layout_width="@dimen/live_top_audience_avatar_height"
+        android:layout_height="@dimen/live_top_audience_avatar_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/live_default_head_img" />
+
+
+    <ImageView
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/item_identity_icon"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        tools:src="@drawable/user_svip" />
+
+    <ImageView
+        tools:src="@drawable/live_audience_top_3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/iv_head_view"
+        android:layout_width="16dp"
+        app:layout_constraintDimensionRatio="19:12.5"
+        android:layout_height="0dp" />
+
+</android.support.constraint.ConstraintLayout>

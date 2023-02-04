@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?><!--Copyright (c) 2018-2020 拓幻科技 - tillusory.cn. All rights reserved.-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <cn.tillusory.tiui.view.TiBarView
+        android:id="@+id/tiBarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"/>
+
+    <LinearLayout
+        android:id="@+id/indicator_container"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/ti_bg_panel_tab"
+        >
+
+        <com.shizhefei.view.indicator.RecyclerIndicatorView
+            android:id="@+id/tiIndicatorView"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp" />
+
+        <LinearLayout
+            android:id="@+id/btn_back_cute_group"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="18dp"
+                android:background="#99EEEEEE"/>
+
+            <ImageView
+                android:id="@+id/btn_back_cute"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="13dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_ti_mode_back_white"
+                android:contentDescription="@null"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tiBeautyLL"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:background="@color/ti_bg_panel_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/tiEnableLL"
+                android:layout_width="96dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/tiEnableIV"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="32dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_ti_selector_enable" />
+
+                <TextView
+                    android:id="@+id/tiEnableTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="15dp"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="@color/color_ti_selector_not_full"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/tiDividerV"
+                android:layout_width="0.5dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="31dp"
+                android:background="@color/ti_divider" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/btn_bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="25dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_ti_mode_back_black"
+                android:contentDescription="@null"/>
+
+            <cn.tillusory.tiui.custom.DrawableTextView
+                android:id="@+id/btn_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="5dp"
+                android:minWidth="44dp"
+                android:minHeight="20dp"
+                android:drawablePadding="8dp"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="@string/reset"
+                android:textColor="@color/color_ti_selector_reset"
+                android:textSize="10sp"
+                app:dt_left_drawable="@drawable/ic_ti_reset"
+                app:dt_left_width="20dp"
+                app:dt_left_height="20dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <cn.tillusory.tiui.view.TiMakeupView
+        android:id="@+id/tiMakeupView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <cn.tillusory.tiui.view.TiGreenScreenView
+        android:id="@+id/tiGreenScreenView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+
+</LinearLayout>
+
+

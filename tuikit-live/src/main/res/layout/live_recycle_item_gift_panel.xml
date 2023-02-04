@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="108dp"
+    android:orientation="vertical"
+    android:clickable="true"
+    tools:background="#000">
+
+    <LinearLayout
+        android:id="@+id/ll_gift_root"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        tools:background="#6cf"
+        android:id="@+id/iv_gift_icon"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        tools:text="礼物名称"
+        android:id="@+id/tv_gift_name"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:textSize="13dp" />
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/ic_ticket_bean"
+            android:layout_width="11dp"
+            android:layout_height="11dp"/>
+
+        <TextView
+            tools:text="99"
+            android:includeFontPadding="false"
+            android:id="@+id/tv_gift_price"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/live_gift_give_gift"
+        android:textColor="@color/live_gift_dark_orange"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    </LinearLayout>
+
+    <ImageView
+        tools:background="#6cf"
+        android:id="@+id/iv_gift_tip"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:layout_gravity="right" />
+
+</FrameLayout>

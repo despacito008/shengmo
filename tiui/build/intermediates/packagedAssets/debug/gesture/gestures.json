@@ -1,0 +1,49 @@
+{
+  "gestures": [
+    {
+      "name": "ti_gesture_cat",
+      "dir": "ti_gesture_cat",
+      "category": "default",
+      "thumb": "ti_gesture_cat_icon.png",
+      "voiced": false,
+      "downloaded": false,
+      "hint": "双手比心，建议高端机体验"
+    },
+    {
+      "name": "ti_gesture_happy",
+      "dir": "ti_gesture_happy",
+      "category": "default",
+      "thumb": "ti_gesture_happy_icon.png",
+      "voiced": false,
+      "downloaded": false,
+      "hint": "单手做OK手势，建议高端机体验"
+    },
+    {
+      "name": "ti_gesture_heart",
+      "dir": "ti_gesture_heart",
+      "category": "default",
+      "thumb": "ti_gesture_heart_icon.png",
+      "voiced": false,
+      "downloaded": false,
+      "hint": "双手比心，建议高端机体验"
+    },
+    {
+      "name": "ti_gesture_line_cat",
+      "dir": "ti_gesture_line_cat",
+      "category": "default",
+      "thumb": "ti_gesture_line_cat_icon.png",
+      "voiced": false,
+      "downloaded": false,
+      "hint": "单手做OK手势，建议高端机体验"
+    },
+    {
+      "name": "ti_gesture_peach_blossom",
+      "dir": "ti_gesture_peach_blossom",
+      "category": "default",
+      "thumb": "ti_gesture_peach_blossom_icon.png",
+      "voiced": false,
+      "downloaded": false,
+      "hint": "单手竖一根手指，建议高端机体验"
+    }
+  ]
+}

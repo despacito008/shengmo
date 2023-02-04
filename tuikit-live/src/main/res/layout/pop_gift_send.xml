@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_xinxizhongduan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+
+
+    <RadioGroup
+        android:padding="1dp"
+        android:id="@+id/rg_gift_send"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_pop_send_gift_num"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_item_4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="0.1dp"
+            android:background="@drawable/bg_rb_top_button"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:textColor="@drawable/bg_text"
+            android:textSize="14sp"
+            tools:text="1314 一生一世" />
+
+        <RadioButton
+            android:id="@+id/rb_item_3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="0.1dp"
+            android:background="@drawable/shape_xlist_item_min"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:textColor="@drawable/bg_text"
+            android:textSize="14sp"
+            tools:text="520 我爱你" />
+
+        <RadioButton
+            android:id="@+id/rb_item_2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="0.1dp"
+            android:background="@drawable/shape_xlist_item_min"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:textColor="@drawable/bg_text"
+            android:textSize="14sp"
+            tools:text="99 长长久久" />
+
+        <RadioButton
+            android:id="@+id/rb_item_1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="0.1dp"
+            android:background="@drawable/bg_rb_bottom_button"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:textColor="@drawable/bg_text"
+            android:textSize="14sp"
+            tools:text="1 一心一意" />
+    </RadioGroup>
+
+</FrameLayout>

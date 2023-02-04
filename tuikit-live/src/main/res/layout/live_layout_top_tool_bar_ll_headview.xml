@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="horizontal"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:id="@+id/ll_anchor_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/live_top_anchor_info_bg"
+        android:orientation="horizontal"
+        android:paddingStart="1dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="1dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+                android:id="@+id/iv_anchor_head"
+                android:layout_width="@dimen/live_top_anchor_avatar_height"
+                android:layout_height="@dimen/live_top_anchor_avatar_height"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/red_circle"
+                android:padding="1dp"
+                android:src="@drawable/live_default_head_img" />
+
+            <ImageView
+                android:id="@+id/item_identity_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="bottom|right"
+                tools:src="@drawable/user_svip"
+                />
+
+        </FrameLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="3dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_anchor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="3dp"
+                android:maxWidth="@dimen/live_text_max_show_width"
+                android:lines="1"
+                android:minWidth="30dp"
+                android:singleLine="true"
+                android:includeFontPadding="false"
+                android:ellipsize="end"
+                android:maxEms="6"
+                android:paddingVertical="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="12dp"
+                tools:text="一二三四五六七八" />
+
+            <LinearLayout
+                android:layout_below="@id/tv_anchor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp">
+
+
+                <TextView
+                    android:id="@+id/tv_live_top_tool_bar_sex"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="@dimen/small_image_left_margin"
+                    android:paddingRight="@dimen/small_image_left_margin"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/live_top_tool_bar_sex"
+                    android:drawableLeft="@drawable/ic_live_top_tool_bar_sex"
+                    tools:text="33"
+                    android:textColor="@color/white"
+                    android:textSize="9dp" />
+
+                <TextView
+                    android:id="@+id/tv_live_top_tool_bar_type"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="@dimen/small_image_left_margin"
+                    android:paddingRight="@dimen/small_image_left_margin"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/live_top_tool_bar_sex"
+                    android:layout_marginLeft="@dimen/small_image_left_margin"
+                    android:text="慕"
+                    android:textColor="@color/white"
+                    android:textSize="9dp" />
+
+                <TextView
+                    android:id="@+id/tv_audience_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_anchor_name"
+                    android:layout_marginLeft="2dp"
+                    android:hint=""
+                    tools:text="100人"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/small_image_left_margin"
+                    android:paddingRight="@dimen/small_image_left_margin"
+                    android:textColor="@color/live_white"
+                    android:textSize="9dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:background="@drawable/bg_live_follow_btn"
+            android:id="@+id/btn_anchor_follow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:text="+"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_audiences_info"
+        android:gravity="end"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_audiences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ll_audiences_close"
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/close" />
+
+
+</LinearLayout>

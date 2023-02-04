@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_item_gift_num"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="0.1dp"
+        android:background="@drawable/bg_rb_top_button"
+        android:button="@null"
+        android:checked="false"
+        android:gravity="center"
+        android:textColor="@drawable/bg_text"
+        android:textSize="14sp"
+        tools:text="1314 一生一世" />
+
+</FrameLayout>

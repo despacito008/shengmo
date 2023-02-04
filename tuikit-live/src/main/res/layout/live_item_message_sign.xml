@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:background="#000"
+    android:layout_gravity="center"
+    android:id="@+id/ll_item_chat_message"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:paddingLeft="0.001dp"
+            android:paddingRight="5dp"
+            android:paddingTop="1dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/live_tv_live_anchor_level"
+                    android:layout_width="33dp"
+                    android:visibility="gone"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    tools:src="@drawable/live_manager_icon"
+                    android:id="@+id/live_tv_live_anchor_manager"
+                    android:layout_width="32dp"
+                    android:layout_height="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"/>
+
+                <com.tencent.qcloud.tim.tuikit.live.component.other.RoundLinearLayout
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    app:rRadius="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:id="@+id/ll_live_message_fans_club"
+                    tools:background="#9966ccff"
+                    android:layout_gravity="center"
+                    android:paddingRight="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_width="13dp"
+                            android:layout_height="13dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_live_message_fans_club"
+                                    android:src="@drawable/ic_fans_heart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+
+                                <TextView
+                                    android:id="@+id/tv_live_message_fans_club_level"
+                                    android:textSize="6dp"
+                                    android:textColor="@color/white"
+                                    android:text="10"
+                                    android:includeFontPadding="false"
+                                    android:layout_gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                        </FrameLayout>
+
+
+                        <TextView
+                            android:layout_marginLeft="1dp"
+                            android:includeFontPadding="false"
+                            android:text="粉丝团"
+                            android:textStyle="bold"
+                            android:textSize="8dp"
+                            android:paddingVertical="1.5dp"
+                            android:textColor="@color/white"
+                            android:id="@+id/tv_live_message_fans_club_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                </com.tencent.qcloud.tim.tuikit.live.component.other.RoundLinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:id="@+id/ll_live_message_audience_level"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingRight="3dp"
+                    android:background="@drawable/bg_round_audience_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="1dp"
+                            android:id="@+id/iv_live_audience_level"
+                            android:src="@drawable/ic_item_live_audience_level"
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"/>
+
+
+                        <TextView
+                            android:layout_marginLeft="1dp"
+                            android:includeFontPadding="false"
+                            tools:text="10"
+                            android:textStyle="bold"
+                            android:textSize="9dp"
+                            android:paddingVertical="1dp"
+                            android:textColor="@color/white"
+                            android:id="@+id/tv_live_audience_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:id="@+id/ll_live_message_anchor_level"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingRight="3dp"
+                    android:background="@drawable/bg_round_anchor_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="1dp"
+                            android:id="@+id/iv_live_anchor_level"
+                            android:src="@drawable/ic_item_live_anchor_level"
+                            android:layout_width="11dp"
+                            android:layout_height="11dp"/>
+
+
+                        <TextView
+                            android:layout_marginLeft="1dp"
+                            android:includeFontPadding="false"
+                            tools:text="10"
+                            android:textSize="9dp"
+                            android:textStyle="bold"
+                            android:paddingVertical="1dp"
+                            android:textColor="@color/white"
+                            android:id="@+id/tv_live_anchor_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:alpha="0.8"
+                    android:visibility="gone"
+                    android:id="@+id/ll_live_message_wealth"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingRight="6dp"
+                    android:background="@drawable/bg_live_message_wealth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                        <ImageView
+                           android:layout_marginLeft="3dp"
+                            android:layout_marginRight="1dp"
+                            android:id="@+id/iv_layout_user_normal_info_wealth"
+                            android:src="@drawable/user_wealth"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"/>
+
+
+                        <TextView
+                            android:layout_marginLeft="0dp"
+                            android:includeFontPadding="false"
+                            tools:text="10000"
+                            android:textSize="9dp"
+                            android:paddingVertical="1dp"
+                            android:textColor="@color/white"
+                            android:id="@+id/tv_live_message_wealth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/live_tv_live_anchor_v_level"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    tools:src="@drawable/user_vip"
+                    android:layout_gravity="center_vertical"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+        </LinearLayout>
+
+</LinearLayout>

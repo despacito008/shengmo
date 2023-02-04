@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.qcloud.tim.tuikit.live.modules.liveroom.ui.clearscreen.ClearScreenConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/live_voice_room_bg_main_gradient">
+
+
+    <com.tencent.qcloud.tim.tuikit.live.modules.liveroom.ui.widget.LiveVideoManagerLayout
+        android:id="@+id/ll_video_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_constraintWidth_percent="0.75"
+        tools:layout_constraintDimensionRatio="3:4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:layout_marginRight="10dp"
+        android:id="@+id/video_view_manager"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintBottom_toTopOf="@id/layout_bottom_toolbar"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+
+    <com.tencent.qcloud.tim.tuikit.live.component.message.ChatLayout
+        android:id="@+id/layout_chat"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_height="@dimen/live_chat_panel_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_bottom_toolbar"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_bottom_message"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintLeft_toLeftOf="@id/layout_chat"
+        app:layout_constraintTop_toBottomOf="@id/layout_chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/live_chat_message_bg"
+        android:padding="3dp"
+        android:layout_marginTop="3dp">
+
+        <ImageView
+            android:id="@+id/iv_bottom_message_role"
+            android:layout_width="33dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            tools:src="@drawable/live_manager_icon"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/iv_bottom_message_level"
+            android:layout_width="14dp"
+            android:layout_height="13dp"
+            tools:src="@drawable/user_vip"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_bottom_message_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/live_text_size_middle"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            tools:text="文字消息"
+            android:gravity="start"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:layout_marginHorizontal="3dp" />
+    </LinearLayout>
+
+    <com.tencent.qcloud.tim.tuikit.live.component.topbar.TopToolBarLayout
+        android:id="@+id/layout_top_toolbar"
+        android:visibility="visible"
+        tools:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--pk页面-->
+    <com.tencent.qcloud.tim.tuikit.live.component.pk.PkViewLayout
+        android:id="@+id/layout_pk_view"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <master.flame.danmaku.ui.widget.DanmakuView
+        android:id="@+id/view_danmaku"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--倒计时-->
+    <RelativeLayout
+        android:id="@+id/rl_pk_time_display_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/layout_top_toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="gone">
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:padding="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_live_pk_rect" />
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:padding="3dp"
+            android:id="@+id/ic_live_pk_rect_contest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="31dp"
+            android:src="@drawable/ic_live_pk_rect_contest" />
+        <TextView
+            android:layout_marginTop="2dp"
+            android:padding="3dp"
+            android:id="@+id/ic_live_pk_rect_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ic_live_pk_rect_contest"
+            android:textColor="@color/white"
+            android:text="02:30"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+
+    <!--点赞动画-->
+    <com.tencent.qcloud.tim.tuikit.live.component.like.HeartLayout
+        android:id="@+id/heart_layout"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@id/layout_bottom_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="gone" />
+
+    <!-- 场控列表 -->
+    <com.tencent.qcloud.tim.tuikit.live.component.manager.LiveManagerLayout
+        android:id="@+id/layout_live_manager"
+        android:visibility="visible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout_bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <com.tencent.qcloud.tim.tuikit.live.component.bottombar.BottomToolBarLayout
+        android:id="@+id/layout_bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/live_bottom_toolbar_height"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/state_tips"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:visibility="gone"
+        android:background="@drawable/live_bg_state_tips"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/live_white"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/live_status_tips" />
+
+    <com.tencent.qcloud.tim.tuikit.live.component.gift.imp.GiftAnimatorLayout
+        android:id="@+id/lottie_animator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <cn.tillusory.tiui.TiPanelLayout
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/ti_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--连麦：播放小窗口定义 开始-->
+    <!--连麦：第一个播放小窗口-->
+    <View
+        android:visibility="gone"
+        android:background="#66c9"
+        android:id="@+id/video_view_link_mic_1"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintHeight_percent="0.24"
+        app:layout_constraintDimensionRatio="2:3"
+        app:layout_constraintBottom_toTopOf="@id/layout_bottom_toolbar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--连麦：第二个播放小窗口-->
+    <View
+        android:visibility="gone"
+        android:background="#66c7"
+        android:id="@+id/video_view_link_mic_2"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintHeight_percent="0.24"
+        app:layout_constraintDimensionRatio="2:3"
+        app:layout_constraintBottom_toTopOf="@+id/video_view_link_mic_1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--连麦：第三个播放小窗口-->
+    <View
+        android:visibility="gone"
+        android:background="#66c8"
+        android:id="@+id/video_view_link_mic_3"
+        android:layout_marginBottom="5dp"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintHeight_percent="0.24"
+        app:layout_constraintDimensionRatio="2:3"
+        app:layout_constraintBottom_toTopOf="@+id/video_view_link_mic_2"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <!--连麦：播放小窗口定义 结束-->
+
+    <TextView
+        android:id="@+id/tv_live_audience_link_mic"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:alpha="0.5"
+        android:textColor="@color/white"
+        android:gravity="center"
+        tools:text="3人连麦中"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout_bottom_toolbar"
+        android:background="@drawable/bg_round_purple"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.tencent.liteav.custom.CountDownButton
+        android:id="@+id/count_down_bt_ticket"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_top_toolbar"
+        android:layout_marginRight="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textColor="#000"
+        android:textSize="10dp"
+        android:text="购买"
+        app:progressLineWidth="2dp"
+        />
+
+</com.tencent.qcloud.tim.tuikit.live.modules.liveroom.ui.clearscreen.ClearScreenConstraintLayout>

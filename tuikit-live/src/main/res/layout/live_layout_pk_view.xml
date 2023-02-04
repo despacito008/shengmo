@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#2000"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_line_center_line"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--观众top3-->
+    <LinearLayout
+        android:id="@+id/ll_pk_audience_view"
+        android:background="@drawable/bg_round_pk_audience_mask"
+        app:layout_constraintTop_toBottomOf="@id/ll_pk_layer_power"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingTop="7dp"
+        android:gravity="center_vertical|top"
+        app:layout_constraintDimensionRatio="6:1"
+        android:layout_height="0dp">
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1px"/>
+
+        <FrameLayout
+            android:layout_marginHorizontal="@dimen/pk_audience_margin"
+            android:background="@drawable/bg_round_pk_audience_bg_1"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+
+            <View
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_round_pk_audience_bg_3"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:src="@drawable/ic_pk_audience_sign"
+                android:layout_gravity="center"
+                android:layout_width="24dp"
+                android:layout_height="18dp"/>
+
+            <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+                android:id="@+id/iv_pk_view_audience_us_3"
+                android:layout_margin="1dp"
+                tools:src="@drawable/user_svip"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textSize="10dp"
+                android:text="3"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:layout_gravity="bottom|right"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_round_pk_audience_bg_1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_marginHorizontal="@dimen/pk_audience_margin"
+            android:background="@drawable/bg_round_pk_audience_bg_1"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+
+
+            <View
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_round_pk_audience_bg_3"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:src="@drawable/ic_pk_audience_sign"
+                android:layout_gravity="center"
+                android:layout_width="24dp"
+                android:layout_height="18dp"/>
+
+            <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+                android:id="@+id/iv_pk_view_audience_us_2"
+                android:layout_margin="1dp"
+                tools:src="@drawable/user_svip"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textSize="10dp"
+                android:text="2"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:layout_gravity="bottom|right"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_round_pk_audience_bg_1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_marginHorizontal="@dimen/pk_audience_margin"
+            android:background="@drawable/bg_round_pk_audience_bg_1"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+
+
+            <View
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_round_pk_audience_bg_3"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:src="@drawable/ic_pk_audience_sign"
+                android:layout_gravity="center"
+                android:layout_width="24dp"
+                android:layout_height="18dp"/>
+
+            <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+                android:id="@+id/iv_pk_view_audience_us_1"
+                android:layout_margin="1dp"
+                tools:src="@drawable/user_svip"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textSize="10dp"
+                android:text="1"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:layout_gravity="bottom|right"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_round_pk_audience_bg_1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+        </FrameLayout>
+
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_pk_vs"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="29dp"/>
+
+        <FrameLayout
+            android:layout_marginHorizontal="@dimen/pk_audience_margin"
+            android:background="@drawable/bg_round_pk_audience_bg_2"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+
+
+            <View
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_round_pk_audience_bg_4"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:src="@drawable/ic_pk_audience_sign"
+                android:layout_gravity="center"
+                android:layout_width="24dp"
+                android:layout_height="18dp"/>
+
+            <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+                android:id="@+id/iv_pk_view_audience_other_1"
+                android:layout_margin="1dp"
+                tools:src="@drawable/user_svip"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textSize="10dp"
+                android:text="1"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:layout_gravity="bottom|right"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_round_pk_audience_bg_2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_marginHorizontal="@dimen/pk_audience_margin"
+            android:background="@drawable/bg_round_pk_audience_bg_2"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+
+
+            <View
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_round_pk_audience_bg_4"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:src="@drawable/ic_pk_audience_sign"
+                android:layout_gravity="center"
+                android:layout_width="24dp"
+                android:layout_height="18dp"/>
+
+            <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+                android:id="@+id/iv_pk_view_audience_other_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                tools:src="@drawable/user_svip" />
+
+            <TextView
+                android:textSize="10dp"
+                android:text="2"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:layout_gravity="bottom|right"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_round_pk_audience_bg_2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_marginHorizontal="@dimen/pk_audience_margin"
+            android:background="@drawable/bg_round_pk_audience_bg_2"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+
+
+            <View
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_round_pk_audience_bg_4"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:src="@drawable/ic_pk_audience_sign"
+                android:layout_gravity="center"
+                android:layout_width="24dp"
+                android:layout_height="18dp"/>
+
+            <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+                android:id="@+id/iv_pk_view_audience_other_3"
+                android:layout_margin="1dp"
+                tools:src="@drawable/user_svip"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textSize="10dp"
+                android:text="3"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:layout_gravity="bottom|right"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_round_pk_audience_bg_2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+        </FrameLayout>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1px"/>
+
+    </LinearLayout>
+
+    <!--血条-->
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/ll_pk_layer_seekbar"
+        android:src="@drawable/ic_live_pk_rect_contest"
+        app:layout_constraintTop_toTopOf="@+id/guide_line_center_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/live_circle_seekbar_me"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/gl_horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/gl_vertical"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_top_toolbar"
+            android:background="@drawable/live_circle_seekbar_me">
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="2dp"
+                android:padding="3dp"
+                android:id="@+id/tv_live_pk_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:text="@string/tv_live_pk_me"
+                android:textSize="14dp" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:padding="3dp"
+                android:id="@+id/tv_live_pk_me_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_live_pk_me"
+                android:textColor="@color/white"
+                android:text="0"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/live_circle_seekbar_other"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/gl_horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/gl_vertical"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_top_toolbar"
+            android:background="@drawable/live_circle_seekbar_other">
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:padding="3dp"
+                android:id="@+id/tv_live_pk_other_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:text="0"
+                android:layout_toLeftOf="@+id/tv_live_pk_other"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:padding="3dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_live_pk_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:text="@string/tv_live_pk_other"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pk_layer_power"
+        tools:background="#6c9"
+        app:layout_constraintTop_toTopOf="@id/guide_line_center_line"
+        android:layout_width="match_parent"
+        app:layout_constraintDimensionRatio="25:1"
+        android:layout_height="0dp">
+
+        <View
+            android:background="@drawable/bg_pk_us_power"
+            android:id="@+id/view_pk_user_power"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:background="@drawable/bg_round_white"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:background="@drawable/bg_pk_other_power"
+            android:id="@+id/view_pk_other_power"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <!--倒计时-->
+    <RelativeLayout
+        android:id="@+id/rl_pk_time_display_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/ll_pk_layer_seekbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:padding="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_live_pk_rect" />
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:padding="3dp"
+            android:id="@+id/ic_live_pk_rect_contest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="31dp"
+            android:src="@drawable/ic_live_pk_rect_contest" />
+        <TextView
+            android:layout_marginTop="2dp"
+            android:padding="3dp"
+            android:id="@+id/ic_live_pk_rect_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ic_live_pk_rect_contest"
+            android:textColor="@color/white"
+            android:text="02:30"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <!--胜负-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/ll_pk_layer_contest"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_pk_layer_power"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/iv_pk_result_us"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/gl_horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/gl_vertical"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_top_toolbar"
+            tools:src="@drawable/ic_live_pk_rect_level" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/live_circle_contest_ping"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/gl_horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/gl_vertical"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_top_toolbar"
+            android:src="@drawable/ic_live_pk_rect_level" />
+        <ImageView
+            android:id="@+id/iv_pk_result_other"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/gl_horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/gl_vertical"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_top_toolbar"
+            tools:src="@drawable/ic_live_pk_rect_level" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/ic_pk_time_bg"
+        app:layout_constraintBottom_toTopOf="@id/ll_pk_layer_power"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="5dp"
+        android:layout_width="80dp"
+        android:layout_height="20dp">
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:id="@+id/iv_pk_view_status"
+            tools:src="@drawable/ic_pk_status_pk"
+            android:layout_width="36dp"
+            android:layout_height="12dp"/>
+        <TextView
+            android:id="@+id/tv_pk_view_time"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"
+            tools:text="5:00"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_pk_other_window"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintDimensionRatio="3:4"
+        app:layout_constraintBottom_toTopOf="@id/guide_line_center_line"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+    <ImageView
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/iv_pk_mute_other"
+        app:layout_constraintTop_toTopOf="@id/view_pk_other_window"
+        app:layout_constraintRight_toRightOf="@id/view_pk_other_window"
+        android:src="@drawable/ic_pk_other_audio_open"
+        app:layout_constraintBottom_toBottomOf="@id/view_pk_other_window"
+        app:layout_constraintLeft_toLeftOf="@id/view_pk_other_window"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintVertical_bias="0.05"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+    <TextView
+        android:id="@+id/tv_pk_view_us_power"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="#3b0017"
+        android:text="0"
+        android:layout_marginLeft="15dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/ll_pk_layer_power"
+        app:layout_constraintBottom_toBottomOf="@id/ll_pk_layer_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_pk_view_other_power"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="#3b0017"
+        android:text="0"
+        android:layout_marginRight="15dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/ll_pk_layer_power"
+        app:layout_constraintBottom_toBottomOf="@id/ll_pk_layer_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/view_pk_audience_left"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintLeft_toLeftOf="@id/ll_pk_audience_view"
+        app:layout_constraintTop_toTopOf="@id/ll_pk_audience_view"
+        app:layout_constraintBottom_toBottomOf="@id/ll_pk_audience_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <View
+        android:id="@+id/view_pk_audience_right"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintRight_toRightOf="@id/ll_pk_audience_view"
+        app:layout_constraintTop_toTopOf="@id/ll_pk_audience_view"
+        app:layout_constraintBottom_toBottomOf="@id/ll_pk_audience_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+</android.support.constraint.ConstraintLayout>

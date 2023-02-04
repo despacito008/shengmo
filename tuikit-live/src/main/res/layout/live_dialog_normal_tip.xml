@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:id="@+id/constraint_layout_tips"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@drawable/bg_round_white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            app:layout_constraintWidth_percent="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_pop_normal_tips_title"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:textSize="16dp"
+                android:textColor="#131415"
+                android:text="消息提示"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/tv_pop_normal_tips_info"
+                android:padding="10dp"
+                android:textSize="14dp"
+                tools:text="具体的提示信息"
+                android:gravity="start"
+                android:textColor="#333"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginVertical="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/tv_pop_normal_tips_cancel"
+                    android:background="@drawable/bg_round_cancel"
+                    android:textColor="#666"
+                    android:gravity="center"
+                    android:paddingVertical="12dp"
+                    android:includeFontPadding="false"
+                    android:text="取消"
+                    android:textSize="16dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_normal_tips_confirm"
+                    android:background="@drawable/bg_round_purple"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:paddingVertical="12dp"
+                    android:includeFontPadding="false"
+                    android:text="确定"
+                    android:textSize="16dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

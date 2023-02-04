@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="225dp"
+    android:background="@color/ti_bg_cute"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tiGreenScreenTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="82dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:orientation="vertical">
+
+                <cn.tillusory.tiui.custom.DrawableTextView
+                    android:id="@+id/tiBtnRestore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33dp"
+                    android:layout_marginStart="30dp"
+                    android:minHeight="55dp"
+                    android:drawablePadding="23dp"
+                    android:gravity="center_horizontal"
+                    android:includeFontPadding="false"
+                    android:text="@string/green_screen_restore"
+                    android:textColor="@color/color_ti_selector_reset_full"
+                    android:textSize="10sp"
+                    app:dt_top_drawable="@drawable/ic_ti_green_screen_restore"
+                    app:dt_top_width="24dp"
+                    app:dt_top_height="24dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="31dp"
+                android:background="@color/ti_divider_full"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/tiGreenScreenRV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/tiGreenScreenBackIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="40dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_ti_mode_back_white"
+            android:contentDescription="@null"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

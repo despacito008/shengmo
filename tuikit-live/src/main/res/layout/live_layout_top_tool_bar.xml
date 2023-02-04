@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+   <include layout="@layout/live_layout_top_tool_bar_ll_headview" />
+
+   <HorizontalScrollView
+       android:scrollbars="none"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <LinearLayout
+          android:id="@+id/ll_layout_top_tool_bar_menu"
+          android:paddingVertical="5dp"
+          android:paddingLeft="5dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:gravity="center_vertical">
+
+         <ImageView
+             android:id="@+id/iv_live_top_rank"
+             android:background="@drawable/live_top_coins"
+             android:src="@drawable/ic_live_top_rank"
+             android:layout_marginRight="5dp"
+             android:paddingHorizontal="5dp"
+             android:paddingVertical="4dp"
+             android:layout_width="28dp"
+             android:layout_height="22dp"/>
+
+         <LinearLayout
+             android:id="@+id/ll_alert_gift_list"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/live_top_coins"
+             android:orientation="horizontal"
+             android:paddingStart="1dp"
+             android:gravity="center_vertical"
+             android:paddingTop="1dp"
+             android:paddingEnd="1dp"
+             android:paddingBottom="1dp"
+             android:layout_gravity="right"
+             android:paddingRight="3dp">
+
+            <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+                android:layout_width="@dimen/live_top_audience_avatar_contest_height"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="1dp"
+                android:padding="3dp"
+                android:src="@drawable/ranking_beans" />
+
+            <TextView
+                android:id="@+id/tv_live_coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:maxWidth="@dimen/live_text_max_show_width"
+                android:maxLines="1"
+                android:minWidth="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:text="0"
+                android:textSize="10dp"
+                android:paddingEnd="@dimen/small_image_left_margin"
+                android:layout_marginRight="3dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_live_top_next"
+                android:visibility="gone"/>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/ll_live_contest_number"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/live_top_anchor_info_bg"
+             android:orientation="horizontal"
+             android:gravity="center_vertical"
+             android:paddingStart="1dp"
+             android:layout_marginLeft="10dp"
+             android:paddingTop="1dp"
+             android:paddingEnd="3dp"
+             android:paddingBottom="1dp">
+
+            <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+                android:id="@+id/iv_anchor_head"
+                android:layout_width="@dimen/live_top_audience_avatar_contest_height"
+                android:layout_height="@dimen/live_top_audience_avatar_contest_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/ic_live_top_tool_bar_contest" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="3dp"
+                android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/tv_live_contest_number"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="2dp"
+                   android:maxWidth="@dimen/live_text_max_show_width"
+                   android:maxLines="1"
+                   android:minWidth="30dp"
+                   android:singleLine="true"
+                   android:textColor="@android:color/white"
+                   android:text="@string/live_top_not_on_the_list"
+                   android:textSize="10dp"
+                   tools:text="@string/live_top_not_on_the_list"
+                   android:paddingEnd="@dimen/small_image_left_margin"/>
+
+            </RelativeLayout>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:gravity="center_vertical"
+             android:id="@+id/ll_time"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/live_top_coins"
+             android:orientation="horizontal"
+             android:paddingStart="1dp"
+             android:paddingTop="1dp"
+             android:layout_marginLeft="10dp"
+             android:paddingEnd="3dp"
+             android:paddingBottom="1dp"
+             android:layout_gravity="right"
+             android:layout_marginRight="3dp"
+             android:paddingRight="3dp">
+
+            <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+                android:layout_width="@dimen/live_top_audience_avatar_contest_height"
+                android:layout_height="@dimen/live_top_audience_avatar_contest_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/ic_live_time_duration" />
+
+            <TextView
+                android:id="@+id/tv_time_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:maxWidth="@dimen/live_text_max_show_width"
+                android:maxLines="1"
+                android:minWidth="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                tools:text="2021/10/20"
+                android:text="0"
+                android:textSize="10dp"
+                android:paddingEnd="@dimen/small_image_left_margin"
+                android:layout_marginRight="3dp"/>
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/ll_live_Online_num"
+             android:gravity="center_vertical"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/live_top_coins"
+             android:orientation="horizontal"
+             android:layout_marginLeft="5dp"
+             android:paddingVertical="3dp"
+             android:layout_gravity="center">
+
+
+
+            <TextView
+                android:id="@+id/tv_live_Online_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:maxWidth="@dimen/live_text_max_show_width"
+                android:maxLines="1"
+                android:minWidth="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                tools:text="10人"
+                android:text="0"
+                android:textSize="10dp"
+                android:paddingEnd="@dimen/small_image_left_margin"
+                android:layout_marginRight="3dp"/>
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/ll_live_contest_star_number"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingStart="1dp"
+             android:paddingTop="1dp"
+             android:paddingEnd="1dp"
+             android:paddingBottom="1dp"
+             android:background="@drawable/live_top_tool_bar_toplist"
+             android:layout_marginLeft="@dimen/page_margin"
+             android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_live_toplist"
+                android:layout_width="@dimen/live_top_audience_avatar_contest_height"
+                android:layout_height="@dimen/live_top_audience_avatar_contest_height"
+                android:layout_gravity="center"
+                android:layout_marginStart="1dp"
+                android:src="@drawable/ic_live_top_tool_bar_toplist"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_live_toplist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:maxWidth="@dimen/live_text_max_show_width"
+                android:maxLines="1"
+                android:minWidth="30dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:text="@string/live_contest_star_number"
+                android:textSize="12dp"
+                android:paddingEnd="@dimen/small_image_left_margin" />
+         </LinearLayout>
+
+         <View
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="0dp"/>
+         <Button
+             android:id="@+id/report_user"
+             android:layout_width="36dp"
+             android:layout_height="18dp"
+             android:layout_marginLeft="10dp"
+             android:background="@drawable/live_report_btn_bg"
+             android:text="@string/report"
+             android:textColor="@color/live_white"
+             android:textSize="9dp"
+             tools:visibility="visible"
+             android:visibility="gone" />
+      </LinearLayout>
+   </HorizontalScrollView>
+  <TextView
+      android:visibility="gone"
+      tools:visibility="visible"
+      android:id="@+id/marquee_tv_live_title"
+      android:layout_width="wrap_content"
+      android:paddingHorizontal="10dp"
+      android:layout_height="25dp"
+      android:layout_marginVertical="5dp"
+      android:maxLines="1"
+      android:gravity="center"
+      android:textColor="@color/white"
+      android:background="@drawable/live_top_coins"
+      tools:text="直播间公告直播间公告直播间公告直播间公告直播间公告直播间公告直播间公告直播间公告直播间公告直播间公android:clipChildren=“false” 告"
+      android:scrollHorizontally="true"
+      android:textSize="12dp"/>
+
+   <TextView
+       android:id="@+id/marquee_tv_live_announcement"
+       android:background="@drawable/bg_round_announcement"
+       android:gravity="center"
+       android:textColor="@color/white"
+       tools:text="海龟先生在摸鱼小姐的直播间送出跑车"
+       android:textSize="12dp"
+       android:visibility="gone"
+       tools:visibility="visible"
+       android:maxLines="1"
+       android:scrollHorizontally="true"
+       android:layout_marginHorizontal="10dp"
+       android:paddingHorizontal="5dp"
+       android:layout_width="wrap_content"
+       android:layout_height="25dp"/>
+
+   <FrameLayout
+       android:id="@+id/fl_live_red_envelopes"
+       android:background="@drawable/bg_round_red_envelopes_notice"
+       android:visibility="gone"
+       android:layout_marginLeft="12dp"
+       android:layout_marginTop="5dp"
+       android:layout_width="40dp"
+       android:layout_height="40dp">
+
+      <ImageView
+          android:layout_gravity="bottom|left"
+          android:src="@drawable/ic_live_red_envelopes_notice"
+          android:layout_width="36dp"
+          android:layout_height="36dp"/>
+
+      <TextView
+          android:id="@+id/tv_live_red_envelopes_num"
+          android:background="@drawable/bg_round_live_red_envelopes_dot"
+          android:layout_gravity="top|right"
+          android:textSize="10dp"
+          android:textColor="@color/white"
+          tools:text="10"
+          android:includeFontPadding="false"
+          android:visibility="gone"
+          tools:visibility="visible"
+          android:gravity="center"
+          android:layout_width="15dp"
+          android:layout_height="15dp"/>
+
+      <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+          android:id="@+id/civ_live_red_envelopes_icon"
+          android:src="@drawable/ic_live_red_envelopes_get"
+          android:layout_gravity="center"
+          android:layout_marginRight="3dp"
+          android:rotation="30"
+          android:layout_marginTop="1dp"
+          android:layout_width="15dp"
+          android:layout_height="15dp"/>
+
+   </FrameLayout>
+
+   <android.support.v7.widget.RecyclerView
+       android:visibility="gone"
+       tools:visibility="visible"
+       android:layout_marginHorizontal="12dp"
+       android:id="@+id/rv_live_red_envelopes"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+   <LinearLayout
+       android:id="@+id/ll_live_more"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/live_top_more"
+       android:orientation="horizontal"
+       android:paddingStart="1dp"
+       android:paddingTop="1dp"
+       android:paddingEnd="1dp"
+       android:paddingBottom="1dp"
+       android:layout_gravity="right"
+       android:paddingRight="20dp"
+       android:visibility="gone">
+
+      <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+          android:layout_width="@dimen/live_top_audience_avatar_contest_height"
+          android:layout_height="@dimen/live_top_audience_avatar_contest_height"
+          android:layout_gravity="center_vertical"
+          android:layout_marginLeft="5dp"
+          android:src="@drawable/ic_live_top_more" />
+
+         <TextView
+             android:id="@+id/tv_live_more"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="2dp"
+             android:maxWidth="@dimen/live_text_max_show_width"
+             android:maxLines="1"
+             android:minWidth="30dp"
+             android:singleLine="true"
+             android:textColor="@android:color/white"
+             android:text="@string/live_more"
+             android:textSize="12dp"
+             android:paddingEnd="@dimen/small_image_left_margin"/>
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:layout_marginEnd="12dp"
+          android:layout_gravity="center_vertical"
+          android:src="@drawable/ic_live_top_next" />
+
+   </LinearLayout>
+
+</LinearLayout>

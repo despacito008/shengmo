@@ -1,0 +1,34 @@
+{
+  "masks": [
+    {
+      "name": "panda",
+      "thumb": "panda_icon.png",
+      "downloaded": false
+    },
+    {
+      "name": "fox",
+      "thumb": "fox_icon.png",
+      "downloaded": false
+    },
+    {
+      "name": "pig",
+      "thumb": "pig_icon.png",
+      "downloaded": false
+    },
+    {
+        "name": "spirit",
+        "thumb": "spirit_icon.png",
+        "downloaded": false
+    },
+    {
+      "name": "white_n95",
+      "thumb": "white_n95_icon.png",
+      "downloaded": false
+    },
+    {
+      "name": "medical_mask",
+      "thumb": "medical_mask_icon.png",
+      "downloaded": false
+    }
+  ]
+}

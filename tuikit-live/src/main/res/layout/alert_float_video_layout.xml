@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/small_size_frame_layout"
+    android:layout_width="96dp"
+    android:layout_height="136dp"
+    android:background="@drawable/bg_round_float"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        tools:background="#5cf"
+        android:id="@+id/float_videoview"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" />
+
+    <ImageView
+        tools:background="#5cf"
+        android:scaleType="centerCrop"
+        android:id="@+id/float_imageview"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/float_textview"
+        android:background="#2000"
+        android:textColor="@color/white"
+        android:text="语音通话中"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:paddingVertical="2dp"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>

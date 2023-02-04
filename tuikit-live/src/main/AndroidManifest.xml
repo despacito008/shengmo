@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tencent.qcloud.tim.tuikit.live">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false">
+
+        <activity
+            android:name="com.tencent.liteav.SelectContactActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.tencent.liteav.ui.TRTCAudioCallActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:taskAffinity="com.tencent.liteav.ui.TRTCAudioCallActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.tencent.liteav.ui.TRTCVideoCallActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:taskAffinity="com.tencent.liteav.ui.TRTCVideoCallActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <service android:name="com.tencent.liteav.custom.FloatVideoWindowService"/>
+        <service android:name="com.tencent.liteav.custom.FloatVideoWindowService2"/>
+        <service android:name="com.tencent.liteav.custom.FloatVideoWindowService3"/>
+<!--        <service android:name="com.tencent.liteav.custom.FloatVideoWindowService2" android:exported="false">-->
+<!--            <intent-filter android:priority="1000">-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+        <service
+            android:name="com.tencent.qcloud.tim.tuikit.live.modules.liveroom.screencapture.screen.RotationWatcherService"
+            android:enabled="true"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#15DDDB" />
+    <!--android:startColor和android:endColor分别为起始和结束颜色，android:angle是渐变角度，必须为45的整数倍。-->
+    <gradient android:type="linear" android:useLevel="true" android:startColor="#ff15dddb" android:endColor="#ff16eecf" android:angle="45" />
+    <corners android:radius="200dp" />
+</shape>

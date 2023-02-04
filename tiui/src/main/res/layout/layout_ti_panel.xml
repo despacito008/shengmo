@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?><!--Copyright (c) 2018-2020 拓幻科技 - tillusory.cn. All rights reserved.-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/tiBeautyIV"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="14dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_ti_beauty"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/tiBeautyModeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="@color/ti_bg_cute2"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="60dp">
+
+            <cn.tillusory.tiui.custom.DrawableTextView
+                android:id="@+id/beauty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="65dp"
+                android:drawablePadding="20dp"
+                android:gravity="center"
+                android:text="@string/beauty"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:dt_top_drawable="@drawable/ic_ti_mode_beauty_white"
+                app:dt_top_height="34dp"
+                app:dt_top_width="34dp" />
+
+            <cn.tillusory.tiui.custom.DrawableTextView
+                android:visibility="visible"
+                android:id="@+id/filter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="65dp"
+                android:drawablePadding="20dp"
+                android:gravity="center"
+                android:text="@string/filter"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:dt_top_drawable="@drawable/ic_ti_mode_filter_white"
+                app:dt_top_height="34dp"
+                app:dt_top_width="34dp" />
+
+            <cn.tillusory.tiui.custom.DrawableTextView
+                android:id="@+id/cute"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="65dp"
+                android:drawablePadding="20dp"
+                android:gravity="center"
+                android:text="@string/mode_cute"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:dt_top_drawable="@drawable/ic_ti_mode_cute_white"
+                android:visibility="visible"
+                app:dt_top_height="34dp"
+                app:dt_top_width="34dp" />
+
+            <cn.tillusory.tiui.custom.DrawableTextView
+                android:id="@+id/makeup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="65dp"
+                android:drawablePadding="20dp"
+                android:gravity="center"
+                android:text="@string/makeup"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:dt_top_drawable="@drawable/ic_ti_mode_makeup_white"
+                android:visibility="invisible"
+                app:dt_top_height="34dp"
+                app:dt_top_width="34dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="25dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_ti_mode_back_white"
+            android:contentDescription="@null"/>
+
+    </FrameLayout>
+
+    <cn.tillusory.tiui.view.TiBeautyView
+        android:id="@+id/tiBeautyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/interaction_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+

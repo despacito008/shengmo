@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><!--Copyright (c) 2018-2020 拓幻科技 - tillusory.cn. All rights reserved.-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="68dp"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/tiImageIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"/>
+
+        <ImageView
+            android:id="@+id/tiCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="19dp"
+            android:background="@drawable/color_ti_filter_item_cover_selector"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_ti_filter_selector"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/tiShadow"
+        android:layout_width="60dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="2dp"
+        android:background="@android:color/transparent"
+        android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/tiTextTV"
+            style="@style/TiFilterTextView"
+            android:layout_width="60dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/color_ti_filter_item_text_selector"
+            android:includeFontPadding="false"
+            android:gravity="center"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>
+
+
