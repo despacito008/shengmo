@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_header_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_little_user_center_avatar"
+            android:layout_width="@dimen/alivc_common_size_icon_90"
+            android:layout_height="@dimen/alivc_common_size_icon_90"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/iv_mine_change_avatar"
+            android:layout_width="@dimen/alivc_common_size_icon_28"
+            android:layout_height="@dimen/alivc_common_size_icon_28"
+            android:scaleType="fitXY"
+            android:layout_alignRight="@id/iv_little_user_center_avatar"
+            android:layout_alignBottom="@id/iv_little_user_center_avatar"
+            android:src="@mipmap/alivc_icon_mine_change_avatar"
+            android:layout_alignEnd="@id/iv_little_user_center_avatar" />
+
+        <TextView
+            android:id="@+id/tv_little_mine_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_little_user_center_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/alivc_common_margin_10"
+            android:gravity="center"
+            android:textColor="#c3c5c6"
+            android:textSize="@dimen/alivc_common_font_12" />
+
+        <RelativeLayout
+            android:id="@+id/rl_little_userinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/alivc_common_height_tv_22"
+            android:layout_below="@id/tv_little_mine_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/alivc_common_margin_10">
+
+            <TextView
+                android:id="@+id/tv_little_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/alivc_common_font_white"
+                android:textSize="@dimen/alivc_common_font_16" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

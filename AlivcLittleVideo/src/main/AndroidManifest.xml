@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aliyun.apsara.alivclittlevideo">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity
+            android:name=".activity.VideoListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activity.PublishActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AlivcLittleSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activity.AlivcLittleUserSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AlivcLittleUserChangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AlivcLittlePlayerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AlivcLittlePreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.AlivcLittleLiveActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

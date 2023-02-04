@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/alivc_common_bg_transparent">
+
+    <TextView
+        android:id="@+id/little_titlebar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/alivc_little_user_setting_tittle"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/alivc_common_font_16" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_back"
+        android:layout_width="@dimen/alivc_common_size_icon_42"
+        android:layout_height="@dimen/alivc_common_size_icon_42"
+        android:layout_centerVertical="true"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_back" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/little_titlebar_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingRight="@dimen/alivc_common_margin_8"
+        android:text="@string/alivc_little_user_setting_finish"
+        android:textColor="@color/alivc_common_font_white"
+        android:textSize="@dimen/alivc_common_font_16" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion externalCompileSdkVersion
+
+    defaultConfig {
+        minSdkVersion externalMinSdkVersion
+        targetSdkVersion externalTargetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // 播放器
+    api externalPlayerPart
+
+    // 短视频
+    api project(':AliyunFileDownLoader')
+    api project(':AliyunSVideoBase')
+    api project (":AliyunRecorder:record")
+    api project(':AliyunEditor')
+    implementation project(':AlivcMedia')
+    implementation project(':AliyunVideoCommon')
+    implementation externalAndroidSupportV4
+    implementation externalAndroidAppCompatV7
+    implementation externalOKHTTP
+    implementation externalAndroidRecyclerView
+    implementation externalGSON
+    implementation externalAliyunOSS
+    implementation externalAndroidCardView
+    implementation externalAndroidDesign
+    implementation externalAliyunVodUpload
+
+}

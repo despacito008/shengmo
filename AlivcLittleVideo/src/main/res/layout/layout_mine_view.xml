@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/alivc_little_my_video_bg">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/alivc_swip_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.aliyun.apsara.alivclittlevideo.view.mine.TitleNestedScrollView
+            android:id="@+id/nsv_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/alivc_little_my_video_bg"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/alivc_common_padding_50">
+
+                <include layout="@layout/layout_mine_header_view" />
+
+                <View
+                    android:id="@+id/view_split_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/alivc_common_line_1px"
+                    android:layout_marginLeft="@dimen/alivc_common_margin_16"
+                    android:layout_marginTop="@dimen/alivc_common_margin_8"
+                    android:layout_marginRight="@dimen/alivc_common_margin_16"
+                    android:background="#4A4A4A" />
+
+                <LinearLayout
+                    android:id="@+id/reycler_header_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/alivc_common_size_icon_14"
+                        android:layout_height="@dimen/alivc_common_size_icon_14"
+                        android:layout_marginEnd="@dimen/alivc_common_margin_16"
+                        android:layout_marginRight="@dimen/alivc_common_margin_16"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/alivc_little_my_video" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/alivc_little_mine_my_video"
+                        android:textColor="@color/alivc_common_font_white"
+                        android:textSize="@dimen/alivc_common_font_13" />
+
+                    <TextView
+                        android:id="@+id/tv_my_video_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/alivc_common_margin_12"
+                        android:layout_marginLeft="@dimen/alivc_common_margin_12"
+                        android:textColor="#F8E71C"
+                        android:textSize="@dimen/alivc_common_font_15" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/id_nested_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/alivc_common_keyline_15"
+                    android:paddingRight="@dimen/alivc_common_keyline_15"
+                    android:paddingBottom="@dimen/alivc_little_bottom_bg_height"
+                    />
+            </LinearLayout>
+
+        </com.aliyun.apsara.alivclittlevideo.view.mine.TitleNestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/alivc_common_bg_transparent"
+        android:clickable="true">
+
+        <FrameLayout
+            android:id="@+id/fl_setting"
+            android:layout_width="@dimen/alivc_common_size_icon_42"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/alivc_common_padding_8"
+                android:scaleType="center"
+                android:src="@mipmap/alivc_icon_mine_setting" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">AlivcLittleVideo</string>
+
+
+    <!-- about dialog  start-->
+
+
+    <!-- about dialog  end-->
+
+    <!-- tips content-->
+
+    <string name="alivc_uninclude_module">uninclude this module</string>
+    <!--little video main page-->
+    <string name="alivc_little_main_tip_upload_success">upload success</string>
+    <string name="alivc_little_main_downloading">Downloading</string>
+    <string name="alivc_little_main_dialog_retry">Retry</string>
+    <string name="alivc_little_main_dialog_close">Close</string>
+    <string name="alivc_little_main_creation_failed">Video creation failed</string>
+    <string name="alivc_little_main_dialog_upload_failed">Uploading failed</string>
+    <string name="alivc_little_main_publish">Publishing</string>
+    <string name="alivc_little_main_dialog_content_delete">Are you sure you want to delete the specified video?</string>
+    <string name="alivc_little_main_dialog_setting">Set</string>
+    <string name="alivc_little_main_dialog_not_setting">Cancel</string>
+    <string name="alivc_little_main_dialog_editor">Recorder</string>
+    <string name="alivc_little_main_dialog_recorder">Editor</string>
+    <string name="alivc_little_main_tip_publish_error">Video publishing error,</string>
+    <string name="alivc_little_main_tip_exit">Press once more to exit the application</string>
+    <string name="alivc_little_main_net_error">network error</string>
+    <string name="alivc_little_main_video_upload_error">Uploading failed</string>
+    <string name="alivc_little_main_picture_upload_error">Uploading failed</string>
+
+    <!--list player page-->
+    <string name="alivc_little_play_tip_last_video">This is the last video</string>
+    <string name="alivc_little_play_tip_downloaded">Downloaded</string>
+    <string name="alivc_little_play_dialog_save_loacal">Local</string>
+    <string name="alivc_little_play_dialog_delete">delete</string>
+    <string name="alivc_little_play_anonymous">Anonymous</string>
+    <string name="alivc_little_play_tip_resource_none">None</string>
+    <string name="alivc_little_play_date_none">None</string>
+    <string name="alivc_little_play_tip_reviewing">Reviewing</string>
+    <string name="alivc_little_play_tip_not_pass">Sorry, the video contains inappropriate content.</string>
+    <!--user center page-->
+    <string name="alivc_little_mine_reviewing">Reviewing</string>
+    <string name="alivc_little_mine_passed">Passed</string>
+    <string name="alivc_little_mine_failed">Failed</string>
+    <string name="alivc_little_mine_my_video">my video</string>
+    <string name="alivc_little_mine_dialog_confirm">Confirm</string>
+    <string name="alivc_little_mine_dialog_cancel">Cancel</string>
+    <string name="alivc_little_mine_dialog_audit_fail">Sorry, the video contains inappropriate content. The video has been deleted?</string>
+    <string name="alivc_little_mine_not_support_play">Moderating video content. You cannot watch the video now！</string>
+    <!--setting page-->
+    <string name="alivc_little_setting_video_version_code">little video version code : V</string>
+
+    <string name="alivc_little_setting_sdk_version">Short Video SDK Version【%s】\n Player SDK Version【%s】</string>
+    <string name="alivc_little_setting_tittle">Setting</string>
+
+    <!--user setting page-->
+    <string name="alivc_little_user_setting_tittle">UserSetting</string>
+    <string name="alivc_little_user_setting_change_user">ChangeUser</string>
+    <string name="alivc_little_user_setting_input_nickname">Please input your nickname</string>
+    <string name="alivc_little_user_setting_new_nickname">NewNickName</string>
+    <string name="alivc_little_user_setting_finish">finish</string>
+    <string name="alivc_little_user_setting_word_limit">No more than 20 characters</string>
+    <string name="alivc_little_user_setting_tip_change_user_fail">Switch to another account failed，Please wait</string>
+    <string name="alivc_little_user_setting_dialog_change_user_tip">Switch to another account</string>
+    <!--publish page-->
+
+    <string name="alivc_little_publish_hint_video_desc">Please input a video description</string>
+    <string name="alivc_little_publish_tip_description_beyond">The description must contain less than 20 characters</string>
+    <string name="alivc_little_tip_no_user">You must log on first</string>
+
+
+    <string name="alivc_little_dialog_permission_tips">Please allow ApsaraVideo to access Photos first，Please allow ApsaraVideo to access sdcard first，Please allow ApsaraVideo to access sdcard first</string>
+
+    <string name="alivc_little_publishing_not_edit">Publishing</string>
+    <string name="alivc_little_publishing_can_not_recorder">Publishinging</string>
+    <string name="alivc_little_main_not_support_edit">The mobile version do not support edit</string>
+    <string name="alivc_little_main_not_support_recorder">The mobile version do not support recorder</string>
+    <!--Mobile version is too low-->
+
+
+    <!--Reviewing-->
+
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.aliyun.apsara.alivclittlevideo.view.video.AlivcVideoPlayView
+        android:id="@+id/video_play_detail_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    <FrameLayout
+        android:id="@+id/fl_video_detail_back"
+        android:layout_width="@dimen/alivc_common_size_icon_42"
+        android:layout_height="@dimen/alivc_common_size_icon_42"
+        android:layout_gravity="top|left"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/alivc_common_padding_8"
+            android:scaleType="center"
+            android:src="@drawable/icon_back"
+            />
+    </FrameLayout>
+</FrameLayout>

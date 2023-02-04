@@ -1,0 +1,59 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:1:1-24:12
+INJECTED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:1:1-24:12
+INJECTED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:1:1-24:12
+	package
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:3:5-37
+		INJECTED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml
+		INJECTED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:2:5-51
+	xmlns:android
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:5:5-22:19
+activity#com.aliyun.svideo.crop.CropMediaActivity
+ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:7:9-11:20
+	android:screenOrientation
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:10:13-49
+	android:theme
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:8:13-55
+	tools:replace
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:9:13-42
+	android:name
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:7:19-74
+activity#com.aliyun.svideo.crop.AliyunVideoCropActivity
+ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:12:9-16:20
+	android:screenOrientation
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:15:13-49
+	android:theme
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:13:13-55
+	tools:replace
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:14:13-42
+	android:name
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:12:19-80
+activity#com.aliyun.svideo.crop.AliyunImageCropActivity
+ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:17:9-21:20
+	android:screenOrientation
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:20:19-55
+	android:theme
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:18:19-61
+	tools:replace
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:19:19-48
+	android:name
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml:17:19-80
+uses-sdk
+INJECTED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml
+INJECTED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml
+INJECTED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml
+INJECTED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml
+		INJECTED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml
+		ADDED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml
+		INJECTED from C:\Android\WorkSpace\AiWuJie\newshengmo\AliyunCrop\crop\src\main\AndroidManifest.xml

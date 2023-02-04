@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 底部导航栏 start-->
+    <dimen name="bottom_view_height">49dp</dimen>
+    <dimen name="alivc_little_bottom_tab_underline_top">2dp</dimen>
+    <dimen name="alivc_little_bottom_tab_underline_bottom">1dp</dimen>
+    <dimen name="alivc_little_bottom_tab_icon_width">30dp</dimen>
+    <dimen name="alivc_little_bottom_tab_icon_height">30dp</dimen>
+    <dimen name="alivc_little_bottom_tab_underline_width">24dp</dimen>
+    <dimen name="alivc_little_bottom_tab_underline_height">2dp</dimen>
+    <dimen name="alivc_little_bottom_tab_more_width">52dp</dimen>
+    <dimen name="alivc_little_bottom_tab_more_height">52dp</dimen>
+    <dimen name="alivc_little_bottom_tab_more_margin_bottom">2dp</dimen>
+    <dimen name="alivc_little_bottom_view_height">58dp</dimen>
+    <!-- 底部导航栏 end-->
+
+    <!-- 视频播放 start-->
+    <dimen name="alivc_little_video_play_icon_width">50dp</dimen>
+    <dimen name="alivc_little_video_play_icon_height">50dp</dimen>
+    <!-- 视频播放 end-->
+
+    <!-- menu dialog start-->
+    <dimen name="alivc_little_menu_close_icon_widht">54dp</dimen>
+    <dimen name="alivc_little_menu_close_icon_height">54dp</dimen>
+    <dimen name="alivc_little_menu_padding_bottom">4dp</dimen>
+    <dimen name="alivc_little_menu_editor_margin">80dp</dimen>
+    <dimen name="alivc_little_menu_recorder_margin">80dp</dimen>
+    <!-- menu dialog view end-->
+
+    <!-- video content view start-->
+    <dimen name="alivc_little_content_view_user_icon_width">36dp</dimen>
+    <dimen name="alivc_little_content_view_user_icon_height">36dp</dimen>
+    <dimen name="alivc_little_content_view_nick_name_text_size">15sp</dimen>
+    <dimen name="alivc_little_content_view_nick_name_margin_left">16dp</dimen>
+    <dimen name="alivc_little_content_view_nick_name_margin_bottom">10dp</dimen>
+    <dimen name="alivc_little_content_view_video_title_text_size">14sp</dimen>
+    <dimen name="alivc_little_content_view_video_title_margin_top">11dp</dimen>
+    <dimen name="alivc_little_content_view_video_title_max_width">210dp</dimen>
+    <!-- video content view end-->
+
+    <!-- loading view height-->
+    <dimen name="alivc_little_publish_cover_h">250dp</dimen>
+    <dimen name="alivc_little_publish_cover_w">152dp</dimen>
+    <dimen name="alivc_little_bottom_bg_height">48dp</dimen>
+
+</resources>

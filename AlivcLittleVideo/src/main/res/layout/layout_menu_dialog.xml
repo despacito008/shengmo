@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/alivc_little_menu_padding_bottom"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_recorder"
+        style="@style/AlivcDialogButtonStyle_Group"
+        android:layout_above="@id/iv_close"
+        android:layout_marginLeft="@dimen/alivc_little_menu_recorder_margin"
+        android:layout_marginStart="@dimen/alivc_little_menu_recorder_margin">
+
+        <TextView
+            style="@style/AlivcDialogButtonStyle_Text"
+            android:text="@string/alivc_little_main_dialog_recorder" />
+
+        <ImageView
+            android:id="@+id/iv_menu_recoder"
+            style="@style/AlivcDialogButtonStyle_Icon"
+            android:src="@mipmap/alivc_icon_menu_recorder" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_editor"
+        style="@style/AlivcDialogButtonStyle_Group"
+        android:layout_above="@id/iv_close"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/alivc_little_menu_editor_margin"
+        android:layout_marginRight="@dimen/alivc_little_menu_editor_margin">
+
+        <TextView
+            style="@style/AlivcDialogButtonStyle_Text"
+            android:text="@string/alivc_little_main_dialog_editor" />
+
+        <ImageView
+            style="@style/AlivcDialogButtonStyle_Icon"
+            android:src="@mipmap/alivc_icon_menu_editor" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/alivc_little_menu_close_icon_widht"
+        android:layout_height="@dimen/alivc_little_menu_close_icon_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/alivc_icon_bottom_recorder_close" />
+</RelativeLayout>

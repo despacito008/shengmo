@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/layout_little_action_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/alivc_common_height_tv_20"
+        android:layout_marginTop="@dimen/alivc_common_margin_64"
+        android:layout_marginLeft="@dimen/alivc_common_margin_30"
+        android:gravity="center"
+        android:text="@string/alivc_little_user_setting_new_nickname"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/alivc_common_font_14" />
+
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/alivc_common_margin_15"
+        android:layout_marginRight="@dimen/alivc_common_margin_15"
+        android:layout_marginTop="@dimen/alivc_common_margin_94"
+        android:layout_height="@dimen/alivc_common_height_tv_50"
+        android:gravity="center_vertical"
+        android:padding="@dimen/alivc_common_padding_15"
+        android:maxLines="1"
+        android:textColor="#ffffff"
+        android:hint="@string/alivc_little_user_setting_input_nickname"
+        android:textColorHint="#26ffffff"
+        android:textSize="@dimen/alivc_common_font_14"
+        android:background="@drawable/alivc_little_nickname_input_background"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aliyun.svideo.crop" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="29" />
+
+    <application>
+        <activity
+            android:name="com.aliyun.svideo.crop.CropMediaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AliyunVideoUIStytle"
+            tools:replace="android:theme" >
+        </activity>
+        <activity
+            android:name="com.aliyun.svideo.crop.AliyunVideoCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AliyunVideoUIStytle"
+            tools:replace="android:theme" >
+        </activity>
+        <activity
+            android:name="com.aliyun.svideo.crop.AliyunImageCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AliyunVideoUIStytle"
+            tools:replace="android:theme" >
+        </activity>
+    </application>
+
+</manifest>

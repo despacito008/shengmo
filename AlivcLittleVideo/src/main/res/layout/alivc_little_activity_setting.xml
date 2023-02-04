@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alivc_common_bg_black">
+    <FrameLayout
+        android:id="@+id/ll_little_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <FrameLayout
+            android:id="@+id/fl_setting_back"
+            android:layout_width="@dimen/alivc_common_size_icon_42"
+            android:layout_height="@dimen/alivc_common_size_icon_42"
+            android:layout_gravity="start|center_vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_back" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alivc_little_setting_tittle"
+            android:textSize="@dimen/alivc_common_font_16"
+            android:textColor="@color/alivc_common_font_white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+    </FrameLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alivc_common_height_icon_104"
+        android:layout_marginTop="@dimen/alivc_common_margin_142"
+        android:layout_below="@id/ll_little_title"
+        android:background="@mipmap/alivc_mine_setting_bg_lines" />
+
+
+    <ImageView
+        android:id="@+id/iv_mine_avatar_bg"
+        android:layout_width="@dimen/alivc_common_size_icon_339"
+        android:layout_height="@dimen/alivc_common_size_icon_339"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/alivc_common_margin_55"
+        android:scaleType="fitXY"
+        android:src="@mipmap/alivc_mine_avatar_mine" />
+
+
+    <ImageView
+        android:id="@+id/iv_version_info_icon"
+        android:layout_width="@dimen/alivc_common_size_icon_100"
+        android:layout_height="@dimen/alivc_common_size_icon_100"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/alivc_common_margin_130"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_mine_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_version_info_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/alivc_common_margin_45"
+        android:gravity="center"
+        android:text="@string/alivc_little_setting_video_version_code"
+        android:textColor="@color/alivc_common_font_white"
+        android:textSize="@dimen/alivc_common_font_16" />
+
+    <TextView
+        android:id="@+id/tv_sdk_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/alivc_common_font_gray_light"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_mine_id"
+        android:layout_marginTop="@dimen/alivc_common_margin_21"
+        android:textSize="@dimen/alivc_common_font_12" />
+
+</RelativeLayout>

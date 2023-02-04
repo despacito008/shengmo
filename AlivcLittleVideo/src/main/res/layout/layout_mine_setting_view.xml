@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alivc_common_height_icon_104"
+        android:layout_marginTop="@dimen/alivc_common_margin_142"
+        android:background="@mipmap/alivc_mine_setting_bg_lines" />
+
+
+    <ImageView
+        android:id="@+id/iv_mine_avatar_bg"
+        android:layout_width="@dimen/alivc_common_size_icon_339"
+        android:layout_height="@dimen/alivc_common_size_icon_339"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/alivc_common_margin_55"
+        android:scaleType="fitXY"
+        android:src="@mipmap/alivc_mine_avatar_mine" />
+
+
+    <ImageView
+        android:id="@+id/iv_mine_avatar"
+        android:layout_width="@dimen/alivc_common_size_icon_100"
+        android:layout_height="@dimen/alivc_common_size_icon_100"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/alivc_common_margin_175"
+        android:src="@mipmap/alivc_mine_face" />
+
+    <ImageView
+        android:id="@+id/iv_mine_change_avatar"
+        android:layout_width="@dimen/alivc_common_size_icon_28"
+        android:layout_height="@dimen/alivc_common_size_icon_28"
+        android:layout_alignEnd="@id/iv_mine_avatar"
+        android:layout_alignRight="@id/iv_mine_avatar"
+        android:layout_alignBottom="@id/iv_mine_avatar"
+        android:scaleType="fitXY"
+        android:src="@mipmap/alivc_icon_mine_change_avatar" />
+
+    <TextView
+        android:id="@+id/tv_mine_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_mine_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/alivc_common_margin_10"
+        android:gravity="center"
+        android:text="ID:26383910"
+        android:textColor="#c3c5c6"
+        android:textSize="@dimen/alivc_common_font_12" />
+
+    <RelativeLayout
+        android:id="@+id/modify_userinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mine_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/alivc_common_margin_10">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Virgie Hines"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/alivc_common_font_16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/alivc_common_margin_10"
+            android:layout_toRightOf="@id/tv_username"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/alivc_icon_right_arrow" />
+
+    </RelativeLayout>
+</RelativeLayout>

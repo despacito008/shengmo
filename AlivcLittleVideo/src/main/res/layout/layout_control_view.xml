@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.aliyun.apsara.alivclittlevideo.view.video.LoadingView
+        android:id="@+id/loading_view"
+        android:layout_width="match_parent"
+        android:layout_above="@id/bottom_view"
+        android:layout_marginBottom="@dimen/alivc_common_margin_10"
+        android:layout_alignParentBottom="true" />
+
+</merge>

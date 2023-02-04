@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alivc_common_bg_black">
+
+    <SurfaceView
+        android:id="@+id/alivc_ittle_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/iv_preview_back"
+        android:layout_width="@dimen/alivc_common_size_icon_42"
+        android:layout_height="?attr/actionBarSize"
+        android:src="@drawable/icon_back"
+        android:layout_gravity="top|left"
+        />
+</FrameLayout>

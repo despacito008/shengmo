@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alivc_common_bg_black"
+    >
+    <FrameLayout
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clickable="false"
+        android:focusable="false">
+
+        <ImageView
+            android:id="@+id/img_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clickable="false"
+
+            android:scaleType="fitXY"
+            android:focusable="false"
+            android:adjustViewBounds="true"/>
+
+        <ImageView
+            android:id="@+id/iv_play_icon"
+            android:layout_width="@dimen/alivc_little_video_play_icon_width"
+            android:layout_height="@dimen/alivc_little_video_play_icon_height"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/alivc_little_video_play"
+            android:background="@drawable/aliyun_little_video_backgroud_circle_shape"
+            android:visibility="gone" />
+        
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/iv_download"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="@dimen/alivc_common_margin_88"
+        android:layout_marginRight="@dimen/alivc_common_keyline_15"
+        android:layout_gravity="right|bottom"
+        android:padding="@dimen/alivc_common_padding_10"
+        android:src="@mipmap/alivc_little_icon_share"/>
+    <!--窄带高清提示标志-->
+    <ImageView
+        android:id="@+id/iv_narrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alivc_common_margin_37"
+        android:layout_marginLeft="@dimen/alivc_common_keyline_15"
+        android:layout_gravity="left|top"
+        android:visibility="gone"
+
+        android:src="@mipmap/alivc_little_icon_narrowband"/>
+    <ImageView
+        android:id="@+id/iv_live"
+        android:layout_width="@dimen/alivc_common_size_icon_40"
+        android:layout_height="@dimen/alivc_common_size_icon_40"
+        android:layout_marginTop="@dimen/alivc_common_margin_37"
+        android:layout_marginRight="@dimen/alivc_common_keyline_15"
+        android:src="@mipmap/alivc_little_icon_live"
+        android:visibility="gone"
+        android:layout_gravity="right|top"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/alivc_common_margin_74"
+        android:layout_marginLeft="@dimen/alivc_common_keyline_15"
+        android:layout_gravity="left|bottom">
+        <com.aliyun.apsara.alivclittlevideo.view.video.VideoInfoView
+            android:id="@+id/content_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</FrameLayout>

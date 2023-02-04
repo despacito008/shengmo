@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">小视频</string>
+
+
+    <!-- MenuDialog相关  start-->
+
+
+    <!-- about dialog  end-->
+
+    <!--趣视频 主页面-->
+    <string name="alivc_little_main_dialog_editor">视频编辑</string>
+    <string name="alivc_little_main_dialog_recorder">视频录制</string>
+    <string name="alivc_little_main_tip_upload_success">发布成功，已经进入审核通道</string>
+    <string name="alivc_little_main_publish">后台发布中</string>
+    <string name="alivc_little_main_dialog_content_delete">确认删除吗？</string>
+    <string name="alivc_little_main_tip_publish_error">发布失败,</string>
+    <string name="alivc_little_main_dialog_setting">去设置</string>
+    <string name="alivc_little_main_creation_failed">合成失败</string>
+    <string name="alivc_little_main_dialog_upload_failed">上传失败</string>
+    <string name="alivc_little_main_downloading">下载中</string>
+    <string name="alivc_little_main_dialog_retry">重试</string>
+    <string name="alivc_little_main_dialog_close">关闭</string>
+    <string name="alivc_little_main_dialog_not_setting">暂时不设置</string>
+    <string name="alivc_little_main_tip_exit">再按一次退出应用</string>
+    <string name="alivc_little_main_net_error">网络错误</string>
+    <string name="alivc_little_main_video_upload_error">视频上传出错</string>
+    <string name="alivc_little_main_picture_upload_error">图片上传出错</string>
+    <string name="alivc_little_main_not_support_edit">手机版本过低，暂不支持编辑</string>
+    <string name="alivc_little_main_not_support_recorder">手机版本过低，暂不支持录制</string>
+
+    <!--列表播放界面-->
+    <string name="alivc_little_play_tip_last_video">已经是最后一个视频了</string>
+    <string name="alivc_little_play_dialog_delete">删除</string>
+    <string name="alivc_little_play_dialog_save_loacal">保存本地</string>
+    <string name="alivc_little_play_tip_downloaded">下载完成</string>
+    <string name="alivc_little_play_anonymous">匿名</string>
+    <string name="alivc_little_play_tip_resource_none">暂无资源</string>
+    <string name="alivc_little_play_date_none">暂无数据</string>
+    <string name="alivc_little_play_tip_not_pass">视频审核未通过，暂不支持下载</string>
+    <string name="alivc_little_play_tip_reviewing">视频正在审核中，暂不支持下载</string>
+
+    <!--用户中心界面-->
+    <string name="alivc_little_mine_my_video">我的视频</string>
+    <string name="alivc_little_mine_reviewing">审核中</string>
+    <string name="alivc_little_mine_passed">已通过</string>
+    <string name="alivc_little_mine_failed">未通过</string>
+    <string name="alivc_little_mine_dialog_confirm">确认</string>
+    <string name="alivc_little_mine_dialog_cancel">取消</string>
+    <string name="alivc_little_mine_dialog_audit_fail">抱歉, 该视频未通过审核, 是否删除?</string>
+    <string name="alivc_little_mine_not_support_play">视频正在审核中，暂不支持播放！</string>
+
+    <!--设置页面-->
+    <string name="alivc_little_setting_video_version_code">趣视频 版本号 V</string>
+    <string name="alivc_little_setting_tittle">设置</string>
+    <string name="alivc_little_setting_sdk_version">包含短视频版本号【%s】\n 播放器版本号【%s】</string>
+
+    <!--用户设置页面-->
+    <string name="alivc_little_user_setting_tittle">用户设置</string>
+    <string name="alivc_little_user_setting_change_user">更换用户</string>
+    <string name="alivc_little_user_setting_input_nickname">请输入用户昵称</string>
+    <string name="alivc_little_user_setting_new_nickname">新昵称</string>
+    <string name="alivc_little_user_setting_finish">完成</string>
+    <string name="alivc_little_user_setting_word_limit">字数超过限制</string>
+    <string name="alivc_little_user_setting_dialog_change_user_tip">确认更换用户吗</string>
+    <string name="alivc_little_user_setting_tip_change_user_fail">暂不能更换用户，请稍后重试</string>
+    <!--推流页面-->
+    <string name="alivc_little_publish_hint_video_desc">添加视频描述20字以内</string>
+    <string name="alivc_little_publish_tip_description_beyond">请在20字以内描述该视频</string>
+    <string name="alivc_little_publishing_not_edit">视频正在发布中，暂不能编辑</string>
+    <string name="alivc_little_publishing_can_not_recorder">视频正在发布中，暂不能录制</string>
+
+
+    <string name="alivc_uninclude_module">该模块不存在</string>
+    <string name="alivc_little_tip_no_user">暂无用户</string>
+    <string name="alivc_little_dialog_permission_tips">需要访问 \"外部存储器读写权限\",否则会影响视频下载的功能使用, 请到 \"应用信息 -> 权限\" 中设置！</string>
+
+
+
+</resources>
