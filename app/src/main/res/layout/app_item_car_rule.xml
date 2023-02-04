@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/ll_rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_item_message_stamp_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="一个月"
+            android:textColor="@drawable/selector_item_message_stamp_tv"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/tv_item_vip_center_original_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:textColor="@drawable/selector_item_message_stamp_tv"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="￥20" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_vip_center_discount"
+        android:includeFontPadding="false"
+        android:textSize="9sp"
+        android:textColor="@color/white"
+        android:paddingVertical="3dp"
+        android:paddingHorizontal="9dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_item_vip_center_discount"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="优惠10%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</android.support.constraint.ConstraintLayout>

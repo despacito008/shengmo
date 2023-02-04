@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <android.support.v4.widget.NestedScrollView
+          android:id="@+id/scroll_user_info_live_history"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+         <LinearLayout
+             android:gravity="center"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_live_history_empty"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/iv_user_info_live_empty"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_empty_comment"
+                android:layout_width="122dp"
+                android:layout_height="103dp"/>
+
+            <TextView
+                android:id="@+id/tv_user_info_live_title"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="直播记录不可见"
+                android:textColor="@color/normalGray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_user_info_live_info"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="该用户已将直播记录设为好友/vip用户可见"
+                android:textColor="@color/lightGray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_user_info_live_btn"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+               <android.support.constraint.Guideline
+                   android:id="@+id/guide_line_1"
+                   app:layout_constraintGuide_percent="0.5"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:id="@+id/tv_user_info_add_friend"
+                   android:background="@drawable/bg_user_info_add_friend"
+                   android:textColor="#888"
+                   android:text="加好友"
+                   android:gravity="center"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintRight_toRightOf="@id/guide_line_1"
+                   android:layout_marginRight="10dp"
+                   android:layout_width="87dp"
+                   android:layout_height="25dp"/>
+
+               <TextView
+                   android:id="@+id/tv_user_info_buy_vip"
+                   android:background="@drawable/bg_user_info_buy_vip"
+                   android:textColor="@color/purple_main"
+                   android:text="开通VIP"
+                   android:gravity="center"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintLeft_toLeftOf="@id/guide_line_1"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="87dp"
+                   android:layout_height="25dp"/>
+
+            </android.support.constraint.ConstraintLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/tv_live_history_tips"
+                android:background="@drawable/bg_round_live_history_tip"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/titleBlack"
+                android:lineSpacingMultiplier="1.2"
+                android:letterSpacing="0.03"
+                android:textSize="12dp"
+                android:layout_marginVertical="5dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:text="个人主页，直播：观众数、魔豆、时间/时长，加总时长，上周时长、上周有效天数（签约主播/黑V可见）、本周时长"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+         </LinearLayout>
+      </android.support.v4.widget.NestedScrollView>
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/rv_fragment_user_live_history"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+
+   </LinearLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.aiwujie.shengmo.activity.SfzrzActivity">
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="13.2%w"
+        android:background="#FFFFFF"
+        >
+        <ImageView
+            android:id="@+id/msmrzCenter_return"
+            android:layout_width="40dp"
+            app:layout_heightPercent="50%"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:src="@mipmap/return_back"
+            android:layout_marginLeft="12dip"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实名认证"
+            android:layout_centerInParent="true"
+            android:textColor="#333333"
+            app:layout_textSizePercent="35%"/>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <TextView
+        android:id="@+id/mVipCenter_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dddddd"
+        />
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="真实姓名"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e2644d"
+            android:text="*"/>
+
+        <EditText
+            android:id="@+id/et_zsxm"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edit_kuang_shape"
+            android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证号"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e2644d"
+            android:text="*"/>
+
+        <EditText
+            android:id="@+id/et_sfzh"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edit_kuang_shape"
+            android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="上传身份证（人像面）"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e2644d"
+            android:text="*"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/sfz_zheng"/>
+
+
+        <RelativeLayout
+            android:id="@+id/bt1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/fre_sfz_1"
+                android:layout_width="match_parent"
+                app:roundedCornerRadius="5dp"
+                android:background="@drawable/iv_xu_bian"
+                android:layerType="software"
+                android:layout_height="100dp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_jia_1"
+                    android:layout_centerInParent="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/jia_hui"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--111111111111111111111111111111111111111111111111111111111-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="上传身份证（国徽面）"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e2644d"
+            android:text="*"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/sfz_fan"/>
+
+
+        <RelativeLayout
+            android:id="@+id/bt2"
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/fre_sfz_2"
+                android:layout_width="match_parent"
+                app:roundedCornerRadius="5dp"
+                android:background="@drawable/iv_xu_bian"
+                android:layerType="software"
+                android:layout_height="100dp" />
+
+
+            <ImageView
+                android:id="@+id/iv_jia_2"
+                android:layout_centerInParent="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/jia_hui"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--111111111111111111111111111111111111111111111111111111111-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="手持身份证照"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e2644d"
+            android:text="*"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/shouchi_shili"/>
+
+
+        <RelativeLayout
+            android:id="@+id/bt3"
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/fre_sfz_3"
+                android:layout_width="match_parent"
+                app:roundedCornerRadius="5dp"
+                android:background="@drawable/iv_xu_bian"
+                android:layerType="software"
+                android:layout_height="100dp" />
+
+
+            <ImageView
+                android:id="@+id/iv_jia_3"
+                android:layout_centerInParent="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/jia_hui"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--11111111111111111111111111111111111111111111111111111111111111111-->
+
+
+    <Button
+        android:id="@+id/msfz_tijiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_marginLeftPercent="4%"
+        app:layout_marginRightPercent="4%"
+        android:layout_marginBottom="100dp"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:text="提交审核"
+        android:background="@drawable/item_login_btn2"
+        />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    </ScrollView>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

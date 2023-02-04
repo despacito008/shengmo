@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aiwujie.shengmo.activity.SendredbaoActivity">
+
+    <View
+        android:background="@drawable/bg_send_red_bag_top"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"/>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:tint="@color/white"
+            android:id="@+id/backya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/return_back"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发红包"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@drawable/bg_send_red_bag_center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+        android:background="@drawable/yuan_white_shape"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红包个数"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/num_doudou"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="填写个数"
+            android:maxLength="6"
+            android:textColor="#000"
+            android:singleLine="true"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:gravity="right"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yuan_white_shape"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总金额"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/zong_doudou"
+            android:layout_width="0dp"
+            android:singleLine="true"
+            android:background="@null"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="0.00"
+            android:gravity="right"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="魔豆"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
+
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/et_message"
+        android:background="@drawable/yuan_white_shape"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:minHeight="80dp"
+        android:gravity="start"
+        android:maxLength="20"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="恭喜发财，大吉大利">
+
+
+    </EditText>
+    <LinearLayout
+            android:layout_marginVertical="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="13dp"
+                android:includeFontPadding="false"
+                android:text="500魔豆以上红包上大喇叭"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:checked="true"
+                android:id="@+id/cb_red_bag_isOpen"
+                android:layout_width="27dp"
+                android:layout_height="27dp"/>
+
+        </LinearLayout>
+
+    <TextView
+        android:textColor="@color/normalGray"
+        android:textSize="12dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="35dp"
+        android:gravity="center"
+        android:text="群聊红包平均不低于2魔豆\n红包领取后为银魔豆"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send_red"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:background="@drawable/bg_send_red_bag_bottom"
+        android:layout_marginBottom="30dp"
+        android:text="塞魔豆进红包"/>
+
+</FrameLayout>

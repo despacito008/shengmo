@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    android:padding="10dp"
+    android:id="@+id/ll_item_comment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%w"
+        app:layout_widthPercent="10%w">
+        <ImageView
+            android:id="@+id/item_listview_allcomment_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/morentouxiang"
+            android:background="@drawable/item_icon_bg" />
+
+
+        <ImageView
+            android:id="@+id/item_listview_allcomment_vip"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="30%h"
+            app:layout_widthPercent="30%h"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/vip"
+            android:visibility="invisible"
+            />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                tools:text="通知信息"
+                android:id="@+id/item_listview_allcomment_name"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/titleBlack"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_item_all_comment_new"
+                tools:visibility="visible"
+                android:visibility="gone"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_shape_message_new"
+                android:text="NEW"
+                android:paddingHorizontal="3dp"
+                android:gravity="center"
+                android:textColor="#ff615c"
+                android:textSize="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:paddingVertical="7dp"
+            android:textSize="11dp"
+            android:textColor="@color/lightGray"
+            tools:text="04-28 18:00"
+            android:id="@+id/item_listview_allcomment_time"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <TextView
+            android:paddingVertical="7dp"
+            tools:text="很难不赞同"
+            android:id="@+id/item_listview_allarguement_content"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="14dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/titleBlack"
+            />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <com.aiwujie.shengmo.customview.PercentLinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="13%w"
+            app:layout_heightPercent="13%w"
+            android:background="#f8f8f8">
+            <TextView
+                android:id="@+id/item_listview_allcomment_dynamiccontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                app:layout_textSizePercent="20%"
+                android:textColor="#787878"
+                android:lines="3"
+                android:ellipsize="end"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:padding="3dp"/>
+            <ImageView
+                android:id="@+id/item_listview_allcomment_dynamiciv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:visibility="gone"/>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_item_all_comment_apply"
+            android:paddingVertical="10dp"
+            android:text="回复"
+            android:textColor="#db57f3"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.aiwujie.shengmo.customview.PercentLinearLayout>
+
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

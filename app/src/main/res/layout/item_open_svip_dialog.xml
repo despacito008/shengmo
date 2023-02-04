@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:gravity="center"
+                                                     android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_edittext_bg"
+        android:orientation="vertical"
+        android:paddingTop="25dp"
+        app:layout_widthPercent="80%"
+        >
+
+        <TextView
+            android:id="@+id/item_open_vip_message"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:hint="需要成为超级会员才可以继续使用哦~"
+            android:lineSpacingExtra="3dp"
+            android:textColor="#333333"
+            app:layout_heightPercent="6.5%"
+            app:layout_textSizePercent="2.5%"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#eff0f2"/>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/darkGray"
+                android:id="@+id/item_open_vip_cancel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textStyle="bold"
+                app:layout_heightPercent="8.5%"
+                app:layout_textSizePercent="3%"/>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:background="#eff0f2"
+                app:layout_heightPercent="7%w"
+                />
+
+            <TextView
+                android:id="@+id/item_open_vip_buy"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="去开通"
+                android:textColor="#b73acb"
+                android:textStyle="bold"
+                app:layout_heightPercent="8.5%"
+                app:layout_textSizePercent="3%"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

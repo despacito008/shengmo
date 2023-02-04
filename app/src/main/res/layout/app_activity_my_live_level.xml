@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <include layout="@layout/layout_normal_titlebar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            tools:background="#6c9"
+            android:id="@+id/iv_my_live_level_icon"
+            android:layout_marginTop="20dp"
+            app:layout_constraintWidth_percent="0.2"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <ImageView
+            tools:src="@drawable/user_svip"
+            android:id="@+id/iv_my_live_level_identity"
+            android:layout_marginTop="20dp"
+            app:layout_constraintWidth_percent="0.07"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintRight_toRightOf="@id/iv_my_live_level_icon"
+            app:layout_constraintBottom_toBottomOf="@id/iv_my_live_level_icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_my_live_level"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="13dp"
+        android:paddingVertical="2dp"
+        android:paddingHorizontal="4dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_my_live_level_icon"
+        android:background="@drawable/bg_round_my_live_user_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_my_live_level"
+            tools:src="@drawable/ic_live_audience_level"
+            android:layout_width="16dp"
+            android:layout_height="12dp"/>
+
+        <TextView
+            android:id="@+id/tv_my_live_level"
+            android:includeFontPadding="false"
+            tools:text="10"
+            android:textSize="13dp"
+            android:textColor="@color/liveLevelUserColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_my_live_level_icon"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_my_live_level_current"
+            android:src="@drawable/ic_live_audience_level"
+            android:layout_width="14dp"
+            android:layout_height="11dp"/>
+
+        <TextView
+            android:id="@+id/tv_my_live_level_current"
+            android:layout_marginLeft="3dp"
+            tools:text="0"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="@color/titleBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ProgressBar
+            android:id="@+id/pb_my_live_level_progress"
+            tools:progress="90"
+            android:progressDrawable="@drawable/pg_audience_level"
+            android:layout_marginHorizontal="10dp"
+            style="@style/mLevelProgressBarStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="5dp"/>
+
+        <ImageView
+            android:id="@+id/iv_my_live_level_next"
+            android:src="@drawable/ic_live_audience_level"
+            android:layout_width="14dp"
+            android:layout_height="11dp"/>
+
+        <TextView
+            android:id="@+id/tv_my_live_level_next"
+            android:layout_marginLeft="3dp"
+            tools:text="0"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="@color/titleBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_my_live_level_next_level_tips"
+        android:layout_marginLeft="3dp"
+        tools:text="需要9000魔豆升级"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textColor="@color/titleBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_my_live_level_desc"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

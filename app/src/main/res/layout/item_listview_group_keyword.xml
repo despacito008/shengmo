@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="5%"
+        android:background="#f4f4f4"
+        >
+        <TextView
+            android:id="@+id/item_listview_group_tv_keyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索关键词"
+            android:layout_gravity="center_vertical"
+            app:layout_textSizePercent="3.5%w"
+            android:layout_marginLeft="10dp"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <com.aiwujie.shengmo.customview.MyGridview
+        android:id="@+id/item_listview_group_keyword_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"/>
+
+
+    <com.aiwujie.shengmo.view.FlowLayout
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="10dp"
+        android:id="@+id/flow_item_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

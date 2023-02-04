@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="14%w"
+        app:layout_widthPercent="14%w">
+        <ImageView
+            android:id="@+id/item_listview_allcomment_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/morentouxiang"
+            android:background="@drawable/item_icon_bg"
+            />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/item_listview_allcomment_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:text="1111111" />
+
+        <TextView
+            android:id="@+id/item_listview_allcomment_time"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="111111111" />
+
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ivdui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/duiya"/>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

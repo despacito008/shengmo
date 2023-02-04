@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8">
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/mFragment_follow_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        ptr:ptrHeaderTextColor="#FFFFFF"
+        ptr:ptrDrawable="@mipmap/loading"
+        android:dividerHeight="1dp"
+        android:divider="#fff"
+        ptr:ptrScrollingWhileRefreshingEnabled="true">
+        <!--<com.aiwujie.shengmo.customview.MyListView-->
+            <!--android:id="@+id/mFragment_follow_listview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scrollbars="none">-->
+
+        <!--</com.aiwujie.shengmo.customview.MyListView>-->
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_feisvip"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_feisvip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="开通SVIP"
+            android:textSize="16sp"
+            android:textColor="@color/tongyong"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="即可悄悄关注"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/layout_normal_empty" android:visibility="gone"/>
+
+</RelativeLayout>

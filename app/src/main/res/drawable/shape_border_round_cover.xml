@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--下层画布，全白色-->
+    <item>
+        <shape>
+            <solid android:color="#00000000" />
+        </shape>
+    </item>
+    <!--上层画布，红色边框，宽度1dp；左、右、下设置margin-->
+    <item
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp">
+        <shape>
+            <stroke
+                android:width="10dp"
+                android:color="#f10606" />
+            <corners android:radius="2dp"/>
+        </shape>
+    </item>
+</layer-list>

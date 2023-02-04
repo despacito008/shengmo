@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.aiwujie.shengmo.view.CustomScrollerView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.android.percent.support.PercentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_paddingBottomPercent="7.5%h">
+
+                <com.zhy.android.percent.support.PercentFrameLayout
+                    android:id="@+id/mMy_banner_framlayout"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="30.67%w"
+                    app:layout_widthPercent="100%w">
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/mMy_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:indicator_drawable_selected="@mipmap/bannerpointpurple"
+                        app:indicator_drawable_unselected="@mipmap/bannerpointgray"
+                        app:indicator_height="8dp"
+                        app:indicator_width="8dp" />
+
+                    <ImageView
+                        android:id="@+id/mMy_banner_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@mipmap/chahao" />
+                </com.zhy.android.percent.support.PercentFrameLayout>
+
+                <!--占位的tablayout-->
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tablayout_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#ffffff"
+                    app:tabIndicatorColor="@color/colorPrimary"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="@color/colorPrimary" />
+
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/content_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue_light"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/tuijian_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="推荐主播"
+                            app:layout_textSizePercent="4%w" />
+
+                        <com.aiwujie.shengmo.view.FitGridView
+                            android:id="@+id/tuijian_zhubo_gv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:horizontalSpacing="5dp"
+                            android:numColumns="3"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="10dp" />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/hot_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellff"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="热门主播"
+                            app:layout_textSizePercent="4%w" />
+
+                        <com.aiwujie.shengmo.view.FitGridView
+                            android:id="@+id/mFragment_hot_live_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:horizontalSpacing="5dp"
+                            android:numColumns="2"
+                            android:overScrollMode="never"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="10dp" />
+
+                        <!--<com.aiwujie.samer.view.PullToRefreshRecycleView xmlns:ptr="http://schemas.android.com/apk/res-auto"-->
+                            <!--android:id="@+id/mFragment_hot_live_listview"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:divider="#f8f8f8"-->
+                            <!--android:dividerHeight="0dp"-->
+                            <!--android:scrollbars="none"-->
+                            <!--ptr:ptrDrawable="@mipmap/loading"-->
+                            <!--ptr:ptrHeaderTextColor="#FFFFFF"-->
+                            <!--ptr:ptrScrollingWhileRefreshingEnabled="true" />-->
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+            <!--实际用户操作的tablayout-->
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout_real"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:visibility="invisible"
+                app:tabIndicatorColor="@color/colorPrimary"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/colorPrimary" />
+        </com.zhy.android.percent.support.PercentFrameLayout>
+
+
+    </com.aiwujie.shengmo.view.CustomScrollerView>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

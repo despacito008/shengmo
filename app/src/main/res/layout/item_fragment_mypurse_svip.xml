@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                       android:layout_width="match_parent"
+                                                       android:layout_height="match_parent"
+                                                       android:background="#FFFFFF"
+                                                       android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/mSvipCenter_ll_buy_01"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            app:layout_heightPercent="15%w"
+            >
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mSvipCenter_buy01_tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1个月 / ¥128 或 1280魔豆"
+                    android:textColor="#333333"
+                    app:layout_textSizePercent="4.35%w"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:text="31超值特权"
+                    android:textColor="#777777"
+                    app:layout_textSizePercent="4%w"/>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <ImageView
+                android:id="@+id/mSvipCenter_buy01"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/pursexz"
+                app:layout_heightPercent="5%w"
+                app:layout_widthPercent="5%w"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/mSvipCenter_ll_buy_02"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            app:layout_heightPercent="15%w"
+            >
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mSvipCenter_buy02_tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3个月 / ¥348 或 3480魔豆  原价384元"
+                    android:textColor="#333333"
+                    app:layout_textSizePercent="4.35%w"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:text="[优惠9%] 93天超值特权"
+                    android:textColor="#777777"
+                    app:layout_textSizePercent="4%w"/>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <ImageView
+                android:id="@+id/mSvipCenter_buy02"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/pursewxz"
+                app:layout_heightPercent="5%w"
+                app:layout_widthPercent="5%w"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/mSvipCenter_ll_buy_03"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            app:layout_heightPercent="15%w"
+            >
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mSvipCenter_buy03_tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="8个月 / ¥898 或 8980魔豆  原价1024元"
+                    android:textColor="#333333"
+                    app:layout_textSizePercent="4.35%w"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:text="[优惠13%] 248天超值特权"
+                    android:textColor="#777777"
+                    app:layout_textSizePercent="4%w"/>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <ImageView
+                android:id="@+id/mSvipCenter_buy03"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/pursewxz"
+                app:layout_heightPercent="5%w"
+                app:layout_widthPercent="5%w"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/mSvipCenter_ll_buy_04"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            app:layout_heightPercent="15%w"
+            >
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mSvipCenter_buy04_tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="12个月 / ¥1298 或 12980魔豆  原价1536元"
+                    android:textColor="#333333"
+                    app:layout_textSizePercent="4.35%w"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:text="[优惠16%] 372天超值特权（年费会员排名靠前）"
+                    android:textColor="#777777"
+                    app:layout_textSizePercent="4%w"/>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <ImageView
+                android:id="@+id/mSvipCenter_buy04"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/pursewxz"
+                app:layout_heightPercent="5%w"
+                app:layout_widthPercent="5%w"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#F8F8F8"
+            app:layout_heightPercent="12%w"
+            >
+
+            <TextView
+                android:id="@+id/tv_svip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="SVIP会员特权"
+                android:textColor="#333333"
+                app:layout_textSizePercent="4%w"/>
+
+
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/mSvipCenter_zs01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.[专属]-包含普通VIP会员所有特权"
+                android:textColor="#333333"
+                app:layout_textSizePercent="3.2%w"
+                />
+
+            <TextView
+                android:id="@+id/mSvipCenter_zs02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="2.[专属]-发消息无需邮票，无限畅聊"
+                android:textColor="#333333"
+                app:layout_textSizePercent="3.2%w"
+                />
+
+            <TextView
+                android:id="@+id/mSvipCenter_zs03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="3.[专属]-可设置所有人无需邮票直接给我发消息"
+                android:textColor="#333333"
+                app:layout_textSizePercent="3.2%w"/>
+
+            <TextView
+                android:id="@+id/mSvipCenter_zs04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="4.[专属]-年费SVIP将在“身边”推顶一个月"
+                android:textColor="#333333"
+                app:layout_textSizePercent="3.2%w"/>
+
+            <TextView
+                android:id="@+id/mSvipCenter_zs05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="5.[专属]-可查看所有人历史昵称"
+                android:textColor="#333333"
+                app:layout_textSizePercent="3.2%w"/>
+
+            <TextView
+                android:id="@+id/mSvipCenter_zs15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="6.[专属]-可对所有人进行“分组”"
+                android:textColor="#333333"
+                app:layout_textSizePercent="3.2%w"/>
+
+            <TextView
+                android:id="@+id/mSvipCenter_zs12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="7.[专属]-可对所有人进行“详细描述”"
+                android:textColor="#333333"
+                app:layout_textSizePercent="3.2%w"/>
+
+            <TextView
+                android:id="@+id/mSvipCenter_zs06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="8.[专属]-修改昵称不限次数"
+                android:textColor="#333333"
+                app:layout_textSizePercent="3.2%w"/>
+
+            <TextView
+                android:id="@+id/mSvipCenter_zs13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="9.[专属]-签名由256字升级为500字"
+                android:textColor="#333333"
+                app:layout_textSizePercent="3.2%w"/>
+
+            <TextView
+                android:id="@+id/mSvipCenter_zs07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="10.[专属]-发布的动态将自动被推荐"
+                android:textColor="#333333"
+                app:layout_textSizePercent="3.2%w"/>
+
+            <TextView
+                android:id="@+id/mSvipCenter_zs08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="11.[专属]-聊天对话页显示红色昵称"
+                android:textColor="#333333"
+                app:layout_textSizePercent="3.2%w"/>
+
+            <TextView
+                android:id="@+id/mSvipCenter_zs09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="12.[专属]-可编辑已发布动态"
+                android:textColor="#333333"
+                app:layout_textSizePercent="3.2%w"/>
+
+            <TextView
+                android:id="@+id/mSvipCenter_zs14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="13.[专属]-可使用悄悄关注功能"
+                android:textColor="#333333"
+                app:layout_textSizePercent="3.2%w"/>
+
+            <TextView
+                android:id="@+id/mSvipCenter_zs10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="14.[专属]-各列表排名最前"
+                android:textColor="#333333"
+                app:layout_textSizePercent="3.2%w"/>
+
+            <TextView
+                android:id="@+id/mSvipCenter_zs11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="15.[专属]-豪华金V标识"
+                android:textColor="#333333"
+                app:layout_textSizePercent="3.2%w"/>
+
+            <TextView
+                android:id="@+id/mSvipCenter_bottomTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="升级无忧：已是VIP会员的用户,开通SVIP会员后VIP会暂停计时,待SVIP到期后VIP恢复计时,从而不给您造成任何损失,让您无后顾之忧!"
+                android:textColor="#AAAAAA"
+                app:layout_marginTopPercent="6%w"
+                app:layout_textSizePercent="3.3%w"/>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

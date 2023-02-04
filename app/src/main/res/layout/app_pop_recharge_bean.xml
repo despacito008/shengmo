@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#131A2C"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="HardcodedText,SpUsage,MissingDefaultResource">
+
+    <LinearLayout
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingHorizontal="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/titleBlack"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:text="充值魔豆"
+            android:paddingVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_recharge_bean_balance"
+            android:textColor="@color/titleBlack"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:text="魔豆余额"
+            android:paddingVertical="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recharge_bean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/ll_custom_pay"
+            android:background="@drawable/bg_vip_center_item_normal"
+            android:paddingVertical="10dp"
+            android:layout_marginVertical="5dp"
+            android:paddingHorizontal="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_item_recharge"
+                    android:src="@drawable/ic_recharge_beans_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:visibility="visible"
+                    android:text="自定义充值金额"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/normalGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:visibility="visible"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_fragment_recharge_buy_custom"
+                    android:background="@drawable/bg_vip_center_item_normal"
+                    android:paddingVertical="12dp"
+                    android:paddingHorizontal="5dp"
+                    android:textSize="12dp"
+                    android:layout_width="0dp"
+                    android:hint="10 - 100000元"
+                    android:layout_marginRight="10dp"
+                    android:maxLength="7"
+                    android:inputType="number"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_fragment_recharge_buy_custom"
+                    android:textColor="@color/normalGray"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:text="0金魔豆"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/titleBlack"
+            android:textSize="12dp"
+            android:gravity="center_vertical"
+            android:text="选择支付方式"
+            android:paddingVertical="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_recharge_bean_type_we_chat"
+                android:layout_marginRight="5dp"
+                android:background="#6c7"
+                android:paddingVertical="10dp"
+                android:textColor="@color/white"
+                android:text="微信支付"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_recharge_bean_type_ali_pay"
+                android:layout_marginLeft="5dp"
+                android:background="#eee"
+                android:paddingVertical="10dp"
+                android:textColor="@color/normalGray"
+                android:text="支付宝支付"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_recharge_bean_pay"
+            android:paddingVertical="10dp"
+            android:gravity="center"
+            android:background="@drawable/bg_round_purple_home"
+            android:text="确认支付"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

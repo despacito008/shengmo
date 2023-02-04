@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <FrameLayout
+        android:id="@+id/fl_tab_top_bar_left"
+        tools:background="#6f00"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_top_bar"
+        tools:background="#60f0"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:background="#FFFFFF"
+        app:tabIndicatorHeight="0dp"
+        app:tabPaddingStart="2dp"
+        app:tabPaddingEnd="2dp"
+        app:tabBackground="@color/transparent"
+        app:tabIndicatorColor="@color/purple_main"
+        app:tabSelectedTextColor="@color/purple_main"
+        app:tabTextColor="#555555"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/fl_tab_top_bar_right"
+        tools:background="#600f"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

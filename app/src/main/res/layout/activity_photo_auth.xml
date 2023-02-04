@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/layout_normal_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"
+                android:textColor="@color/titleBlack"
+                android:textSize="20dp"
+                android:text="我的认证照片"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                android:layout_gravity="center"
+                android:background="@drawable/ic_auth_photo_bg"
+                android:layout_width="200dp"
+                android:layout_height="200dp">
+
+                <FrameLayout
+                    android:layout_gravity="center"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp">
+
+
+                    <TextView
+                        android:textSize="14dp"
+                        android:textColor="@color/titleBlack"
+                        android:layout_marginBottom="30dp"
+                        android:layout_gravity="center|bottom"
+                        android:gravity="center"
+                        android:text="请使用前置\n摄像头进行自拍"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/mPhoto_auth_pic"
+                        android:src="@drawable/ic_auth_photo_camera"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@mipmap/shiliphoto"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"/>
+
+                <ImageView
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/ic_auth_photo_arrow"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="照片认证示例"
+                        android:textColor="@color/titleBlack"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:letterSpacing="0.15"
+                        android:lineSpacingExtra="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/lightGray"
+                        android:layout_marginTop="10dp"
+                        android:text="*请自拍本人正面照片，照片只用于认证审核\n
+*请使用前置摄像头进行自拍，后置摄像头拍摄将不予通过。"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:text="认证照查看权限"
+                android:textColor="@color/titleBlack"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="查看权限认证通过后可更改"
+                android:textColor="@color/lightGray"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:paddingVertical="15dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/mPhoto_auth_btn01"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/selector_item_photo_auth_bg"
+                    android:textColor="@drawable/selector_item_message_stamp_tv2"
+                    android:paddingVertical="9dp"
+                    android:paddingHorizontal="19dp"
+                    android:text="不公开认证照"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/mPhoto_auth_btn02"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/selector_item_photo_auth_bg"
+                    android:textColor="@drawable/selector_item_message_stamp_tv2"
+                    android:paddingVertical="9dp"
+                    android:paddingHorizontal="19dp"
+                    android:text="认证照VIP可见"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+   <TextView
+       android:id="@+id/mPhoto_auth_tijiao"
+       android:layout_marginVertical="20dp"
+       android:textColor="@color/white"
+       android:paddingHorizontal="103dp"
+       android:text="提交审核"
+       android:paddingVertical="13dp"
+       android:background="@drawable/bg_user_info_sex_cdts"
+       android:layout_gravity="center"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+</LinearLayout>

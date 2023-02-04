@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aiwujie.shengmo">
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 读取手机状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 8.0安装需要的权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- 悬浮框权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- //手机震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- //相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+<!--    <uses-feature android:name="android.hardware.camera2"/>-->
+    <!-- //手势锁 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Ping++通用权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <!-- Ping++通用权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 高德 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 用于写入缓存数据到扩展存储卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 融云权限 -->
+    <!-- 获取机型信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <!-- 查看 Wi-Fi 状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 查看网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 控制振动器 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 防止设备休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <!-- 获取联系人信息，demo中演示发送通讯录消息 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--
+    &lt;!&ndash; ⼩米 配置开始 < &ndash;&gt;
+    <permission
+        android:name="com.aiwujie.shengmo.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.aiwujie.shengmo.permission.MIPUSH_RECEIVE" />
+    -->
+    <!-- ⼩米 配置结束 < -->
+    <!-- GCM 配置开始 < -->
+    <permission
+        android:name="com.aiwujie.shengmo.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="cn.rongcloud.im.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <!-- GCM 配置结束 < -->
+    <!-- 融云权限结束 -->
+    <!-- 华为 -->
+    <!-- <permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"></permission> -->
+    <!--tools:replace="android:allowBackup"-->
+<!--    tools:replace="android:appComponentFactory"-->
+<!--    android:appComponentFactory="shengmo"-->
+    <!-- tools:replace="android:allowBackup,android:appComponentFactory"
+        android:appComponentFactory="shengmo"-->
+
+    <!--部分手机可以调用不起微信-->
+<!--    <queries>-->
+<!--        <package android:name="com.tencent.mm"/>-->
+<!--    </queries>-->
+
+    <application
+        android:name="com.aiwujie.shengmo.application.MyApp"
+        android:icon="@mipmap/applogo"
+        android:label="@string/app_main_name"
+        android:largeHeap="true"
+        tools:replace="android:allowBackup,android:label,android:networkSecurityConfig"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_permission_config"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+
+        <!--tools:replace="android:icon"-->
+        <!--友盟统计-->
+        <!-- <meta-data android:value="5a0ab281f43e482978000010" android:name="UMENG_APPKEY"/> -->
+        <!-- <meta-data android:value="Yingyongbao" android:name="UMENG_CHANNEL"/> -->
+        <!-- 友盟多渠道配置 -->
+<!--        <meta-data-->
+<!--            android:name="UMENG_APPKEY"-->
+<!--            android:value="57c9318667e58e97c6000fe4" />-->
+        <!-- <meta-data android:value="${UMENG_CHANNEL_VALUE}" android:name="UMENG_CHANNEL"/> -->
+
+
+        <!-- 适配全面屏 https://www.jianshu.com/p/b7594ae3900f -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+        <!--AutoLayout宽高-->
+        <meta-data
+            android:name="design_width"
+            android:value="768" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <service
+            android:name="com.aiwujie.shengmo.service.AliveService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":alive_service" />
+        <service
+            android:name="com.aiwujie.shengmo.service.CancelNoticeService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":service" />
+        <service
+            android:name="com.aiwujie.shengmo.service.PlayAliveService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":alive_services" />
+
+        <activity
+            android:name="com.aiwujie.shengmo.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.RegistPhoneActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.RegistEmailActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.RetrievePswActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.SmAgreementActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.RegistOnePageActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.RegistTwoPageActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- &lt;!&ndash; 高德 &ndash;&gt; -->
+        <!-- <service android:name="com.amap.api.location.APSService"/> -->
+
+        <!--<meta-data-->
+            <!--android:name="com.amap.api.v2.apikey"-->
+            <!--android:value="0e25fcbb199e518c5d4b0947c31dea57"/>-->
+
+            <!-- //开发者申请的key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="4d9e924c5302a5fff5ecde2648c9d2af"/>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57c9318667e58e97c6000fe4" />
+
+
+<!--        <receiver-->
+<!--            android:name="com.aiwujie.shengmo.notification.RongNotification"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />-->
+<!--                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />-->
+<!--                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />-->
+<!--                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+        <!-- 此部分代码需要移植到您的 app 下的 manifest，并且 authorities 指定您的包名。例如：com.android.FileProvider -->
+        <!-- 否则使用拍照功能时，会崩溃 -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.aiwujie.shengmo.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/app_file_paths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <activity
+            android:name="com.aiwujie.shengmo.activity.HomeFilterActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.MapActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="shengmo"
+                    android:pathPrefix="/pathPrefix"
+                    android:scheme="scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aiwujie.shengmo.activity.BannerWebActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.SearchActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.MapFindActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.SeeActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.EditPersonMsgActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.aiwujie.shengmo.activity.EditNameActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.SettingActivity"
+            android:launchMode="singleTop"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.EditIntroduceActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.SecretActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.PhotoAlbumActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.GzFsHyActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.ZoomActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.BlackListActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.EditPwdActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.MyPurseActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.WithdrawalsActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.SetBankcardActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.AddBackCardActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <!-- Ping++ SDK -->
+<!--        <activity-->
+<!--            android:name="com.pingplusplus.android.PaymentActivity"-->
+<!--            android:configChanges="orientation|keyboardHidden|navigation|screenSize"-->
+<!--            android:launchMode="singleTop"-->
+<!--            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> &lt;!&ndash; 微信支付 &ndash;&gt;-->
+<!--        <activity-alias-->
+<!--            android:name=".wxapi.WXPayEntryActivity"-->
+<!--            android:exported="true"-->
+<!--            android:targetActivity="com.pingplusplus.android.PaymentActivity" />-->
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.FeedbackActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.PhotoAuthenticationActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.VipWebActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.VipCenterActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.CommonActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.RechargeBillActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.ContactUsActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.GroupSquareActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.CreateGroupActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.ReportActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.AdditionalActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.MakeGroupFailActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.GroupInfoActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.EditGroupActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.VerificationActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.MemberActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.SearchGroupActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.GroupMsgOperationActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.UpLevelActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.PhotoRzActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.SendDynamicActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <!--协议部分，-->
+                <data
+                    android:host="mainhost"
+                    android:path="/mainDetail"
+                    android:scheme="scheme" />
+                <!--下面这几行也必须得设置-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.aiwujie.alivideo" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aiwujie.shengmo.activity.OtherGroupActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.TopicActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.DynamicDetailActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.DynamicMessageActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.AllZanActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.AllRewardActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.RecorderActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.WebDiscoveryActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1105968084" />
+<!--                <data android:scheme="tencent1109831381" />-->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 微博 -->
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+<!--        <service-->
+<!--            android:name="com.sina.weibo.sdk.net.DownloadService"-->
+<!--            android:exported="false" />-->
+
+        <activity
+            android:name="com.aiwujie.shengmo.activity.Lock9ViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.SettingGustureActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.GroupIntroActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <!-- 小米 配置开始 < -->
+        <!--
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+        -->
+        <!-- 注：此service必须在2.2.5版本以后（包括2.2.5版本）加入 -->
+        <!--
+            <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        -->
+        <!-- 注：此service必须在3.0.1版本以后（包括3.0.1版本）加入 -->
+
+
+        <!--
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="io.rong.push.platform.MiMessageReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        -->
+        <!-- 小米 配置结束 < -->
+        <activity
+            android:name="com.aiwujie.shengmo.activity.AlertSettingActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.SendMetionAllMsgActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.EditGroupNameActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.AtGroupMemberActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.AtFansActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.AtMinedActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.RichesListActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.PopularityActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.ActiveActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.HelpCenterActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.binding.ChangeBindingMobileActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.binding.BindingMobileActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.binding.ChangeBindingNextOneActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.binding.ChargeCodeActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.binding.BindingEmailActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.binding.ChangeBindingEmailActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.binding.ChangeBindingEmailNextActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.binding.ChargeEmailCodeActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.InviteGroupMemberActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.DiscoveryAboutSMActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.SoundLoveActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.DynamicNoticeActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.PresentBillActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.PresentListActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.StampBillActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.SignGiftActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTransparent" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.FallingViewActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTransparent" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.OtherReasonActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.HooliganActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation|keyboard"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:finishOnTaskLaunch="false"
+            android:launchMode="singleInstance"
+            android:theme="@style/HooliganActivityStyle" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.TopicDetailActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.SendTopicActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.MyOrOtherTopicActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.RecommendReasonActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.CollectDynamicActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.PesonInfoActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+          >
+
+        </activity>
+        <activity
+            android:name="com.aiwujie.shengmo.activity.StampActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.EditDynamicActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <!--协议部分，-->
+                <data
+                    android:host="mainhost"
+                    android:path="/editDetail"
+                    android:scheme="scheme" />
+                <!--下面这几行也必须得设置-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.aiwujie.alivideo" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aiwujie.shengmo.activity.GroupSearchKeywordActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.RedWomenActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.RedWomenDetailActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.RedwomenPersonCenterActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.PersonInfoDynamicActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.FollowMsgActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.PersonInfoCommentActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.WelcomBannerActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.WarningRankListActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.RedWomenEditMsgActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.EditRedWomenJYActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aiwujie.shengmo.activity.EditRedWomenJSActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <!-- wx pay -->
+        <activity
+            android:name="com.aiwujie.shengmo.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx0392b14b6a6f023c" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.aiwujie.shengmo.base.BaseActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.HarassActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.AlbumJurisdictionActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.DynamicdictionActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.CommentsPermissionsActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.history_nameActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.Ejection_Activity" />
+        <activity android:name="com.aiwujie.shengmo.activity.Ejection_mingxi_Activity" />
+        <activity android:name="com.aiwujie.shengmo.activity.EditBeizhuActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.EditGuanliBeizhuActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.DuihuanModouActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.AllTuidingActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.XiangXiBeiZhuActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.Vip_BillActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.SendredbaoActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.RedBaoshouActivity" android:launchMode="singleTop" />
+        <activity android:name="com.aiwujie.shengmo.activity.Shan_yaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.aiwujie.shengmo.activity.SwitchActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.aiwujie.shengmo.activity.AddUserActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.aiwujie.shengmo.activity.HuojianfeiActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.aiwujie.shengmo.activity.SfzrzActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name="com.aiwujie.shengmo.activity.SendredbaopersonActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.Group_liwu_list" android:launchMode="singleTop" />
+        <activity android:name="com.aiwujie.shengmo.activity.HistnameseeActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.More_news_Activity" />
+        <activity android:name="com.aiwujie.shengmo.activity.MoreActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.RedBaoshougroupActivity" android:launchMode="singleTop" />
+        <activity android:name="com.aiwujie.shengmo.activity.SendredbaoChatroomActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.Share_haoyou_Activity" />
+        <activity android:name="com.aiwujie.shengmo.activity.Share_qunzu_Activity" />
+
+        <service android:name="com.aiwujie.shengmo.service.FloatingService" />
+
+        <activity android:name="com.aiwujie.shengmo.activity.SearchfriendsActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.LabelDefaultsActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.GrouplistActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.FriendsetGroupActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.GrouptoaddActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.ModificationChatActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.EditChatroomNameActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.ChatroomIntroActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.EditGroupCardNameActivity"></activity>
+        <activity android:name="com.aiwujie.shengmo.activity.VideoPlayerActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.ActivityCommonWealth" />
+        <activity android:name="com.aiwujie.shengmo.activity.SendReasonActivity" />
+        <activity android:name="com.aiwujie.shengmo.activity.ApplyForLiveActivity" />
+        <activity android:name=".activity.EditPunishmentActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".videoplay.VideoActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".activity.TopicListActivity" android:screenOrientation="portrait"/>
+
+<!--        禁动、禁言、封号、禁资-->
+        <activity android:name=".activity.CommentDetailActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.GetOutOfLineActivity" android:screenOrientation="portrait"/>
+<!--        投诉、被投诉-->
+        <activity android:name=".activity.ComplaintInformationActivity" android:screenOrientation="portrait"/>
+
+        <!--个人主页黑V权限-账号-->
+        <activity android:name=".activity.AccountActivity"/>
+        <!--个人主页黑V权限-地址查看-->
+        <activity android:name=".activity.HistoryAddressActivity"/>
+
+        <activity android:name=".tim.chat.ChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.tencent.action.chat.chatActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".tim.contact.FriendProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".tim.chat.TempActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".tim.location.SelectLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".tim.location.LocationInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.user.UserInfoActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="com.tencent.action.user.UserInfoActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.newui.VipMemberCenterActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".fragment.rank.RankActivity"/>
+        <activity android:name=".activity.ranking.RewardRankingActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".activity.ranking.PopularityRankingActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".activity.ranking.ActiveRankingActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".activity.newui.DynamicPushActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".activity.EditVipBeizhuActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".activity.newui.PunishmentDetailActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".activity.newui.NewDynamicDetailActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".activity.newui.TopicDynamicActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".activity.newui.InvitationRewardActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".activity.newui.InvitationRewardDetailActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".activity.ChangeGroupLocationActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+
+        //图片选择Activity
+        //去掉Activity的ActionBar。
+        //使用者可以根据自己的项目去配置，不一定要这样写，只要让Activity的ActionBar去掉就可以了。
+        //横竖屏切换处理。
+        //如果要支持横竖屏切换，一定要加上这句，否则在切换横竖屏的时候会发生异常。
+        <activity android:name="com.donkingliang.imageselector.ImageSelectorActivity"
+
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        <!--直播页面-->
+        <!--            android:launchMode="singleInstance"  android:screenOrientation="portrait"-->
+        <activity android:name=".timlive.ui.LiveRoomAnchorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity android:name=".timlive.ui.LiveRoomAnchorFloatActivity"  android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".timlive.ui.LiveRoomAnchorFloatActivity"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="adjustResize"/>
+
+        //图片预览Activity
+        <activity android:name="com.donkingliang.imageselector.PreviewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+     '   //图片剪切Activity
+        <activity
+            android:name="com.donkingliang.imageselector.ClipImageActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity android:name=".timlive.ui.LiveRoomSwitchActivity"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".timlive.ui.LiveRoomSwitchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        <activity android:name=".timlive.ui.LiveRoomRegisterAuthActivity" android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        <activity android:name="com.aiwujie.shengmo.timlive.kt.ui.activity.SearchLiveUserActivity" android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".kt.ui.activity.LottieAnimActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTransparent" />
+
+        <activity android:name=".kt.ui.activity.GroupMsgOperateActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".kt.ui.activity.statistical.StampDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.statistical.VipDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.statistical.RechargeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.statistical.PushTopCardDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.WithdrawActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.WithdrawDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.LiveAdminOperateActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".kt.ui.activity.AnchorAuthActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.WithdrawAuthActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.LivePartitionActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.NewLivePartitionActivity" android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity android:name=".kt.ui.activity.AllCarListActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ranking.LiveRankingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ranking.ActiveAndPopularityRankingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.LiveRuleSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.LiveSealDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.MyLiveLevelActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.AddAliPayAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.PlayBackVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".qnlive.activity.QNLiveRoomAnchorActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".qnlive.activity.QNLiveRoomAudienceActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:taskAffinity=".qnlive.activity.QNLiveRoomAudienceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity android:name=".activity.NewSfzrzActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.UserInviteListActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".kt.ui.activity.normallist.CollectedDynamicActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.SearchUserActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.statistical.GroupSearchResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.statistical.PublicScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normallist.PushTopUsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normallist.ThumbUpUsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normallist.AtUsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.statistical.PresentDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.HighEndAuthActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".kt.ui.activity.HighEndUserActivity" android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".kt.ui.activity.PushHighActivity" android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".kt.ui.activity.GroupMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.GroupInviteActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.statistical.UserRelationShipActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.ComplaintInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.LiveChatSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.C2CSendRedEnvelopesActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.GroupSendRedEnvelopesActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normallist.FollowMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normallist.RewardUsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normallist.PurchaseRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.statistical.MyAuthActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.GroupingDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.statistical.ShareUserActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.GroupingSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.statistical.GroupingAddMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.EditPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.FeedBackActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.statistical.AtMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.AtGroupMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.statistical.WarningRankListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normaldeal.ManagerMarkActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normaldeal.UserMarkActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.MapFindActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.MapActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.FriendSetGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.ShanYaActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".kt.ui.activity.normaldeal.ManagerBanActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normaldeal.PunishmentEditActivity" android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".kt.ui.activity.SVGAAnimActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTransparent" />
+        <activity android:name=".activity.ranking.NewLiveRankingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.EditNameActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.statistical.RechargeAndGiftActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.ExchangeBeansActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.IDCardAuthActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.SelfieAuthActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normallist.InviteRewardDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.EditPersonInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normallist.HighServiceOpenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.tabtopbar.HighServiceDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.CarInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.MyCarListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.CarRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.HighFollowAndFansActivity" android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name="com.tencent.rtmp.video.TXScreenCapture$TXScreenCaptureAssistantActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <activity android:name=".kt.ui.activity.GroupDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normallist.UserJoinTopicActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.tabtopbar.RechargeGiftActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.HomePageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".kt.ui.activity.SimpleAnimActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTransparent" />
+
+        <activity android:name=".kt.ui.activity.SearchHighUserActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normallist.LinkHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normallist.AccountPunishActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".timlive.kt.ui.activity.LiveRoomAudienceActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.ConversationCallListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.ConversationCallActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.ValueAddServicesActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.statistical.CallCardDetailActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".kt.ui.activity.FansClubListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.FansClubInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.FansClubRankActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normallist.ExtensionHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.ExtensionDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normallist.UserGroupListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.tabtopbar.GroupSquareActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".kt.ui.activity.normaldeal.NormalReportActivity" android:screenOrientation="portrait"/>
+
+    </application>
+
+
+
+</manifest>

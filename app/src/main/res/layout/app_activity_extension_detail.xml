@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#2333"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/ic_my_top_bg"
+        tools:background="@color/purple_main"
+        app:layout_constraintDimensionRatio="4:3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/layout_normal_title_bar"/>
+
+            <TextView
+                android:layout_marginHorizontal="25dp"
+                android:textColor="@color/white"
+                android:text="推广完成"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginHorizontal="25dp"
+                android:textColor="@color/white"
+                android:text="呼唤时间"
+                android:textSize="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_call_time"
+                android:layout_marginHorizontal="25dp"
+                android:textColor="@color/white"
+                tools:text="2022-05-10 11:22:33"
+                android:textSize="13dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:background="@drawable/bg_round_white"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="13dp"
+                    android:text="数据详情"
+                    android:textColor="@color/titleBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_call_bao"
+                    android:layout_marginTop="20dp"
+                    android:textSize="13dp"
+                    android:text="10 倍曝光"
+                    android:textColor="@color/darkGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_call_see"
+                    android:layout_marginTop="20dp"
+                    android:textSize="13dp"
+                    tools:text="呼唤期间,已被50333人看到"
+                    android:textColor="@color/darkGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <FrameLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <FrameLayout
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        android:id="@+id/fl_user_1"
+                        android:layout_marginRight="60dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/bg_round_blue"
+                        android:padding="2dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                        <com.aiwujie.shengmo.view.CircleImageView
+                            android:id="@+id/iv_user_1"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_task_icon_gift_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        android:id="@+id/fl_user_2"
+                        android:layout_marginRight="30dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/bg_round_blue"
+                        android:padding="2dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                        <com.aiwujie.shengmo.view.CircleImageView
+                            android:id="@+id/iv_user_2"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_task_icon_gift_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        android:id="@+id/fl_user_3"
+                        android:layout_gravity="right"
+                        android:background="@drawable/bg_round_blue"
+                        android:padding="2dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                        <com.aiwujie.shengmo.view.CircleImageView
+                            android:id="@+id/iv_user_3"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_task_icon_gift_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_call_click"
+                        android:paddingVertical="2dp"
+                        android:text="676"
+                        android:textSize="18dp"
+                        android:textColor="@color/water_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="12dp"
+                        android:textColor="@color/normalGray"
+                        android:paddingVertical="2dp"
+                        android:layout_gravity="bottom"
+                        android:text="主页访问量(人数)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_call_question"
+                android:gravity="center"
+                android:paddingVertical="13dp"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginHorizontal="25dp"
+                android:background="@drawable/bg_round_white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="@color/normalGray"
+                    android:text="常见问题"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="@color/darkGray"
+                    android:text="提升互动数据"
+                    android:paddingRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:padding="2dp"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <FrameLayout
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_call_commit"
+            android:layout_marginHorizontal="20dp"
+            android:paddingVertical="15dp"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+            android:text="继续呼唤"
+            android:background="@drawable/bg_round_purple_home"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

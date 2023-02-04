@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/layout_normal_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:paddingHorizontal="15dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_round_white"
+                android:elevation="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:paddingVertical="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/red"
+                        android:text="*"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="14dp"
+                        android:textColor="@color/titleBlack"
+                        android:text="真实姓名"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/et_zsxm"
+                        android:hint="请输入真实姓名"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/lightGray"
+                        android:textSize="14dp"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <View
+                    android:background="#e5e5e5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:paddingVertical="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/red"
+                        android:text="*"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="14dp"
+                        android:textColor="@color/titleBlack"
+                        android:text="身份证号"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/et_sfzh"
+                        android:hint="请输入身份证号"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/lightGray"
+                        android:textSize="14dp"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:paddingTop="30dp"
+                android:paddingHorizontal="15dp"
+                android:paddingBottom="20dp"
+                android:textStyle="bold"
+                android:text="请上传身份证的正反面"
+                android:textSize="16dp"
+                android:textColor="@color/titleBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginHorizontal="15dp"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_round_white"
+                android:elevation="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="人像面"
+                        android:textColor="@color/titleBlack"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="上传您的身份证人像面"
+                        android:textColor="@color/lightGray"
+                        android:textSize="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/fre_sfz_1"
+                    android:src="@drawable/ic_auth_id_card_front"
+                    android:layout_width="180dp"
+                    android:layout_height="120dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="15dp"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_round_white"
+                android:elevation="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="国徽面"
+                        android:textColor="@color/titleBlack"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="上传您的身份证国徽面"
+                        android:textColor="@color/lightGray"
+                        android:textSize="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/fre_sfz_2"
+                    android:src="@drawable/ic_auth_id_card_back"
+                    android:layout_width="180dp"
+                    android:layout_height="120dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="15dp"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_round_white"
+                android:elevation="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="手持身份证照"
+                        android:textColor="@color/titleBlack"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="上传您的手持身份证照"
+                        android:textColor="@color/lightGray"
+                        android:textSize="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/fre_sfz_3"
+                    android:src="@drawable/ic_auth_id_card_example"
+                    android:layout_width="180dp"
+                    android:layout_height="120dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/msfz_tijiao"
+        android:layout_marginVertical="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_round_normal_button"
+        android:paddingHorizontal="113dp"
+        android:paddingVertical="13dp"
+        android:textColor="@color/white"
+        android:text="认证"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

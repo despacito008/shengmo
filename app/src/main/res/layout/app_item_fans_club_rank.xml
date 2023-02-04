@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_item_rank"
+        tools:text="1"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/titleBlack"
+        android:textStyle="bold"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"/>
+
+    <com.aiwujie.shengmo.view.CircleImageView
+        android:id="@+id/civ_item_icon"
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="10dp"
+        tools:background="#66cf"
+        android:layout_width="65dp"
+        android:layout_height="65dp"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            tools:text="xxx的粉丝团"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/tv_item_mark"
+                android:background="@drawable/bg_round_purple_home"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="1dp"
+                android:textColor="@color/white"
+                tools:text="二哈"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_item_num"
+            tools:text="粉丝团人数：1377"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

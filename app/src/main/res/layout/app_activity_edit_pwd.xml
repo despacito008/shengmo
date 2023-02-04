@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include   layout="@layout/layout_normal_titlebar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"
+        android:layout_marginBottom="50dp"/>
+
+    <EditText
+        android:id="@+id/et_old_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_border_edit_pwd"
+        android:hint="请输入旧密码"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center_vertical"
+
+        android:singleLine="true"/>
+
+
+    <EditText
+        android:id="@+id/et_new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_border_edit_pwd"
+        android:hint="请输入新密码"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/mEditpwd_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:textColor="#FFFFFF"
+        android:text="确定"
+        android:background="@drawable/item_login_btn2"
+        />
+</LinearLayout>

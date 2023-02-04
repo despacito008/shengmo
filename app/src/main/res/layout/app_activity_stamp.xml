@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_stamp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+              android:orientation="vertical"
+              tools:ignore="SpUsage,ContentDescription,RtlHardcoded,HardcodedText"
+              tools:context="com.aiwujie.shengmo.activity.StampActivity">
+    
+
+    <LinearLayout
+        android:id="@+id/ll_stamp_title_bar"
+        android:paddingTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/iv_stamp_return"
+            android:tint="@color/normalGray"
+            android:padding="16dp"
+            android:src="@drawable/normal_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:text="消息邮票"
+            android:textColor="@color/titleBlack"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:id="@+id/tv_stamp_detailed"
+            android:textColor="@color/normalGray"
+            android:text="明细"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/view_stamp_top_bg"
+                    app:layout_constraintWidth_percent="1"
+                    app:layout_constraintDimensionRatio="353:173"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/ic_stamp_top_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@id/mStamp_count"
+                    android:includeFontPadding="false"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp"
+                   app:layout_constraintTop_toBottomOf="@id/tv_stamp_count_info"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_stamp_count_info"
+                    tools:text="20"
+                    android:textSize="30dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    app:layout_constraintBottom_toBottomOf="@id/mStamp_count"
+                    app:layout_constraintLeft_toRightOf="@id/mStamp_count"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:text="张"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_stamp_count_info"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintTop_toTopOf="@id/view_stamp_top_bg"
+                    app:layout_constraintLeft_toLeftOf="@id/view_stamp_top_bg"
+                    android:text="共购买"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintTop_toTopOf="@id/view_stamp_top_bg"
+                    app:layout_constraintLeft_toLeftOf="@id/view_stamp_top_bg"
+                    android:text="通用邮票"
+                    android:textSize="16dp"
+                    android:textColor="#fff600"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_stamp_count_tips"
+                    app:layout_constraintVertical_bias="0.4"
+                    android:paddingHorizontal="13dp"
+                    android:paddingVertical="5dp"
+                    android:background="@drawable/bg_stamp_count_time"
+                    app:layout_constraintLeft_toLeftOf="@id/mStamp_count"
+                    app:layout_constraintBottom_toBottomOf="@id/view_stamp_top_bg"
+                    app:layout_constraintTop_toBottomOf="@id/mStamp_count"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:text="永久有效"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginRight="36dp"
+                    app:layout_constraintTop_toTopOf="@id/tv_stamp_count_tips"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_stamp_count_tips"
+                    app:layout_constraintRight_toRightOf="@id/view_stamp_top_bg"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:text="*邮票启用后24小时内有效 "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:visibility="visible"
+                android:id="@+id/rv_stamp"
+                android:minHeight="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/tv_stamp_buy_money"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/bg_vip_center_buy_money"
+                android:gravity="center"
+                android:text="官方充值"
+                android:layout_gravity="center"
+                android:layout_width="265dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/tv_vip_stamp_beans"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/bg_vip_center_buy_beans"
+                android:gravity="center"
+                android:text="魔豆兑换"
+                android:layout_gravity="center"
+                android:layout_width="265dp"
+                android:layout_height="40dp"/>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/ic_stamp_task_bg"
+                android:elevation="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="353:288"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/iv_stamp_limit"
+                    android:visibility="gone"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="23dp"
+                    android:src="@drawable/ic_stamp_small"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="13dp"
+                    android:layout_height="14dp"/>
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/mStamp_give_stamp_txt"
+                    android:includeFontPadding="false"
+                    android:layout_marginLeft="35dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="35dp"
+                    android:text="共获赠"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:includeFontPadding="false"
+                    android:layout_marginLeft="86dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="35dp"
+                    android:textColor="#fff600"
+                    android:textStyle="bold"
+                    android:text="任务邮票"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/mStamp_give_stamp"
+                    android:includeFontPadding="false"
+                    app:layout_constraintLeft_toLeftOf="@id/mStamp_give_stamp_txt"
+                    app:layout_constraintTop_toBottomOf="@id/mStamp_give_stamp_txt"
+                    android:layout_marginTop="10dp"
+                    tools:text="3张"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_stamp_limit_tips"
+                    app:layout_constraintVertical_bias="0.4"
+                    android:paddingHorizontal="13dp"
+                    android:paddingVertical="5dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/bg_stamp_count_time"
+                    app:layout_constraintLeft_toLeftOf="@id/mStamp_give_stamp_txt"
+                    app:layout_constraintTop_toBottomOf="@+id/mStamp_give_stamp"
+                    app:layout_constraintBottom_toTopOf="@id/iv_stamp_limit_boy"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:text="当日有效"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="36dp"
+                    app:layout_constraintTop_toTopOf="@id/tv_stamp_limit_tips"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_stamp_limit_tips"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:text="*邮票启用后24小时内有效 "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:layout_marginRight="11dp"
+                    android:id="@+id/iv_stamp_limit_boy"
+                    app:layout_constraintRight_toLeftOf="@id/iv_stamp_limit_girl"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_stamp_limit_girl"
+                    android:src="@drawable/ic_stamp_boy"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.27"
+                    app:layout_constraintDimensionRatio="1:1"
+                    android:layout_height="0dp"/>
+
+                <ImageView
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/iv_stamp_limit_girl"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/ic_stamp_girl"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.27"
+                    app:layout_constraintDimensionRatio="1:1"
+                    android:layout_height="0dp"/>
+
+                <ImageView
+                    android:layout_marginLeft="11dp"
+                    android:id="@+id/iv_stamp_limit_cdts"
+                    app:layout_constraintLeft_toRightOf="@id/iv_stamp_limit_girl"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_stamp_limit_girl"
+                    android:src="@drawable/ic_stamp_cdts"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.27"
+                    app:layout_constraintDimensionRatio="1:1"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/mStamp_manYpCount"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_stamp_limit_boy"
+                    app:layout_constraintRight_toRightOf="@id/iv_stamp_limit_boy"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_stamp_limit_boy"
+                    android:layout_marginBottom="5dp"
+                    tools:text="1张"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/mStamp_womanYpCount"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_stamp_limit_girl"
+                    app:layout_constraintRight_toRightOf="@id/iv_stamp_limit_girl"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_stamp_limit_girl"
+                    android:layout_marginBottom="5dp"
+                    tools:text="1张"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/mStamp_cdtsYpCount"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_stamp_limit_cdts"
+                    app:layout_constraintRight_toRightOf="@id/iv_stamp_limit_cdts"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_stamp_limit_cdts"
+                    android:layout_marginBottom="5dp"
+                    tools:text="1张"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <com.hjq.shape.layout.ShapeConstraintLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="15dp"
+                app:shape="rectangle"
+                app:shape_radius="10dp"
+                app:shape_shadowColor="#66131415"
+                app:shape_shadowSize="1dp"
+                app:shape_solidColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="210dp">
+
+            <View
+                app:layout_constraintTop_toBottomOf="@id/tv_stamp_free_txt"
+                app:layout_constraintLeft_toLeftOf="@id/tv_stamp_free_txt"
+                app:layout_constraintBottom_toBottomOf="@id/tv_stamp_free_txt"
+                android:background="@drawable/bg_topic_tab_bottom"
+                android:layout_width="63dp"
+                android:layout_height="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_stamp_free_txt"
+                android:includeFontPadding="false"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="限时体验·免费领邮票"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/titleBlack"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginTop="70dp"
+                android:id="@+id/iv_stamp_auth"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/tv_stamp_free_txt"
+                android:src="@drawable/ic_stamp_auth"
+                android:layout_width="34dp"
+                android:layout_height="34dp"/>
+
+            <TextView
+                app:layout_constraintTop_toTopOf="@id/iv_stamp_auth"
+                app:layout_constraintBottom_toTopOf="@id/iv_stamp_auth"
+                app:layout_constraintLeft_toRightOf="@id/iv_stamp_auth"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/mStamp_commenUser_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="认证用户每日可领取3张邮票"
+                android:textColor="@color/titleBlack"
+                android:textSize="14dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/iv_stamp_auth"
+                app:layout_constraintTop_toBottomOf="@id/iv_stamp_auth"
+                app:layout_constraintLeft_toLeftOf="@id/mStamp_commenUser_tv"
+                android:text="男/女/CDTS票各1张"
+                android:textColor="#999999"
+                android:textSize="12dp"
+                />
+
+
+            <TextView
+                app:layout_constraintTop_toTopOf="@id/iv_stamp_auth"
+                app:layout_constraintBottom_toBottomOf="@id/iv_stamp_auth"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="15dp"
+                android:id="@+id/mStamp_commenReceive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:background="@drawable/item_stamp_bg_round_selector"
+                android:gravity="center"
+                android:paddingHorizontal="13dp"
+                android:paddingVertical="6dp"
+                android:text="领取"
+                android:textColor="@drawable/item_stamp_tv_round_selector"
+                android:textSize="12dp"/>
+
+
+            <ImageView
+                android:layout_marginBottom="23dp"
+                android:id="@+id/iv_stamp_vip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/tv_stamp_free_txt"
+                android:src="@drawable/ic_stamp_vip"
+                android:layout_width="34dp"
+                android:layout_height="34dp"/>
+
+            <TextView
+                app:layout_constraintTop_toTopOf="@id/iv_stamp_vip"
+                app:layout_constraintBottom_toTopOf="@id/iv_stamp_vip"
+                app:layout_constraintLeft_toRightOf="@id/iv_stamp_vip"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/mStamp_viprealnameUser_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIP会员每日可领取3张邮票"
+                android:textColor="@color/titleBlack"
+                android:textSize="14dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/iv_stamp_vip"
+                app:layout_constraintTop_toBottomOf="@id/iv_stamp_vip"
+                app:layout_constraintLeft_toLeftOf="@id/mStamp_commenUser_tv"
+                android:text="男/女/CDTS票各1张"
+                android:textColor="#999999"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                app:layout_constraintTop_toTopOf="@id/iv_stamp_vip"
+                app:layout_constraintBottom_toBottomOf="@id/iv_stamp_vip"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="15dp"
+                android:id="@+id/mStamp_viprealnameReceive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:background="@drawable/item_stamp_bg_round_selector"
+                android:gravity="center"
+                android:paddingHorizontal="13dp"
+                android:paddingVertical="6dp"
+                android:text="领取"
+                android:textColor="@drawable/item_stamp_tv_round_selector"
+                android:textSize="12dp"/>
+
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+
+        <com.hjq.shape.layout.ShapeConstraintLayout
+            android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp"
+            app:shape="rectangle"
+            app:shape_radius="10dp"
+            app:shape_shadowColor="#66131415"
+            app:shape_shadowSize="1dp"
+            app:shape_solidColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="270dp">
+
+                <View
+                    app:layout_constraintTop_toBottomOf="@id/tv_stamp_task_day_txt"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_stamp_task_day_txt"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_stamp_task_day_txt"
+                    android:background="@drawable/bg_topic_tab_bottom"
+                    android:layout_width="63dp"
+                    android:layout_height="8dp"/>
+
+                <TextView
+                    android:id="@+id/tv_stamp_task_day_txt"
+                    android:includeFontPadding="false"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="每日任务·免费领邮票"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textColor="@color/titleBlack"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginTop="70dp"
+                    android:id="@+id/iv_stamp_thumb_up"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_stamp_task_day_txt"
+                    android:src="@drawable/ic_stamp_auth"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"/>
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="@id/iv_stamp_thumb_up"
+                    app:layout_constraintBottom_toTopOf="@id/iv_stamp_thumb_up"
+                    app:layout_constraintLeft_toRightOf="@id/iv_stamp_thumb_up"
+                    android:layout_marginLeft="12dp"
+                    android:id="@+id/mStamp_laudCount_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每日动态点赞20个赠3张邮票"
+                    android:textColor="@color/titleBlack"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_stamp_task_thumb_up_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_stamp_thumb_up"
+                    app:layout_constraintTop_toBottomOf="@id/iv_stamp_thumb_up"
+                    app:layout_constraintLeft_toLeftOf="@id/mStamp_laudCount_tv"
+                    android:text="男/女/CDTS票各1张"
+                    android:textColor="#999999"
+                    android:textSize="12dp"
+                    />
+
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="@id/mStamp_laudCount_tv"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/mStamp_laudGo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:background="@drawable/item_stamp_bg_round_selector"
+                    android:gravity="center"
+                    android:paddingHorizontal="13dp"
+                    android:paddingVertical="6dp"
+                    android:text="去完成"
+                    android:textColor="@drawable/item_stamp_tv_round_selector"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    app:layout_constraintLeft_toLeftOf="@id/mStamp_laudGo"
+                    app:layout_constraintRight_toRightOf="@id/mStamp_laudGo"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_stamp_task_thumb_up_tips"
+                    android:id="@+id/mStamp_laudCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="0/20"
+                    android:textColor="#555555"
+                    android:textSize="12dp"/>
+
+                <ImageView
+                    android:layout_marginTop="36dp"
+                    android:id="@+id/iv_stamp_share"
+                    app:layout_constraintTop_toBottomOf="@id/iv_stamp_thumb_up"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_stamp_task_day_txt"
+                    android:src="@drawable/ic_stamp_share"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"/>
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="@id/iv_stamp_share"
+                    app:layout_constraintBottom_toTopOf="@id/iv_stamp_share"
+                    app:layout_constraintLeft_toRightOf="@id/iv_stamp_share"
+                    android:layout_marginLeft="12dp"
+                    android:id="@+id/mStamp_shareCount_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每日分享APP一次赠3张邮票"
+                    android:textColor="@color/titleBlack"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_stamp_task_share_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_stamp_share"
+                    app:layout_constraintTop_toBottomOf="@id/iv_stamp_share"
+                    app:layout_constraintLeft_toLeftOf="@id/mStamp_laudCount_tv"
+                    android:text="男/女/CDTS票各1张"
+                    android:textColor="#999999"
+                    android:textSize="12dp"
+                    />
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="@id/mStamp_shareCount_tv"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/mStamp_shareGo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:background="@drawable/item_stamp_bg_round_selector"
+                    android:gravity="center"
+                    android:paddingHorizontal="13dp"
+                    android:paddingVertical="6dp"
+                    android:text="去完成"
+                    android:textColor="@drawable/item_stamp_tv_round_selector"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    app:layout_constraintLeft_toLeftOf="@id/mStamp_shareGo"
+                    app:layout_constraintRight_toRightOf="@id/mStamp_shareGo"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_stamp_task_share_tips"
+                    android:id="@+id/mStamp_shareCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="0/1"
+                    android:textColor="#555555"
+                    android:textSize="12dp"/>
+
+
+                <ImageView
+                    android:layout_marginTop="36dp"
+                    android:id="@+id/iv_stamp_beans"
+                    app:layout_constraintTop_toBottomOf="@id/iv_stamp_share"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_stamp_task_day_txt"
+                    android:src="@drawable/ic_stamp_gift"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"/>
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="@id/iv_stamp_beans"
+                    app:layout_constraintBottom_toTopOf="@id/iv_stamp_beans"
+                    app:layout_constraintLeft_toRightOf="@id/iv_stamp_beans"
+                    android:layout_marginLeft="12dp"
+                    android:id="@+id/mStamp_mouDouCount_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每日单次送礼满100魔豆赠3张邮票"
+                    android:textColor="@color/titleBlack"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_stamp_task_beans_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_stamp_beans"
+                    app:layout_constraintTop_toBottomOf="@id/iv_stamp_beans"
+                    app:layout_constraintLeft_toLeftOf="@id/mStamp_mouDouCount_tv"
+                    android:text="男/女/CDTS票各1张"
+                    android:textColor="#999999"
+                    android:textSize="12dp"
+                    />
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="@id/mStamp_mouDouCount_tv"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/mStamp_giveMouDouGo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:background="@drawable/item_stamp_bg_round_selector"
+                    android:gravity="center"
+                    android:paddingHorizontal="13dp"
+                    android:paddingVertical="6dp"
+                    android:text="去完成"
+                    android:textColor="@drawable/item_stamp_tv_round_selector"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    app:layout_constraintLeft_toLeftOf="@id/mStamp_giveMouDouGo"
+                    app:layout_constraintRight_toRightOf="@id/mStamp_giveMouDouGo"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_stamp_task_beans_tips"
+                    android:id="@+id/mStamp_giveMouDouCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="0/1"
+                    android:textColor="#555555"
+                    android:textSize="12dp"/>
+
+            </com.hjq.shape.layout.ShapeConstraintLayout>
+
+        <com.hjq.shape.layout.ShapeConstraintLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="15dp"
+            app:shape="rectangle"
+            app:shape_radius="10dp"
+            app:shape_shadowColor="#66131415"
+            app:shape_shadowSize="1dp"
+            app:shape_solidColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <View
+                    app:layout_constraintTop_toBottomOf="@id/tv_stamp_task_once_txt"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_stamp_task_once_txt"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_stamp_task_once_txt"
+                    android:background="@drawable/bg_topic_tab_bottom"
+                    android:layout_width="63dp"
+                    android:layout_height="8dp"/>
+
+                <TextView
+                    android:id="@+id/tv_stamp_task_once_txt"
+                    android:includeFontPadding="false"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="单次任务·免费领邮票"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textColor="@color/titleBlack"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginTop="70dp"
+                    android:id="@+id/iv_stamp_bind_phone"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_stamp_task_once_txt"
+                    android:src="@drawable/ic_stamp_bing_phone"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"/>
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="@id/iv_stamp_bind_phone"
+                    app:layout_constraintBottom_toTopOf="@id/iv_stamp_bind_phone"
+                    app:layout_constraintLeft_toRightOf="@id/iv_stamp_bind_phone"
+                    android:layout_marginLeft="12dp"
+                    android:id="@+id/mStamp_bingPhone_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="绑定手机号赠9张邮票"
+                    android:textColor="@color/titleBlack"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_stamp_task_bind_phone_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_stamp_bind_phone"
+                    app:layout_constraintTop_toBottomOf="@id/iv_stamp_bind_phone"
+                    app:layout_constraintLeft_toLeftOf="@id/mStamp_bingPhone_tv"
+                    android:text="男/女/CDTS票各3张"
+                    android:textColor="#999999"
+                    android:textSize="12dp"
+                    />
+
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="@id/iv_stamp_bind_phone"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_stamp_bind_phone"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/mStamp_bingPhoneGo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:background="@drawable/item_stamp_bg_round_selector"
+                    android:gravity="center"
+                    android:paddingHorizontal="13dp"
+                    android:paddingVertical="6dp"
+                    android:text="去完成"
+                    android:textColor="@drawable/item_stamp_tv_round_selector"
+                    android:textSize="12dp"/>
+
+
+
+                <ImageView
+                    android:layout_marginTop="36dp"
+                    android:id="@+id/iv_stamp_recommend"
+                    app:layout_constraintTop_toBottomOf="@id/iv_stamp_bind_phone"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_stamp_bind_phone"
+                    android:src="@drawable/ic_stamp_recommand"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"/>
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="@id/iv_stamp_recommend"
+                    app:layout_constraintBottom_toTopOf="@id/iv_stamp_recommend"
+                    app:layout_constraintLeft_toRightOf="@id/iv_stamp_recommend"
+                    android:layout_marginLeft="12dp"
+                    android:id="@+id/mStamp_commentApp_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="应用商店好评赠9张邮票"
+                    android:textColor="@color/titleBlack"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_stamp_recommend"
+                    app:layout_constraintTop_toBottomOf="@id/iv_stamp_recommend"
+                    app:layout_constraintLeft_toLeftOf="@id/mStamp_commentApp_tv"
+                    android:text="男/女/CDTS票各3张"
+                    android:textColor="#999999"
+                    android:textSize="12dp"
+                    />
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="@id/iv_stamp_recommend"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_stamp_recommend"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/mStamp_commentAppGo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:background="@drawable/item_stamp_bg_round_selector"
+                    android:gravity="center"
+                    android:paddingHorizontal="13dp"
+                    android:paddingVertical="6dp"
+                    android:text="去完成"
+                    android:textColor="@drawable/item_stamp_tv_round_selector"
+                    android:textSize="12dp"/>
+
+            </com.hjq.shape.layout.ShapeConstraintLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/mStamp_return"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:gravity="center_vertical"
+            android:src="@mipmap/return_back"
+            android:text="@string/regist"
+            android:textColor="#4b4b4b"
+            app:layout_heightPercent="50%"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消息邮票"
+            android:textColor="#333333"
+            app:layout_textSizePercent="35%"/>
+
+        <TextView
+            android:id="@+id/mStamp_zhangdan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="明细"
+            android:textColor="#4b4b4b"
+            app:layout_textSizePercent="30%"
+            app:layout_widthPercent="12%"
+            />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dddddd"/>
+
+    <ScrollView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/yptong"
+                app:layout_heightPercent="12%h"
+                app:layout_marginTopPercent="3%h"
+                app:layout_widthPercent="16.8%h"
+                />
+
+            <TextView
+                android:id="@+id/mStamp_count1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="共购买张通用邮票"
+                android:textColor="#333333"
+                app:layout_marginTopPercent="1.5%h"
+                app:layout_textSizePercent="4.6%w"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="◆邮票启用后24小时内有效"
+                android:textColor="#999999"
+                app:layout_marginTopPercent="1%h"
+                app:layout_textSizePercent="3%w"
+                />
+
+            <com.aiwujie.shengmo.customview.MyGridview
+                android:id="@+id/mStamp_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="10dp"
+                app:layout_marginTopPercent="3%h"></com.aiwujie.shengmo.customview.MyGridview>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="任意购"
+                    app:layout_textSizePercent="4%w"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/mStamp_etCount"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/item_chongzhi_bg_hui"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="7"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp"
+                            android:textColor="#000000"
+                            android:textCursorDrawable="@null"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:text="张"
+                            app:layout_textSizePercent="4%w"
+                            />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/duoshao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="￥0/0魔豆"/>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/mStamp_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/item_gv_bg_zi"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:text="购买"
+                    android:textColor="#FFFFFF"
+                    app:layout_textSizePercent="4%w"
+                    />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/stampline"
+                app:layout_heightPercent="5%w"
+                app:layout_marginTopPercent="5%h"
+                />
+
+            <TextView
+                android:id="@+id/mStamp_give_stamp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:text="共获赠张任务邮票（当日有效）"
+                android:textColor="#333333"
+                app:layout_marginTopPercent="4.5%h"
+                app:layout_textSizePercent="4.6%w"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="◆邮票启用后24小时内有效"
+                android:textColor="#999999"
+                app:layout_marginTopPercent="1%h"
+                app:layout_textSizePercent="3%w"
+                />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_marginTopPercent="3.5%h">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/ypnan"
+                        app:layout_heightPercent="12%h"
+                        app:layout_widthPercent="16.8%h"
+                        />
+
+                    <TextView
+                        android:id="@+id/mStamp_manYpCount1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="男票张"
+                        android:textColor="#333333"
+                        app:layout_textSizePercent="11%w"
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/ypnv"
+                        app:layout_heightPercent="12%h"
+                        app:layout_widthPercent="16.8%h"
+                        />
+
+                    <TextView
+                        android:id="@+id/mStamp_womanYpCount1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="女票张"
+                        android:textColor="#333333"
+                        app:layout_textSizePercent="11%w"
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/ypcdts"
+                        app:layout_heightPercent="12%h"
+                        app:layout_widthPercent="16.8%h"
+                        />
+
+                    <TextView
+                        android:id="@+id/mStamp_cdtsYpCount1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="CDTS票张"
+                        android:textColor="#333333"
+                        app:layout_textSizePercent="11%w"
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dddddd"
+                android:padding="10dp"
+                android:text="限时试用★免费领邮票"
+                android:textColor="#333333"
+                app:layout_marginTopPercent="4.5%h"
+                app:layout_textSizePercent="4%w"
+                />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_marginTopPercent="1%h"
+                >
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7.5"
+                    android:orientation="vertical">
+
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:textColor="#555555"
+                    app:layout_textSizePercent="3.5%w"/>
+
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd"/>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7.5"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="男/女/CDTS票各1张"
+                        android:textColor="#999999"
+                        app:layout_textSizePercent="6%w"
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:textColor="#555555"
+                    app:layout_textSizePercent="3.5%w"/>
+
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDDDDD"
+                android:padding="10dp"
+                android:text="每日任务★免费领邮票"
+                android:textColor="#333333"
+                app:layout_marginTopPercent="2.5%h"
+                app:layout_textSizePercent="4%w"/>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_marginTopPercent="1%h">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7.5"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每日动态点赞20个赠3张邮票"
+                        android:textColor="#333333"
+                        app:layout_textSizePercent="6.3%w"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="男/女/CDTS票各1张"
+                        android:textColor="#999999"
+                        app:layout_textSizePercent="6%w"
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd"/>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7.5"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每日分享APP一次赠3张邮票"
+                        android:textColor="#333333"
+                        app:layout_textSizePercent="6.3%w"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="男/女/CDTS票各1张"
+                        android:textColor="#999999"
+                        app:layout_textSizePercent="6%w"
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/item_round_bg_hui"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="0/1"
+                    android:textColor="#555555"
+                    app:layout_textSizePercent="3.5%w"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:background="@drawable/item_stamp_round_selector"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="去完成"
+                    android:textColor="@drawable/item_stamp_tv_round_selector"
+                    app:layout_textSizePercent="3.5%w"/>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd"/>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7.5"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="#333333"
+                        app:layout_textSizePercent="6.3%w"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="男/女/CDTS票各1张"
+                        android:textColor="#999999"
+                        app:layout_textSizePercent="6%w"
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/item_round_bg_hui"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="0/1"
+                    android:textColor="#555555"
+                    app:layout_textSizePercent="3.5%w"/>
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:background="@drawable/item_stamp_round_selector"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="去完成"
+                    android:textColor="@drawable/item_stamp_tv_round_selector"
+                    app:layout_textSizePercent="3.5%w"/>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDDDDD"
+                android:padding="10dp"
+                android:text="单次任务★免费领邮票"
+                android:textColor="#333333"
+                app:layout_marginTopPercent="2.5%h"
+                app:layout_textSizePercent="4%w"
+                />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_marginTopPercent="1%h">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="绑定手机号赠9张邮票"
+                        android:textColor="#333333"
+                        app:layout_textSizePercent="6.3%w"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="男/女/CDTS票各3张"
+                        android:textColor="#999999"
+                        app:layout_textSizePercent="6%w"
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:textColor="#555555"
+                    app:layout_textSizePercent="3.5%w"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:background="@drawable/item_stamp_round_selector"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="去完成"
+                    android:textColor="@drawable/item_stamp_tv_round_selector"
+                    app:layout_textSizePercent="3.5%w"/>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd"/>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_marginBottomPercent="5%h">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="应用商店好评赠9张邮票"
+                        android:textColor="#333333"
+                        app:layout_textSizePercent="6.3%w"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="男/女/CDTS票各3张"
+                        android:textColor="#999999"
+                        app:layout_textSizePercent="6%w"
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:textColor="#555555"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:background="@drawable/item_stamp_round_selector"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="去完成"
+                    android:textColor="@drawable/item_stamp_tv_round_selector"
+                    app:layout_textSizePercent="3.5%w"/>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map_view_message_tim_location"
+        android:layout_width="200dp"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:layout_gravity="bottom"
+        android:background="@color/lightGray"
+        tools:text="具体的地址消息"
+        android:textColor="@color/white"
+        android:id="@+id/tv_message_tim_location"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/view_message_tim_location_font"
+        android:layout_width="200dp"
+        android:layout_height="150dp"/>
+
+</FrameLayout>

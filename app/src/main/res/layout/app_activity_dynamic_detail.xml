@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="SpUsage,ContentDescription,RtlHardcoded,HardcodedText,DisableBaselineAlignment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_normal_titlebar" />
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        app:srlEnablePreviewInEditMode="false"
+        android:id="@+id/srl_dynamic_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.design.widget.CoordinatorLayout
+                android:id="@+id/coord_dynamic_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.AppBarLayout
+                    app:elevation="0dp"
+                    android:id="@+id/app_bar_dynamic_detail"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/layout_dynamic_detail_content"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed"/>
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tab_dynamic_detail"
+                        app:tabGravity="fill"
+                        app:tabMode="scrollable"
+                        app:tabBackground="@color/transparent"
+                        app:layout_scrollFlags="snap"
+                        app:tabIndicatorColor="#ffb1e6"
+                        app:tabIndicatorHeight="0dp"
+                        tools:background="#2cf"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"/>
+
+
+
+                </android.support.design.widget.AppBarLayout>
+
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager_dynamic_detail"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </android.support.design.widget.CoordinatorLayout>
+        </FrameLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <View
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_dynamic_detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_dynamic_detail_thumb_up"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_dynamic_detail_thumb_up"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_dynamic_thumb_up_normal"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="赞"
+                android:textColor="@color/lightGray"
+                app:layout_textSizePercent="15%w" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="#f5f5f5"
+            app:layout_heightPercent="4%" />
+
+        <LinearLayout
+            android:id="@+id/ll_dynamic_detail_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/pinglunda"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="评论"
+                android:textColor="#DB57F3"
+                app:layout_textSizePercent="15%w" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="#f5f5f5"
+            app:layout_heightPercent="4%" />
+
+        <LinearLayout
+            android:id="@+id/ll_dynamic_detail_reward"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/dashangda"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="打赏"
+                android:textColor="#DB57F3"
+                app:layout_textSizePercent="15%w" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="#f5f5f5"
+            app:layout_heightPercent="4%" />
+
+        <LinearLayout
+            android:id="@+id/ll_dynamic_detail_push_top"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/huojian4"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="推顶"
+                android:textColor="#DB57F3"
+                app:layout_textSizePercent="15%w" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

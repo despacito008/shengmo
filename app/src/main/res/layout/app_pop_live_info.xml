@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#66cf"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<!--   <View-->
+<!--       app:layout_constraintTop_toTopOf="parent"-->
+<!--       app:layout_constraintBottom_toBottomOf="parent"-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="match_parent"/>-->
+
+   <android.support.constraint.ConstraintLayout
+       android:background="@drawable/bg_top_round_white"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+   <com.aiwujie.shengmo.timlive.view.RoundAngleImageView
+       android:id="@+id/iv_pop_live_info_icon"
+       android:layout_marginTop="25dp"
+       android:layout_marginLeft="15dp"
+       android:layout_width="0dp"
+       app:layout_constraintCircleRadius="5dp"
+       app:layout_constraintWidth_percent="0.185"
+       app:layout_constraintDimensionRatio="1:1"
+       tools:background="#6cf"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_height="0dp"/>
+
+   <TextView
+       app:layout_constraintLeft_toLeftOf="@id/iv_pop_live_info_icon"
+       app:layout_constraintRight_toRightOf="@id/iv_pop_live_info_icon"
+       app:layout_constraintBottom_toBottomOf="@id/iv_pop_live_info_icon"
+       app:layout_constraintDimensionRatio="3:1"
+       android:gravity="center"
+       android:textColor="@color/white"
+       android:text="更换封面"
+       android:textSize="10dp"
+       android:background="@drawable/bg_short_video_bottom_mask"
+       android:layout_width="0dp"
+       android:layout_height="0dp"/>
+
+      <TextView
+          android:id="@+id/tv_pop_live_info_title_tip"
+          app:layout_constraintTop_toTopOf="@id/iv_pop_live_info_icon"
+          app:layout_constraintLeft_toLeftOf="@id/et_pop_live_info_title"
+          android:text="标题(非必选)"
+          android:textSize="12dp"
+          android:textColor="@color/titleBlack"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+   <EditText
+       android:id="@+id/et_pop_live_info_title"
+       app:layout_constraintTop_toBottomOf="@id/tv_pop_live_info_title_tip"
+       app:layout_constraintLeft_toRightOf="@id/iv_pop_live_info_icon"
+       android:layout_marginLeft="10dp"
+       tools:text=""
+       android:paddingVertical="5dp"
+       android:paddingHorizontal="5dp"
+       android:hint="最多可以输入100字"
+       android:textStyle="bold"
+       android:textSize="16dp"
+       android:maxLength="100"
+       android:minLines="2"
+       android:layout_marginTop="5dp"
+       android:gravity="top"
+       android:background="@drawable/bg_border_live_ticket"
+       android:layout_width="0dp"
+       app:layout_constraintRight_toRightOf="parent"
+       android:layout_marginRight="30dp"
+       android:layout_height="wrap_content"/>
+
+   <ImageView
+       android:id="@+id/iv_pop_live_info_edit_title"
+       app:layout_constraintTop_toTopOf="@id/et_pop_live_info_title"
+       app:layout_constraintBottom_toBottomOf="@id/et_pop_live_info_title"
+       app:layout_constraintLeft_toRightOf="@id/et_pop_live_info_title"
+       app:layout_constraintRight_toRightOf="parent"
+       android:layout_marginLeft="5dp"
+       android:src="@drawable/ic_live_card_edit"
+       android:padding="6dp"
+       android:layout_width="24dp"
+       android:layout_height="25dp"/>
+
+   <TextView
+       android:id="@+id/tv_pop_live_info_label_tip"
+       android:layout_marginTop="10dp"
+       app:layout_constraintTop_toBottomOf="@id/et_pop_live_info_title"
+       app:layout_constraintLeft_toLeftOf="@id/et_pop_live_info_title"
+       tools:text="标签(最多选3个)"
+       android:textSize="12dp"
+       android:textColor="@color/titleBlack"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+   <com.donkingliang.labels.LabelsView
+       android:id="@+id/label_pop_live_info"
+       android:layout_marginTop="10dp"
+       app:layout_constraintLeft_toLeftOf="@id/et_pop_live_info_title"
+       app:layout_constraintTop_toBottomOf="@id/tv_pop_live_info_label_tip"
+       android:layout_width="0dp"
+       app:layout_constraintRight_toRightOf="parent"
+       android:layout_marginRight="50dp"
+       app:labelTextPaddingBottom="4dp"
+       app:labelTextPaddingLeft="8dp"
+       app:labelTextPaddingRight="8dp"
+       app:labelTextPaddingTop="4dp"
+       app:labelBackground="@drawable/label_live_info_bg"
+       app:labelTextColor="@drawable/label_live_info_text_color"
+       app:labelTextSize="11dp"
+       app:lineMargin="10dp"
+       app:selectType="MULTI"
+       app:wordMargin="7dp"
+       android:layout_height="wrap_content"/>
+
+
+   <TextView
+       android:id="@+id/tv_start_live_ticket"
+       android:text="门票房"
+       android:layout_marginTop="20dp"
+       app:layout_constraintLeft_toLeftOf="@id/et_pop_live_info_title"
+       app:layout_constraintTop_toBottomOf="@id/label_pop_live_info"
+       android:textStyle="bold"
+       android:textSize="15dp"
+       android:textColor="@color/titleBlack"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+   <TextView
+       android:id="@+id/tv_start_live_ticket_price"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       tools:text="（1魔豆）"
+       android:textColor="@color/titleBlack"
+       android:textSize="14dp"
+       android:textStyle="bold"
+       app:layout_constraintVertical_bias="0.9"
+       app:layout_constraintTop_toTopOf="@id/tv_start_live_ticket"
+       app:layout_constraintLeft_toRightOf="@id/tv_start_live_ticket"
+       app:layout_constraintBottom_toBottomOf="@id/tv_start_live_ticket"/>
+
+   <CheckBox
+       app:layout_constraintBottom_toBottomOf="@id/tv_start_live_ticket"
+       app:layout_constraintRight_toRightOf="@id/label_pop_live_info"
+       app:layout_constraintTop_toTopOf="@id/tv_start_live_ticket"
+       android:id="@+id/cb_start_live_ticket"
+       android:checked="false"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       app:layout_constraintWidth_percent="0.1"
+       app:layout_constraintDimensionRatio="28:17"
+       android:layout_gravity="center_vertical"
+       android:background="@drawable/item_filter_button_bg"
+       android:button="@null"
+       android:gravity="center" />
+
+
+   <SeekBar
+       android:visibility="gone"
+       android:id="@+id/seek_bar_ticket"
+       android:layout_marginTop="10dp"
+       app:layout_constraintTop_toBottomOf="@id/tv_start_live_ticket"
+       app:layout_constraintLeft_toLeftOf="@id/tv_start_live_ticket"
+       app:layout_constraintRight_toRightOf="@id/cb_start_live_ticket"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:duplicateParentState="true"
+       android:max="1000"
+       android:min="1"
+       android:maxHeight="2dp"
+       android:minHeight="2dp"
+       android:paddingStart="0dp"
+       android:paddingLeft="0dp"
+       android:paddingEnd="0dp"
+       android:paddingRight="0dp"
+       android:progress="0"
+       android:progressDrawable="@drawable/seek_bar_ticket_info_style"
+       android:thumb="@drawable/bg_shape_seekbar_ticket"
+       android:thumbOffset="0dp"
+       tools:progress="0"/>
+
+   <TextView
+       android:visibility="gone"
+       android:id="@+id/tv_start_live_ticket_min"
+       android:layout_marginTop="5dp"
+       app:layout_constraintLeft_toLeftOf="@id/seek_bar_ticket"
+       app:layout_constraintTop_toBottomOf="@id/seek_bar_ticket"
+       android:textColor="@color/normalGray"
+       android:text="1"
+       android:textSize="11dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+   <TextView
+       android:visibility="gone"
+       android:id="@+id/tv_start_live_ticket_max"
+       android:layout_marginTop="5dp"
+       app:layout_constraintRight_toRightOf="@id/seek_bar_ticket"
+       app:layout_constraintTop_toBottomOf="@id/seek_bar_ticket"
+       android:textColor="@color/normalGray"
+       android:text="1000"
+       android:textSize="11dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+
+   <EditText
+       android:paddingVertical="8dp"
+       android:layout_marginTop="10dp"
+       android:id="@+id/et_pop_live_info_ticket"
+       app:layout_constraintTop_toBottomOf="@id/tv_start_live_ticket"
+       app:layout_constraintLeft_toLeftOf="@id/tv_start_live_ticket"
+       app:layout_constraintRight_toRightOf="@id/cb_start_live_ticket"
+       android:textStyle="bold"
+       android:textColor="@color/titleBlack"
+       android:textSize="13dp"
+       android:maxLength="10"
+       android:hint="请输入1-1000魔豆"
+       android:inputType="number"
+       android:paddingHorizontal="10dp"
+       android:background="@drawable/bg_border_live_ticket"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"/>
+
+   <android.support.constraint.Group
+       android:id="@+id/group_start_live_ticket"
+       android:visibility="gone"
+       tools:visibility="visible"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:constraint_referenced_ids="et_pop_live_info_ticket"/>
+
+
+   <include
+       android:id="@+id/layout_live_info_password"
+       layout="@layout/layout_live_info_password"
+       app:layout_constraintTop_toBottomOf="@id/et_pop_live_info_ticket"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       app:layout_constraintRight_toRightOf="@id/label_pop_live_info"
+       app:layout_constraintLeft_toLeftOf="@id/label_pop_live_info"/>
+
+   <TextView
+       android:id="@+id/tv_pop_live_info_confirm"
+       android:gravity="center"
+       android:textSize="15dp"
+       android:background="@drawable/bg_round_live_card"
+       android:textColor="@color/white"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/layout_live_info_password"
+       android:layout_marginTop="50dp"
+       android:paddingVertical="8dp"
+       android:paddingHorizontal="70dp"
+       android:layout_marginBottom="15dp"
+       android:text="确认"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+   </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

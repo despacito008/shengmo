@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dashang_black_bg"
+    >
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="4%w"
+        app:layout_marginBottomPercent="4%w">
+        <TextView
+            android:id="@+id/dashang_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推顶卡"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ff9d00"
+            android:layout_centerInParent="true"
+            />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tuiding_dia"
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/huojian1"
+            />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:id="@+id/tuidingrl1"
+        android:layout_gravity="center"
+        app:layout_heightPercent="12%h">
+
+        <ImageView
+            android:id="@+id/tuiding_dia2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/huojian1"
+            />
+
+        <ImageView
+            android:layout_toRightOf="@id/tuiding_dia2"
+            android:id="@+id/tuiding_dia3"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/huojian1"
+            />
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/mStamp_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="剩余 0 张推顶卡"
+        android:textColor="#ddd"
+        app:layout_marginTopPercent="1.5%h"
+        android:textSize="16sp"
+        />
+
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/sysl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用数量"
+            android:textColor="#ddd"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:textColor="#ff9d00"
+            android:id="@+id/et_shu"
+            android:inputType="number"
+            android:paddingLeft="5dp"
+            android:layout_toRightOf="@+id/sysl"
+            android:layout_width="60dp"
+            android:singleLine="true"
+            android:background="@drawable/wide_yan_shape"
+            android:maxLength="5"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <TextView
+        android:id="@+id/addmei"
+        android:textColor="#ddd"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="被推者增加 0 魅力值"/>
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_zidong"
+            android:textColor="#ddd"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/et_shu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定时自动推顶间隔时长"/>
+
+        <RadioGroup
+            android:id="@+id/rgya2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_zidong"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/rb_time6"
+                android:button="@null"
+                android:textColor="#ddd"
+                android:padding="3dp"
+                android:background="@drawable/topcard_time_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5分钟"/>
+            <RadioButton
+                android:id="@+id/rb_time7"
+                android:padding="3dp"
+                android:background="@drawable/topcard_time_sel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:button="@null"
+                android:textColor="#ddd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10分钟"/>
+            <RadioButton
+                android:id="@+id/rb_time8"
+                android:padding="3dp"
+                android:background="@drawable/topcard_time_sel"
+                android:button="@null"
+                android:textColor="#ddd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15分钟"/>
+            <RadioButton
+                android:id="@+id/rb_time9"
+                android:padding="3dp"
+                android:background="@drawable/topcard_time_sel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:button="@null"
+                android:textColor="#ddd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20分钟"/>
+            <RadioButton
+                android:id="@+id/rb_time10"
+                android:padding="3dp"
+                android:background="@drawable/topcard_time_sel"
+                android:button="@null"
+                android:textColor="#ddd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30分钟"/>
+
+        </RadioGroup>
+
+
+
+        <RadioGroup
+            android:id="@+id/rgya"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/rb_time1"
+                android:button="@null"
+                android:textColor="#ddd"
+                android:padding="3dp"
+                android:background="@drawable/topcard_time_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1小时"/>
+            <RadioButton
+                android:id="@+id/rb_time2"
+                android:padding="3dp"
+                android:background="@drawable/topcard_time_sel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:button="@null"
+                android:textColor="#ddd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3小时"/>
+            <RadioButton
+                android:id="@+id/rb_time3"
+                android:padding="3dp"
+                android:background="@drawable/topcard_time_sel"
+                android:button="@null"
+                android:textColor="#ddd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6小时"/>
+            <RadioButton
+                android:id="@+id/rb_time4"
+                android:padding="3dp"
+                android:background="@drawable/topcard_time_sel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:button="@null"
+                android:textColor="#ddd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12小时"/>
+            <RadioButton
+                android:id="@+id/rb_time5"
+                android:padding="3dp"
+                android:background="@drawable/topcard_time_sel"
+                android:button="@null"
+                android:textColor="#ddd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24小时"/>
+
+        </RadioGroup>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_up_dalaba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_up_lb"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:src="@mipmap/yuandiantaozi"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ddd"
+            android:layout_gravity="center"
+            android:text="推顶可选是否上大喇叭"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/mStamp_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/item_gv_bg_zi"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="去购买"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

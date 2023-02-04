@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/layout_normal_titlebar"
+        android:id="@+id/layout_normal_titlebar" />
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:background="#fafafa"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <android.support.constraint.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <ImageView
+             android:id="@+id/iv_invitation_reward_bg"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             android:layout_width="match_parent"
+             android:scaleType="centerCrop"
+             tools:src="@drawable/ic_invitation_reward_bg"
+             app:layout_constraintDimensionRatio="414:391"
+             android:layout_height="0dp"/>
+
+         <LinearLayout
+             android:layout_marginHorizontal="15dp"
+             android:orientation="vertical"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             android:layout_marginTop="160dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <com.hjq.shape.layout.ShapeLinearLayout
+                 android:layout_marginHorizontal="1dp"
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/ll_reward_type"
+                 android:elevation="0dp"
+                 android:paddingHorizontal="15dp"
+                 android:layout_marginBottom="20dp"
+                 android:paddingVertical="15dp"
+                 android:orientation="vertical"
+                 app:shape="rectangle"
+                 app:shape_radius="10dp"
+                 app:shape_shadowColor="@color/titleBlack"
+                 app:shape_shadowSize="1dp"
+                 app:shape_solidColor="@color/white"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+
+                 <TextView
+                     android:paddingVertical="10dp"
+                     android:text="选择奖励类型"
+                     android:textColor="@color/titleBlack"
+                     android:textSize="16dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"/>
+
+                 <RadioGroup
+                     android:id="@+id/rg_reward_type"
+                     android:orientation="horizontal"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <RadioButton
+                         android:id="@+id/rb_reward_svip"
+                         android:text="5天SVIP"
+                         android:checked="true"
+                         android:layout_weight="1"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"/>
+
+                     <RadioButton
+                         android:id="@+id/rb_reward_bean"
+                         android:text="50银魔豆(可提现)"
+                         android:layout_weight="1"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"/>
+
+                 </RadioGroup>
+
+             </com.hjq.shape.layout.ShapeLinearLayout>
+
+             <com.hjq.shape.layout.ShapeLinearLayout
+                 android:layout_marginHorizontal="1dp"
+                 android:paddingVertical="20dp"
+                 android:paddingHorizontal="15dp"
+                 android:layout_marginBottom="20dp"
+                 android:orientation="vertical"
+                 app:shape="rectangle"
+                 app:shape_radius="10dp"
+                 app:shape_shadowColor="@color/titleBlack"
+                 app:shape_shadowSize="1dp"
+                 app:shape_solidColor="@color/white"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                 <TextView
+                     android:paddingVertical="10dp"
+                     android:text="我的邀请码"
+                     android:textColor="@color/titleBlack"
+                     android:textSize="16dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"/>
+
+                 <LinearLayout
+                     android:gravity="center_vertical"
+                     android:orientation="horizontal"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <TextView
+                         android:id="@+id/tv_invitation_code"
+                         android:textStyle="bold"
+                         android:letterSpacing="0.25"
+                         android:text="******"
+                         android:paddingVertical="10dp"
+                         android:textColor="@color/titleBlack"
+                         android:textSize="16dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"/>
+
+                     <TextView
+                         android:id="@+id/tv_invitation_code_tips"
+                         android:layout_marginLeft="10dp"
+                         android:text="绑定手机号才能显示"
+                         android:paddingVertical="10dp"
+                         android:paddingHorizontal="15dp"
+                         android:textColor="@color/lightGray"
+                         android:textSize="12dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"/>
+
+                     <View
+                         android:layout_weight="1"
+                         android:layout_width="0dp"
+                         android:layout_height="1dp"/>
+
+                     <TextView
+                         android:id="@+id/tv_invitation_code_operate"
+                         android:paddingVertical="5dp"
+                         android:paddingHorizontal="8dp"
+                         android:textColor="@color/white"
+                         android:textSize="14dp"
+                         android:background="@drawable/bg_user_info_claim"
+                         android:text="立即绑定"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"/>
+
+                 </LinearLayout>
+
+                 <View
+                     android:layout_marginTop="15dp"
+                     android:background="#e5e5e5"
+                     android:layout_width="match_parent"
+                     android:layout_height="1px"/>
+
+                 <TextView
+                     android:id="@+id/tv_invitation_code_content"
+                     android:layout_marginTop="10dp"
+                     android:textColor="@color/lightGray"
+                     android:text="中国最早、最火的亚文化交友APP-圣魔 www.shengmo.cn 下载后输入邀请码，可获得5天SVIP"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
+             </com.hjq.shape.layout.ShapeLinearLayout>
+
+             <com.hjq.shape.layout.ShapeLinearLayout
+                 android:layout_marginHorizontal="1dp"
+                 android:elevation="1dp"
+                 android:layout_marginBottom="20dp"
+                 android:paddingVertical="20dp"
+                 android:paddingHorizontal="15dp"
+                 android:background="@drawable/bg_round_white"
+                 android:orientation="vertical"
+                 app:shape="rectangle"
+                 app:shape_radius="10dp"
+                 app:shape_shadowColor="@color/titleBlack"
+                 app:shape_shadowSize="1dp"
+                 app:shape_solidColor="@color/white"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                 <TextView
+                     android:paddingVertical="10dp"
+                     android:text="我的邀请码"
+                     android:textColor="@color/titleBlack"
+                     android:textSize="16dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"/>
+
+
+                 <LinearLayout
+                     android:gravity="center_vertical"
+                     android:orientation="horizontal"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <ImageView
+                         android:src="@drawable/ic_app_er_code"
+                         android:layout_width="80dp"
+                         android:layout_height="80dp"/>
+
+                     <View
+                         android:layout_weight="1"
+                         android:layout_width="0dp"
+                         android:layout_height="1dp"/>
+
+                     <TextView
+                         android:id="@+id/tv_invitation_pic_share"
+                         android:paddingVertical="5dp"
+                         android:paddingHorizontal="8dp"
+                         android:textColor="@color/white"
+                         android:textSize="14dp"
+                         android:background="@drawable/bg_user_info_claim"
+                         android:text="立即分享"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"/>
+
+                 </LinearLayout>
+
+             </com.hjq.shape.layout.ShapeLinearLayout>
+
+             <com.hjq.shape.layout.ShapeLinearLayout
+                 app:shape="rectangle"
+                 app:shape_radius="10dp"
+                 app:shape_shadowColor="@color/titleBlack"
+                 app:shape_shadowSize="1dp"
+                 app:shape_solidColor="@color/white"
+                 android:layout_marginHorizontal="1dp"
+                 android:id="@+id/ll_invitation_reward_get"
+                 android:layout_marginBottom="20dp"
+                 android:elevation="1dp"
+                 android:paddingVertical="20dp"
+                 android:paddingHorizontal="15dp"
+                 android:layout_marginTop="15dp"
+                 android:background="@drawable/bg_round_white"
+                 android:gravity="center_vertical"
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                 <TextView
+                     android:id="@+id/tv_invitation_reward_tips"
+                     android:layout_marginRight="15dp"
+                     android:textColor="@color/titleBlack"
+                     android:textSize="14dp"
+                     tools:text="您是老用户【张三】邀请来的，绑定手机号后您和【三张】均可获得5天SVIP会员"
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="wrap_content"/>
+
+                 <TextView
+                     android:id="@+id/tv_invitation_reward_operate"
+                     android:paddingVertical="5dp"
+                     android:paddingHorizontal="8dp"
+                     android:textColor="@color/white"
+                     android:textSize="14dp"
+                     android:background="@drawable/bg_user_info_claim"
+                     android:text="立即绑定"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"/>
+
+             </com.hjq.shape.layout.ShapeLinearLayout>
+
+
+             <com.hjq.shape.layout.ShapeLinearLayout
+                 app:shape="rectangle"
+                 app:shape_radius="10dp"
+                 app:shape_shadowColor="@color/titleBlack"
+                 app:shape_shadowSize="1dp"
+                 app:shape_solidColor="@color/white"
+                 android:layout_marginHorizontal="1dp"
+                 android:layout_marginTop="10dp"
+                 android:elevation="1dp"
+                 android:background="@drawable/bg_round_white"
+                 android:paddingHorizontal="15dp"
+                 android:layout_marginBottom="20dp"
+                 android:paddingVertical="15dp"
+                 android:orientation="vertical"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                 <TextView
+                     android:paddingVertical="10dp"
+                     android:text="规则"
+                     android:textColor="@color/titleBlack"
+                     android:textSize="16dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"/>
+
+
+                 <TextView
+                     android:id="@+id/tv_invitation_rule"
+                     android:layout_marginBottom="20dp"
+                     android:textSize="14dp"
+                     android:textColor="@color/lightGray"
+                     android:text="同一设备/网络只奖励一次"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
+             </com.hjq.shape.layout.ShapeLinearLayout>
+
+         </LinearLayout>
+
+     </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_marginVertical="10dp"
+        android:id="@+id/fl_header_1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <View
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_topic_tab_bottom"
+            android:layout_width="57dp"
+            android:layout_height="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="Ta的粉丝群"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="@color/titleBlack"
+            />
+
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_header_fans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_marginVertical="10dp"
+        android:id="@+id/fl_header_2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <View
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_topic_tab_bottom"
+            android:layout_width="57dp"
+            android:layout_height="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="Ta创建的群组"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="@color/titleBlack"
+            />
+
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_header_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_marginVertical="10dp"
+        android:id="@+id/fl_header_3"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:visibility="visible">
+
+        <View
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_topic_tab_bottom"
+            android:layout_width="57dp"
+            android:layout_height="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="Ta加入的群组"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="@color/titleBlack" />
+
+
+    </FrameLayout>
+
+</LinearLayout>

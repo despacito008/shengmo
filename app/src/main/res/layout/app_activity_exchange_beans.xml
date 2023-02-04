@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#eee"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/layout_normal_title_bar"/>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/bg_round_white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:maxLength="6"
+                tools:text="100000"
+                android:textColor="@color/titleBlack"
+                android:id="@+id/et_exchange_num"
+                android:textSize="22dp"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:includeFontPadding="false"
+                android:hint="请输入需要兑换的金魔豆"
+                android:minWidth="100dp"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:text="魔豆"
+                android:textColor="@color/normalGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_exchange_rate"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="兑换比例：2银魔豆 = 1金魔豆"
+            android:textSize="15dp"
+            android:textColor="@color/wealthColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/line_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <TextView
+            android:id="@+id/tv_exchange_balance"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="15dp"
+            tools:text="可兑换魔豆 10000"
+            android:textSize="14dp"
+            android:textColor="@color/titleBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/line_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <LinearLayout
+            android:id="@+id/ll_exchange_add_wealth"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_exchange_add_wealth"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="5dp"
+                android:src="@mipmap/yuandiantaozi"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是否增加财富值"
+                android:textColor="#777777"
+                android:textSize="15dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_exchange_commit"
+        android:layout_marginVertical="35dp"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:text="立即兑换"
+        android:background="@drawable/bg_round_normal_button"
+        android:textColor="@color/white"
+        android:paddingHorizontal="100dp"
+        android:paddingVertical="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

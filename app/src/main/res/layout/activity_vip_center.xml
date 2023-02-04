@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.aiwujie.shengmo.activity.VipCenterActivity">
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="13.2%w"
+        android:background="#FFFFFF"
+        >
+        <ImageView
+            android:id="@+id/mVipCenter_return"
+            android:layout_width="40dp"
+            app:layout_heightPercent="50%"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:src="@mipmap/return_back"
+            android:layout_marginLeft="12dip"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会员中心"
+            android:layout_centerInParent="true"
+            android:textColor="#333333"
+            app:layout_textSizePercent="35%"/>
+
+        <TextView
+            android:id="@+id/mMypurse_zhangdan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="12%"
+            android:layout_marginRight="3dp"
+            android:textColor="#4b4b4b"
+            android:text="明细"
+            android:layout_alignParentRight="true"
+            app:layout_textSizePercent="30%"
+            android:gravity="center"
+            />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <TextView
+        android:id="@+id/mVipCenter_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dddddd"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/mVipCenter_line"
+            android:orientation="vertical">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/mVipCenter_header_my"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:id="@+id/mVipCenter_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/morentouxiang"
+                    app:layout_heightPercent="18%w"
+                    app:layout_widthPercent="18%w" />
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="8"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="尊享会员特权"
+                        android:textColor="#333333"
+                        app:layout_textSizePercent="5.6%w" />
+
+                    <TextView
+                        android:id="@+id/mVipCenter_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="点亮身份标识"
+                        app:layout_textSizePercent="4.5%w"
+                        app:layout_marginTopPercent="2%w"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/mVipCenter_svip_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="点亮身份标识"
+                        app:layout_textSizePercent="4.5%w"
+                        app:layout_marginTopPercent="2%w"
+                        android:visibility="gone"/>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/mVipCenter_header_sendVip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+              android:visibility="gone"
+                >
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp"
+                    >
+                    <ImageView
+                        android:id="@+id/mVipCenter_icon_my"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/morentouxiang"
+                        app:layout_heightPercent="18%w"
+                        app:layout_widthPercent="18%w" />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="赠送会员→"
+                            android:textColor="#333333"
+                            app:layout_textSizePercent="7%w" />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <ImageView
+                        android:id="@+id/mVipCenter_icon_other"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/morentouxiang"
+                        app:layout_heightPercent="18%w"
+                        app:layout_widthPercent="18%w" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+              <com.zhy.android.percent.support.PercentLinearLayout
+                  android:id="@+id/rl_up_lb"
+                  android:layout_width="match_parent"
+                  android:layout_height="30dp"
+                  android:gravity="center"
+                  android:layout_gravity="center"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="获赠人会收到您赠送的提示，可选择是否上大喇叭"
+                      android:textColor="#777777"
+                      app:layout_textSizePercent="3%w"
+                      />
+                  <ImageView
+                      android:id="@+id/iv_up_lb"
+                      android:layout_width="0dp"
+                      android:layout_height="0dp"
+                      app:layout_heightPercent="5%w"
+                      app:layout_widthPercent="5%w"
+                      android:layout_gravity="center"
+                      android:layout_marginLeft="5dp"
+                      android:src="@mipmap/yuandiantaozi"/>
+
+              </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/mVipCenter_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#F8F8F8"
+                app:layout_heightPercent="12.5%w"
+                app:tabIndicatorColor="#333333"
+                app:tabSelectedTextColor="#333333"
+                app:tabTextColor="#888888" />
+            <!--可滑动的布局内容-->
+            <com.aiwujie.shengmo.customview.SlideCustomViewpager
+                android:id="@+id/mVipCenter_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </ScrollView>
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="7%w"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="金额"
+                app:layout_textSizePercent="4%w"
+                android:textColor="#333333"
+                />
+            <TextView
+                android:id="@+id/mVipCenter_bottom_tvMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple_main"
+                app:layout_textSizePercent="4%w"
+                android:text="30"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="元 或 魔豆"
+                app:layout_textSizePercent="4%w"
+                android:textColor="#333333"
+                />
+            <TextView
+                android:id="@+id/mVipCenter_bottom_tvMoDou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple_main"
+                app:layout_textSizePercent="4%w"
+                android:text="300"
+                android:layout_marginLeft="5dp"
+                />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="8%w"
+            android:background="#FFFFFF">
+            <TextView
+                android:id="@+id/mVipCenter_xieyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="成为会员即表示已阅读并同意圣魔会员协议"
+                android:textColor="#555555"
+                app:layout_textSizePercent="3.2%w"
+                android:layout_marginLeft="10dp"/>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+        <Button
+            android:id="@+id/mVipCenter_btn_vip_buy"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/purple_main"
+            app:layout_heightPercent="13%w"
+            app:layout_textSizePercent="4.5%w"
+            android:layout_alignParentBottom="true"
+            android:text="确认支付"
+            android:textColor="#FFFFFF"
+            />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="6dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/view_item_present_bg"
+        android:background="@drawable/ic_gift_item_pop_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintDimensionRatio="85:90"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        tools:background="#6cf"
+        android:id="@+id/item_gridview_present_iv"
+        app:layout_constraintLeft_toLeftOf="@id/view_item_present_bg"
+        app:layout_constraintRight_toRightOf="@id/view_item_present_bg"
+        app:layout_constraintTop_toTopOf="@id/view_item_present_bg"
+        app:layout_constraintBottom_toBottomOf="@id/view_item_present_bg"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintVertical_bias="0.1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center" />
+
+
+    <TextView
+        tools:text="雪糕"
+        android:id="@+id/item_gridview_present_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/view_item_present_bg"
+        app:layout_constraintRight_toRightOf="@id/view_item_present_bg"
+        app:layout_constraintTop_toBottomOf="@id/item_gridview_present_iv"
+        app:layout_constraintBottom_toTopOf="@id/item_gridview_present_dou"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:textColor="#FFFFFF"
+        android:textSize="13dp" />
+
+    <TextView
+        tools:text="99魔豆"
+        android:id="@+id/item_gridview_present_dou"
+        app:layout_constraintLeft_toLeftOf="@id/view_item_present_bg"
+        app:layout_constraintRight_toRightOf="@id/view_item_present_bg"
+        app:layout_constraintTop_toTopOf="@id/view_item_present_bg"
+        app:layout_constraintBottom_toBottomOf="@id/view_item_present_bg"
+        app:layout_constraintVertical_bias="0.9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffd039"
+        android:textSize="11dp" />
+
+
+
+</android.support.constraint.ConstraintLayout>

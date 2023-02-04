@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/layout_normal_empty"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_layout_normal_empty"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_user_info_dynamic_empty"
+        android:layout_width="127dp"
+        android:layout_height="93dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_layout_normal_empty"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="200dp"
+        android:text="暂无数据"
+        android:textSize="12dp"
+        android:textColor="@color/lightGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

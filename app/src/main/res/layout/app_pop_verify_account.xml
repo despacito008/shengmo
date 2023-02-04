@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/ll_pop_verify_account_cancel"
+        app:layout_constraintVertical_bias="0.4"
+        android:background="@drawable/bg_round_white"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.8"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_pop_verify_code_title"
+            android:paddingVertical="15dp"
+            android:textSize="16dp"
+            android:text="登录验证"
+            android:textStyle="bold"
+            android:textColor="@color/titleBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_pop_verify_code_tips"
+            android:paddingVertical="5dp"
+            android:layout_marginHorizontal="15dp"
+            android:text="为保障您的账户安全，本次登录需要验证"
+            android:textColor="@color/titleBlack"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_pop_verify_code_account"
+            android:paddingVertical="5dp"
+            android:layout_marginHorizontal="15dp"
+            android:text="验证账号：100000000"
+            android:textColor="@color/normalGray"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <EditText
+                android:paddingHorizontal="5dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/et_pop_verify_code_img"
+                android:background="@drawable/bg_round_verify_code_border"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="40dp"/>
+
+            <ImageView
+                android:background="#fff"
+                android:scaleType="fitXY"
+                android:id="@+id/iv_pop_verify_code_img"
+                android:layout_width="120dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <EditText
+                android:paddingHorizontal="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_round_verify_code_border"
+                android:id="@+id/et_pop_verify_code_code"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:id="@+id/tv_pop_verify_code_send"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:text="获取验证码"
+                android:gravity="center"
+                android:background="@drawable/bg_round_verify_code"
+                android:layout_width="120dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pop_verify_code_commit"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="20dp"
+            android:text="确认"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:background="@drawable/bg_user_info_sex_cdts"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_pop_verify_code_close"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:src="@mipmap/close"
+        app:layout_constraintTop_toTopOf="@id/ll_pop_verify_account_cancel"
+        app:layout_constraintRight_toRightOf="@id/ll_pop_verify_account_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+</android.support.constraint.ConstraintLayout>

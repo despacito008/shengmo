@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText,SpUsage"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:background="@drawable/bg_gift_panel"
+        android:id="@+id/view_pop_gift_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintDimensionRatio="2:2.75"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_pop_gift_panel_wealth"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:text="送礼物"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintTop_toTopOf="@id/view_pop_gift_bg"
+        app:layout_constraintLeft_toLeftOf="@id/view_pop_gift_bg"
+        app:layout_constraintRight_toRightOf="@id/view_pop_gift_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_pop_gift_panel_free"
+        android:textSize="15dp"
+        android:textColor="#afff"
+        android:text="背包"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="@id/tv_pop_gift_panel_wealth"
+        app:layout_constraintBottom_toBottomOf="@id/tv_pop_gift_panel_wealth"
+        app:layout_constraintRight_toRightOf="@id/view_pop_gift_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_pop_gift_panel"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_pop_gift_panel_wealth"
+        app:layout_constraintLeft_toLeftOf="@id/view_pop_gift_bg"
+        app:layout_constraintRight_toRightOf="@id/view_pop_gift_bg"
+        app:layout_constraintDimensionRatio="3:3.2"
+        app:layout_constraintWidth_percent="0.85"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_pop_gift_knapsack"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_pop_gift_panel_wealth"
+        app:layout_constraintLeft_toLeftOf="@id/view_pop_gift_bg"
+        app:layout_constraintRight_toRightOf="@id/view_pop_gift_bg"
+        app:layout_constraintDimensionRatio="3:3.2"
+        app:layout_constraintWidth_percent="0.85"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <com.aiwujie.shengmo.view.indicator.CircleIndicator
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:ci_drawable="@color/chatWrite"
+        android:id="@+id/indicator_pop_send_gift"
+        app:layout_constraintTop_toBottomOf="@id/view_pager_pop_gift_panel"
+        app:layout_constraintBottom_toTopOf="@id/ll_pop_gift_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.aiwujie.shengmo.view.indicator.CircleIndicator
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:ci_drawable="@color/chatWrite"
+        android:id="@+id/indicator_pop_send_knapsack"
+        app:layout_constraintTop_toBottomOf="@id/view_pager_pop_gift_panel"
+        app:layout_constraintBottom_toTopOf="@id/ll_pop_gift_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_pop_gift_bottom"
+        app:layout_constraintLeft_toLeftOf="@id/view_pop_gift_bg"
+        app:layout_constraintRight_toRightOf="@id/view_pop_gift_bg"
+        app:layout_constraintBottom_toBottomOf="@id/view_pop_gift_bg"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ranking_beans"
+            android:layout_width="18dp"
+            android:layout_height="18dp"/>
+
+        <TextView
+            android:paddingLeft="3dp"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:text="我的魔豆："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_pop_gift_panel_beans"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            tools:text="2000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_pop_gift_panel_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值"
+            android:textColor="#FFFFFF"
+            android:padding="3dp"
+            android:alpha="0.6"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            />
+        <ImageView
+            android:id="@+id/iv_pop_gift_panel_buy"
+            android:layout_centerVertical="true"
+            android:rotation="180"
+            android:tint="@color/lightGray"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/normal_back"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/lottie_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</android.support.constraint.ConstraintLayout>

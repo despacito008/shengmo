@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:background="@drawable/ic_give_tips_bg"
+            android:paddingVertical="8dp"
+            android:id="@+id/aa"
+            android:text="送500魔豆以上的礼物可上大喇叭"
+            android:layout_width="wrap_content"
+            android:textSize="11dp"
+            android:textColor="#ffab3a"
+            android:layout_height="wrap_content" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/mFragment_notice_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        ptr:ptrHeaderTextColor="#FFFFFF"
+        ptr:ptrDrawable="@mipmap/loading"
+        android:dividerHeight="@null"
+        android:divider="@null"
+        ptr:ptrScrollingWhileRefreshingEnabled="true"
+        >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</com.zhy.android.percent.support.PercentLinearLayout>

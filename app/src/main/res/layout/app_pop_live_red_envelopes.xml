@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint_live_red_envelop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.64"
+        app:layout_constraintDimensionRatio="0.6"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+        <View
+            android:background="@drawable/ic_live_red_envelopes_bg"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="1"
+            app:layout_constraintDimensionRatio="6:7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+
+        <View
+            android:id="@+id/view_live_red_envelopes_icon_bg"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintWidth_percent="0.24"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintVertical_bias="0.2"
+            android:background="@drawable/bg_round_circle_white"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+
+        <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+            android:id="@+id/civ_live_red_envelopes_icon"
+            app:layout_constraintLeft_toLeftOf="@id/view_live_red_envelopes_icon_bg"
+            app:layout_constraintRight_toRightOf="@id/view_live_red_envelopes_icon_bg"
+            app:layout_constraintTop_toTopOf="@id/view_live_red_envelopes_icon_bg"
+            app:layout_constraintWidth_percent="0.23"
+            app:layout_constraintDimensionRatio="1:1"
+            tools:src="@drawable/live_gift_btn_icon"
+            app:layout_constraintBottom_toBottomOf="@id/view_live_red_envelopes_icon_bg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_live_red_envelopes_name"
+            app:layout_constraintLeft_toLeftOf="@id/view_live_red_envelopes_icon_bg"
+            app:layout_constraintRight_toRightOf="@id/view_live_red_envelopes_icon_bg"
+            app:layout_constraintTop_toBottomOf="@id/view_live_red_envelopes_icon_bg"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            tools:text="虎纹鲨鱼 好大的鱼"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/iv_live_red_enveloped_get"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_live_red_envelopes_get"
+            app:layout_constraintWidth_percent="0.33"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintVertical_bias="0.7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+
+        <com.aiwujie.shengmo.view.roundview.RoundLinearLayout
+            android:id="@+id/ll_live_red_envelops_receive"
+            app:rRadius="10dp"
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:background="@drawable/bg_round_live_red_envelopes_bg"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.9"
+            app:layout_constraintDimensionRatio="2:3"
+            android:layout_height="0dp">
+
+            <TextView
+                android:background="@drawable/ic_send_red_envelopes_top_bg"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="查看大家手气"
+                android:paddingVertical="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                tools:text="总20个/1000豆，已领10个/522豆"
+                android:textSize="10dp"
+                android:textColor="#666"
+                android:paddingVertical="5dp"
+                android:id="@+id/tv_receive_info"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/smart_refresh_live_red_envelopes"
+                app:srlEnablePreviewInEditMode="false"
+                app:srlEnableLoadMore="false"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_live_red_envelopes"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        </com.aiwujie.shengmo.view.roundview.RoundLinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aiwujie.shengmo.customview.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="224dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <com.zhy.android.percent.support.PercentFrameLayout
+        android:id="@+id/mMy_banner_framlayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="100%w"
+        app:layout_heightPercent="30.67%w"
+        android:visibility="gone">
+
+        <com.youth.banner.Banner
+            android:id="@+id/mct_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:indicator_drawable_selected="@mipmap/bannerpointpurple"
+            app:indicator_drawable_unselected="@mipmap/bannerpointgray"
+            app:indicator_height="8dp"
+            app:indicator_width="8dp"
+            />
+
+        <ImageView
+            android:id="@+id/mMy_banner_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/chahao"/>
+    </com.zhy.android.percent.support.PercentFrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_liao"
+        android:layout_below="@id/mMy_banner_framlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_head_beijing"
+        android:layout_width="match_parent"
+        android:layout_height="74dp" />
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:padding="8dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/liaotianshi"
+        android:layout_marginLeft="6dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_aa"
+            android:layout_toRightOf="@id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="圣魔聊吧"
+                android:textSize="16sp"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/tv_chat_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#333333"/>
+
+        </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_jieshao"
+        android:layout_marginLeft="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_below="@id/ll_aa"
+        android:text="欢迎来到圣魔聊吧"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:textColor="#9D9E9D"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="4dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true" />
+
+
+    </RelativeLayout>
+</com.aiwujie.shengmo.customview.PercentLinearLayout>

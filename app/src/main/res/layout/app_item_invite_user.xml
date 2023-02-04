@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="10dp"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/tv_item_invite_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="3dp"
+        android:textColor="@color/titleBlack"
+        android:textSize="15dp"
+        tools:text="虎纹鲨鱼" />
+
+    <TextView
+        android:id="@+id/tv_item_invite_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="2dp"
+        android:textColor="@color/normalGray"
+        android:textSize="13dp"
+        tools:text="邀请时间：2022-01-06" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        app:layout_constraintRight_toRightOf="parent"
+        android:ellipsize="end"
+        android:layout_marginRight="@dimen/dp_10"
+        android:maxLines="2"
+        android:text="："
+        android:textColor="@color/colorGray4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_enter_time_str"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_height="wrap_content"
+        android:text="进入："
+        android:textColor="@color/colorGray4"
+        app:layout_constraintLeft_toLeftOf="@id/tv_address"
+        app:layout_constraintTop_toBottomOf="@id/tv_address"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_enter_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tv_enter_time_str"
+        app:layout_constraintLeft_toRightOf="@id/tv_enter_time_str"
+        app:layout_constraintTop_toTopOf="@id/tv_enter_time_str"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        android:text=":1111"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/tv_out_time_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="离开："
+        android:textColor="@color/colorGray4"
+        app:layout_constraintTop_toTopOf="@id/tv_enter_time_str"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintBottom_toBottomOf="@id/tv_enter_time_str"/>
+
+    <TextView
+        android:id="@+id/tv_out_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tv_out_time_str"
+        app:layout_constraintLeft_toRightOf="@id/tv_out_time_str"
+        app:layout_constraintTop_toTopOf="@id/tv_out_time_str"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text=":1112221"
+        android:textColor="@color/black" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+</android.support.constraint.ConstraintLayout>

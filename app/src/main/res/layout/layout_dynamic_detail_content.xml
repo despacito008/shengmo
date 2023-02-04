@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+    tools:ignore="SpUsage,ContentDescription,RtlHardcoded,HardcodedText,DisableBaselineAlignment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="@dimen/dynamic_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/app_layout_normal_user_info2"/>
+
+        <LinearLayout
+            android:paddingVertical="12dp"
+            android:orientation="vertical"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    tools:visibility="visible"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:id="@+id/iv_top"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/user_top"
+                    android:layout_width="12dp"
+                    android:layout_height="18dp"/>
+
+                <ImageView
+                    tools:visibility="visible"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:id="@+id/iv_recommend"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/user_recommend"
+                    android:layout_width="19dp"
+                    android:layout_height="20dp"/>
+
+
+
+                <ImageView
+                    tools:visibility="visible"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:id="@+id/iv_ding"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/ic_dynamic_top"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"/>
+
+                <ImageView
+                    tools:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:id="@+id/iv_lock"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/ic_dynamic_lock"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center|right"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:id="@+id/iv_item_dynamic_read_count"
+                    android:layout_marginHorizontal="3dp"
+                    android:src="@drawable/user_browse"
+                    android:scaleType="fitXY"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"/>
+
+                <TextView
+                    android:gravity="center"
+                    tools:text="2333"
+                    android:textSize="11dp"
+                    android:id="@+id/item_listview_dynamic_readcount"
+                    android:textColor="#ff7857"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/ll_item_dynamic_topic"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/bg_round_dynamic_topic"
+        android:paddingVertical="3dp"
+        android:paddingHorizontal="9dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:includeFontPadding="false"
+            android:textColor="@color/purple_main"
+            android:text="#"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_item_dynamic_topic"
+            android:layout_marginLeft="5dp"
+            tools:text="星座 and 占卜"
+            android:textSize="13dp"
+            android:textColor="@color/titleBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_dynamic_detail_content"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/titleBlack"
+        android:textSize="15dp"
+        android:paddingHorizontal="15dp"
+        android:paddingTop="15dp"
+        tools:text="#星座 占卜# 师傅说，在颠沛流离的大时代里，我们都是渺小而微不足道的人。"
+        android:textIsSelectable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:paddingHorizontal="15dp"
+        android:paddingTop="15dp"
+        android:id="@+id/fl_dynamic_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.aiwujie.shengmo.customview.NineGridViewWrapper
+            tools:background="#6cf"
+            android:id="@+id/iv_dynamic_detail_pic"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:minHeight="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.lzy.ninegrid.NineGridView
+            android:id="@+id/iv_nine_dynamic_detail_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/ic_video_play"
+            android:id="@+id/iv_dynamic_detail_video_play"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/iv_dynamic_detail_pic_round"
+            android:src="@drawable/ic_round_cover_nine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingHorizontal="15dp">
+        <TextView
+            android:id="@+id/tv_likeliar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="该用户为可疑用户"
+            android:textColor="@color/red"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            android:textSize="12sp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:visibility="gone"
+            android:src="@drawable/ic_no_distance"
+            android:textColor="@color/lightGray"
+            android:id="@+id/iv_dynamic_detail_distance"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            />
+
+        <TextView
+            android:visibility="visible"
+            tools:text="300km"
+            android:textColor="@color/lightGray"
+            android:id="@+id/tv_dynamic_detail_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="11dp"
+            />
+
+        <TextView
+            android:textSize="11dp"
+            tools:text="2分钟前"
+            android:textColor="@color/lightGray"
+            android:id="@+id/tv_dynamic_detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

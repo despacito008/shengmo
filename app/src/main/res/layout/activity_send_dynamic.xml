@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mSend_dynamic_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.aiwujie.shengmo.activity.SendDynamicActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/mSendDynamic_cancel"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="取消"
+                android:textColor="#4b4b4b"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="发布动态"
+                android:textColor="#333333"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/mSendDynamic_send"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="3dp"
+                android:gravity="center"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/bg_round_normal_button"
+                android:layout_gravity="center"
+                android:text="发布"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dddddd" />
+
+        <ScrollView
+            android:id="@+id/mSendDynamic_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="100dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="20dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/titleBlack"
+                            android:textStyle="bold"
+                            android:text="参与话题"
+                            android:textSize="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/lightGray"
+                            android:layout_marginLeft="10dp"
+                            android:text="(可选，正确分类将获得更多曝光)"
+                            android:textSize="12dp"/>
+
+                        <!--                  <TextView
+                                              android:id="@+id/mSendDynamic_newTopic"
+                                              android:layout_width="100dp"
+                                              android:layout_height="wrap_content"
+                                              android:layout_alignParentRight="true"
+                                              android:layout_centerVertical="true"
+                                              android:gravity="right"
+                                              android:paddingTop="10dp"
+                                              android:text="创建话题"
+                                              app:layout_textSizePercent="3.5%w"/>-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:id="@+id/mSendDynamic_topic_sort_00"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/item_topic_selector"
+                            android:gravity="center"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:paddingTop="2dp"
+                            android:text="推荐"
+                            android:textColor="#fff"
+                            app:layout_textSizePercent="3.7%w" />
+
+                        <TextView
+                            android:id="@+id/mSendDynamic_topic_sort_01"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/item_topic_selector"
+                            android:gravity="center"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:paddingTop="2dp"
+                            android:text="杂谈"
+                            android:textColor="#fff"
+                            app:layout_textSizePercent="3.7%w" />
+
+                        <TextView
+                            android:id="@+id/mSendDynamic_topic_sort_02"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/item_topic_selector"
+                            android:gravity="center"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:paddingTop="2dp"
+                            android:text="兴趣"
+                            android:textColor="#fff"
+                            app:layout_textSizePercent="3.7%w" />
+
+                        <TextView
+                            android:id="@+id/mSendDynamic_topic_sort_03"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/item_topic_selector"
+                            android:gravity="center"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:paddingTop="2dp"
+                            android:text="爆照"
+                            android:textColor="#fff"
+                            app:layout_textSizePercent="3.7%w" />
+
+                        <TextView
+                            android:id="@+id/mSendDynamic_topic_sort_04"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/item_topic_selector"
+                            android:gravity="center"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:paddingTop="2dp"
+                            android:text="交友"
+                            android:textColor="#fff"
+                            app:layout_textSizePercent="3.7%w" />
+
+                        <TextView
+                            android:id="@+id/mSendDynamic_topic_sort_05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/item_topic_selector"
+                            android:gravity="center"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:paddingTop="2dp"
+                            android:text="生活"
+                            android:textColor="#fff"
+                            app:layout_textSizePercent="3.7%w" />
+
+                        <TextView
+                            android:id="@+id/mSendDynamic_topic_sort_06"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/item_topic_selector"
+                            android:gravity="center"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:paddingTop="2dp"
+                            android:text="情感"
+                            android:textColor="#fff"
+                            app:layout_textSizePercent="3.7%w" />
+
+                        <TextView
+                            android:id="@+id/mSendDynamic_topic_sort_07"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/item_topic_selector"
+                            android:gravity="center"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:paddingTop="2dp"
+                            android:text="官方"
+                            android:textColor="#fff"
+                            app:layout_textSizePercent="3.7%w" />
+                    </LinearLayout>
+
+                    <com.aiwujie.shengmo.customview.WordWrapView
+                        android:id="@+id/mSendDynamic_wordwrapview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+                <View
+                    android:background="#e5e5e5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/mSendDynamic_ll_tvTopic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:background="@drawable/bg_round_d_topic"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#"
+                            android:textSize="13dp"
+                            android:textColor="@color/purple_main" />
+
+                        <TextView
+                            android:id="@+id/mSendDynamic_tvTopic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:textSize="13dp"
+                            tools:text="有全脸算我输"
+                            android:textColor="@color/purple_main"
+                            android:textCursorDrawable="@null" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="#"
+                            android:textColor="@color/purple_main" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/mSendDynamic_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:gravity="top"
+                    android:hint="分享我的圣魔生活……\n（请勿使用露骨的项目词汇、大尺度文字描述、有偿收费描述、多人夫妻描述等！十一年圣魔来之不易，需要同好们的共同呵护~）"
+                    android:lineSpacingExtra="3dp"
+                    android:lines="12"
+                    android:maxLength="10000"
+                    android:padding="12dp"
+                    android:paddingLeft="5dp"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/mSendDynamic_guifan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        app:layout_textSizePercent="3.5%w" />
+
+                    <TextView
+                        android:id="@+id/mSendDynamic_textcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:text="0/10000" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eeeeee" />
+
+                <LinearLayout
+                    android:id="@+id/mSendDynamic_at"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/aiteicon"
+                        app:layout_heightPercent="3.7%w"
+                        app:layout_widthPercent="3.7%w" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="8"
+                        android:text="提醒谁看"
+                        android:textColor="#666666"
+                        app:layout_textSizePercent="3.8%w" />
+
+                    <TextView
+                       tools:text="个人"
+                        android:id="@+id/mSendDynamic_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        app:layout_textSizePercent="3.5%w" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.3"
+                        android:src="@mipmap/rightjian" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#e5e5e5" />
+
+                <!--<com.zhy.android.percent.support.PercentLinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:background="#FFFFFF"-->
+                <!--android:orientation="horizontal"-->
+                <!--app:layout_heightPercent="11%w"-->
+                <!--&gt;-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="4"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="    是否推荐"-->
+                <!--android:textColor="#333333"-->
+                <!--app:layout_marginLeftPercent="4%"-->
+                <!--app:layout_textSizePercent="35%"/>-->
+
+                <!--<CheckBox-->
+                <!--android:id="@+id/mSendDynamic_recommend"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:background="@drawable/item_filter_button_bg"-->
+                <!--android:button="@null"-->
+                <!--android:gravity="center"-->
+                <!--app:layout_heightPercent="70%"-->
+                <!--app:layout_marginRightPercent="4%"-->
+                <!--app:layout_widthPercent="12%"-->
+                <!--/>-->
+                <!--</com.zhy.android.percent.support.PercentLinearLayout>-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="是否推荐"
+                        android:textColor="@color/titleBlack"
+                        app:layout_marginLeftPercent="4%"
+                        android:textSize="14dp"/>
+
+                    <CheckBox
+                        android:id="@+id/mSecret_gz"
+                        android:layout_width="50dp"
+                        android:layout_height="27dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/item_filter_button_bg"
+                        android:button="@null"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="请勿上传大尺度图片及调教照"
+                    android:textColor="@color/normalGray"
+                    android:textSize="14dp" />
+
+                <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+                    android:id="@+id/mSendDynamic_add_photos"
+                    style="@style/WrapWrap"
+                    android:layout_margin="10dp"
+                    app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+                    app:bga_snpl_deleteDrawableOverlapQuarter="false"
+                    app:bga_snpl_editable="true"
+                    app:bga_snpl_itemCornerRadius="0dp"
+                    app:bga_snpl_itemSpanCount="3"
+                    app:bga_snpl_itemWhiteSpacing="4dp"
+                    app:bga_snpl_itemWidth="0dp"
+                    app:bga_snpl_maxItemCount="9"
+                    app:bga_snpl_otherWhiteSpacing="0dp"
+                    app:bga_snpl_placeholderDrawable="@mipmap/bga_pp_ic_holder_dark"
+                    app:bga_snpl_plusDrawable="@mipmap/bga_pp_ic_plus"
+                    app:bga_snpl_plusEnable="true"
+                    app:bga_snpl_sortable="true" />
+
+                <RelativeLayout
+                    android:id="@+id/video_player_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp"
+                    android:visibility="gone"
+                    app:layout_widthPercent="36%"
+                   >
+
+                    <ImageView
+                        android:id="@+id/video_cover_img"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerInParent="true"
+                        app:layout_widthPercent="100%w"
+                        app:layout_heightPercent="132%w"
+                        android:scaleType="centerCrop" />
+                    <ImageView
+                        android:id="@+id/delete_img"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/bga_pp_ic_delete"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

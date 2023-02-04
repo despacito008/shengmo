@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.constraint.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/tv_complaint_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="封禁消息/"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="封禁消息"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/tv_complaint_type"
+            app:layout_constraintTop_toTopOf="@id/tv_complaint_type"
+            app:layout_constraintBottom_toBottomOf="@id/tv_complaint_type"/>
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginRight="@dimen/dp_20"
+            android:text="111111111"
+            app:layout_constraintBottom_toBottomOf="@id/tv_complaint_type"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_complaint_type" />
+
+        <TextView
+            android:id="@+id/tv_msg_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="sssss"
+            android:layout_marginTop="@dimen/dp_10"
+            app:layout_goneMarginBottom="@dimen/dp_10"
+            app:layout_constraintBottom_toTopOf="@id/rlv_img"
+            app:layout_constraintLeft_toLeftOf="@id/tv_complaint_type"
+            app:layout_constraintTop_toBottomOf="@id/tv_complaint_type" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlv_img"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_msg_content" />
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:id="@+id/tv_item_result"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
+        tools:text="处理结果"
+        android:textColor="@color/titleBlack"
+        android:layout_marginRight="20dp"
+        android:textSize="15dp"
+        android:letterSpacing="0.1"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

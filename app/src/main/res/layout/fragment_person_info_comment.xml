@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person_info_comment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context="com.aiwujie.shengmo.activity.PersonInfoCommentActivity">
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="13%w"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:id="@+id/mPersonInfoComment_return"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:src="@mipmap/return_back"
+            android:layout_marginLeft="12dip"
+            app:layout_heightPercent="50%"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/mPersonInfoComment_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#333333"
+            app:layout_textSizePercent="35%"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/mPersonInfoComment_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        tools:background="#6cf"
+        android:dividerHeight="0.5dp"
+        android:background="#FFFFFF"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        ptr:ptrHeaderTextColor="#FFFFFF"
+        ptr:ptrDrawable="@mipmap/loading"
+        ptr:ptrScrollingWhileRefreshingEnabled="true" />
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</LinearLayout>

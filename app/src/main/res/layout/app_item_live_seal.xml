@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingVertical="3dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="15dp"
+            android:textColor="@color/titleBlack"
+            android:text="类型："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_item_live_seal_info"
+            android:textSize="15dp"
+            android:textColor="@color/titleBlack"
+            android:text="警告主播"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+    android:paddingVertical="3dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="15dp"
+        android:textColor="@color/titleBlack"
+        android:text="原因："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_item_live_seal_reason"
+        android:textSize="15dp"
+        android:textColor="@color/titleBlack"
+        android:text="请勿穿着暴露"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:paddingVertical="3dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="13dp"
+            android:textColor="@color/normalGray"
+            android:text="操作人："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_item_live_seal_people"
+            android:textSize="13dp"
+            android:textColor="@color/normalGray"
+            android:text="客服小姐姐"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_item_live_seal_time"
+            android:layout_marginLeft="20dp"
+            android:textSize="13dp"
+            android:textColor="@color/normalGray"
+            android:text="2021-11-30 19:20:15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mRegist_one_page_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.aiwujie.shengmo.activity.RegistOnePageActivity">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        app:layout_heightPercent="13%w">
+
+        <ImageView
+            android:id="@+id/mRgist_one_page_return"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:gravity="center_vertical"
+            android:src="@mipmap/return_back"
+            android:text="@string/regist"
+            android:textColor="#4b4b4b"
+            app:layout_heightPercent="50%" />
+
+        <TextView
+            android:id="@+id/item_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/regist"
+            android:textColor="#666666"
+            app:layout_textSizePercent="35%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                app:layout_heightPercent="24%w"
+                app:layout_marginBottomPercent="1%"
+                app:layout_marginTopPercent="2%"
+                app:layout_widthPercent="24%w">
+
+                <ImageView
+                    android:id="@+id/mRgist_one_page_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/morentouxiang" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/paizise"
+                    app:layout_heightPercent="25%w"
+                    app:layout_widthPercent="25%w" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="建议上传个人照片，可提高交友成功率"
+                android:textColor="#B7B7B7"
+                app:layout_marginBottomPercent="1.8%"
+                app:layout_textSizePercent="1.8%" />
+
+            <EditText
+                android:id="@+id/mRgist_one_page_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/item_login_et_username2"
+                android:hint="请输入1-10字符昵称"
+                android:maxLength="10"
+                android:paddingLeft="10dip"
+                android:textColor="#333333"
+                android:textColorHint="#B7B7B7"
+                android:textCursorDrawable="@null"
+                app:layout_heightPercent="6%"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="8%"
+                app:layout_textSizePercent="2.6%" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="昵称请勿使用露骨/有偿/多人等违规词汇"
+                android:textColor="#B7B7B7"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="8%"
+                app:layout_marginTopPercent="1%"
+                app:layout_textSizePercent="1.8%" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dddddd"
+                android:visibility="invisible"
+                app:layout_marginBottomPercent="0.5%"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_heightPercent="7%"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="8%">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="性别"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:text="(注册后不可修改)"
+                        android:textColor="#B7B7B7"
+                        app:layout_textSizePercent="26%" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/mRegist_one_page_rgSex"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/mRgist_one_page_nan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="4dip"
+                        android:text="男"
+                        android:textColor="@drawable/item_text_selector" />
+
+                    <RadioButton
+                        android:id="@+id/mRgist_one_page_nv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="4dip"
+                        android:text="女"
+                        android:textColor="@drawable/item_text_selector" />
+
+                    <RadioButton
+                        android:id="@+id/mRgist_one_page_yi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="4dip"
+                        android:text="CDTS"
+                        android:textColor="@drawable/item_text_selector" />
+                </RadioGroup>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dddddd"
+                android:visibility="invisible"
+                app:layout_marginBottomPercent="0.5%"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="0.5%" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_heightPercent="7%"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="8%">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="性取向"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center_vertical"
+                        android:text="(可多选)"
+                        android:textColor="#B7B7B7"
+                        app:layout_textSizePercent="26%" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <!--<RadioGroup-->
+                <!--android:id="@+id/mRegist_one_page_rgQuxiang"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_weight="6"-->
+                <!--android:gravity="center">-->
+                <!--<RadioButton-->
+                <!--android:id="@+id/mRgist_one_page_yixing"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:button="@null"-->
+                <!--android:background="@drawable/item_rb_selector"-->
+                <!--android:textColor="@drawable/item_text_selector"-->
+                <!--android:text="男"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="5dip"-->
+                <!--/>-->
+                <!--<RadioButton-->
+                <!--android:id="@+id/mRgist_one_page_tongxing"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:button="@null"-->
+                <!--android:background="@drawable/item_rb_selector"-->
+                <!--android:textColor="@drawable/item_text_selector"-->
+                <!--android:text="女"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="5dip"-->
+                <!--/>-->
+                <!--<RadioButton-->
+                <!--android:id="@+id/mRgist_one_page_shuangxing"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:button="@null"-->
+                <!--android:background="@drawable/item_rb_selector"-->
+                <!--android:textColor="@drawable/item_text_selector"-->
+                <!--android:text="双"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="5dip"-->
+                <!--/>-->
+                <!--</RadioGroup>-->
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/mRgist_one_page_yixing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="4dip"
+                        android:text="男"
+                        android:textColor="@drawable/item_text_selector" />
+
+                    <CheckBox
+                        android:id="@+id/mRgist_one_page_tongxing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="4dip"
+                        android:text="女"
+                        android:textColor="@drawable/item_text_selector" />
+
+                    <CheckBox
+                        android:id="@+id/mRgist_one_page_shuangxing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="4dip"
+                        android:text="CDTS"
+                        android:textColor="@drawable/item_text_selector" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统会智能展示符合您性取向的人和动态"
+                android:textColor="#B7B7B7"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="8%"
+                app:layout_textSizePercent="1.8%" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dddddd"
+                android:visibility="invisible"
+                app:layout_marginBottomPercent="0.5%"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="0.5%" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_heightPercent="7%"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="8%">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="出生日期"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <TextView
+                    android:id="@+id/mRegist_one_page_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/rightjian" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dddddd"
+                android:visibility="invisible"
+                app:layout_marginBottomPercent="0.5%"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="0.5%" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_heightPercent="7%"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="8%">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="身高体重"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <TextView
+                    android:id="@+id/mRegist_one_page_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/rightjian" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#dddddd"-->
+            <!--app:layout_marginTopPercent="0.5%"-->
+            <!--app:layout_marginBottomPercent="0.5%"-->
+            <!--app:layout_marginLeftPercent="4%"-->
+            <!--app:layout_marginRightPercent="4%"-->
+            <!--/>-->
+            <!--<com.zhy.android.percent.support.PercentLinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--app:layout_heightPercent="7%"-->
+            <!--android:orientation="horizontal"-->
+            <!--app:layout_marginLeftPercent="4%"-->
+            <!--app:layout_marginRightPercent="4%"-->
+            <!--&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="4"-->
+            <!--android:text="体重"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textColor="#333333"-->
+            <!--android:gravity="center_vertical"/>-->
+            <!--<TextView-->
+            <!--android:id="@+id/mRegist_one_page_weight"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="60kg"-->
+            <!--android:layout_weight="6"-->
+            <!--android:gravity="center_vertical|right"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:textSize="15sp"/>-->
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@mipmap/rightjian"/>-->
+            <!--</com.zhy.android.percent.support.PercentLinearLayout>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dddddd"
+                android:visibility="invisible"
+                app:layout_marginBottomPercent="0.5%"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="0.5%" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="8%">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="角色"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.aiwujie.shengmo.view.LineWrapRadioGroup
+                    android:id="@+id/mRegist_one_page_rgJue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/mRgist_one_page_s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="4dip"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="4dp"
+                        android:text="斯"
+                        android:textColor="@drawable/item_text_selector" />
+
+                    <RadioButton
+                        android:id="@+id/mRgist_one_page_m"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="4dip"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="4dp"
+                        android:text="慕"
+                        android:textColor="@drawable/item_text_selector" />
+
+                    <RadioButton
+                        android:id="@+id/mRgist_one_page_sm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="4dip"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="4dp"
+                        android:text="双"
+                        android:textColor="@drawable/item_text_selector" />
+
+                    <RadioButton
+                        android:id="@+id/mRgist_one_page_lang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="4dip"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="4dp"
+                        android:text="~"
+                        android:textColor="@drawable/item_text_selector" />
+
+                    <RadioButton
+                        android:id="@+id/mRgist_one_page_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="4dp"
+                        android:text="非斯慕同好"
+                        android:textColor="@drawable/item_text_selector" />
+                </com.aiwujie.shengmo.view.LineWrapRadioGroup>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dddddd"
+                android:visibility="invisible"
+                app:layout_marginBottomPercent="0.5%"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="0.5%" />
+
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/gay_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_heightPercent="7%"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="8%">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="属性"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/mRegist_one_page_gay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/mRgist_one_page_gong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="4dip"
+                        android:text="1"
+                        android:textColor="@drawable/item_text_selector" />
+
+                    <RadioButton
+                        android:id="@+id/mRgist_one_page_shou"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="4dip"
+                        android:text="0"
+                        android:textColor="@drawable/item_text_selector" />
+
+                    <RadioButton
+                        android:id="@+id/mRgist_one_page_ban"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="4dip"
+                        android:text="0.5"
+                        android:textColor="@drawable/item_text_selector" />
+
+                    <RadioButton
+                        android:id="@+id/mRgist_one_page_gay_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="4dip"
+                        android:text="~"
+                        android:textColor="@drawable/item_text_selector" />
+                </RadioGroup>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dddddd"
+                android:visibility="invisible"
+                app:layout_marginBottomPercent="0.5%"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="0.5%" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/les_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_heightPercent="7%"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="8%">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="属性"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/mRegist_one_page_les"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/mRgist_one_page_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="4dip"
+                        android:text="T"
+                        android:textColor="@drawable/item_text_selector" />
+
+                    <RadioButton
+                        android:id="@+id/mRgist_one_page_p"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="4dip"
+                        android:text="P"
+                        android:textColor="@drawable/item_text_selector" />
+
+                    <RadioButton
+                        android:id="@+id/mRgist_one_page_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="4dip"
+                        android:text="H"
+                        android:textColor="@drawable/item_text_selector" />
+
+                    <RadioButton
+                        android:id="@+id/mRgist_one_page_les_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_rb_selector2"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="4dip"
+                        android:text="~"
+                        android:textColor="@drawable/item_text_selector" />
+                </RadioGroup>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <EditText
+                android:id="@+id/mRegist_invite_code"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dip"
+                android:background="@color/transparent"
+                android:digits="@string/filter_vcode"
+                android:hint="如您有邀请码可点击输入（可选）"
+                android:inputType="text"
+                android:maxLength="16"
+                android:paddingLeft="10dip"
+                android:textColor="#333333"
+                android:textColorHint="#B7B7B7"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="8%" />
+
+            <Button
+                android:id="@+id/mRgist_one_page_next"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="12dip"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/item_login_btn2"
+                android:text="下一步"
+                android:textColor="#FFFFFF"
+                app:layout_heightPercent="8%"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="8%"
+                app:layout_textSizePercent="3%" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </ScrollView>
+</com.zhy.android.percent.support.PercentLinearLayout>

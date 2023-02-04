@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <com.tencent.qcloud.tim.uikit.modules.chat.ChatLayout
+        android:id="@+id/chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/ll_message_unread_tip"
+        android:background="@drawable/shape_message_unread_tip"
+        android:layout_gravity="right"
+        android:layout_marginTop="180dp"
+        android:gravity="center"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:tint="@color/purpleColor"
+            android:rotation="270"
+            android:src="@drawable/arrow_right"
+            android:layout_width="12dp"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:textSize="12dp"
+            android:id="@+id/tv_chat_unread"
+            android:textColor="@color/purpleColor"
+            tools:text="5条新消息"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

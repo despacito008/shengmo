@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        layout="@layout/layout_user_avatar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/layout_user_avatar"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.2" />
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/layout_user_avatar"
+        app:layout_constraintLeft_toRightOf="@id/layout_user_avatar"
+        tools:text="风云别恋"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/titleBlack"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_item_live_online_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <include
+        app:layout_constraintTop_toBottomOf="@id/tv_item_live_online_user"
+        layout="@layout/layout_user_normal_info"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/tv_item_live_online_user_city"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_live_online_user"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        tools:text="北京市"
+        android:textSize="16dp"
+        android:textColor="@color/normalGray"
+        android:id="@+id/tv_item_live_online_user_city"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_live_online_user"
+        app:layout_constraintBottom_toBottomOf="@id/layout_user_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tv_item_live_online_user_remove"
+        app:layout_constraintTop_toTopOf="@id/layout_user_avatar"
+        app:layout_constraintBottom_toBottomOf="@id/layout_user_avatar"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_border_invite_code"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:includeFontPadding="false"
+        android:textSize="13dp"
+        android:text="解除场控"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>

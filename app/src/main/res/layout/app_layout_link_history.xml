@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingVertical="10dp"
+    android:layout_width="match_parent"
+    android:minWidth="400dp"
+    android:background="#f6f6f6"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:text="连线次数"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/tv_link_times"
+            android:gravity="center"
+            tools:text="20"
+            android:textColor="@color/titleBlack"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:text="连线时长"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/tv_link_length"
+            android:gravity="center"
+            tools:text="150分"
+            android:textColor="@color/titleBlack"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:text="连线收入"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/tv_link_beans"
+            android:gravity="center"
+            tools:text="12780"
+            android:textColor="@color/titleBlack"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingVertical="10dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_item_receive_red_envelopes_name"
+        android:textColor="#5c4738"
+        android:text="芳草青青"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:src="@drawable/ic_ticket_bean"
+        android:layout_width="13dp"
+        android:layout_height="13dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_receive_red_envelopes_bean"
+        android:text="3"
+        android:textSize="14dp"
+        android:textColor="#5c4738"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

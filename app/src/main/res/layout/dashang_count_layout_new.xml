@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <View
+        android:alpha="0.9"
+        android:id="@+id/view_layout_gift_bg"
+        app:layout_constraintDimensionRatio="268:362"
+        app:layout_constraintWidth_percent="0.85"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/bg_vip_center_item_choose"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="@id/view_layout_gift_bg"
+        app:layout_constraintRight_toRightOf="@id/view_layout_gift_bg"
+        android:id="@+id/dashang_count_cancel"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:padding="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_normal_close"
+        android:textColor="#FFFFFF"
+        />
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="@id/view_layout_gift_bg"
+        app:layout_constraintBottom_toBottomOf="@id/view_layout_gift_bg"
+        app:layout_constraintLeft_toLeftOf="@id/view_layout_gift_bg"
+        app:layout_constraintRight_toRightOf="@id/view_layout_gift_bg"
+        app:layout_constraintVertical_bias="0.1"
+        android:id="@+id/dashang_count_iv"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@mipmap/presentnew02" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="@id/dashang_count_iv"
+        app:layout_constraintRight_toRightOf="@id/dashang_count_iv"
+        app:layout_constraintTop_toBottomOf="@id/dashang_count_iv"
+        android:id="@+id/dashang_count_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="零食大礼包"
+        android:textSize="14dp"
+        android:textColor="@color/titleBlack" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="@id/dashang_count_name"
+        app:layout_constraintRight_toRightOf="@id/dashang_count_name"
+        app:layout_constraintTop_toBottomOf="@id/dashang_count_name"
+        android:id="@+id/dashang_count_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="2魔豆"
+        android:textSize="12dp"
+        android:textColor="@color/lightGray" />
+
+
+    <View
+        android:id="@+id/view_layout_gift_num_bg"
+        android:background="@drawable/bg_vip_center_item_normal"
+        app:layout_constraintTop_toTopOf="@id/view_layout_gift_bg"
+        app:layout_constraintBottom_toBottomOf="@id/view_layout_gift_bg"
+        app:layout_constraintLeft_toLeftOf="@id/view_layout_gift_bg"
+        app:layout_constraintRight_toRightOf="@id/view_layout_gift_bg"
+        app:layout_constraintWidth_percent="0.7"
+        app:layout_constraintDimensionRatio="215:35"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/view_layout_gift_num_bg"
+        app:layout_constraintBottom_toBottomOf="@id/view_layout_gift_num_bg"
+        app:layout_constraintLeft_toLeftOf="@id/view_layout_gift_num_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="赠送数量"
+        android:textColor="@color/titleBlack"
+        android:textSize="14dp"
+        />
+
+    <EditText
+        app:layout_constraintTop_toTopOf="@id/view_layout_gift_num_bg"
+        app:layout_constraintBottom_toBottomOf="@id/view_layout_gift_num_bg"
+        app:layout_constraintRight_toRightOf="@id/view_layout_gift_num_bg"
+        android:id="@+id/dashang_count_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:text="1"
+        android:paddingHorizontal="10dp"
+        android:maxLength="5"
+        android:textSize="14dp"
+        android:layout_marginRight="10dp"
+        android:textCursorDrawable="@null"
+        android:inputType="number"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        app:layout_constraintLeft_toLeftOf="@id/view_layout_gift_num_bg"
+        app:layout_constraintTop_toBottomOf="@id/view_layout_gift_num_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/titleBlack"
+        android:text="总价值"
+        android:layout_gravity="center"
+        android:textSize="14dp"
+        android:layout_marginTop="15dp"/>
+
+
+    <TextView
+        android:id="@+id/dashang_count_allMoney"
+        app:layout_constraintRight_toRightOf="@id/view_layout_gift_num_bg"
+        app:layout_constraintTop_toBottomOf="@id/view_layout_gift_num_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffab3a"
+        tools:text="2 魔豆"
+        android:layout_gravity="center"
+        android:textSize="14dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"/>
+    <LinearLayout
+        app:layout_constraintLeft_toLeftOf="@id/view_layout_gift_num_bg"
+        app:layout_constraintRight_toRightOf="@id/view_layout_gift_num_bg"
+        app:layout_constraintTop_toBottomOf="@id/dashang_count_allMoney"
+        android:id="@+id/duoxuanya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/dashang_count_gonggao"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/yuandiantaohui"
+            />
+        <TextView
+            android:includeFontPadding="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightGray"
+            android:text="总价值500魔豆及以上可选是否上大喇叭"
+            android:layout_gravity="center_vertical"
+            android:textSize="11dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/duoxuanya"
+        app:layout_constraintBottom_toBottomOf="@id/view_layout_gift_bg"
+        app:layout_constraintLeft_toLeftOf="@id/view_layout_gift_bg"
+        app:layout_constraintRight_toRightOf="@id/view_layout_gift_bg"
+        android:id="@+id/dashang_count_zeng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认赠送"
+        android:gravity="center"
+        android:background="@drawable/bg_user_info_sex_cdts"
+        android:textColor="#FFFFFF"
+        android:paddingVertical="9dp"
+        android:paddingHorizontal="50dp"
+        android:textSize="14dp" />
+
+</android.support.constraint.ConstraintLayout>

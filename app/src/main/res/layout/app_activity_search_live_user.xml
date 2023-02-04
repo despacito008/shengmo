@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_normal_titlebar"/>
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+
+        <LinearLayout
+            android:id="@+id/ll_normal_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_group_search"
+            android:gravity="center_vertical"
+            android:minHeight="33dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_normal_search" />
+
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="搜索用户"
+                android:background="@null"
+                android:textColor="@color/lightGray"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginHorizontal="6dp"
+                android:background="@drawable/bg_round_little_purple"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@color/purpleColor"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_explain"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_question"
+            android:visibility="gone"
+            android:padding="7dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_near_rule"
+            android:gravity="center"
+            android:paddingVertical="3dp"
+            android:paddingHorizontal="15dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/normalGray"
+            android:text="@string/cancel"
+            android:lineSpacingMultiplier="0.8"
+            android:textSize="14dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart_refresh_search_live_user"
+        app:srlEnablePreviewInEditMode="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_search_live_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

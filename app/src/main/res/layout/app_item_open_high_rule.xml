@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/ll_rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_open_high_bg"
+        android:gravity="center"
+        android:padding="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_item_vip_center_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|bottom"
+                android:gravity="center_vertical|bottom"
+                android:text="3800"
+                android:textColor="@drawable/selector_open_high_text"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/tv_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical|bottom"
+                android:layout_marginLeft="5dp"
+                android:text="元/2年"
+                android:textColor="@drawable/selector_open_high_text"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_item_vip_center_original_price"
+            tools:text="原价：50元"
+            android:textSize="12dp"
+            android:textColor="#adadad"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_item_vip_center_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_vip_center_discount"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="7dp"
+        android:paddingVertical="5dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="5dp"
+        android:textSize="10sp"
+        app:layout_constraintTop_toTopOf="@+id/ll_rootView"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text=""
+        android:visibility="gone"
+        tools:visibility="visible"/>
+</android.support.constraint.ConstraintLayout>

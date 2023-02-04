@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/live_hot_swipe_refresh_layout_list"
+    app:srlEnablePreviewInEditMode="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <ScrollView
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:paddingVertical="10dp"
+                            android:id="@+id/cl_live_header"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                                <FrameLayout
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_marginBottom="20dp"
+                                    android:visibility="gone"
+                                    tools:visibility="visible"
+                                    android:id="@+id/mMy_banner_framlayout"
+                                    app:layout_constraintHorizontal_weight="1"
+                                    app:layout_constraintDimensionRatio="750:172"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp">
+
+                                        <com.youth.banner.Banner
+                                            android:id="@+id/mMy_banner"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            app:indicator_drawable_selected="@mipmap/bannerpointpurple"
+                                            app:indicator_drawable_unselected="@mipmap/bannerpointgray"
+                                            app:indicator_height="8dp"
+                                            app:indicator_width="8dp" />
+
+                                        <ImageView
+                                            android:id="@+id/mMy_banner_close"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="right"
+                                            android:layout_marginRight="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:src="@mipmap/chahao" />
+                                </FrameLayout>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:layout_marginTop="5dp"
+                                    android:id="@+id/rv_live_partition"
+                                    app:layout_constraintTop_toBottomOf="@id/mMy_banner_framlayout"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                        </android.support.constraint.ConstraintLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_red_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/live_hot_red_list"
+                            android:textSize="17dp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:drawableRight="@mipmap/home_red_hot"
+                            tools:visibility="visible"
+                            android:visibility="gone"/>
+
+                        <fragment
+                            tools:layout="@layout/app_fragment_live_room"
+                            android:layout_marginHorizontal="10dp"
+                            android:id="@+id/top_fragment"
+                            android:name="com.aiwujie.shengmo.timlive.frag.LiveRoomFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_hot_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/live_hot_list"
+                            android:textSize="17dp"
+                            tools:visibility="visible"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:visibility="gone"/>
+
+                        <fragment
+                            tools:layout="@layout/app_fragment_live_room"
+                            android:id="@+id/bottom_fragment"
+                            android:layout_marginHorizontal="10dp"
+                            android:name="com.aiwujie.shengmo.timlive.frag.LiveRoomFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <include layout="@layout/layout_live_no_data" android:visibility="gone"/>
+                </LinearLayout>
+    </ScrollView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

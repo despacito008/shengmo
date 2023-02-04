@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/item_click_bg_selector">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="25px"
+        >
+        <ImageView
+            android:layout_width="10px"
+            android:layout_height="10px"
+            android:src="@mipmap/yuandian"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15px"/>
+        <TextView
+            android:id="@+id/item_gridview_two_common_wealth_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#666666"
+            android:maxLines="2"
+            android:textSize="32px"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

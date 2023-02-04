@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="#5000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <FrameLayout
+        android:background="@drawable/bg_round_white"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.733"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/titleBlack"
+            android:text="连线"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <ImageView
+            android:id="@+id/iv_pop_link_user_close"
+            android:layout_gravity="top|right"
+            android:tint="@color/normalGray"
+            android:src="@drawable/ic_live_audiences_close"
+            android:padding="16dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_pop_link_user_audio"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_user_link_audio"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"/>
+
+                <TextView
+                    android:textSize="14dp"
+                    android:text="语音聊天"
+                    android:textColor="@color/titleBlack"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_link_type_audio_price"
+                    android:textSize="12dp"
+                    android:text="---魔豆/分钟"
+                    android:textColor="@color/normalGray"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingVertical="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_link_user_video"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_user_link_video"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"/>
+
+                <TextView
+                    android:textSize="14dp"
+                    android:text="视频聊天"
+                    android:textColor="@color/titleBlack"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_link_type_video_price"
+                    android:textSize="12dp"
+                    android:text="---魔豆/分钟"
+                    android:textColor="@color/normalGray"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingVertical="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="50dp"
+            android:background="@color/line_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_pop_link_user_balance"
+                android:gravity="center"
+                tools:text="剩余魔豆:1000"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/normalGray"
+                android:textSize="13dp"
+                android:layout_height="match_parent"/>
+
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_pop_link_user_recharge"
+                    android:gravity="center"
+                    android:text="去充值"
+                    android:textSize="13dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_round_purple_home"
+                    android:layout_gravity="center"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="20dp"
+                    android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

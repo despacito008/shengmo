@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingVertical="10dp"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/bg_round_topic_top"
+        android:paddingVertical="3dp"
+        android:paddingHorizontal="7dp"
+        android:includeFontPadding="false"
+        android:text="置顶"
+        android:textColor="#15e2d8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_item_topic_push_top"
+        tools:text="师傅说在颠沛流离的时代里我们都很渺小的存在"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/titleBlack"
+        android:textSize="14dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginRight="20dp"
+        android:src="@drawable/arrow_right"
+        android:layout_width="12dp"
+        android:layout_height="12dp"/>
+
+</LinearLayout>

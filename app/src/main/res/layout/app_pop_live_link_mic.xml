@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="#e000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:background="@drawable/bg_live_room_click_anchor"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/tv_live_online_user"
+            android:text="连麦用户"
+            android:textColor="@color/titleBlack"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:paddingVertical="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smart_refresh_live_online_user"
+            app:srlEnablePreviewInEditMode="false"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_live_online_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <LinearLayout
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/tv_pop_live_link_link"
+                android:layout_weight="1"
+                android:background="@drawable/bg_round_purple_home"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:text="申请连麦"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/tv_pop_live_link_camera"
+                android:layout_weight="1"
+                android:background="@drawable/bg_round_purple_home"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:text="关闭摄像头"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

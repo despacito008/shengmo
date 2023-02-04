@@ -1,0 +1,1691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A6A9B5"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/mPersonInfo_top_guanlibeizhu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ffffff"
+            app:layout_textSizePercent="3.8%w" />
+
+        <com.aiwujie.shengmo.view.FitGridView
+            android:id="@+id/my_gridlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:horizontalSpacing="5dp"
+            android:numColumns="5"
+            android:visibility="gone"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp"/>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_xiangxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#f5f5f5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_xiangxi1"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:text="详细描述（仅自己可见）"
+                app:layout_textSizePercent="3.5%w" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/rightjian"/>
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/xiangxi_beizhu"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lineSpacingExtra="4dp"
+        android:textColor="#666666"
+        app:layout_textSizePercent="3.7%w" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_fenzu"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ddd"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:text="分组"/>
+
+            <TextView
+                android:id="@+id/tv_fenzu"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:textColor="#333333"
+                android:text=""/>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/rightjian"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/mPersonInfo_top_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FF3434"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:visibility="gone"
+        app:layout_heightPercent="7%w"
+        app:layout_textSizePercent="3.3%w" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="38%">
+
+        <ImageView
+            android:id="@+id/mPersonInfo_ivBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ddffffff"
+            android:scaleType="centerCrop" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="11dp"
+            app:layout_marginTopPercent="10%">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_marginLeftPercent="10%h"
+                app:layout_widthPercent="45%h">
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="45%h">
+
+                    <ImageView
+                        android:id="@+id/mPersonInfo_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/morentouxiang" />
+
+                    <ImageView
+                        android:id="@+id/mPersonInfo_vip"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:alpha="0"
+                        app:layout_heightPercent="25%h"
+                        app:layout_widthPercent="25%h" />
+
+                    <ImageView
+                        android:id="@+id/mPersonInfo_hongniang"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:src="@mipmap/qian"
+                        android:visibility="invisible"
+                        app:layout_heightPercent="30%h"
+                        app:layout_widthPercent="30%h" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <TextView
+                    android:id="@+id/mPersonInfo_donate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:alpha="0"
+                    android:background="@drawable/item_vip_bg_zi"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="1dp"
+                    android:shadowColor="@color/purple_main"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    android:text="赠送会员"
+                    android:textColor="@color/purple_main"
+                    android:textStyle="italic"
+                    app:layout_marginTopPercent="9%"
+                    android:textSize="15sp"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/mPersonInfo_see_realnamePhoto"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:alpha="0"
+                    android:background="@mipmap/renzhengkuang"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="认证照未公开"
+                    android:textColor="@color/purple_main"
+                    android:textStyle="bold"
+                    app:layout_heightPercent="50%w"
+                    app:layout_marginTopPercent="7%"
+                    android:textSize="15sp"
+                    app:layout_widthPercent="70%w"></TextView>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_marginLeftPercent="5%">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mPersonInfo_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:alpha="0"
+                        android:shadowColor="#FF000000"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="3"
+                        android:singleLine="true"
+                        android:textColor="#333333"
+                        app:layout_textSizePercent="47%" />
+
+                    <ImageView
+                        android:id="@+id/mPersonInfo_renzheng"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:alpha="0"
+                        android:padding="2dp"
+                        app:layout_heightPercent="50%h"
+                        app:layout_widthPercent="62%h" />
+
+                    <ImageView
+                        android:id="@+id/mPersonInfo_sfzrenzheng"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:padding="2dp"
+                        android:src="@mipmap/sfzrz_lan"
+                        app:layout_heightPercent="50%h"
+                        app:layout_widthPercent="62%h" />
+
+                    <ImageView
+                        android:id="@+id/mPersonInfo_online"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:alpha="0"
+                        android:src="@mipmap/lvdian"
+                        android:visibility="invisible"
+                        app:layout_heightPercent="20%h"
+                        app:layout_widthPercent="20%h" />
+
+                    <ImageView
+                        android:id="@+id/ck_ls"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:padding="2dp"
+                        app:layout_heightPercent="54%h"
+                        android:layout_marginLeft="5dp"
+                        app:layout_widthPercent="54%h"
+                        android:src="@mipmap/lishi"/>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+                <!--1111111111111111111111111111111111-->
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/layout_beizhu"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mPersonInfo_beizhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:singleLine="true"
+                        android:layout_marginBottom="9dp"
+                        app:layout_textSizePercent="40%"
+                        android:text="（我是备注）"/>
+
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+                <!--1111111111111111111111111111111111-->
+
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mPersonInfo_Sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="4dp"
+                        android:alpha="0"
+                        android:background="@drawable/item_sex_nan_bg"
+                        android:drawableLeft="@mipmap/san"
+                        android:drawablePadding="4dp"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="2dp"
+                        android:textColor="#FFFFFF"
+                        app:layout_textSizePercent="27%" />
+
+                    <TextView
+                        android:id="@+id/mPersonInfo_role"
+                        android:layout_width="24dp"
+                        android:layout_height="0dp"
+                        app:layout_heightPercent="47%h"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="4dp"
+                        android:alpha="0"
+                        android:background="@drawable/item_sex_nv_bg"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="2dp"
+                        android:text="M"
+                        android:textColor="#FFFFFF"
+                        app:layout_textSizePercent="27%" />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/mPersonInfo_ll_richCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:alpha="0"
+                        android:background="@drawable/item_caifuzhi_bg"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="47%h">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/caifuzhi"
+                            app:layout_widthPercent="100%h" />
+
+                        <TextView
+                            android:id="@+id/mPersonInfo_richCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:textColor="#febf3b"
+                            app:layout_textSizePercent="56%h" />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/mPersonInfo_ll_beautyCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:alpha="0"
+                        android:background="@drawable/item_meilizhi_bg"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="47%h">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/meilizhi"
+                            app:layout_widthPercent="100%h" />
+
+                        <TextView
+                            android:id="@+id/mPersonInfo_beautyCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:textColor="#f56684"
+                            app:layout_textSizePercent="56%h" />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/mPersonInfo_yuyin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:alpha="0"
+                        android:src="@mipmap/yuyintiao" />
+
+                    <TextView
+                        android:id="@+id/mPersonInfo_mediaTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:alpha="0"
+                        android:textColor="@color/purple_main"
+                        app:layout_textSizePercent="4%w" />
+
+                    <ImageView
+                        android:id="@+id/mPersonInfo_mediaIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="gone"
+                        app:layout_heightPercent="40%h" />
+
+                    <ImageView
+                        android:id="@+id/mPersonInfo_luyin"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:alpha="0"
+                        android:src="@mipmap/luyin"
+                        android:visibility="gone"
+                        app:layout_heightPercent="50%h"
+                        app:layout_widthPercent="100%h" />
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mPersonInfo_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="3dp"
+                        android:alpha="0"
+                        android:background="@drawable/item_personmsg_tv_bg2"
+                        android:drawableLeft="@mipmap/shijian"
+                        android:drawablePadding="4dp"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="2dp"
+                        android:textColor="#FFFFFF"
+                        app:layout_heightPercent="50%h"
+                        app:layout_textSizePercent="27%" />
+
+                    <TextView
+                        android:id="@+id/mPersonInfo_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:alpha="0"
+                        android:background="@drawable/item_personmsg_tv_bg2"
+                        android:drawableLeft="@mipmap/weizhi"
+                        android:drawablePadding="4dp"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="2dp"
+                        android:text="0.00km"
+                        android:textColor="#FFFFFF"
+                        app:layout_heightPercent="50%h"
+                        app:layout_textSizePercent="27%" />
+
+                    <TextView
+                        android:id="@+id/mPersonInfo_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:alpha="0"
+                        android:background="@drawable/item_personmsg_tv_bg2"
+                        android:drawableLeft="@mipmap/chengshi"
+                        android:drawablePadding="4dp"
+                        android:gravity="center_vertical"
+                        android:maxEms="11"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="2dp"
+                        android:singleLine="true"
+                        android:textColor="#FFFFFF"
+                        app:layout_heightPercent="50%h"
+                        app:layout_textSizePercent="27%" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <!--<TextView-->
+                    <!--android:id="@+id/mPersonInfo_alpha01"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:text="今日访问  "-->
+                    <!--android:shadowColor="#efefef"-->
+                    <!--android:shadowDx="1"-->
+                    <!--android:shadowDy="1"-->
+                    <!--android:shadowRadius="2"-->
+                    <!--android:alpha="0"-->
+                    <!--app:layout_textSizePercent="3.9%w"/>-->
+                    <!--<TextView-->
+                    <!--android:id="@+id/mPersonInfo_dayFk"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:textColor="#b73acb"-->
+                    <!--android:shadowColor="#b73acb"-->
+                    <!--android:shadowDx="2"-->
+                    <!--android:shadowDy="2"-->
+                    <!--android:shadowRadius="3"-->
+                    <!--android:alpha="0"-->
+                    <!--app:layout_textSizePercent="3.9%w"/>-->
+                    <!--&lt;!&ndash;android:layout_alignLeft="@+id/mPersonInfo_AllFk"&ndash;&gt;-->
+                    <!--<TextView-->
+                    <!--android:id="@+id/mPersonInfo_alpha02"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--app:layout_marginLeftPercent="3%"-->
+                    <!--android:text="总访问量  "-->
+                    <!--android:shadowColor="#efefef"-->
+                    <!--android:shadowDx="1"-->
+                    <!--android:shadowDy="1"-->
+                    <!--android:shadowRadius="1"-->
+                    <!--android:alpha="0"-->
+                    <!--app:layout_textSizePercent="3.9%w"/>-->
+                    <!--<TextView-->
+                    <!--android:id="@+id/mPersonInfo_AllFk"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:textColor="#b73acb"-->
+                    <!--android:shadowColor="#b73acb"-->
+                    <!--android:shadowDx="2"-->
+                    <!--android:shadowDy="2"-->
+                    <!--android:shadowRadius="3"-->
+                    <!--android:alpha="0"-->
+                    <!--app:layout_textSizePercent="3.9%w"-->
+                    <!--/>-->
+                    <!--app:layout_marginLeftPercent="3%"-->
+                    <TextView
+                        android:id="@+id/mPersonInfo_alpha03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:alpha="0"
+                        android:textColor="@color/darkGray"
+                        android:shadowColor="#efefef"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="注册日期  "
+                        app:layout_textSizePercent="3.9%w" />
+
+                    <TextView
+                        android:id="@+id/mPersonInfo_registTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:alpha="0"
+                        android:layout_marginBottom="5dp"
+                        android:shadowColor="#b73acb"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="3"
+                        android:textColor="#b73acb"
+                        app:layout_textSizePercent="3.9%w" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_get_out_of_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="10%h"
+            app:layout_marginRightPercent="10%h"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/tv_ban_to_dynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="禁动0"/>
+            <TextView
+                android:id="@+id/tv_banned_to_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="/禁言0"/>
+            <TextView
+                android:id="@+id/tv_ban_to_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="/禁资0"/>
+
+            <TextView
+                android:id="@+id/tv_ban"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="/封号0"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_banned_equipment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="/封设0"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_complain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="/投诉0"/>
+            <TextView
+                android:id="@+id/tv_be_complained"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="/被投0"/>
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="/账号0"/>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F7F7F7" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#333333"
+        android:orientation="horizontal"
+        app:layout_heightPercent="7%">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/mPersonInfo_ll_gz"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mPersonInfo_guanzhuCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#aaaaaa"
+                app:layout_textSizePercent="30%" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关注"
+                android:textColor="#aaaaaa"
+                app:layout_textSizePercent="30%" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:background="#aaaaaa"
+            app:layout_heightPercent="45%" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/mPersonInfo_ll_fs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mPersonInfo_fansCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#aaaaaa"
+                app:layout_textSizePercent="30%" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="粉丝"
+                android:textColor="#aaaaaa"
+                app:layout_textSizePercent="30%" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:background="#aaaaaa"
+            app:layout_heightPercent="45%" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/mPersonInfo_ll_qz"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mPersonInfo_groupCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#aaaaaa"
+                app:layout_textSizePercent="30%" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="群组"
+                android:textColor="#aaaaaa"
+                app:layout_textSizePercent="30%" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="#f5f5f5" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/mPersonInfo_present_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:alpha="0"
+        android:background="#f5f5f5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        app:layout_heightPercent="11%">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@mipmap/mypresent"
+                app:layout_heightPercent="55%w"
+                app:layout_widthPercent="55%w"></ImageView>
+
+            <TextView
+                android:id="@+id/mPersonInfo_presentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkGray"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                app:layout_textSizePercent="23%w"></TextView>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:background="#cccccc"
+            app:layout_heightPercent="40%" />
+
+        <com.aiwujie.shengmo.customview.MyGridview
+            android:id="@+id/mPersonInfo_present_gridview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="8"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp"></com.aiwujie.shengmo.customview.MyGridview>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="0.5"
+            android:src="@mipmap/rightjian" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/mPersonInfo_photo_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:alpha="0"
+        android:background="#FFFFFF"
+        android:padding="5dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mPersonInfo_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#FFFFFF"
+            android:scrollbars="horizontal" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <ImageView
+        android:id="@+id/mPersonInfo_addIv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@mipmap/tianjiatupian"
+        android:visibility="gone"
+        app:layout_heightPercent="26%w"
+        app:layout_widthPercent="26%w" />
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/mPersonInfo_photo_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0"
+        android:background="@drawable/person_infoshape"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/darkGray"
+        android:text="个性签名"
+        app:layout_textSizePercent="3.5%w" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/mPersonInfo_introduce_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/mPersonInfo_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:alpha="0"
+            android:lineSpacingExtra="4dp"
+            android:textColor="#666666"
+            android:textIsSelectable="true"
+            app:layout_textSizePercent="3.7%w" />
+
+        <TextView
+            android:id="@+id/mPersonInfo_editSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:alpha="0"
+            android:drawableLeft="@mipmap/bianjiqianming"
+            android:gravity="center_vertical"
+            android:text="编辑签名"
+            android:textColor="#333333"
+            android:visibility="gone"
+            app:layout_textSizePercent="3.7%w" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/mPersonInfo_introduce_admin_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/mPersonInfo_introduce_admin_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_uplevel_conner_hui_bg"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:textSize="26px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/mPersonInfo_photo_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:background="@drawable/person_infoshape"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/darkGray"
+        android:paddingTop="5dp"
+        android:text="个人信息"
+        app:layout_textSizePercent="3.5%w" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+<!--        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2" />-->
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mPersonInfo_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                android:gravity="center_vertical|left"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                app:layout_textSizePercent="8%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mPersonInfo_jiechu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                android:gravity="center_vertical|left"
+               android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                app:layout_textSizePercent="8%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+<!--        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1" />-->
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+  <!--      <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2" />
+-->
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mPersonInfo_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                android:gravity="center_vertical|left"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                app:layout_textSizePercent="8%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mPersonInfo_shijian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                android:gravity="center_vertical|left"
+               android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                app:layout_textSizePercent="8%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+ <!--       <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1" />-->
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+<!--        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2" />-->
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mPersonInfo_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                android:gravity="center_vertical|left"
+               android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                app:layout_textSizePercent="8%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mPersonInfo_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                android:gravity="center_vertical|left"
+               android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                app:layout_textSizePercent="8%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+   <!--     <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1" />-->
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+ <!--       <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2" />-->
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mPersonInfo_culture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                android:gravity="center_vertical|left"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                app:layout_textSizePercent="8%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mPersonInfo_quxiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                android:gravity="center_vertical|left"
+               android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                app:layout_textSizePercent="8%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+   <!--     <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1" />-->
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+<!--        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2" />-->
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mPersonInfo_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                android:gravity="center_vertical|left"
+               android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                app:layout_textSizePercent="8%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mPersonInfo_want"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                android:gravity="center_vertical|left"
+               android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                app:layout_textSizePercent="8%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+     <!--   <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1" />-->
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="3dp"-->
+    <!--android:background="#f5f5f5"/>-->
+    <!--<com.zhy.android.percent.support.PercentLinearLayout-->
+    <!--android:id="@+id/mPersonInfo_ll_dynamicCount"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--app:layout_heightPercent="12%w"-->
+    <!--android:background="#f5f5f5"-->
+    <!--android:paddingLeft="25dp"-->
+    <!--android:paddingRight="25dp"-->
+    <!--android:alpha="0"-->
+    <!--&gt;-->
+    <!--<com.zhy.android.percent.support.PercentLinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="2dp"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_heightPercent="31%w"-->
+    <!--app:layout_widthPercent="31%w"-->
+    <!--android:src="@mipmap/gerendongtai"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/mPersonInfo_dynamicCount"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:layout_textSizePercent="15%w"-->
+    <!--android:singleLine="true"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_marginLeft="2dip"-->
+    <!--android:textColor="@color/purple_main"/>-->
+    <!--</com.zhy.android.percent.support.PercentLinearLayout>-->
+    <!--<TextView-->
+    <!--android:layout_width="1dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_heightPercent="45%"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:background="#f5f5f5"-->
+    <!--/>-->
+    <!--<com.zhy.android.percent.support.PercentLinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="2dp"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_heightPercent="31%w"-->
+    <!--app:layout_widthPercent="31%w"-->
+    <!--android:src="@mipmap/gerentuijian"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/mPersonInfo_recommendCount"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:layout_textSizePercent="15%w"-->
+    <!--android:gravity="center"-->
+    <!--android:singleLine="true"-->
+    <!--android:layout_marginLeft="2dip"-->
+    <!--android:textColor="@color/purple_main"/>-->
+    <!--</com.zhy.android.percent.support.PercentLinearLayout>-->
+    <!--<TextView-->
+    <!--android:layout_width="1dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_heightPercent="45%"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:background="#f5f5f5"-->
+    <!--/>-->
+    <!--<com.zhy.android.percent.support.PercentLinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="2dp"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_heightPercent="31%w"-->
+    <!--app:layout_widthPercent="31%w"-->
+    <!--android:src="@mipmap/gerenpinglun"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/mPersonInfo_commentCount"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:layout_textSizePercent="15%w"-->
+    <!--android:singleLine="true"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_marginLeft="2dip"-->
+    <!--android:textColor="@color/purple_main"/>-->
+    <!--</com.zhy.android.percent.support.PercentLinearLayout>-->
+    <!--<TextView-->
+    <!--android:layout_width="1dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_heightPercent="45%"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:background="#f5f5f5"-->
+    <!--/>-->
+    <!--<com.zhy.android.percent.support.PercentLinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="2dp"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_heightPercent="31%w"-->
+    <!--app:layout_widthPercent="31%w"-->
+    <!--android:src="@mipmap/gerendianzan"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/mPersonInfo_laudCount"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:layout_textSizePercent="15%w"-->
+    <!--android:singleLine="true"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_marginLeft="2dip"-->
+    <!--android:textColor="@color/purple_main"/>-->
+    <!--</com.zhy.android.percent.support.PercentLinearLayout>-->
+    <!--<TextView-->
+    <!--android:layout_width="1dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_heightPercent="45%"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:background="#f5f5f5"-->
+    <!--/>-->
+    <!--<com.zhy.android.percent.support.PercentLinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="2dp"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_heightPercent="35%w"-->
+    <!--app:layout_widthPercent="35%w"-->
+    <!--android:src="@mipmap/gerenhuoshang"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/mPersonInfo_rewardCount"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:layout_textSizePercent="15%w"-->
+    <!--android:text="11"-->
+    <!--android:singleLine="true"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_marginLeft="2dip"-->
+    <!--android:textColor="@color/purple_main"/>-->
+    <!--</com.zhy.android.percent.support.PercentLinearLayout>-->
+    <!--</com.zhy.android.percent.support.PercentLinearLayout>-->
+    <!--<com.zhy.android.percent.support.PercentLinearLayout-->
+    <!--android:id="@+id/mPersonInfo_ll_sendTopic"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--app:layout_heightPercent="6%w"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingRight="10dp"-->
+    <!--android:alpha="0"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginBottom="2.5dp"-->
+    <!--&gt;-->
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_heightPercent="5%w"-->
+    <!--app:layout_widthPercent="18%w"-->
+    <!--android:text="发布话题"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:background="@mipmap/persontopicbg"-->
+    <!--app:layout_textSizePercent="3.5%w"-->
+    <!--android:paddingRight="3dp"-->
+    <!--android:gravity="center"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/mPersonInfo_sendTvTopic"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="9"-->
+    <!--app:layout_textSizePercent="3.5%w"-->
+    <!--app:layout_marginLeftPercent="1%w"-->
+    <!--android:singleLine="true"-->
+    <!--/>-->
+    <!--<ImageView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="0.5"-->
+    <!--android:src="@mipmap/rightjian"-->
+    <!--/>-->
+    <!--</com.zhy.android.percent.support.PercentLinearLayout>-->
+    <!--<TextView-->
+    <!--android:id="@+id/mPersonInfo_sendTopic_line"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="2dp"-->
+    <!--android:background="#f5f5f5"-->
+    <!--/>-->
+    <!--<com.zhy.android.percent.support.PercentLinearLayout-->
+    <!--android:id="@+id/mPersonInfo_ll_joinTopic"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--app:layout_heightPercent="6%w"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingRight="10dp"-->
+    <!--android:alpha="0"-->
+    <!--android:layout_marginTop="2.5dp"-->
+    <!--android:layout_marginBottom="2.5dp"-->
+    <!--&gt;-->
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_heightPercent="5%w"-->
+    <!--app:layout_widthPercent="18%w"-->
+    <!--android:text="参与话题"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:background="@mipmap/persontopicbg"-->
+    <!--app:layout_textSizePercent="3.5%w"-->
+    <!--android:paddingRight="3dp"-->
+    <!--android:gravity="center"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/mPersonInfo_joinTvTopic"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="9"-->
+    <!--app:layout_textSizePercent="3.5%w"-->
+    <!--app:layout_marginLeftPercent="1%w"-->
+    <!--android:singleLine="true"-->
+    <!--/>-->
+    <!--<ImageView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="0.5"-->
+    <!--android:src="@mipmap/rightjian"-->
+    <!--/>-->
+    <!--</com.zhy.android.percent.support.PercentLinearLayout>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/mPersonInfo_line_dynamicCount"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="2dp"-->
+    <!--android:background="#f5f5f5"-->
+    <!--/>-->
+    <!--<com.zhy.autolayout.AutoLinearLayout-->
+    <!--android:id="@+id/mPersonInfo_bottom_ll"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_marginBottom="80dp"-->
+    <!--android:gravity="center"-->
+    <!--android:visibility="gone"-->
+    <!--&gt;-->
+    <!--<TextView-->
+    <!--android:id="@+id/mPersonInfo_bottom_tv"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="26px"-->
+    <!--android:background="@drawable/item_uplevel_conner_hui_bg"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingRight="10dp"-->
+    <!--/>-->
+    <!--</com.zhy.autolayout.AutoLinearLayout>-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200px"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/mPersonInfo_header_bottom_ll"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:alpha="0"
+            android:background="@drawable/person_infoshape"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/mPersonInfo_header_bottom_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="发布的动态（3）"
+                android:textColor="#666666"
+                android:textSize="27px"
+
+                />
+
+            <TextView
+                android:id="@+id/mPersonInfo_header_text_more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="2dp"
+                android:drawableRight="@mipmap/rightjian"
+                android:gravity="center_vertical"
+                android:text="更多"
+                android:layout_alignParentRight="true"
+                android:textColor="#b0b0b0"
+                android:textSize="25px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/mPersonInfo_header_bottom_ll02"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_marginTop="15px"
+            android:alpha="0"
+            android:background="@drawable/person_infoshape"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/mPersonInfo_header_bottom_tv02"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="参与的评论（33）"
+                android:textColor="#666666"
+                android:textSize="27px"
+
+                />
+
+            <TextView
+                android:id="@+id/mPersonInfo_header_bottom_more02"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="2dp"
+                android:drawableRight="@mipmap/rightjian"
+                android:gravity="center_vertical"
+                android:text="更多"
+                android:layout_alignParentRight="true"
+                android:textColor="#b0b0b0"
+                android:textSize="25px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

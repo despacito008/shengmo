@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/al_id"
+    android:layout_marginLeft="3dp"
+
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="话题"
+        android:paddingRight="10dp"
+        android:drawableLeft="@drawable/tuijianhuati"
+        android:textColor="@color/color_purple_DB57F3"
+        android:textSize="12dp"
+        android:gravity="center"
+        />
+</com.zhy.autolayout.AutoRelativeLayout >

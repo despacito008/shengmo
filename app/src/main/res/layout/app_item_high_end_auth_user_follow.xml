@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constarinIcon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.2">
+
+        <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+            android:id="@+id/iv_item_high_end_auth_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:src="@drawable/ic_ti_bg_btn_confirm" />
+
+
+        <ImageView
+            android:id="@+id/iv_user_avatar_online"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_user_online"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constarinContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/constarinIcon"
+        app:layout_constraintRight_toLeftOf="@+id/tv_follow_status"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_item_high_end_auth_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:textColor="#131415"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:text="晴空万里" />
+
+            <ImageView
+                android:id="@+id/iv_realId"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginHorizontal="3dp"
+                android:src="@drawable/ic_zipai" />
+
+            <ImageView
+                android:id="@+id/iv_vidoeAuth"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginHorizontal="3dp"
+                android:src="@drawable/ic_shipin" />
+
+            <ImageView
+                android:id="@+id/iv_realName"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginHorizontal="3dp"
+                android:src="@drawable/ic_ziliao" />
+
+
+            <ImageView
+                android:id="@+id/iv_caichan"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginHorizontal="3dp"
+                android:src="@mipmap/ic_caichan" />
+
+            <ImageView
+                android:id="@+id/iv_jiankang"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginHorizontal="3dp"
+                android:src="@drawable/ic_high_end_health_done" />
+
+            <ImageView
+                android:id="@+id/iv_xueli"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginHorizontal="3dp"
+                android:src="@drawable/ic_high_end_education_done" />
+
+            <ImageView
+                android:id="@+id/iv_jineng"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginHorizontal="3dp"
+                android:src="@drawable/ic_high_end_skill_done" />
+
+            <ImageView
+                android:id="@+id/iv_qita"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginHorizontal="3dp"
+                android:src="@drawable/ic_high_end_other_done" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_item_high_end_auth_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_item_high_end_auth_name">
+
+            <LinearLayout
+                android:id="@+id/ll_layout_user_normal_info_sex_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="0.5dp"
+                tools:background="@drawable/bg_user_info_sex_cdts">
+
+                <ImageView
+                    android:id="@+id/iv_layout_user_normal_info_sex"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/san" />
+
+
+                <TextView
+                    android:id="@+id/tv_layout_user_normal_info_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:includeFontPadding="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dp"
+                    tools:text="27" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_layout_user_normal_info_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="0.5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp"
+                tools:background="@drawable/bg_user_info_sex_girl"
+                tools:text="-" />
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ADADAD"
+                android:textSize="13dp"
+                android:visibility="gone"
+                tools:text="江西省 赣州市"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_no_location"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_high_end_auth_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="1"
+            android:textColor="#131415"
+            android:textSize="13dp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_item_high_end_auth_info"
+            tools:text="个人情况：描述和择偶要求，每个人可以发布但是聊天可以发布，字数为1000字..."
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_item_high_end_auth_recommend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="1"
+            android:textColor="#131415"
+            android:textSize="13dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_item_high_end_auth_desc"
+            tools:text="红娘荐语：红娘荐语：办理SVIP后联系后联系红娘。00字..."
+            tools:visibility="visible" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/tv_follow_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_high_follow_status"
+        android:text="    关注    "
+        android:textColor="@color/tongyong"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
+
+
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/mFragment_redwomen_man_gridview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp"
+        android:numColumns="2"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        ptr:ptrHeaderTextColor="#FFFFFF"
+        ptr:ptrDrawable="@mipmap/loading"
+        ptr:ptrScrollingWhileRefreshingEnabled="true"
+        />
+</com.zhy.android.percent.support.PercentLinearLayout>

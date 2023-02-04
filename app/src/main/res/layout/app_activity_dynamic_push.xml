@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_dynamic_push_title_bar"
+        android:paddingTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/iv_dynamic_push_return"
+            android:tint="@color/normalGray"
+            android:padding="16dp"
+            android:src="@drawable/normal_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:text="动态推顶"
+            android:textColor="@color/titleBlack"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:id="@+id/tv_dynamic_push_detailed"
+            android:textColor="@color/normalGray"
+            android:text="明细"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_push_dynamic_top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="115dp">
+
+        <LinearLayout
+            app:layout_constraintVertical_bias="0.4"
+            android:id="@+id/ll_dynamic_push_num"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_dynamic_push_num"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:text="81"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:textSize="12dp"
+                android:text="张"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:text="剩余推顶卡"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_dynamic_push_num"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_item_dynamic_push"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginBottom="30dp"
+            android:textSize="12dp"
+            android:textColor="@color/lightGray"
+            android:layout_marginHorizontal="15dp"
+            android:text="“推顶卡”可将动态推至最顶部，获得更多浏览、评论、点赞。同时还可以增加相应的魅力值～"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_dynamic_push_buy_money"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/bg_top_card_buy_money"
+            android:gravity="center"
+            android:text="官方充值"
+            android:layout_gravity="center"
+            android:layout_width="265dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/tv_vip_dynamic_push_beans"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/bg_top_card_buy_beans"
+            android:gravity="center"
+            android:text="魔豆兑换"
+            android:layout_gravity="center"
+            android:layout_width="265dp"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

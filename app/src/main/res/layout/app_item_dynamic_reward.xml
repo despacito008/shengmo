@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_click_bg_selector"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include layout="@layout/app_layout_normal_user_info"/>
+
+    <LinearLayout
+        android:paddingVertical="8dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center|right"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_item_dynamic_reward_gift"
+                tools:src="@mipmap/presentnew01"
+                android:layout_width="36dp"
+                android:layout_height="36dp"/>
+
+            <TextView
+                android:id="@+id/tv_item_dynamic_reward_num"
+                android:textSize="12dp"
+                tools:text="x1"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_item_dynamic_reward_beans"
+                android:textSize="12dp"
+                tools:text="666666豆"
+                android:gravity="right"
+                android:includeFontPadding="false"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_item_dynamic_reward_time"
+            android:gravity="center"
+            android:text="2022-03-05 15:30"
+            android:textSize="12dp"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</FrameLayout>

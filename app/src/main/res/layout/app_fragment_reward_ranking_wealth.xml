@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.aiwujie.shengmo.view.ZoomInScrollView
+        android:id="@+id/zoom_scroll_reward_ranking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_fragment_reward_ranking"
+                android:layout_width="match_parent"
+                android:layout_height="600dp">
+
+                <View
+                    android:background="@drawable/ic_reward_ranking_top_bg"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+
+                <ImageView
+                    android:background="@drawable/ic_reward_ranking_podium"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintWidth_percent="0.7"
+                    app:layout_constraintHeight_percent="0.3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+
+                <View
+                    android:id="@+id/view_fragment_reward_ranking_wealth_light"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintTop_toTopOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    android:background="@drawable/ic_reward_ranking_light"
+                    android:layout_width="450dp"
+                    android:layout_height="650dp"/>
+
+                <View
+                    android:background="@drawable/ic_reward_ranking_star"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    android:layout_width="130dp"
+                    android:layout_height="90dp"/>
+
+                <View
+                    android:id="@+id/view_fragment_reward_ranking_wealth_top_one_bg"
+                    android:background="@drawable/bg_user_info_avator_stroke"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintTop_toTopOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp" />
+
+                <View
+                    android:id="@+id/view_fragment_reward_ranking_wealth_top_two_bg"
+                    android:background="@drawable/bg_user_info_avator_stroke"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_two"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_two"
+                    app:layout_constraintTop_toTopOf="@id/iv_fragment_reward_ranking_wealth_top_two"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_fragment_reward_ranking_wealth_top_two"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp" />
+
+                <View
+                    android:id="@+id/view_fragment_reward_ranking_wealth_top_three_bg"
+                    android:background="@drawable/bg_user_info_avator_stroke"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_three"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_three"
+                    app:layout_constraintTop_toTopOf="@id/iv_fragment_reward_ranking_wealth_top_three"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_fragment_reward_ranking_wealth_top_three"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp" />
+
+                <ImageView
+                    android:id="@+id/iv_fragment_reward_ranking_wealth_top_one"
+                    tools:background="#6cf"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="200dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_fragment_reward_ranking_wealth_top_two"
+                    tools:background="#6cf"
+                    app:layout_constraintVertical_bias="0.25"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintTop_toTopOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_fragment_reward_ranking_wealth_top_three"
+                    tools:background="#6cf"
+                    app:layout_constraintVertical_bias="0.25"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintTop_toTopOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_fragment_reward_ranking_wealth_top_one_crown"
+                    android:src="@drawable/ic_reward_ranking_top_one"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintBottom_toTopOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    android:layout_width="30dp"
+                    android:layout_height="21dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_fragment_reward_ranking_wealth_top_two_crown"
+                    android:src="@drawable/ic_reward_ranking_top_two"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_two"
+                    app:layout_constraintBottom_toTopOf="@id/iv_fragment_reward_ranking_wealth_top_two"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_two"
+                    android:layout_width="27dp"
+                    android:layout_height="19dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_fragment_reward_ranking_wealth_top_three_crown"
+                    android:src="@drawable/ic_reward_ranking_top_three"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_three"
+                    app:layout_constraintBottom_toTopOf="@id/iv_fragment_reward_ranking_wealth_top_three"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_three"
+                    android:layout_width="27dp"
+                    android:layout_height="19dp"/>
+
+
+
+                <TextView
+                    android:maxLength="15"
+                    android:ellipsize="end"
+                    android:id="@+id/tv_fragment_reward_ranking_wealth_top_one"
+                    android:textSize="14dp"
+                    tools:text="女王范儿"
+                    android:textColor="@color/white"
+                    app:layout_constraintLeft_toLeftOf="@+id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintTop_toBottomOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:maxLength="15"
+                    android:ellipsize="end"
+                    android:id="@+id/tv_fragment_reward_ranking_wealth_top_two"
+                    android:textSize="14dp"
+                    tools:text="勇气"
+                    android:textColor="@color/white"
+                    app:layout_constraintLeft_toLeftOf="@+id/iv_fragment_reward_ranking_wealth_top_two"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_two"
+                    app:layout_constraintTop_toBottomOf="@id/iv_fragment_reward_ranking_wealth_top_two"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:maxLength="15"
+                    android:ellipsize="end"
+                    android:id="@+id/tv_fragment_reward_ranking_wealth_top_three"
+                    android:textSize="14dp"
+                    tools:text="等风来"
+                    android:textColor="@color/white"
+                    app:layout_constraintLeft_toLeftOf="@+id/iv_fragment_reward_ranking_wealth_top_three"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_three"
+                    app:layout_constraintTop_toBottomOf="@id/iv_fragment_reward_ranking_wealth_top_three"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    tools:visibility="visible"
+                    android:visibility="gone"
+                    android:id="@+id/ll_fragment_reward_ranking_wealth_top_one_info"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintTop_toBottomOf="@id/tv_fragment_reward_ranking_wealth_top_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ll_fragment_reward_ranking_wealth_top_one_sex"
+                        android:paddingVertical="1dp"
+                        android:paddingHorizontal="5dp"
+                        tools:background="@drawable/bg_user_info_sex_cdts"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_fragment_reward_ranking_wealth_top_one_sex"
+                            android:layout_marginHorizontal="5dp"
+                            tools:src="@mipmap/san"
+                            android:layout_width="9dp"
+                            android:layout_height="9dp"/>
+                        <TextView
+                            android:id="@+id/tv_fragment_reward_ranking_wealth_top_one_age"
+                            android:includeFontPadding="false"
+                            tools:text="25"
+                            android:textColor="@color/white"
+                            android:textSize="11dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_fragment_reward_ranking_wealth_top_one_sex"
+                        android:layout_marginLeft="5dp"
+                        android:paddingVertical="1dp"
+                        android:paddingHorizontal="5dp"
+                        tools:background="@drawable/bg_user_info_sex_girl"
+                        android:includeFontPadding="false"
+                        android:textSize="11dp"
+                        android:textColor="@color/white"
+                        tools:text="慕"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/ll_fragment_reward_ranking_wealth_top_one_richCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/item_caifuzhi_bg"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:background="@drawable/bg_user_wealth"
+                            android:paddingVertical="2.5dp"
+                            android:paddingHorizontal="4.5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/user_wealth" />
+
+                        <TextView
+                            tools:text="10086"
+                            android:id="@+id/tv_fragment_reward_ranking_wealth_top_one_richCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="6dp"
+                            android:textColor="#febf3b"
+                            android:textSize="11dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_reward_ranking_wealth_top_one_send"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintTop_toBottomOf="@id/ll_fragment_reward_ranking_wealth_top_one_info"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_fragment_reward_ranking_wealth_top_one_sendCount"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        tools:text="送出12350"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ranking_beans"
+                        android:layout_width="10dp"
+                        android:layout_height="11dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_reward_ranking_wealth_top_one_favour"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_one"
+                    app:layout_constraintTop_toBottomOf="@id/ll_fragment_reward_ranking_wealth_top_one_send"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/iv_fragment_reward_ranking_wealth_top_one_favour"
+                        tools:src="@drawable/ic_select_on"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"/>
+
+                    <TextView
+                        android:layout_marginLeft="11dp"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="2dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bg_round_red"
+                        android:textSize="12dp"
+                        android:text="最爱"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    tools:visibility="visible"
+                    android:visibility="gone"
+                    android:id="@+id/ll_fragment_reward_ranking_wealth_top_two_info"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_two"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_two"
+                    app:layout_constraintTop_toBottomOf="@id/tv_fragment_reward_ranking_wealth_top_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/ll_fragment_reward_ranking_wealth_top_two_sex"
+                            android:paddingVertical="1dp"
+                            android:paddingHorizontal="5dp"
+                            tools:background="@drawable/bg_user_info_sex_cdts"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/iv_fragment_reward_ranking_wealth_top_two_sex"
+                                android:layout_marginHorizontal="5dp"
+                                tools:src="@mipmap/san"
+                                android:layout_width="9dp"
+                                android:layout_height="9dp"/>
+                            <TextView
+                                android:id="@+id/tv_fragment_reward_ranking_wealth_top_two_age"
+                                android:includeFontPadding="false"
+                                tools:text="25"
+                                android:textColor="@color/white"
+                                android:textSize="11dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_fragment_reward_ranking_wealth_top_two_sex"
+                            android:layout_marginLeft="5dp"
+                            android:paddingVertical="1dp"
+                            android:paddingHorizontal="5dp"
+                            tools:background="@drawable/bg_user_info_sex_girl"
+                            android:includeFontPadding="false"
+                            android:textSize="11dp"
+                            android:textColor="@color/white"
+                            tools:text="慕"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/ll_fragment_reward_ranking_wealth_top_two_richCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/item_caifuzhi_bg"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:background="@drawable/bg_user_wealth"
+                            android:paddingVertical="2.5dp"
+                            android:paddingHorizontal="4.5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/user_wealth" />
+
+                        <TextView
+                            tools:text="10086"
+                            android:id="@+id/tv_fragment_reward_ranking_wealth_top_two_richCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="6dp"
+                            android:textColor="#febf3b"
+                            android:textSize="11dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_reward_ranking_wealth_top_two_send"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_two"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_two"
+                    app:layout_constraintTop_toBottomOf="@id/ll_fragment_reward_ranking_wealth_top_two_info"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_fragment_reward_ranking_wealth_top_two_sendCount"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        tools:text="送出12350"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ranking_beans"
+                        android:layout_width="10dp"
+                        android:layout_height="11dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_reward_ranking_wealth_top_two_favour"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_two"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_two"
+                    app:layout_constraintTop_toBottomOf="@id/ll_fragment_reward_ranking_wealth_top_two_send"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/iv_fragment_reward_ranking_wealth_top_two_favour"
+                        tools:src="@drawable/ic_select_on"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"/>
+
+                    <TextView
+                        android:layout_marginLeft="11dp"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="2dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bg_round_red"
+                        android:textSize="12dp"
+                        android:text="最爱"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    tools:visibility="visible"
+                    android:visibility="gone"
+                    android:id="@+id/ll_fragment_reward_ranking_wealth_top_three_info"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_three"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_three"
+                    app:layout_constraintTop_toBottomOf="@id/tv_fragment_reward_ranking_wealth_top_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/ll_fragment_reward_ranking_wealth_top_three_sex"
+                            android:paddingVertical="1dp"
+                            android:paddingHorizontal="5dp"
+                            tools:background="@drawable/bg_user_info_sex_cdts"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/iv_fragment_reward_ranking_wealth_top_three_sex"
+                                android:layout_marginHorizontal="5dp"
+                                tools:src="@mipmap/san"
+                                android:layout_width="9dp"
+                                android:layout_height="9dp"/>
+                            <TextView
+                                android:id="@+id/tv_fragment_reward_ranking_wealth_top_three_age"
+                                android:includeFontPadding="false"
+                                tools:text="25"
+                                android:textColor="@color/white"
+                                android:textSize="11dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_fragment_reward_ranking_wealth_top_three_sex"
+                            android:layout_marginLeft="5dp"
+                            android:paddingVertical="1dp"
+                            android:paddingHorizontal="5dp"
+                            tools:background="@drawable/bg_user_info_sex_girl"
+                            android:includeFontPadding="false"
+                            android:textSize="11dp"
+                            android:textColor="@color/white"
+                            tools:text="慕"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/ll_fragment_reward_ranking_wealth_top_three_richCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/item_caifuzhi_bg"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:background="@drawable/bg_user_wealth"
+                            android:paddingVertical="2.5dp"
+                            android:paddingHorizontal="4.5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/user_wealth" />
+
+                        <TextView
+                            tools:text="10086"
+                            android:id="@+id/tv_fragment_reward_ranking_wealth_top_three_richCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="6dp"
+                            android:textColor="#febf3b"
+                            android:textSize="11dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_reward_ranking_wealth_top_three_send"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_three"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_three"
+                    app:layout_constraintTop_toBottomOf="@id/ll_fragment_reward_ranking_wealth_top_three_info"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_fragment_reward_ranking_wealth_top_three_sendCount"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        tools:text="送出12350"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ranking_beans"
+                        android:layout_width="10dp"
+                        android:layout_height="11dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_reward_ranking_wealth_top_three_favour"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_fragment_reward_ranking_wealth_top_three"
+                    app:layout_constraintRight_toRightOf="@id/iv_fragment_reward_ranking_wealth_top_three"
+                    app:layout_constraintTop_toBottomOf="@id/ll_fragment_reward_ranking_wealth_top_three_send"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/iv_fragment_reward_ranking_wealth_top_three_favour"
+                        tools:src="@drawable/ic_select_on"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"/>
+
+                    <TextView
+                        android:layout_marginLeft="11dp"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="2dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bg_round_red"
+                        android:textSize="12dp"
+                        android:text="最爱"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+
+                <android.support.constraint.Group
+                    android:id="@+id/group_reward_ranking_top_one"
+                    app:constraint_referenced_ids="iv_fragment_reward_ranking_wealth_top_one,view_fragment_reward_ranking_wealth_top_one_bg,iv_fragment_reward_ranking_wealth_top_one_crown,
+                tv_fragment_reward_ranking_wealth_top_one,"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <android.support.constraint.Group
+                    android:id="@+id/group_reward_ranking_top_two"
+                    app:constraint_referenced_ids="iv_fragment_reward_ranking_wealth_top_two,view_fragment_reward_ranking_wealth_top_two_bg,iv_fragment_reward_ranking_wealth_top_two_crown,
+                tv_fragment_reward_ranking_wealth_top_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <android.support.constraint.Group
+                    android:id="@+id/group_reward_ranking_top_three"
+                    app:constraint_referenced_ids="iv_fragment_reward_ranking_wealth_top_three,view_fragment_reward_ranking_wealth_top_three_bg,iv_fragment_reward_ranking_wealth_top_three_crown,
+                tv_fragment_reward_ranking_wealth_top_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <android.support.constraint.Group
+                    app:constraint_referenced_ids="ll_fragment_reward_ranking_wealth_top_one_send,ll_fragment_reward_ranking_wealth_top_one_favour"
+                    android:id="@+id/group_reward_ranking_top_one_info"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <android.support.constraint.Group
+                    app:constraint_referenced_ids="ll_fragment_reward_ranking_wealth_top_two_send,ll_fragment_reward_ranking_wealth_top_two_favour"
+                    android:id="@+id/group_reward_ranking_top_two_info"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <android.support.constraint.Group
+                    app:constraint_referenced_ids="ll_fragment_reward_ranking_wealth_top_three_send,ll_fragment_reward_ranking_wealth_top_three_favour"
+                    android:id="@+id/group_reward_ranking_top_three_info"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_fragment_reward_ranking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </com.aiwujie.shengmo.view.ZoomInScrollView>
+
+</LinearLayout>

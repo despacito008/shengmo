@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/mFragment_follow_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        ptr:ptrHeaderTextColor="#FFFFFF"
+        ptr:ptrDrawable="@mipmap/loading"
+        android:dividerHeight="0.5dp"
+        android:divider="#f8f8f8"
+        ptr:ptrScrollingWhileRefreshingEnabled="true"
+        >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</com.zhy.android.percent.support.PercentLinearLayout>

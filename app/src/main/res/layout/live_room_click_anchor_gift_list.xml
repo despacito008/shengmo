@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_live_room_click_anchor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/gift_list"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_fragment_message_title_bar"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="36"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/item_dialog_title_padding"
+                android:paddingRight="@dimen/item_dialog_title_padding"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/mFragmentLive_local_dian"
+                        android:layout_width="15dp"
+                        android:layout_height="4dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/bg_user_info_sex_cdts"
+                        android:scaleType="fitXY"
+                        android:layout_marginBottom="3dp" />
+
+                    <TextView
+                        android:id="@+id/mFragmentLive_title_this_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/live_local"
+                        android:textStyle="bold"
+                        android:textColor="@drawable/item_home_text_selector"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/mFragmentLive_week_dian"
+                        android:layout_width="15dp"
+                        android:layout_height="4dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/bg_user_info_sex_cdts"
+                        android:scaleType="fitXY"
+                        android:visibility="gone"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:id="@+id/mFragmentLive_title_week_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="周榜"
+                        android:textColor="@drawable/item_home_text_selector"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/mFragmentLive_month_dian"
+                        android:layout_width="15dp"
+                        android:layout_height="4dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/bg_user_info_sex_cdts"
+                        android:scaleType="fitXY"
+                        android:visibility="gone"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:id="@+id/mFragmentLive_title_monthly_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="月榜"
+                        android:textColor="@drawable/item_home_text_selector"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/recycler_label"/>
+
+
+        <include layout="@layout/layout_vp_no_data"
+            android:visibility="gone"/>
+</LinearLayout>

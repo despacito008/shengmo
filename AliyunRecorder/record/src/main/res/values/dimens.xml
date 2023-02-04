@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alivc_record_focus_rect">60dp</dimen>
+    <dimen name="alivc_record_title_height">54dp</dimen>
+    <dimen name="alivc_record_margin_top_music">40dp</dimen>
+    <dimen name="alivc_record_font_count_down">144sp</dimen>
+    <dimen name="alivc_record_timeline_height">10dp</dimen>
+</resources>

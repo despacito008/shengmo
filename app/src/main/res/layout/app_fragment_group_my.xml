@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabLayout
+            app:tabBackground="@android:color/transparent"
+            app:tabMode="scrollable"
+            app:tabIndicatorHeight="0dp"
+            android:id="@+id/tab_fragment_group_my"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_group_rule"
+            android:gravity="center"
+            android:paddingVertical="3dp"
+            android:paddingHorizontal="5dp"
+            android:background="@drawable/border_group_claim"
+            android:includeFontPadding="false"
+            android:textColor="@color/purple_main"
+            android:text="@string/claim_rule"
+            android:lineSpacingMultiplier="0.8"
+            android:textSize="8dp"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_page_fragment_group_my"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

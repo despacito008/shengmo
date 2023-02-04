@@ -1,0 +1,130 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">圣魔plus</string>
+    <string name="app_main_name" tools:ignore="ExtraTranslation">圣魔</string>
+    <string name="login">登录</string>
+    <string name="regist">注册</string>
+    <string name="forgetPsw">忘记密码</string>
+    <string name="filter_vcode">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@.</string>
+    <string name="filter_shuzi">0123456789</string>
+    <string name="NSNM">男斯女慕</string>
+    <string name="NvSNM">女斯男慕</string>
+    <string name="LGBT">LGBT</string>
+    <string name="ZP">自拍</string>
+    <string name="QJW">求交往</string>
+    <string name="QG">情感</string>
+    <string name="SH">生活</string>
+    <string name="HD">活动</string>
+    <string name="Guanzhu">关注</string>
+    <string name="Tuijian">推荐</string>
+    <string name="Guandian">杂谈</string>
+    <string name="Xingqu">兴趣</string>
+    <string name="Meitu">爆照</string>
+    <string name="Jiaoyou">交友</string>
+    <string name="Shenghuo">生活</string>
+    <string name="Qinggan">情感</string>
+    <string name="Huodong">官方</string>
+    <string name="Wode">我的</string>
+    <string name="SmSharedText">圣魔——国内首个专业亚文化交友APP诞生了！快去看看吧~</string>
+    <string name="transition_name">共享元素</string>
+    <string name="group_notice_prefix">\@全体成员\n</string>
+    <drawable name="clr_normal">#FFFFFF</drawable>
+    <drawable name="clr_pressed">#DDDDDD</drawable>
+    <string name="desc_shrinkup">收起</string>
+    <string name="desc_spread">显示更多</string>
+    <string name="share_content">圣魔——专业亚文化交友APP，十一年历史，欢迎同好加入！</string>
+    <string name="test_custom_action" >自定义消息</string>
+    <string name="im_action_gift">礼物</string>
+    <string name="im_action_red_bao">红包</string>
+    <string name="im_action_one_time_pic">闪照</string>
+    <string name="im_action_location">位置</string>
+    <string name="no_support_msg">不支持的消息</string>
+    <string name="chat_top">置顶消息</string>
+    <string name="chat_delete">删除消息</string>
+    <string name="quit_chat_top">取消置顶</string>
+    <string name="cancel">取消</string>
+    <string name="location">位置</string>
+    <string name="send">发送</string>
+    <string name="notice_suspicious">请注意，该用户是可疑用户</string>
+    <string name="group_square">群广场</string>
+    <string name="notice">通知</string>
+    <string name="comment">评论</string>
+    <string name="message">消息</string>
+    <string name="chat">聊天</string>
+    <string name="link">连线</string>
+    <string name="question"></string>
+
+    <string name="live_hot">热门</string>
+    <string name="live_new">最新</string>
+    <string name="live_follow">关注</string>
+    <string name="live_local">本场</string>
+    <string name="live_month">月榜</string>
+    <string name="live_has_followed">取消关注</string>
+    <string name="current_anchor_is_myself">不能关注自己</string>
+    <string name="current_anchor_is_not_live">当前主播为离播状态！</string>
+
+
+    <string name="live_hot_red_list">红人榜</string>
+    <string name="live_hot_list">热门直播</string>
+    <string name="online">在线</string>
+    <string name="seat_lock">座位已锁定</string>
+    <string name="find_anchor">主播名还在查找</string>
+    <string name="unknow_error">网络异常</string>
+    <string name="online_fail">请求网络失败</string>
+    <string name="live_scenes_live_room">视频直播</string>
+    <string name="create_group_str">创建\n群组</string>
+    <string name="group_rule">群组\n规则</string>
+    <string name="claim_rule">认领\n规则</string>
+    <string name="near_rule">身边\n规则</string>
+    <string name="live_on_line_time" tools:ignore="ExtraTranslation">"上次直播：%s"</string>
+    <string name="live_current_coins">"本场贡献%s"</string>
+    <string name="live_heat_coins">%s热度值</string>
+    <string name="live_head_backward_coins">落后%s热度值</string>
+    <string name="live_has_not_authed">审核不通过</string>
+    <string name="live_is_authing">审核中</string>
+    <string name="live_to_register_anchor">成为圣魔主播</string>
+    <string name="live_text_quality_tag">分享你的精彩生活</string>
+    <string name="live_text_withdraw_tag">申请提现\n提现需满足以下条件</string>
+    <string name="live_btn_start_auth">确认申请</string>
+    <string name="live_require_anchor">申请主播</string>
+    <string name="live_auth_require">要求</string>
+    <string name="bind_phone">1. 绑定手机号</string>
+    <string name="bind_bank_card">2. 绑定银行卡</string>
+    <string name="bind_ali_pay">2. 绑定支付宝</string>
+    <string name="bind_ic_card">3. 身份证认证</string>
+    <string name="auth_photo">2.自拍认证</string>
+    <string name="bind_start">立即绑定</string>
+    <string name="auth_start">立即认证</string>
+    <string name="bind_complate">已绑定</string>
+    <string name="live_auth_tip">\n
+        1、免冠、建议未化妆、五官可见。\n
+        2、请未进行任何软件处理。\n
+        </string>
+    <string name="tv_live_tip">温馨提示</string>
+    <string name="tv_anchor_myself">查看主页</string>
+    <string name="tv_anchor_ante">\@他</string>
+    <string name="tv_anchor_manager">管理</string>
+    <string name="close_live_success">关播成功！</string>
+    <string name="gift_list">主播粉丝贡献榜</string>
+    <string name="is_fast_click">您当前点击的速度过快，请稍后重试！</string>
+    <string name="live_enter_room_fail">您已经在别的房间了！</string>
+    <string name="unbind_manager">解除场控</string>
+    <string name="bind_manager">设置场控</string>
+    <string name="local_no_talking">本场禁言</string>
+    <string name="forever_no_talking">解除禁言</string>
+    <string name="unbind_no_talking">解除禁言</string>
+    <string name="no_anchor_list">暂时还没有主播开播哟~</string>
+    <string name="no_follow_list">您还没有关注任何主播哟~</string>
+
+    <string name="g_none"> </string>
+    <string name="g_loading">加载中...</string>
+    <string name="g_loading_suc">加载成功</string>
+    <string name="g_loading_fail">加载失败</string>
+    <string name="g_loading_net_error">加载错误</string>
+    <string name="g_empty">暂无数据</string>
+    <string name="g_live_empty">暂时还没有主播开播呦~</string>
+
+    <string name="withdraw_rate_info">提现比例：%1$d魔豆 = %2$d元</string>
+
+    <string name="purchase_record_tips">提示：您购买的视频可能因违规删除，请尽快观看</string>
+
+</resources>

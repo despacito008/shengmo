@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:visibility="gone"
+        android:id="@+id/mFragment_dynamic_follow_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:background="#FFFFFF"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        ptr:ptrHeaderTextColor="#FFFFFF"
+        ptr:ptrDrawable="@mipmap/loading"
+        ptr:ptrScrollingWhileRefreshingEnabled="true"
+        />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        app:srlEnablePreviewInEditMode="false"
+        android:id="@+id/srl_dynamic_follow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_dynamic_follow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/mFragment_dynamic_follow_ll_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:src="@mipmap/dynamickuku"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/mFragment_dynamic_follow_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="26px"
+            android:text="没有好友或好友未发布动态~"
+            android:layout_marginTop="50px"
+            android:background="@drawable/item_uplevel_conner_hui_bg"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <ImageView
+        android:id="@+id/mFragment_dynamic_follow_top"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:src="@mipmap/dingbu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

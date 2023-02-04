@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="#6c9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:paddingVertical="25dp"
+        android:paddingHorizontal="15dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:background="@drawable/bg_top_round_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="画面设置"
+            android:textSize="15dp"
+            android:textColor="@color/titleBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:paddingVertical="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_pop_live_setting_camera_front"
+                android:paddingVertical="8dp"
+                android:background="@drawable/bg_round_gray_home"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_pop_live_setting_camera_front"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/selector_live_setting_camera_front"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_live_setting_camera_front"
+                    android:textSize="13dp"
+                    android:textColor="@color/titleBlack"
+                    android:text="前置摄像头"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_live_setting_camera_back"
+                android:layout_marginHorizontal="15dp"
+                android:paddingVertical="8dp"
+                android:background="@drawable/bg_round_gray_home"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_pop_live_setting_camera_back"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/selector_live_setting_camera_back"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_live_setting_camera_back"
+                    android:textSize="13dp"
+                    android:textColor="@color/titleBlack"
+                    android:text="后置摄像头"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_live_setting_camera_close"
+                android:paddingVertical="8dp"
+                android:background="@drawable/bg_round_gray_home"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_pop_live_setting_camera_close"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/selector_live_setting_camera_close"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_live_setting_camera_close"
+                    android:textSize="13dp"
+                    android:textColor="@color/titleBlack"
+                    android:text="关闭摄像头"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_live_ing_setting"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="声音设置"
+            android:textSize="15dp"
+            android:textColor="@color/titleBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:paddingVertical="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_pop_live_setting_audio_open"
+                android:paddingVertical="8dp"
+                android:background="@drawable/bg_round_gray_home"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_pop_live_setting_audio_open"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/selector_live_setting_audio_open"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_live_setting_audio_open"
+                    android:textSize="13dp"
+                    android:textColor="@color/titleBlack"
+                    android:text="开启麦克风"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_live_setting_audio_close"
+                android:layout_marginHorizontal="15dp"
+                android:paddingVertical="8dp"
+                android:background="@drawable/bg_round_gray_home"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_pop_live_setting_audio_close"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/selector_live_setting_audio_close"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_live_setting_audio_close"
+                    android:textSize="13dp"
+                    android:textColor="@color/titleBlack"
+                    android:text="关闭麦克风"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:paddingVertical="8dp"
+                android:background="@drawable/bg_round_gray_home"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="@color/titleBlack"
+                    android:text="前置摄像头"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pop_live_setting_audio_setting"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="其他设置"
+                android:textSize="15dp"
+                android:textColor="@color/titleBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:paddingVertical="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_pop_live_setting_audio_music"
+                    android:paddingVertical="8dp"
+                    android:background="@drawable/bg_round_purple_home"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_pop_live_setting_audio_music"
+                        android:textSize="13dp"
+                        android:textColor="@color/white"
+                        android:text="音效设置"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginHorizontal="15dp"
+                    android:id="@+id/ll_pop_live_setting_beauty"
+                    android:paddingVertical="8dp"
+                    android:background="@drawable/bg_round_purple_home"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_pop_live_setting_beauty"
+                        android:textSize="13dp"
+                        android:textColor="@color/white"
+                        android:text="美颜"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_pop_live_setting_manager_speaking"
+                    android:paddingVertical="8dp"
+                    android:background="@drawable/bg_round_purple_home"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="13dp"
+                        android:textColor="@color/white"
+                        android:text="场控发言列表"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

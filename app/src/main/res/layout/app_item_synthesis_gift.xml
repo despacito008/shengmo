@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    tools:background="#000"
+    android:paddingVertical="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_item_gift_synthesis"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="70:83"
+        android:background="@drawable/bg_round_gift_synthesis_result"
+        android:orientation="vertical">
+
+        <ImageView
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_item_gift_synthesis_num"
+            android:id="@+id/iv_item_gift_synthesis_icon"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1"
+            tools:src="@mipmap/presentnew04" />
+
+        <TextView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/tv_item_gift_synthesis_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_gift_synthesis_tv"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            tools:text="x1" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/cl_item_gift_synthesis"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/tv_item_gift_synthesis_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="黄瓜"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/tv_item_gift_synthesis_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/tv_item_gift_synthesis_bean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="2dp"
+        android:text="40魔豆"
+        android:textColor="@color/live_gift_orange"
+        android:textSize="12dp" />
+
+</android.support.constraint.ConstraintLayout>
+
+

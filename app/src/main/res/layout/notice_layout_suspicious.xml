@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aiwujie.shengmo.customview.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:text="@string/notice_suspicious"
+        android:id="@+id/mPersonInfo_black_top_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="7%w"
+        app:layout_textSizePercent="3.3%w"
+        android:gravity="center"
+        android:background="#FF3434"
+        android:textColor="#ffffff"
+        android:visibility="visible"
+        />
+
+</com.aiwujie.shengmo.customview.PercentFrameLayout>

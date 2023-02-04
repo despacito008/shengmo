@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_normal_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/ll_chat_auth"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="#eee"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_chat_auth"
+                android:textColor="@color/titleBlack"
+                android:textStyle="bold"
+                android:text="开通连线请先认证"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/arrow_right"
+                android:layout_width="15dp"
+                android:layout_height="15dp"/>
+        </LinearLayout>
+
+
+
+        <View
+            android:background="#eee"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/ll_live_chat_setting"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:textColor="@color/titleBlack"
+        android:textStyle="bold"
+        android:text="设置聊天模式"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/rg_chat_model"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_chat_mode_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="可接听"
+            android:checked="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_chat_mode_mute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="勿扰"
+            android:checked="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:textColor="@color/titleBlack"
+        android:textStyle="bold"
+        android:text="设置私聊价格"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/ll_live_chat_audio"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_user_link_audio"
+            android:layout_marginRight="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:paddingVertical="10dp"
+            android:textColor="@color/darkGray"
+            android:text="语音聊天"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_live_chat_audio_price"
+            android:textSize="16dp"
+            android:textColor="@color/purple_main"
+            android:text="10魔豆/分钟"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/ll_live_chat_video"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_user_link_video"
+            android:layout_marginRight="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:paddingVertical="10dp"
+            android:textColor="@color/darkGray"
+            android:text="视频聊天"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_live_chat_video_price"
+            android:textSize="16dp"
+            android:textColor="@color/purple_main"
+            android:text="30魔豆/分钟"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

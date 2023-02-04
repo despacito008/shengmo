@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp">
+
+
+    <ImageView
+        android:id="@+id/mFragmentLive_local_dian"
+        android:layout_width="15dp"
+        android:layout_height="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/bg_user_info_sex_cdts"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/mFragmentLive_title_this_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/live_local"
+        android:textColor="#999999"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

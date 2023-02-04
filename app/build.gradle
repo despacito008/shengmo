@@ -1,0 +1,323 @@
+apply plugin: 'com.android.application'
+apply plugin: 'packer'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: "ua.eshepelyuk.ManifestClasspath"
+android {
+    signingConfigs {
+        config {
+            lintOptions {
+                checkReleaseBuilds false
+
+                abortOnError false
+
+            }
+            keyAlias 'shengmo'
+            keyPassword 'shengmo123'
+            storeFile file('C:/Android/WorkSpace/AiWuJie/newshengmo/shengmo.jks')
+            storePassword 'shengmo123'
+            v2SigningEnabled false
+        }
+        release {
+            lintOptions {
+                checkReleaseBuilds false
+
+                abortOnError false
+
+            }
+            keyAlias 'shengmo'
+            keyPassword 'shengmo123'
+            storeFile file('C:/Android/WorkSpace/AiWuJie/newshengmo/shengmo.jks')
+            storePassword 'shengmo123'
+            // 打包使用旧的签名
+            v2SigningEnabled false
+        }
+    }
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    compileSdkVersion 28
+    buildToolsVersion '27.0.3'
+
+
+    defaultConfig {
+        applicationId "com.aiwujie.shengmo"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 99
+        versionName "6.2.2"
+
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a", "armeabi"
+            //abiFilters "armeabi-v7a"
+        }
+
+        packagingOptions {
+            exclude 'META-INF/rxjava.properties'
+        }
+
+        signingConfig signingConfigs.release
+    }
+    packer {
+        // 是否检查Gradle配置中的signingConfig，默认不检查
+        checkSigningConfig = true
+        // 是否检查Gradle配置中的zipAlignEnabled，默认不检查
+        checkZipAlign = true
+        // 指定渠道打包输出文件名格式
+        //包名-渠道名-正式环境（release）-版本名称-版本号-最终APK文件的MD5哈希值
+        archiveNameFormat = '${appPkg}-${flavorName}-${buildType}-v${versionName}-${versionCode}-${buildTime}'
+        // 指定渠道打包输出目录
+        archiveOutput = file(new File(project.rootProject.buildDir.path, "academy_apks"))
+//        // 指定渠道打包需要修改的AndroidManifest文件项
+//        manifestMatcher = ['UMENG_CHANNEL’, ‘Promotion_Market']
+//// 指定是否使用build版本号自增
+//        buildNumberAuto = true
+//// 指定使用版本号自增的buildType，默认是全部
+//        buildNumberTypeMatcher = ['release', 'beta']
+        //解决编码问题
+        tasks.withType(JavaCompile) {
+            options.encoding = "UTF-8"
+        }
+        buildTypes {
+            release {
+
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+                signingConfig signingConfigs.config
+            }
+            debug {
+                signingConfig signingConfigs.config
+
+            }
+
+        }
+        sourceSets {
+            main { jniLibs.srcDirs = ['libs'] }
+        }
+
+        dexOptions {
+            javaMaxHeapSize "4g"
+        }
+
+        packagingOptions {
+            pickFirst '**/libc++_shared.so'
+            doNotStrip "*/armeabi/libYTCommon.so"
+            doNotStrip "*/armeabi-v7a/libYTCommon.so"
+            doNotStrip "*/x86/libYTCommon.so"
+            doNotStrip "*/arm64-v8a/libYTCommon.so"
+        }
+
+    }
+    repositories {
+        flatDir {
+            //dirs 'libs'
+            dirs '../tuikit/libs', 'libs'  //将xxx替换为引入aar文件的module名
+        }
+    }
+//    configurations.all {
+////        resolutionStrategy {
+////            force 'com.github.bumptech.glide:glide:4.9.0'
+////        }
+//    }
+    configurations.all {
+        resolutionStrategy.eachDependency { details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '26.1.0'
+                }
+            }
+        }
+    }
+    productFlavors {
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+
+
+    greendao {
+        schemaVersion 3  //版本
+        daoPackage 'com.aiwujie.shengmo.dao' // 一般为app包名+生成文件的文件夹名
+        targetGenDir 'src/main/java' //生成文件路径
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':timeselector')
+    implementation project(':androidPullToRefresh')
+    implementation files('libs/mta-sdk-1.6.2.jar')
+    implementation files('libs/open_sdk_r5781.jar')
+
+    implementation files('libs/AMap_2DMap_V2.9.0_20160525.jar')
+    implementation files('libs/AMap_Channel_Location_V1.4.0_20160708.jar')
+    implementation files('libs/AMap_Location_V3.3.0_20170118.jar')
+    implementation files('libs/AMap_Search_V3.4.0_20160811.jar')
+
+    //微博
+    implementation project(':weiboSDK')
+    implementation project(':alertview')  // 一个底部弹出的选项卡，目前来看效果还行，可以延用。
+    // 融云
+//    implementation project(':sticker')
+//    implementation project(':IMLib')
+//    implementation project(':IMKit')
+//    implementation project(':CallKit')
+//    implementation project(':CallLib')
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.jakewharton:butterknife:8.4.0'
+//    compile 'com.github.bumptech.glide:okhttp-integration:1.3.1@aar'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.8.0'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'pub.devrel:easypermissions:0.2.1'
+    implementation 'cn.bingoogolapple:bga-photopicker:1.2.9@aar'
+//    implementation 'androidx.appcompat:appcompat:1.1.0'
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'cn.bingoogolapple:bga-baseadapter:1.2.9@aar'
+//    compile 'cn.bingoogolapple:bga-adapter:1.1.5@aar'
+//    compile 'cn.bingoogolapple:bga-photopicker:1.2.2@aar'
+//    implementation 'com.zhihu.android:matisse:0.5.2-beta4'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'com.android.support:multidex:1.0.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:1.0.2'
+    implementation 'com.takwolf.android:lock9view:0.0.11'
+    implementation 'com.github.yalantis:ucrop:2.2.1'
+    // 这个要切换okhttp3
+//    compile 'com.squareup.okhttp:okhttp:2.7.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    //  日志拦截器
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+
+
+    implementation 'id.zelory:compressor:2.1.0'
+    implementation 'com.dingmouren.fallingview:fallingview:1.0.2'
+    implementation 'com.jaeger.statusbaruitl:library:1.3.0'
+    implementation 'com.github.ybq:Android-SpinKit:1.2.0'
+    implementation 'com.youth.banner:banner:1.4.9'
+    implementation 'com.zhy:percent-support-extends:1.0.1'
+    implementation 'com.zhy:autolayout:1.4.5'
+//    compile 'jp.wasabeef:glide-transformations:2.0.2'
+    implementation 'jp.wasabeef:glide-transformations:4.0.0'
+    // If you want to use the GPU Filters
+    implementation 'jp.co.cyberagent.android:gpuimage:2.0.0'
+    implementation 'me.leolin:ShortcutBadger:1.1.19@aar'
+    implementation 'com.dinuscxj:ellipsizetextview:1.0.5'
+    implementation 'com.jakewharton:butterknife-compiler:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    implementation project(':ninegridview')
+    implementation files('libs/alipaySdk-20170922.jar')
+    //Packger打包依赖
+    implementation 'com.mcxiaoke.gradle:packer-helper:1.0.8'
+    //友盟多渠道打包
+    implementation 'com.umeng.analytics:analytics:latest.integration'
+    // 侧滑依赖
+    implementation 'cn.bingoogolapple:bga-swipebacklayout:1.2.0@aar'
+    implementation(name: 'bugly_crashreport_upgrade-1.4.1', ext: 'aar')
+
+    implementation files('libs/Android_Map3D_SDK_V6.5.0_20180930.jar')
+    implementation 'com.facebook.fresco:fresco:1.8.1'
+    implementation 'org.greenrobot:greendao:3.1.0'
+    implementation 'org.greenrobot:greendao-generator:3.1.0'
+    implementation 'com.github.wildma:IDCardCamera:1.1.0'
+    //SmartRefreshLayout
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.2'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.2'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHorizontal:1.1.2'
+    implementation 'com.billy.android:smart-swipe:1.0.5'
+    implementation 'com.yanzhenjie:recyclerview-swipe:1.1.4'
+    implementation 'com.github.HanHuoBin:BaseDialog:1.2.0'
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+    //腾讯直播LiteAv SDK
+    // implementation 'com.tencent.liteavsdk:LiteAVSDK_Smart:latest.release'
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+
+//    compile 'com.tencent.bugly:crashreport:latest.release'              // 其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+    // 其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
+
+    implementation 'com.github.donkingliang:ImageSelector:1.9.3'
+
+    implementation project(':AliyunEditor')
+    implementation project(':AliyunRecorder:record')
+    implementation project(':AliyunCrop:crop')
+    implementation project(':AliyunVideoCommon')
+    implementation project(':AliyunFileDownLoader')
+//    implementation project (':AliyunResample')
+    implementation project(':AliyunSVideoBase')
+    // implementation project(':lvb')
+
+    annotationProcessor 'com.github.joyrun.ActivityRouter:router-compiler:0.6.2'
+    implementation 'com.alibaba:fastjson:1.2.73'
+    implementation 'com.alibaba:fastjson:1.1.72.android'
+
+    implementation 'com.github.razerdp:BasePopup:2.2.0'
+    implementation 'me.imid.swipebacklayout.lib:library:1.1.0'
+    implementation(project(':tuikit')) {
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude module: 'gson'
+    }
+    implementation(project(':tuikit-live')) {
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude module: 'gson'
+    }
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+
+    //视频UI层，必须要有
+    //implementation 'cn.yc:VideoPlayer:3.1.0'
+    //视频缓存，如果不需要则可以不依赖
+    //implementation 'cn.yc:VideoCache:3.0.5'
+    //视频内核层，必须有
+    //implementation 'cn.yc:VideoKernel:3.0.6'
+    //视频播放器播放位置记录，选择性添加
+    //implementation 'cn.yc:VideoSqlLite:1.0.2'
+
+    //implementation 'com.github.KuangGang:RoundCorners:1.3.0'
+    //implementation 'com.github.rubensousa:gravitysnaphelper:1.4'
+
+
+    implementation 'cn.jzvd:jiaozivideoplayer:7.4.2'
+    implementation 'com.google.android.exoplayer:exoplayer:2.9.6'
+
+    implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.4'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-arm64:0.8.8'
+
+    implementation files('libs/qndroid-rtc-3.1.2.jar')
+    implementation files('libs/pldroid-player-2.1.5.jar')
+    implementation 'com.qiniu:happy-dns:0.2.17'
+
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'com.github.getActivity:XXPermissions:13.5'
+    implementation 'com.github.getActivity:ShapeView:6.2'
+  
+
+}

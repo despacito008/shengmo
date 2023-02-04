@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#6000"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        app:layout_constraintVertical_bias="0.2"
+        android:background="@drawable/bg_round_white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.75"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        app:layout_constraintDimensionRatio="3:4"
+        android:layout_height="0dp">
+
+        <TextView
+            android:textSize="15dp"
+            android:textColor="@color/titleBlack"
+            android:textStyle="bold"
+            android:text="开通粉丝团"
+            android:paddingVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:scrollbars="none"
+            android:paddingVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/tv_pop_info"
+                tools:text="什么是粉丝团？巴拉巴拉"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <LinearLayout
+            android:paddingVertical="5dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15dp"
+                android:textColor="@color/titleBlack"
+                android:text="定义你的徽章名称"
+                android:paddingVertical="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/et_fan_club_card"
+                android:maxLength="3"
+                android:hint="最多三个字"
+                android:paddingHorizontal="10dp"
+                android:background="@drawable/bg_border_edit_pwd"
+                android:paddingVertical="10dp"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_pop_commit"
+                android:layout_marginVertical="10dp"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_round_purple_home"
+                android:text="申请开通"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_click_bg_selector"
+    xmlns:tools="http://schemas.android.com/tools">
+    <include
+        layout="@layout/app_layout_normal_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        android:paddingVertical="8dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp">
+        <View
+            android:visibility="invisible"
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:visibility="invisible"
+            tools:visibility="visible"
+            android:id="@+id/tv_item_homepage_user_time"
+            android:layout_gravity="center|right"
+            android:text="刚刚"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:layout_gravity="center|right"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <TextView
+                android:visibility="invisible"
+                tools:visibility="visible"
+                android:id="@+id/tv_item_homepage_user_distance"
+                android:layout_gravity="center"
+                android:text="1000km"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:visibility="invisible"
+                tools:visibility="visible"
+                android:id="@+id/iv_item_homepage_user_distance"
+                android:layout_gravity="center|right"
+                android:src="@drawable/ic_no_location"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

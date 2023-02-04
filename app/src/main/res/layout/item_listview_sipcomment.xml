@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <TextView
+        android:id="@+id/item_listview_sipcomment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#b73acb"
+        android:paddingLeft="10dp"
+        android:text="111"
+        android:singleLine="true"
+        app:layout_textSizePercent="2%"/>
+    <TextView
+        android:id="@+id/item_listview_sipcomment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="1111"
+        app:layout_textSizePercent="1.8%"
+        android:layout_marginLeft="5dp"/>
+</com.zhy.android.percent.support.PercentLinearLayout>

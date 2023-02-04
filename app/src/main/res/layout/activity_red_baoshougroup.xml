@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aiwujie.shengmo.activity.RedBaoshougroupActivity">
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll1"
+        android:background="#EF5B49"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:tint="@color/white"
+            android:id="@+id/iv_back"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/zuofed2ad"/>
+
+
+    </LinearLayout>
+
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_below="@id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="#00000000"
+        app:srlPrimaryColor="#00000000"
+        android:background="#fff"
+        app:srlEnablePreviewInEditMode="true">
+
+
+        <ListView
+            android:scrollbars="none"
+            android:background="#fff"
+            android:id="@+id/shouredbaolist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#fff"/>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+</RelativeLayout>

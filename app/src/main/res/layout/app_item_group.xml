@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_click_bg_selector">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp">
+        <FrameLayout
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical">
+            <com.aiwujie.shengmo.view.CircleImageView
+                android:id="@+id/iv_item_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/morentouxiang"
+                android:background="@drawable/item_icon_bg" />
+
+            <ImageView
+                android:id="@+id/iv_item_level"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/user_manager"
+                tools:visibility="visible"
+                android:visibility="invisible"
+                />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    tools:text="绳艺爱好者"
+                    android:id="@+id/tv_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@color/blackGray"
+                    android:singleLine="true"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.75"
+                android:orientation="horizontal">
+                <TextView
+                    tools:text="1 本群为绳艺爱好者"
+                    android:id="@+id/tv_item_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:singleLine="true"
+                    android:textSize="12dp"
+                    android:textColor="@color/lightGray"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.75"
+                android:orientation="horizontal">
+                <TextView
+                    android:background="@drawable/border_group_numbers"
+                    android:id="@+id/tv_item_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textSize="10dp"
+                    android:drawableLeft="@mipmap/lanseren"
+                    android:drawablePadding="5dp"
+                    android:textColor="#67cdff"
+                    android:paddingVertical="3dp"
+                    android:paddingHorizontal="8dp"
+                    android:includeFontPadding="false"
+                    tools:text="60人"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:includeFontPadding="false"
+                    android:background="@drawable/border_group_distance"
+                    android:id="@+id/tv_item_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="10dp"
+                    android:drawablePadding="5dp"
+                    android:paddingVertical="3dp"
+                    android:paddingHorizontal="8dp"
+                    android:textColor="#ffd339"
+                    tools:text="100km"
+                    android:drawableLeft="@mipmap/huangsedingwei"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center" />
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    tools:visibility="visible"
+                    android:visibility="gone"
+                    android:background="@drawable/border_group_claim"
+                    android:id="@+id/tv_item_claim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="10dp"
+                    android:includeFontPadding="false"
+                    android:layout_marginRight="5dp"
+                    android:drawablePadding="5dp"
+                    android:paddingVertical="3dp"
+                    android:paddingHorizontal="8dp"
+                    android:textColor="@color/purpleColor"
+                    android:text="可认领"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

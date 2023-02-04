@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_user_avatar"
+    tools:background="#3000"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+    <View
+        android:id="@+id/view_layout_avatar_bg"
+        android:background="@drawable/bg_user_info_avator_stroke"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.78"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_user_avatar_state"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        android:id="@+id/iv_user_avatar_state"
+        tools:src="@drawable/ic_user_liver"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_user_avatar_icon"
+        tools:src="@mipmap/morentouxiang"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.735"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+    <ImageView
+        android:id="@+id/iv_user_avatar_level"
+        tools:src="@drawable/user_vip_year"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_user_avatar_icon"
+        app:layout_constraintLeft_toLeftOf="@id/iv_user_avatar_icon"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+    <ImageView
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:background="@drawable/bg_user_online"
+        android:id="@+id/iv_user_avatar_online"
+        app:layout_constraintRight_toRightOf="@id/iv_user_avatar_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_user_avatar_icon"
+        app:layout_constraintLeft_toRightOf="@id/iv_user_avatar_icon"
+        app:layout_constraintBottom_toTopOf="@id/iv_user_avatar_icon"
+        android:layout_width="6dp"
+        android:layout_height="6dp"/>
+
+
+</android.support.constraint.ConstraintLayout>

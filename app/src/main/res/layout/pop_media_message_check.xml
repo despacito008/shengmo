@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/bg_round_white"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_pop_message_check_tips"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/darkGray"
+            tools:text="你选择了下面的图片"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <FrameLayout
+            android:layout_marginHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:maxHeight="400dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_pop_message_check"
+                tools:src="@drawable/ic_reward_ranking_top_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/iv_pop_message_check_play"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_video_play"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+        </FrameLayout>
+
+        <View
+            android:background="#e5e5e5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:textColor="@color/darkGray"
+               android:id="@+id/tv_pop_message_check_cancel"
+               android:gravity="center"
+               android:text="取消"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="50dp"/>
+
+           <TextView
+               android:background="@drawable/bg_pop_message_check"
+               android:textColor="@color/white"
+               android:id="@+id/tv_pop_message_check_confirm"
+               android:gravity="center"
+               android:text="确认"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="50dp"/>
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

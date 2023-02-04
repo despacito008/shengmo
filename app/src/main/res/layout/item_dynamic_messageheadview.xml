@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <android.support.constraint.Guideline
+            app:layout_constraintGuide_percent="0.125"
+            android:orientation="vertical"
+            android:id="@+id/guide_line_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <android.support.constraint.Guideline
+            app:layout_constraintGuide_percent="0.375"
+            android:orientation="vertical"
+            android:id="@+id/guide_line_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <android.support.constraint.Guideline
+            app:layout_constraintGuide_percent="0.625"
+            android:orientation="vertical"
+            android:id="@+id/guide_line_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <android.support.constraint.Guideline
+            app:layout_constraintGuide_percent="0.875"
+            android:orientation="vertical"
+            android:id="@+id/guide_line_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+      <View
+          app:layout_constraintVertical_bias="0.4"
+          android:id="@+id/view_message_thumb_bg"
+          android:background="@drawable/bg_message_thumb"
+          app:layout_constraintLeft_toLeftOf="@id/guide_line_1"
+          app:layout_constraintRight_toRightOf="@id/guide_line_1"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:layout_width="50dp"
+          android:layout_height="50dp"/>
+
+        <View
+            app:layout_constraintVertical_bias="0.4"
+            android:id="@+id/view_message_reword_bg"
+            android:background="@drawable/bg_message_reward"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_2"
+            app:layout_constraintRight_toRightOf="@id/guide_line_2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+
+        <View
+            app:layout_constraintVertical_bias="0.4"
+            android:id="@+id/view_message_recommend_bg"
+            android:background="@drawable/bg_message_recommend"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_3"
+            app:layout_constraintRight_toRightOf="@id/guide_line_3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+
+        <View
+            app:layout_constraintVertical_bias="0.4"
+            android:id="@+id/view_message_alite_bg"
+            android:background="@drawable/bg_message_alite"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_4"
+            app:layout_constraintRight_toRightOf="@id/guide_line_4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="赞过我的"
+            android:textSize="14dp"
+            android:textColor="@color/darkGray"
+            app:layout_constraintTop_toBottomOf="@id/view_message_thumb_bg"
+            app:layout_constraintLeft_toLeftOf="@id/view_message_thumb_bg"
+            app:layout_constraintRight_toRightOf="@id/view_message_thumb_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="打赏过我的"
+            android:textSize="14dp"
+            android:textColor="@color/darkGray"
+            app:layout_constraintTop_toBottomOf="@id/view_message_reword_bg"
+            app:layout_constraintLeft_toLeftOf="@id/view_message_reword_bg"
+            app:layout_constraintRight_toRightOf="@id/view_message_reword_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="推顶过我的"
+            android:textSize="14dp"
+            android:textColor="@color/darkGray"
+            app:layout_constraintTop_toBottomOf="@id/view_message_recommend_bg"
+            app:layout_constraintLeft_toLeftOf="@id/view_message_recommend_bg"
+            app:layout_constraintRight_toRightOf="@id/view_message_recommend_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="\@过我的"
+            android:textSize="14dp"
+            android:textColor="@color/darkGray"
+            app:layout_constraintTop_toBottomOf="@id/view_message_alite_bg"
+            app:layout_constraintLeft_toLeftOf="@id/view_message_alite_bg"
+            app:layout_constraintRight_toRightOf="@id/view_message_alite_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <ImageView
+            android:src="@drawable/message_thumb"
+            app:layout_constraintLeft_toLeftOf="@id/view_message_thumb_bg"
+            app:layout_constraintRight_toRightOf="@id/view_message_thumb_bg"
+            app:layout_constraintBottom_toBottomOf="@id/view_message_thumb_bg"
+            app:layout_constraintTop_toTopOf="@id/view_message_thumb_bg"
+            android:layout_width="33.5dp"
+            android:layout_height="33.5dp"/>
+
+        <ImageView
+            android:src="@drawable/message_reword"
+            app:layout_constraintLeft_toLeftOf="@id/view_message_reword_bg"
+            app:layout_constraintRight_toRightOf="@id/view_message_reword_bg"
+            app:layout_constraintBottom_toBottomOf="@id/view_message_reword_bg"
+            app:layout_constraintTop_toTopOf="@id/view_message_reword_bg"
+            android:layout_width="33.5dp"
+            android:layout_height="33.5dp"/>
+
+        <ImageView
+            android:src="@drawable/message_recommend"
+            app:layout_constraintLeft_toLeftOf="@id/view_message_recommend_bg"
+            app:layout_constraintRight_toRightOf="@id/view_message_recommend_bg"
+            app:layout_constraintBottom_toBottomOf="@id/view_message_recommend_bg"
+            app:layout_constraintTop_toTopOf="@id/view_message_recommend_bg"
+            android:layout_width="31dp"
+            android:layout_height="38dp"/>
+
+        <ImageView
+            android:src="@drawable/message_alite"
+            app:layout_constraintLeft_toLeftOf="@id/view_message_alite_bg"
+            app:layout_constraintRight_toRightOf="@id/view_message_alite_bg"
+            app:layout_constraintBottom_toBottomOf="@id/view_message_alite_bg"
+            app:layout_constraintTop_toTopOf="@id/view_message_alite_bg"
+            android:layout_width="33.5dp"
+            android:layout_height="33.5dp"/>
+        
+        <TextView
+            android:id="@+id/mDynamic_message_zancount"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="8.5dp"
+            android:includeFontPadding="false"
+            tools:text="26"
+            android:paddingHorizontal="3dp"
+            android:minWidth="16dp"
+            android:background="@drawable/bg_message_zan_count"
+            app:layout_constraintBottom_toBottomOf="@id/view_message_thumb_bg"
+            app:layout_constraintRight_toRightOf="@id/view_message_thumb_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"/>
+
+        <TextView
+            android:id="@+id/mDynamic_message_dscount"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="8.5dp"
+            android:includeFontPadding="false"
+            tools:text="26"
+            android:paddingHorizontal="3dp"
+            android:minWidth="16dp"
+            android:background="@drawable/bg_message_count"
+            app:layout_constraintBottom_toBottomOf="@id/view_message_reword_bg"
+            app:layout_constraintRight_toRightOf="@id/view_message_reword_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"/>
+
+        <TextView
+            android:id="@+id/mDynamic_tuiding_atcount"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="8.5dp"
+            android:includeFontPadding="false"
+            tools:text="26"
+            android:paddingHorizontal="3dp"
+            android:minWidth="16dp"
+            android:background="@drawable/bg_message_count"
+            app:layout_constraintBottom_toBottomOf="@id/view_message_recommend_bg"
+            app:layout_constraintRight_toRightOf="@id/view_message_recommend_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"/>
+
+        <TextView
+            android:id="@+id/mDynamic_message_atcount"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="8.5dp"
+            android:includeFontPadding="false"
+            tools:text="26"
+            android:paddingHorizontal="3dp"
+            android:minWidth="16dp"
+            android:background="@drawable/bg_message_count"
+            app:layout_constraintBottom_toBottomOf="@id/view_message_alite_bg"
+            app:layout_constraintRight_toRightOf="@id/view_message_alite_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"/>
+
+
+        
+
+    </android.support.constraint.ConstraintLayout>
+
+
+<!--    <com.zhy.android.percent.support.PercentLinearLayout-->
+<!--        android:id="@+id/mDynamic_message_ll_zan"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:paddingTop="8dp"-->
+<!--        android:paddingBottom="8dp"-->
+<!--        android:paddingRight="10dp"-->
+<!--        app:layout_heightPercent="16%w"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@drawable/item_click_bg_selector"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@mipmap/zanguowode"/>-->
+<!--        <com.zhy.android.percent.support.PercentLinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_weight="9"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            >-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="赞过我的"-->
+<!--                app:layout_textSizePercent="5%w"-->
+<!--                android:textColor="#333333"-->
+<!--                android:layout_gravity="center_vertical"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="2dp"-->
+<!--                app:layout_textSizePercent="4.5%w"-->
+<!--                android:textColor="#b73acb"-->
+
+<!--                android:layout_gravity="center_vertical"/>-->
+<!--        </com.zhy.android.percent.support.PercentLinearLayout>-->
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="0.5"-->
+<!--            android:src="@mipmap/rightjian"-->
+<!--            android:layout_gravity="center_vertical"/>-->
+<!--    </com.zhy.android.percent.support.PercentLinearLayout>-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="#eeeeee"/>-->
+<!--    <com.zhy.android.percent.support.PercentLinearLayout-->
+<!--        android:id="@+id/mDynamic_message_ll_ds"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:paddingTop="8dp"-->
+<!--        android:paddingBottom="8dp"-->
+<!--        android:paddingRight="10dp"-->
+<!--        app:layout_heightPercent="15.5%w"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@drawable/item_click_bg_selector"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@mipmap/shang"/>-->
+<!--        <com.zhy.android.percent.support.PercentLinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_weight="9"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:gravity="center_vertical">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="打赏过我的"-->
+<!--                app:layout_textSizePercent="5%w"-->
+<!--                android:textColor="#333333"-->
+<!--                android:layout_gravity="center_vertical"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="2dp"-->
+<!--                app:layout_textSizePercent="4.5%w"-->
+<!--                android:textColor="#b73acb"-->
+<!--                android:layout_gravity="center_vertical"/>-->
+<!--        </com.zhy.android.percent.support.PercentLinearLayout>-->
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="0.5"-->
+<!--            android:src="@mipmap/rightjian"-->
+<!--            android:layout_gravity="center_vertical"/>-->
+<!--    </com.zhy.android.percent.support.PercentLinearLayout>-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="#eeeeee"/>-->
+<!--    <com.zhy.android.percent.support.PercentLinearLayout-->
+<!--        android:id="@+id/mDynamic_message_ll_at_tuiding"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:paddingTop="8dp"-->
+<!--        android:paddingBottom="8dp"-->
+<!--        android:paddingRight="10dp"-->
+<!--        app:layout_heightPercent="15.5%w"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@drawable/item_click_bg_selector">-->
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@mipmap/tuidingguowo"/>-->
+
+<!--        <com.zhy.android.percent.support.PercentLinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_weight="9"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:gravity="center_vertical">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="推顶过我的"-->
+<!--                app:layout_textSizePercent="5%w"-->
+<!--                android:textColor="#333333"-->
+<!--                android:layout_gravity="center_vertical"/>-->
+<!--            <TextView-->
+<!--              -->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="2dp"-->
+<!--                app:layout_textSizePercent="4.5%w"-->
+<!--                android:textColor="#b73acb"-->
+<!--                android:layout_gravity="center_vertical"/>-->
+<!--        </com.zhy.android.percent.support.PercentLinearLayout>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="0.5"-->
+<!--            android:src="@mipmap/rightjian"-->
+<!--            android:layout_gravity="center_vertical"/>-->
+<!--    </com.zhy.android.percent.support.PercentLinearLayout>-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="#eeeeee"/>-->
+<!--    <com.zhy.android.percent.support.PercentLinearLayout-->
+<!--        android:id="@+id/mDynamic_message_ll_at_mined"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:paddingTop="8dp"-->
+<!--        android:paddingBottom="8dp"-->
+<!--        android:paddingRight="10dp"-->
+<!--        app:layout_heightPercent="15.5%w"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@drawable/item_click_bg_selector">-->
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@mipmap/aite"/>-->
+
+<!--        <com.zhy.android.percent.support.PercentLinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_weight="9"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:gravity="center_vertical">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="\@过我的"-->
+<!--                app:layout_textSizePercent="5%w"-->
+<!--                android:textColor="#333333"-->
+<!--                android:layout_gravity="center_vertical"/>-->
+<!--            <TextView-->
+<!--             -->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="2dp"-->
+<!--                app:layout_textSizePercent="4.5%w"-->
+<!--                android:textColor="#b73acb"-->
+<!--                android:layout_gravity="center_vertical"/>-->
+<!--        </com.zhy.android.percent.support.PercentLinearLayout>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="0.5"-->
+<!--            android:src="@mipmap/rightjian"-->
+<!--            android:layout_gravity="center_vertical"/>-->
+<!--    </com.zhy.android.percent.support.PercentLinearLayout>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/mDynamic_message_tvHeadview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:text="动态评论"/>
+
+        <FrameLayout
+            android:layout_marginVertical="20dp"
+            android:id="@+id/item_group_my_header_ll01"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <View
+                android:layout_gravity="bottom"
+                android:background="@drawable/bg_topic_tab_bottom"
+                android:layout_width="57dp"
+                android:layout_height="8dp"/>
+
+            <TextView
+                android:id="@+id/mDynamic_message_tvHeadview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                tools:text="刚刚有12条评论"
+                android:textSize="14dp"
+                android:textColor="@color/titleBlack"
+                />
+
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

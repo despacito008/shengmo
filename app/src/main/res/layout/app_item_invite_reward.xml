@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_item_invite_reward_content"
+        android:textColor="@color/titleBlack"
+        android:textSize="16dp"
+        android:paddingVertical="5dp"
+        tools:text="邀请 成功 获得 五天 VIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_item_invite_reward_time"
+        android:textColor="@color/normalGray"
+        android:textSize="12dp"
+        tools:text="2020 - 9 - 1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

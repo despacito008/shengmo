@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp">
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical">
+            <ImageView
+                android:id="@+id/item_group_operation_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/morentouxiang"
+                android:background="@drawable/item_icon_bg"
+                />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    tools:text="小小的承诺请求加入北京交友群"
+                    android:id="@+id/item_group_operation_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/titleBlack"
+                    android:textSize="15dp"
+                    android:maxLines="2"
+                    android:layout_gravity="center_vertical"
+                    />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_marginTop="9dp"
+                android:id="@+id/item_group_operation_ll_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    tools:text="验证消息：小小的承诺"
+                    android:id="@+id/item_group_operation_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/lightGray"
+                    android:textSize="12dp"
+                    android:maxLines="1"
+                    android:layout_gravity="center_vertical"
+                    />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/item_group_operation_ll_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    tools:text="2021-04-28 15:09:43"
+                    android:id="@+id/item_group_operation_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/lightGray"
+                    android:textSize="12dp"
+                    android:maxLines="1"
+                    android:layout_gravity="center_vertical"
+                    />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <TextView
+            android:id="@+id/item_group_operation_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1.8"
+            android:text="同意"
+            android:visibility="gone"
+            android:textSize="11dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_group_request_agree"/>
+        <TextView
+            android:id="@+id/item_group_operation_refuse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1.8"
+            android:text="拒绝"
+            android:visibility="gone"
+            android:textSize="11dp"
+            android:gravity="center"
+            android:textColor="#ff615c"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_group_request_refuse"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_group_operation_yichuli"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="已同意"
+                android:layout_marginVertical="6dp"
+                android:visibility="gone"
+                android:textSize="11dp"
+                android:gravity="center"
+                android:textColor="#666"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_group_request_done"/>
+
+            <TextView
+                android:id="@+id/item_group_operation_yichul2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="处理人小姐姐"
+                android:layout_marginVertical="6dp"
+                android:visibility="gone"
+                android:textSize="11dp"
+                android:gravity="center"
+                android:textColor="@color/lightGray"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

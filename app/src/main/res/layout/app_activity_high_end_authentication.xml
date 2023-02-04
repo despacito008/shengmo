@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tab_layout"
+        layout="@layout/layout_normal_title_bar" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_activity_high_end_authentication"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tab_layout"
+        android:scrollbars="none"
+        app:tabBackground="@color/transparent"
+        app:tabIndicatorHeight="0dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_activity_high_end_authentication"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_activity_high_end_authentication" />
+
+    <TextView
+        android:id="@+id/tv_open"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_high_recharge"
+        android:gravity="center"
+        android:text="开通圣魔高端交友"
+        android:textColor="#ffffffff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

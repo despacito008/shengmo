@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:paddingVertical="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_item_live_audience_task_icon"
+        tools:src="@drawable/ic_live_audio_sign"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+    <LinearLayout
+        android:layout_marginHorizontal="15dp"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_item_live_audience_task_desc"
+            android:paddingVertical="4dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/titleBlack"
+            tools:text="在直播间累计发言20次     (20/20)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_item_live_audience_task_reward"
+            android:paddingVertical="4dp"
+            android:textSize="12dp"
+            android:textColor="@color/normalGray"
+            tools:text="奖励 6金魔豆 + 玩具狗"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_live_audience_task_state"
+        tools:text="未完成"
+        android:paddingVertical="6dp"
+        android:paddingHorizontal="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

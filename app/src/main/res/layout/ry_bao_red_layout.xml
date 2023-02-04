@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/minGray"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/ic_red_envelope_bg"
+        android:id="@+id/ry_phone_layout"
+        android:orientation="vertical"
+        android:layout_width="203dp"
+        android:layout_height="77dp">
+
+    <LinearLayout
+        android:id="@+id/llya"
+        android:layout_width="203dp"
+        android:layout_height="52dp">
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv_liwuya"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/redbaobao"/>
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:textSize="14dp"
+            tools:text="大吉大利，恭喜发财"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:id="@+id/ry_chat_phone_des_tv"
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+  <TextView
+      android:textColor="@color/white"
+      android:layout_width="203dp"
+      android:layout_height="25dp"
+      android:textSize="12dp"
+      android:gravity="center_vertical"
+      android:paddingLeft="15dp"
+      android:text="圣魔红包"/>
+
+    </LinearLayout>
+</LinearLayout>

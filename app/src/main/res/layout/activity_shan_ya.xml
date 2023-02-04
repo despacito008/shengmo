@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlya"
+   >
+
+
+    <ImageView
+        android:id="@+id/iv_shan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_shan1"
+        android:background="#ddd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:placeholderImage="@mipmap/default_error"/>
+
+    <ImageView
+        android:id="@+id/iv_aishan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/baishan"/>
+
+    <TextView
+        android:id="@+id/tvyayaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按住屏幕可查看5秒"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/iv_aishan"/>
+
+    <com.aiwujie.shengmo.zdyview.CountDownButton
+        android:id="@+id/countdown2"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:text="5"
+        app:totalTime="5000"
+        app:progressLineWidth="2dp"
+        />
+
+
+</RelativeLayout>

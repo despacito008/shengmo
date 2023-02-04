@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:layout_marginHorizontal="15dp"
+    android:background="@drawable/bg_round_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <com.aiwujie.shengmo.view.CircleImageView
+            android:id="@+id/civ_fans_club_icon"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            tools:background="#96cf"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.2"
+            app:layout_constraintDimensionRatio="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:id="@+id/tv_fans_club_name"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toRightOf="@id/civ_fans_club_icon"
+            tools:text="xxx 的 粉丝团"
+            app:layout_constraintTop_toTopOf="@id/civ_fans_club_icon"
+            app:layout_constraintBottom_toTopOf="@id/tv_fans_club_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_fans_club_mark"
+            app:layout_constraintLeft_toLeftOf="@id/tv_fans_club_name"
+            tools:text="团团"
+            app:layout_constraintBottom_toBottomOf="@id/civ_fans_club_icon"
+            app:layout_constraintTop_toBottomOf="@id/tv_fans_club_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_fans_club_num"
+            app:layout_constraintLeft_toLeftOf="@id/tv_fans_club_name"
+            tools:text="粉丝团成员: 230人"
+            app:layout_constraintTop_toBottomOf="@id/tv_fans_club_mark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_fans_club_rank"
+            app:layout_constraintTop_toTopOf="@id/tv_fans_club_mark"
+            app:layout_constraintBottom_toBottomOf="@id/tv_fans_club_mark"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="10dp"
+            tools:text="排名 20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_xinxizhongduan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/page_margin"
+    android:layout_marginRight="@dimen/page_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_manager_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_manager_top_title"
+        android:button="@null"
+        android:checked="false"
+        android:gravity="center"
+        android:text="管理场控"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/text_gray1"
+        />
+</LinearLayout>

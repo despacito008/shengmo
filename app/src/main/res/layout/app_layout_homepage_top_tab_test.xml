@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/cl_fragment_message_title_bar"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/iv_fragment_live_search"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/ic_live_top_rank"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+
+        <ImageView
+            android:id="@+id/iv_fragment_live"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/ic_live_home_start_live"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="36"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginHorizontal="50dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/mFragmentLive_hot_dian"
+                    android:layout_width="15dp"
+                    android:layout_height="4dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_round_titleblack"
+                    android:scaleType="fitXY"
+                    app:layout_marginBottomPercent="5%" />
+
+                <TextView
+                    android:id="@+id/mFragmentLive_title_hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/live_hot"
+                    android:textColor="@drawable/item_home_text_selector"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/mFragment_live_recommendCount"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/item_messagecount_bg"
+                    android:gravity="center"
+                    android:text="99+"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone"
+                    app:layout_heightPercent="40%h"
+                    app:layout_marginRightPercent="14%h"
+                    app:layout_marginTopPercent="10%h"
+                    app:layout_textSizePercent="18%h"
+                    app:layout_widthPercent="40%h" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/mFragmentlive_new_dian"
+                    android:layout_width="15dp"
+                    android:layout_height="4dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_round_titleblack"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    app:layout_marginBottomPercent="5%" />
+
+                <TextView
+                    android:id="@+id/mFragmentLive_title_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/live_new"
+                    android:textColor="@drawable/item_home_text_selector"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/mFragment_live_newCount"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/item_messagecount_bg"
+                    android:gravity="center"
+                    android:text="99+"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone"
+                    app:layout_heightPercent="40%h"
+                    app:layout_marginRightPercent="14%h"
+                    app:layout_marginTopPercent="10%h"
+                    app:layout_textSizePercent="18%h"
+                    app:layout_widthPercent="40%h" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/mFragmentLive_follow_dian"
+                    android:layout_width="15dp"
+                    android:layout_height="4dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_round_titleblack"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    app:layout_marginBottomPercent="5%" />
+
+                <TextView
+                    android:id="@+id/mFragmentLive_title_follow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"
+                    android:text="关注"
+                    android:textColor="@drawable/item_home_text_selector"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/mFragment_live_followCount"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/item_messagecount_bg"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone"
+                    app:layout_heightPercent="40%h"
+                    app:layout_marginRightPercent="14%h"
+                    app:layout_marginTopPercent="10%h"
+                    app:layout_textSizePercent="18%h"
+                    app:layout_widthPercent="40%h" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/mFragmentLive_rank_dian"
+                    android:layout_width="15dp"
+                    android:layout_height="4dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_round_titleblack"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    app:layout_marginBottomPercent="5%" />
+
+                <TextView
+                    android:id="@+id/mFragmentLive_title_rank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"
+                    android:text="榜单"
+                    android:textColor="@drawable/item_home_text_selector"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/mFragment_live_rankCount"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/item_messagecount_bg"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone"
+                    app:layout_heightPercent="40%h"
+                    app:layout_marginRightPercent="14%h"
+                    app:layout_marginTopPercent="10%h"
+                    app:layout_textSizePercent="18%h"
+                    app:layout_widthPercent="40%h" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

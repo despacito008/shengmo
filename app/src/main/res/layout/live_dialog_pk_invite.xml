@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="#fff"
+    android:background="@drawable/bg_top_round_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/tv_dialog_pk_invite_info"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingVertical="15dp"
+        android:textColor="#333"
+        android:text="来自主播的PK邀请"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <CheckBox
+        android:id="@+id/cb_dialog_pk_invite"
+        android:background="@drawable/item_filter_button_bg"
+        app:layout_constraintTop_toTopOf="@id/tv_dialog_pk_invite_info"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tv_dialog_pk_invite_info"
+        android:layout_marginRight="15dp"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintDimensionRatio="28:17"
+        android:button="@null"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/cb_dialog_pk_invite"
+        app:layout_constraintBottom_toBottomOf="@id/cb_dialog_pk_invite"
+        android:text="下播前勿扰"
+        app:layout_constraintRight_toLeftOf="@id/cb_dialog_pk_invite"
+        android:textColor="@color/titleBlack"
+        android:textSize="13dp"
+        android:layout_marginRight="5dp"
+        android:includeFontPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:text="本场自动拒绝"
+        app:layout_constraintRight_toLeftOf="@id/cb_dialog_pk_invite"
+        app:layout_constraintBottom_toBottomOf="@id/view_dialog_pk_invite_top_line"
+        android:textColor="@color/lightGray"
+        android:layout_marginRight="5dp"
+        android:textSize="11dp"
+        android:includeFontPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:visibility="invisible"
+        android:id="@+id/view_dialog_pk_invite_top_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_dialog_pk_invite_info"
+        android:background="#e3e3e3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+
+    <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+        android:id="@+id/iv_dialog_pk_invite_icon"
+        app:layout_constraintLeft_toLeftOf="@id/tv_dialog_pk_invite_info"
+        app:layout_constraintTop_toBottomOf="@id/view_dialog_pk_invite_top_line"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintDimensionRatio="1"
+        tools:background="#6cf"
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        android:id="@+id/iv_dialog_pk_invite_level"
+        tools:src="@drawable/user_manager"
+        app:layout_constraintBottom_toBottomOf="@id/iv_dialog_pk_invite_icon"
+        app:layout_constraintRight_toRightOf="@id/iv_dialog_pk_invite_icon"
+        app:layout_constraintWidth_percent="0.07"
+        app:layout_constraintDimensionRatio="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_pk_invite_name"
+        app:layout_constraintTop_toTopOf="@id/iv_dialog_pk_invite_icon"
+        app:layout_constraintLeft_toRightOf="@id/iv_dialog_pk_invite_icon"
+        tools:text="人生何处不相逢"
+        android:textColor="#131415"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tv_dialog_pk_invite_room_type"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/tv_dialog_pk_invite_name"
+        app:layout_constraintTop_toTopOf="@id/tv_dialog_pk_invite_name"
+        app:layout_constraintBottom_toBottomOf="@id/tv_dialog_pk_invite_name"
+        android:textSize="11dp"
+        android:textColor="@color/normalGray"
+        android:paddingVertical="1dp"
+        android:paddingHorizontal="4dp"
+        android:text="视频"
+        android:background="@drawable/bg_border_invite_anchor_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <include layout="@layout/layout_user_normal_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/tv_dialog_pk_invite_name"
+        app:layout_constraintBottom_toBottomOf="@id/iv_dialog_pk_invite_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_dialog_pk_invite_icon"/>
+
+
+    <ImageView
+        android:id="@+id/iv_dialog_pk_invite_watch_num"
+        app:layout_constraintBottom_toBottomOf="@id/iv_dialog_pk_invite_icon"
+        app:layout_constraintLeft_toLeftOf="@id/tv_dialog_pk_invite_name"
+        android:src="@drawable/ic_pk_invite_watch_num"
+        android:layout_width="12dp"
+        android:layout_height="12dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_dialog_pk_invite_watch_sum"
+        app:layout_constraintTop_toTopOf="@id/iv_dialog_pk_invite_watch_num"
+        app:layout_constraintBottom_toBottomOf="@id/iv_dialog_pk_invite_watch_num"
+        app:layout_constraintLeft_toRightOf="@id/iv_dialog_pk_invite_watch_num"
+        tools:text="100在线人数"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/iv_dialog_pk_invite_reward_bean"
+        app:layout_constraintTop_toTopOf="@id/iv_dialog_pk_invite_watch_num"
+        app:layout_constraintBottom_toBottomOf="@id/iv_dialog_pk_invite_watch_num"
+        app:layout_constraintLeft_toLeftOf="@id/iv_dialog_pk_invite_watch_num"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/ic_pk_invite_reward_bean"
+        android:layout_width="12dp"
+        android:layout_height="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_pk_invite_reward_bean"
+        app:layout_constraintTop_toTopOf="@id/iv_dialog_pk_invite_reward_bean"
+        app:layout_constraintBottom_toBottomOf="@id/iv_dialog_pk_invite_reward_bean"
+        app:layout_constraintLeft_toRightOf="@id/iv_dialog_pk_invite_reward_bean"
+        tools:text="10000打赏魔豆"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/view_dialog_pk_invite_bottom_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_dialog_pk_invite_icon"
+        android:background="#e3e3e3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="1px"/>
+
+    <View
+        android:id="@+id/view_dialog_pk_invite_center_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_dialog_pk_invite_bottom_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#e5e5e5"
+        android:layout_width="1dp"
+        android:layout_height="19dp"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_pk_invite_refuse"
+        app:layout_constraintTop_toBottomOf="@id/view_dialog_pk_invite_bottom_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingVertical="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/view_dialog_pk_invite_center_line"
+        android:text="拒绝"
+        android:layout_width="0dp"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tv_dialog_pk_invite_accept"
+        app:layout_constraintTop_toBottomOf="@id/view_dialog_pk_invite_bottom_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingVertical="15dp"
+        app:layout_constraintLeft_toLeftOf="@id/view_dialog_pk_invite_center_line"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="接受"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:textColor="@color/purple_main"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>

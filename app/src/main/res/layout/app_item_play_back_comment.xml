@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_click_bg_selector"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include
+        android:layout_marginTop="10dp"
+        android:id="@+id/layout_user_avatar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/layout_user_avatar"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintDimensionRatio="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        tools:text="海龟先生"
+        android:paddingVertical="5dp"
+        android:textSize="15dp"
+        android:textColor="@color/titleBlack"
+        app:layout_constraintTop_toTopOf="@id/layout_user_avatar"
+        app:layout_constraintLeft_toRightOf="@id/layout_user_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_item_date"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_name"
+        app:layout_constraintTop_toTopOf="@id/layout_user_avatar"
+        app:layout_constraintBottom_toBottomOf="@id/layout_user_avatar"
+        android:textColor="@color/normalGray"
+        tools:text="2022-06-06 20:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_item_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        tools:text="人生得意须尽欢 莫使金樽空对月 劝君更尽一杯酒 西出阳关无故人 我有一壶酒 足以慰风尘 尽倾江海中 赠饮天下人"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_date"
+        android:textColor="@color/darkGray"
+        android:textSize="15dp"
+        android:layout_width="0dp"
+        android:maxLines="9"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_name"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>

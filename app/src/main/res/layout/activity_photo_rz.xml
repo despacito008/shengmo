@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    tools:context="com.aiwujie.shengmo.activity.PhotoRzActivity">
+  <com.zhy.android.percent.support.PercentRelativeLayout
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/mPhotorz_return"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dip"
+        android:gravity="center_vertical"
+        android:src="@mipmap/return_back"
+        android:textColor="#4b4b4b"
+        app:layout_heightPercent="50%" />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="我的认证"
+        android:textColor="@color/titleBlack"
+        app:layout_textSizePercent="35%" />
+</com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mPresentBill_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="@color/purple_main"
+        app:tabTextColor="#555555"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mPresentBill_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

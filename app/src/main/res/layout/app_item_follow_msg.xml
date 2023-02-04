@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_click_bg_selector"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+    <com.aiwujie.shengmo.view.CircleImageView
+        android:id="@+id/iv_item_follow_msg_icon"
+        app:layout_constraintWidth_percent="0.18"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginVertical="15dp"
+        android:layout_marginLeft="10dp"
+        tools:src="@mipmap/morentouxiang"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="13dp"
+        android:layout_marginBottom="3dp"
+        android:textColor="@color/normalGray"
+        android:text="关注你了呦！互相关注即为好友~"
+        app:layout_constraintLeft_toRightOf="@id/iv_item_follow_msg_icon"
+        app:layout_constraintBottom_toBottomOf="@id/iv_item_follow_msg_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:id="@+id/tv_item_follow_msg_name"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="@color/titleBlack"
+        tools:text="晴天"
+        app:layout_constraintLeft_toRightOf="@id/iv_item_follow_msg_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_item_follow_msg_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:id="@+id/tv_item_follow_msg_date"
+        android:textSize="13dp"
+        android:textColor="@color/normalGray"
+        android:text="2022-03-07 13:30"
+        app:layout_constraintTop_toTopOf="@id/iv_item_follow_msg_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        app:layout_constraintLeft_toLeftOf="@id/iv_item_follow_msg_icon"
+        app:layout_constraintRight_toRightOf="@id/tv_item_follow_msg_date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/line_gray"
+        android:layout_width="0dp"
+        android:layout_height="1px"/>
+
+
+</android.support.constraint.ConstraintLayout>

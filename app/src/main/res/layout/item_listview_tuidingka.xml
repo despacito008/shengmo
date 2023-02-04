@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="120%w"
+        app:layout_widthPercent="100%w"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/item_listview_chongzhi_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@drawable/item_chongzhi_text_selector"
+            android:text="6元"
+            />
+        <TextView
+            android:id="@+id/item_listview_chongzhi_modou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@drawable/item_chongzhi_text_selector"
+            android:text="42魔豆"/>
+
+        <TextView
+            android:id="@+id/item_listview_chongzhi_jin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@drawable/item_chongzhi_text_selector"
+            android:text="6元"
+            />
+
+        <TextView
+            android:id="@+id/item_listview_chongzhi_yuanmodou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="@drawable/item_chongzhi_text_selector"
+            android:text="42魔豆"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

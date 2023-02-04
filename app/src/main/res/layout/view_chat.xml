@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="82dp"
+    android:layout_height="40dp">
+
+    <ImageButton
+        android:id="@+id/floating_imageView"
+        android:layout_width="86dp"
+        android:layout_height="40dp"
+        android:background="@drawable/chatroomxiaochuang"/>
+
+    <ImageView
+        android:id="@+id/iv_chatroomicon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:alpha="0.7"
+        android:src="@drawable/liaotianshi"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_chatroomname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_chatroomicon"
+        android:text="圣魔聊吧"
+        android:maxWidth="80dp"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="#fff"/>
+
+
+    <ImageView
+        android:id="@+id/iv_chahca"
+        android:layout_marginLeft="49dp"
+        android:layout_centerVertical="true"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/yuanfencha"/>
+
+</RelativeLayout>

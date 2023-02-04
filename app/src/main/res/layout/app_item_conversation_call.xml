@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:background="#36cf"
+    tools:layout_height="80dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view_item_bg"
+        android:background="@drawable/bg_border_conversation_call"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintHeight_percent="0.77"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <com.aiwujie.shengmo.view.CircleImageView
+        android:id="@+id/civ_user_icon"
+        android:src="@drawable/ic_conversation_call"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintBottom_toBottomOf="@id/view_item_bg"
+        app:layout_constraintHeight_percent="0.7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+    <ImageView
+        tools:src="@drawable/user_svip_year"
+        android:id="@+id/iv_item_user_level"
+        app:layout_constraintWidth_percent="0.35"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/civ_user_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_user_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_item_bg"
+        android:textColor="@color/purple_main"
+        android:text="开启呼唤中"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:maxLength="5"
+        android:ellipsize="end"
+        android:paddingVertical="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

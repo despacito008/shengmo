@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    tools:context="com.aiwujie.shengmo.activity.rong.ChatRoomActivity">
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_head_beijing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/mConversation_return"
+                android:layout_marginLeft="8dp"
+                android:layout_width="30dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:src="@mipmap/return_back"/>
+
+            <TextView
+                android:id="@+id/mConversation_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/mConversation_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/iv_shangmai"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/maipai" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/iv_shangmai2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/mai2"/>
+
+            <ImageView
+                android:id="@+id/iv_chatroomshengyim"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/shengyinkai"/>
+
+
+            <ImageView
+                android:id="@+id/iv_chatroomintroduction"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/chatroomziliao"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/ll1">
+
+            <ImageView
+                android:id="@+id/iv_ren_head"
+                android:layout_width="48dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:src="@drawable/liaotianshi"
+                android:layout_height="48dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="赠送blablablabla"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:background="#000"
+            android:id="@+id/recycler_mairen"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/llll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_ren"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></android.support.v7.widget.RecyclerView>
+
+
+            <ImageView
+                android:id="@+id/iv_ren_liebiao"
+                android:layout_width="48dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:src="@drawable/chartoomliebiao"
+                android:layout_height="48dp" />
+
+        </LinearLayout>
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <FrameLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/conversation"/>
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:layout_marginRight="-200dp"
+            android:id="@+id/ll_liwu"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/chatroomrongli"
+            android:layout_marginBottom="170dp"
+            android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_liwuya"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_liwu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="12sp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    <LinearLayout
+        android:visibility="invisible"
+       android:layout_marginRight="-150dp"
+        android:id="@+id/ll_laile"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/chatroomlaile"
+        android:layout_marginBottom="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_laile"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/tv_laile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="来了"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

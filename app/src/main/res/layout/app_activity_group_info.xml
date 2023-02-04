@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_normal_title_bar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#eee">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_group_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <FrameLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:id="@+id/iv_group_info_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/qunmorentouxiang" />
+
+                    <ImageView
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        android:id="@+id/iv_group_info_level"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="right|bottom"
+                        android:src="@drawable/user_manager" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:paddingVertical="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_group_info_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/titleBlack"
+                            android:textSize="16dp"
+                            android:paddingVertical="5dp"
+                            android:textStyle="bold"
+                            tools:text="群组名称" />
+
+                        <TextView
+                            android:id="@+id/tv_group_info_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/lightGray"
+                            android:textSize="13dp"
+                            tools:text="群号：1003536" />
+
+                        <TextView
+                            android:id="@+id/tv_group_info_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/lightGray"
+                            android:textSize="13dp"
+                            tools:text="创建：2020-02-02" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_group_info_strive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="0dp"
+                        android:background="@drawable/bg_user_info_purple"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="5dp"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/group_claim" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="认领"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_group_info_claim_rule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="75dp"
+                        android:background="@drawable/border_group_claim"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:lineSpacingMultiplier="0.8"
+                        android:paddingHorizontal="5dp"
+                        android:paddingVertical="3dp"
+                        android:text="@string/claim_rule"
+                        android:textColor="@color/purple_main"
+                        android:textSize="8dp"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/iv_group_info"
+                    android:layout_width="30dp"
+                    android:layout_height="16dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/arrow_right"
+                    tools:visibility="visible"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_marginTop="5dp">
+                <LinearLayout
+                    android:id="@+id/ll_group_info_member"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="群成员"
+                        android:textSize="15dp"
+                        android:textColor="@color/titleBlack"/>
+
+                    <TextView
+                        tools:text="(80/400)"
+                        android:layout_marginLeft="11dp"
+                        android:id="@+id/tv_group_info_member_count"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:gravity="left"
+                        android:textSize="14dp"
+                        android:textColor="@color/lightGray"
+                        android:layout_marginRight="3dp"/>
+
+                    <ImageView
+                        android:visibility="visible"
+                        android:layout_width="30dp"
+                        android:layout_height="16dp"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/arrow_right"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+
+                <com.aiwujie.shengmo.customview.MyGridview
+                    android:id="@+id/grid_view_group_info_member"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="6"
+                    android:horizontalSpacing="3dp"
+                    android:scrollbars="none"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_group_info_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="群地点"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/titleBlack" />
+
+                <TextView
+                    android:id="@+id/tv_group_info_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:gravity="right"
+                    tools:text="北京市"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_group_info_address"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:layout_width="30dp"
+                    android:layout_height="16dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/arrow_right"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/ll_group_info_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="群介绍"
+                        android:textSize="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/titleBlack"/>
+                    <TextView
+                        tools:text="1.本群为官方CD-TS群，CDTS以及取向中包含CDTS的，注册后将被自动邀请入群； 2.如觉得群吵，关闭“群声音”即可哦～"
+                        android:id="@+id/tv_group_info_introduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/lightGray"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="14.5dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_group_info_introduce"
+                    android:visibility="gone"
+                    android:layout_width="30dp"
+                    android:layout_height="16dp"
+                    android:scaleType="fitEnd"
+                    tools:visibility="visible"
+                    android:src="@drawable/arrow_right"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_group_info_set_manager"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置管理员"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/titleBlack"/>
+                <TextView
+                    android:id="@+id/tv_group_info_manager_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:gravity="right"
+                    tools:text="1/2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"/>
+                <ImageView
+                    android:visibility="visible"
+                    android:layout_width="30dp"
+                    android:layout_height="16dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/arrow_right"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_group_info_at_all"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="\@所有人"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/titleBlack"/>
+
+                <ImageView
+                    android:visibility="visible"
+                    android:layout_width="30dp"
+                    android:layout_height="16dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/arrow_right"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_group_info_clear_member"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="清理未登录成员"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/titleBlack"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_group_info_auto_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:text="自动通过群申请"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/titleBlack"/>
+                <CheckBox
+                    android:id="@+id/cb_group_info_auto_pass"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:button="@null"
+                    android:background="@drawable/item_filter_button_bg"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_group_info_voice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:text="群声音"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/titleBlack"/>
+                <CheckBox
+                    android:id="@+id/cb_group_info_voice"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:button="@null"
+                    android:background="@drawable/item_filter_button_bg"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_group_info_name_card"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text="我的群昵称"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/titleBlack"/>
+
+                <TextView
+                    tools:text="点击输入群昵称"
+                    android:id="@+id/tv_group_info_name_card"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_group_info_clear_chat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="清空聊天记录"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#67cdff"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_group_info_operate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:text="退出群组"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:paddingVertical="10dp"
+                android:background="#FFFFFF"
+                android:textStyle="bold"
+                android:textColor="@color/purple_main"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/bt_group_info_start_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始聊天"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:paddingVertical="20dp"
+        android:background="#FFFFFF"
+        android:textStyle="bold"
+        android:textColor="@color/purple_main"/>
+
+</LinearLayout>

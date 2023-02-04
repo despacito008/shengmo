@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:background="#6c9"
+    tools:ignore="SpUsage,ContentDescription,RtlHardcoded,HardcodedText"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_popularity_ranking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/ll_popularity_ranking_title_bar"
+        android:paddingTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/iv_popularity_ranking_return"
+            android:tint="@color/white"
+            android:padding="16dp"
+            android:src="@drawable/normal_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:text="人气榜"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:text="明细"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_popularity_ranking_tab_type"
+        android:paddingVertical="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_popularity_ranking_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <View
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_popularity_ranking_comment"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_popularity_ranking_comment"
+                android:includeFontPadding="false"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:text="热评榜"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:id="@+id/view_popularity_ranking_comment"
+                android:visibility="invisible"
+                android:background="@drawable/bg_round_white"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="15dp"
+                android:layout_height="4dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_popularity_ranking_thumb"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_popularity_ranking_thumb"
+                android:includeFontPadding="false"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:text="热赞榜"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:id="@+id/view_popularity_ranking_thumb"
+                android:visibility="invisible"
+                android:background="@drawable/bg_round_white"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="15dp"
+                android:layout_height="4dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_popularity_ranking_push"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_popularity_ranking_push"
+                android:includeFontPadding="false"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:text="热推榜"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:id="@+id/view_popularity_ranking_push"
+                android:visibility="invisible"
+                android:background="@drawable/bg_round_white"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="15dp"
+                android:layout_height="4dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/bg_round_alpha__ranking_white"
+        android:id="@+id/ll_popularity_ranking_tab_time"
+        app:layout_constraintTop_toBottomOf="@id/ll_popularity_ranking_tab_type"
+        app:layout_constraintWidth_percent="0.7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintDimensionRatio="264:30"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/tv_popularity_ranking_time_day"
+            android:textColor="@color/white"
+            android:text="日榜"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            tools:textColor="#ff4500"
+            android:id="@+id/tv_popularity_ranking_time_week"
+            android:textColor="@color/white"
+            android:text="周榜"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            tools:textColor="#ff4500"
+            android:id="@+id/tv_popularity_ranking_time_month"
+            android:textColor="@color/white"
+            android:text="月榜"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_popularity_ranking_time_all"
+            android:textColor="@color/white"
+            android:text="总榜"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

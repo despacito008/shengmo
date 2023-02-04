@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aiwujie.shengmo.customview.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/mPersonInfo_comment_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/mPersonInfo_comment_bottom_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26px"
+            android:background="@drawable/item_uplevel_conner_hui_bg"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.aiwujie.shengmo.customview.PercentLinearLayout>

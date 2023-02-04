@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/mFragment_near_recommend_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        ptr:ptrHeaderTextColor="#FFFFFF"
+        ptr:ptrDrawable="@mipmap/loading"
+        ptr:ptrScrollingWhileRefreshingEnabled="true"
+        android:dividerHeight="1dp"
+        android:divider="@null" />
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/mFragment_near_recommend_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:dividerHeight="10dp"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        ptr:ptrHeaderTextColor="#FFFFFF"
+        ptr:ptrDrawable="@mipmap/loading"
+        ptr:ptrScrollingWhileRefreshingEnabled="true"
+        android:horizontalSpacing="8dip"
+        android:numColumns="3"
+        android:verticalSpacing="8dip" />
+    <ImageView
+        android:id="@+id/mFragment_near_recommend_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%w"
+        app:layout_widthPercent="12%w"
+        android:layout_marginBottom="5dp"
+        app:layout_marginRightPercent="2%w"
+        android:gravity="center"
+        android:src="@mipmap/dingbu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        />
+</com.zhy.android.percent.support.PercentRelativeLayout>

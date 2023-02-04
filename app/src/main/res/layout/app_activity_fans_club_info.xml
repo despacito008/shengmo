@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_normal_title_bar"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:background="#1000"
+        android:id="@+id/refresh_fans_club"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_fans_club"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_join_club"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:paddingVertical="20dp"
+        android:gravity="center"
+        android:background="@color/purple_main"
+        android:text="加入粉丝团"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

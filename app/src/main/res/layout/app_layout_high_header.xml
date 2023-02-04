@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_solid_high_gradient">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="100dp"
+            android:text="所有人均可免费发布，跟“优点”结合，有月老/红娘荐语。"
+            android:textColor="#ffffffff"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:text="高端发布"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_btn_push_hight"
+            android:textColor="#ffdb57f3"
+            android:textSize="12sp"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

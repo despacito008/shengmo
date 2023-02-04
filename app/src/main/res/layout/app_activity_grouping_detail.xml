@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_normal_title_bar"/>
+
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="消息页面显示分组"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/normalGray"
+            android:textSize="14dp"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/cb_grouping_show"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/item_filter_button_bg"
+            android:button="@null"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_add_label"
+        android:layout_width="match_parent"
+        android:paddingVertical="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/fenzujia"/>
+
+        <TextView
+            android:textColor="@color/tongyong"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新建分组"/>
+
+    </LinearLayout>
+
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+        android:background="#eee"
+        android:id="@+id/rv_grouping_label"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

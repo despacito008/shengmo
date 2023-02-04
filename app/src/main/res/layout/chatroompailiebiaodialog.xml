@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chatroom_dialogshape">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/namezaixian">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="排麦用户"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/cha_dismis"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/cha"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_below="@id/namezaixian"
+        android:id="@+id/recycler_liebiao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        ptr:ptrHeaderTextColor="#FFFFFF"
+        ptr:ptrDrawable="@mipmap/loading"
+        android:dividerHeight="1dp"
+        android:divider="#fff"
+        ptr:ptrScrollingWhileRefreshingEnabled="true"
+        >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:keepScreenOn="true"
+    android:background="@color/dialog_black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.aiwujie.shengmo.activity.AllZanActivity">
+
+    <VideoView
+        android:id="@+id/mVideo_Player"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <ImageView
+        android:id="@+id/ivCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="13%w"
+        android:background="@color/transparent"
+        >
+        <ImageView
+            android:id="@+id/mAllZan_return"
+            android:layout_width="40dp"
+            app:layout_heightPercent="50%"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:src="@mipmap/return_back"
+            android:layout_marginLeft="12dip"
+            android:layout_centerVertical="true"/>
+
+        <com.aiwujie.shengmo.videoplay.view.VideoLoadingProgressbar
+            android:id="@+id/pbLoading"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/mAllZan_return" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

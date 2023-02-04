@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <include
+        layout="@layout/app_layout_normal_user_info"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/layout_user_avatar"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_layout_user_normal_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:textColor="@color/titleBlack"
+                android:textSize="15dp"
+                tools:text="平生不愿风雨飘摇" />
+
+            <ImageView
+                android:id="@+id/iv_layout_user_normal_info_auth_pic"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginHorizontal="3dp"
+                android:src="@drawable/ic_zipai"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_layout_user_normal_info_auth_card"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginHorizontal="3dp"
+                android:src="@drawable/ic_ziliao"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraint_layout_audience_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_live_audience_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/color_audience_level"
+                        android:textSize="11dp"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_live_audience_level"
+                        app:layout_constraintLeft_toRightOf="@id/iv_live_audience_level"
+                        app:layout_constraintTop_toTopOf="@id/iv_live_audience_level"
+                        tools:text="5" />
+
+                    <View
+                        android:id="@+id/view_live_audience_level"
+                        android:layout_width="0dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bg_round_info_audience_level"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_live_audience_level"
+                        app:layout_constraintLeft_toLeftOf="@id/iv_live_audience_level"
+                        app:layout_constraintRight_toRightOf="@id/tv_live_audience_level" />
+
+                    <ImageView
+                        android:id="@+id/iv_live_audience_level"
+                        android:layout_width="18dp"
+                        android:layout_height="14dp"
+                        android:src="@drawable/ic_live_audience_level"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraint_layout_anchor_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_live_anchor_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/color_anchor_level"
+                        android:textSize="11dp"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_live_anchor_level"
+                        app:layout_constraintHorizontal_bias="0.3"
+                        app:layout_constraintLeft_toRightOf="@id/iv_live_anchor_level"
+                        app:layout_constraintTop_toTopOf="@id/iv_live_anchor_level"
+                        tools:text="10" />
+
+                    <View
+                        android:id="@+id/view_live_anchor_level"
+                        android:layout_width="0dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bg_round_info_anchor_level"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_live_anchor_level"
+                        app:layout_constraintLeft_toLeftOf="@id/iv_live_anchor_level"
+                        app:layout_constraintRight_toRightOf="@id/tv_live_anchor_level"
+                        app:layout_constraintTop_toTopOf="@id/iv_live_anchor_level" />
+
+                    <ImageView
+                        android:id="@+id/iv_live_anchor_level"
+                        android:layout_width="16dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/ic_info_anchor_level"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:id="@+id/ll_layout_user_normal_info_sex_age"
+                android:paddingVertical="0.5dp"
+                android:paddingHorizontal="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                tools:background="@drawable/bg_user_info_sex_cdts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_layout_user_normal_info_sex"
+                    android:src="@mipmap/san"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:includeFontPadding="false"
+                    tools:text="27"
+                    android:textSize="10dp"
+                    android:id="@+id/tv_layout_user_normal_info_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="四川省 成都市"
+                android:textColor="#ffadadad"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

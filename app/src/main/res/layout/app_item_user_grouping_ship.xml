@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:background="@drawable/item_click_bg_selector"
+    android:paddingHorizontal="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_item_group_ing_state"
+        tools:src="@mipmap/atweixuanzhong"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+    <include
+        layout="@layout/app_layout_normal_user_info"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

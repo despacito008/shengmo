@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_pop_bg">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="筛选仅对“推荐/附近/在线”生效"
+        android:paddingLeft="10dp"
+        android:paddingVertical="10dp"
+        android:textSize="14dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e0e0e0"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_pick_all"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:id="@+id/item_home_pop_llAll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="所有人"
+            android:textColor="#646464"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:textSize="14dp"/>
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_pick_boy"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/item_home_pop_llNan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="只看男"
+            android:layout_weight="1"
+            android:textColor="#646464"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:paddingLeft="5dp"
+            />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_pick_girl"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:id="@+id/item_home_pop_llNv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="只看女"
+            android:layout_weight="1"
+            android:textColor="#646464"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:paddingLeft="5dp"
+            />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_pick_cdts"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:id="@+id/item_home_pop_llCdts"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="只看CDTS"
+            android:layout_weight="1"
+            android:textColor="#646464"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:paddingLeft="5dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e0e0e0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <LinearLayout
+        android:id="@+id/item_home_pop_llSexual"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/popquan"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/item_home_pop_tvSexual"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:layout_gravity="center_vertical"
+            android:text="根据我的性取向展示感兴趣的人"
+            android:textColor="#646464"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@mipmap/rightjian"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e0e0e0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <LinearLayout
+        android:id="@+id/item_home_pop_llSx"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/popshaixuan"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/item_home_pop_tvAdvancedScreening"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:layout_gravity="center_vertical"
+            android:text="自定义高级筛选"
+            android:textColor="#646464"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            />
+        <TextView
+            android:id="@+id/item_home_pop_isOpen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:gravity="right|center"
+            android:textSize="14dp"
+            android:text="未开启"
+            />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@mipmap/rightjian"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e0e0e0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_menu_show_type"
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:paddingHorizontal="10dp"
+            android:id="@+id/ll_normal_show_type"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="33dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_menu_show_type"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/liebiao" />
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_menu_show_type"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="列表模式"
+                android:background="@null"
+                android:textColor="#646464"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/normal_back"
+                android:rotation="180"
+                android:gravity="center"
+                android:textColor="@color/purpleColor"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e0e0e0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:paddingHorizontal="10dp"
+            android:id="@+id/ll_normal_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="33dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_home_search" />
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="搜索用户"
+                android:background="@null"
+                android:textColor="#646464"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/tv_search"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/normal_back"
+                android:rotation="180"
+                android:gravity="center"
+                android:textColor="@color/purpleColor"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_explain"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_question"
+            android:visibility="gone"
+            android:padding="7dp"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_near_rule"
+            android:gravity="center"
+            android:paddingVertical="3dp"
+            android:paddingHorizontal="5dp"
+            android:background="@drawable/border_group_claim"
+            android:includeFontPadding="false"
+            android:textColor="@color/purple_main"
+            android:text="@string/near_rule"
+            android:lineSpacingMultiplier="0.8"
+            android:textSize="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e0e0e0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:paddingHorizontal="10dp"
+            android:id="@+id/ll_normal_rule"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="33dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_home_tip" />
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="身边规则"
+                android:background="@null"
+                android:textColor="#646464"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/normal_back"
+                android:rotation="180"
+                android:gravity="center"
+                android:textColor="@color/purpleColor"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

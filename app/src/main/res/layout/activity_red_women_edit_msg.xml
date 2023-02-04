@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.aiwujie.shengmo.activity.RedWomenEditMsgActivity">
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="13%w"
+        android:background="#FFFFFF"
+        >
+        <ImageView
+            android:id="@+id/mRedwomen_edit_msg_return"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:src="@mipmap/return_back"
+            android:layout_marginLeft="12dip"
+            app:layout_heightPercent="50%"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改资料"
+            android:layout_centerInParent="true"
+            android:textColor="#333333"
+            app:layout_textSizePercent="35%"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#DDDDDD"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@mipmap/redgrxcgray"
+                app:layout_heightPercent="12%w"
+                app:layout_marginLeftPercent="3%w"
+                app:layout_marginRightPercent="3%w"
+                app:layout_marginTopPercent="5%w" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_marginLeftPercent="3%w"
+                app:layout_marginRightPercent="3%w"
+                app:layout_marginTopPercent="5%w">
+
+                <ImageView
+                    android:id="@+id/mRedwomen_edit_msg_iv01"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/tianjiatupian"
+                    app:layout_heightPercent="30%w"
+                    app:layout_widthPercent="30%w" />
+
+                <ImageView
+                    android:id="@+id/mRedwomen_edit_msg_iv02"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/tianjiatupian"
+                    app:layout_heightPercent="30%w"
+                    app:layout_widthPercent="30%w" />
+
+                <ImageView
+                    android:id="@+id/mRedwomen_edit_msg_iv03"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/tianjiatupian"
+                    app:layout_heightPercent="30%w"
+                    app:layout_widthPercent="30%w" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_marginLeftPercent="3%w"
+                app:layout_marginRightPercent="3%w"
+                app:layout_marginTopPercent="2%w">
+
+                <ImageView
+                    android:id="@+id/mRedwomen_edit_msg_iv04"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/tianjiatupian"
+                    app:layout_heightPercent="30%w"
+                    app:layout_widthPercent="30%w" />
+
+                <ImageView
+                    android:id="@+id/mRedwomen_edit_msg_iv05"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/tianjiatupian"
+                    app:layout_heightPercent="30%w"
+                    app:layout_widthPercent="30%w" />
+
+                <ImageView
+                    android:id="@+id/mRedwomen_edit_msg_iv06"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/tianjiatupian"
+                    app:layout_heightPercent="30%w"
+                    app:layout_widthPercent="30%w" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/mRedwomen_edit_msg_switch_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="3%w"
+                app:layout_marginLeftPercent="3%w"
+                app:layout_marginRightPercent="3%w"
+                >
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/mFragment_mRedwomen_edit_msg_switch_ll01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/mFragmentmRedwomen_edit_msg_switch_01"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_widthPercent="16%w"
+                        app:layout_heightPercent="16%w"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/pursewxz"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="所有人可见"
+                        android:textColor="#333333"
+                        app:layout_marginLeftPercent="3%w"
+                        app:layout_textSizePercent="11.5%w" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/mFragmentmRedwomen_edit_msg_switch_ll02"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/mFragmentmRedwomen_edit_msg_switch_02"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_widthPercent="16%w"
+                        app:layout_heightPercent="16%w"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/pursewxz"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        app:layout_textSizePercent="11.5%w"
+                        app:layout_marginLeftPercent="3%w"
+                        android:textColor="#333333"
+                        android:text="牵线用户可见"/>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/mFragmentmRedwomen_edit_msg_switch_ll03"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/mFragmentmRedwomen_edit_msg_switch_03"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_widthPercent="16%w"
+                        app:layout_heightPercent="16%w"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/pursewxz"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        app:layout_textSizePercent="11.5%w"
+                        app:layout_marginLeftPercent="3%w"
+                        android:textColor="#333333"
+                        android:text="所有人不可见"/>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="3%w"
+                app:layout_marginRightPercent="3%w"
+                app:layout_marginTopPercent="2%w"
+                android:text="只能上传个人照片，可不露脸，也可设置查看权限"
+                app:layout_textSizePercent="3.5%w"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@mipmap/rednxdbgray"
+                app:layout_heightPercent="12%w"
+                app:layout_marginLeftPercent="3%w"
+                app:layout_marginRightPercent="3%w"
+                app:layout_marginTopPercent="5%w"
+                app:layout_marginBottomPercent="5%w"
+                />
+
+            <EditText
+                android:id="@+id/mRedwomen_edit_msg_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_edittext_redwomen_bg"
+                android:gravity="top"
+                android:hint="内容参考：1、自我介绍、圣魔经历、喜恶项目等；2、择友要求：征友地区、年龄、身材、长相、长期短期、结婚意向等。3、请勿使用大尺度文字描述。"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                app:layout_marginLeftPercent="5%w"
+                app:layout_marginRightPercent="5%w"
+                app:layout_textSizePercent="4%w" />
+
+            <ImageView
+                android:id="@+id/mRedwomen_edit_msg_tj"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@mipmap/redtj"
+                app:layout_heightPercent="12%w"
+                app:layout_marginBottomPercent="5%w"
+                app:layout_marginTopPercent="4%w"
+                app:layout_widthPercent="32%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </ScrollView>
+</com.zhy.android.percent.support.PercentLinearLayout>

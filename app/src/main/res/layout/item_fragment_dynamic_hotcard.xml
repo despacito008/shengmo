@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/mFragment_dynamic_hotCard_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:divider="@null"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        ptr:ptrHeaderTextColor="#FFFFFF"
+        ptr:ptrDrawable="@mipmap/loading"
+        ptr:ptrScrollingWhileRefreshingEnabled="true"
+
+        >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+   <com.zhy.autolayout.AutoLinearLayout
+       android:id="@+id/mFragment_dynamic_hotCard_ll_lock"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_centerInParent="true"
+       android:visibility="gone"
+      >
+       <ImageView
+           android:layout_width="150px"
+           android:layout_height="150px"
+           android:src="@mipmap/dynamiclock"
+           android:layout_gravity="center_horizontal"/>
+       <TextView
+           android:id="@+id/mFragment_dynamic_hotCard_tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:textSize="26px"
+           android:layout_marginTop="50px"
+           android:background="@drawable/item_uplevel_conner_hui_bg"
+           android:paddingTop="5dp"
+           android:paddingBottom="5dp"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           />
+   </com.zhy.autolayout.AutoLinearLayout>
+    <ImageView
+        android:id="@+id/mFragment_dynamic_hotCard_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%w"
+        app:layout_widthPercent="12%w"
+        app:layout_marginBottomPercent="4%w"
+        app:layout_marginRightPercent="2%w"
+        android:gravity="center"
+        android:src="@mipmap/dingbu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        />
+</com.zhy.android.percent.support.PercentRelativeLayout>

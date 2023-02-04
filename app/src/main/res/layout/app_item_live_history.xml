@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="15dp"
+    tools:background="#1000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.aiwujie.shengmo.timlive.view.RoundAngleImageView
+        android:id="@+id/iv_item_live_history_poster"
+        tools:background="#6c9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="@id/iv_item_live_history_poster"
+        app:layout_constraintRight_toRightOf="@id/iv_item_live_history_poster"
+        app:layout_constraintTop_toTopOf="@id/iv_item_live_history_poster"
+        app:layout_constraintBottom_toBottomOf="@id/iv_item_live_history_poster"
+        android:id="@+id/iv_item_live_history_play"
+        android:src="@drawable/ic_play_back_play"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tv_item_live_history_title"
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toRightOf="@id/iv_item_live_history_poster"
+        app:layout_constraintTop_toTopOf="@id/iv_item_live_history_poster"
+        tools:text="一场直播的标题"
+        android:textColor="@color/titleBlack"
+        android:textSize="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/iv_item_live_history_person"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_live_history_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_live_history_title"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_live_history_watcher"
+        app:layout_constraintVertical_bias="0.7"
+        android:layout_width="11dp"
+        android:layout_height="11dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_live_history_person"
+        android:textSize="11dp"
+        android:textColor="@color/lightGray"
+        tools:text="累计1200人"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toTopOf="@id/iv_item_live_history_person"
+        app:layout_constraintBottom_toBottomOf="@id/iv_item_live_history_person"
+        app:layout_constraintLeft_toRightOf="@id/iv_item_live_history_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/iv_item_live_history_bean"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_live_history_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_live_history_person"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/ic_live_history_bean"
+        android:layout_width="11dp"
+        android:layout_height="11dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_live_history_bean"
+        android:textSize="11dp"
+        android:textColor="#ffab3a"
+        tools:text="本场总获得的魔豆总数 76500"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintLeft_toRightOf="@id/iv_item_live_history_bean"
+        app:layout_constraintTop_toTopOf="@id/iv_item_live_history_bean"
+        app:layout_constraintBottom_toBottomOf="@id/iv_item_live_history_bean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_item_live_history_start_time"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_live_history_title"
+        app:layout_constraintTop_toBottomOf="@id/iv_item_live_history_bean"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_live_history_time"
+        android:layout_width="11dp"
+        android:layout_height="11dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_live_history_start_time"
+        android:textSize="11dp"
+        android:textColor="@color/lightGray"
+        tools:text="开播时间：2020-2-1  直播时长:3小时"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toTopOf="@id/iv_item_live_history_start_time"
+        app:layout_constraintBottom_toBottomOf="@id/iv_item_live_history_start_time"
+        app:layout_constraintLeft_toRightOf="@id/iv_item_live_history_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_item_live_history_play_back"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_live_history_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_live_history_start_time"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/ic_live_history_bean"
+        android:layout_width="11dp"
+        android:layout_height="11dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_live_history_play_back"
+        android:textSize="11dp"
+        android:textColor="#ffab3a"
+        tools:text="免费回放"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintLeft_toRightOf="@id/iv_item_live_history_play_back"
+        app:layout_constraintTop_toTopOf="@id/iv_item_live_history_play_back"
+        app:layout_constraintBottom_toBottomOf="@id/iv_item_live_history_play_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/iv_item_live_history_lock"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="5dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:src="@drawable/ic_play_back_lock"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+
+<!--    <android.support.constraint.Group-->
+<!--        android:id="@+id/group_item_live_history_playback"-->
+<!--        app:constraint_referenced_ids="iv_item_live_history_play_back,tv_item_live_history_play_back,iv_item_live_history_lock"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+    
+</android.support.constraint.ConstraintLayout>

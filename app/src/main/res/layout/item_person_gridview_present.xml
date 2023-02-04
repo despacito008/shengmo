@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <ImageView
+        android:id="@+id/item_person_gridview_present_iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%h"
+        app:layout_widthPercent="10%h"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/item_person_gridview_present_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        app:layout_textSizePercent="2%"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:id="@+id/item_person_gridview_present_dou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        app:layout_textSizePercent="2%"
+        />
+</com.zhy.android.percent.support.PercentLinearLayout>

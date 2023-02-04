@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="#e000"
+    android:orientation="vertical"
+    android:paddingVertical="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_item_lottery_draw_record_info"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        tools:text="[抽奖x100次]中[亲一个x10][口红x7][心心相印x6][香蕉x10][黄瓜x4][秋裤x5][狗粮x25][棒棒糖x33]"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_item_lottery_draw_record_time"
+        android:textSize="12dp"
+        android:alpha="0.6"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        tools:text="2022-03-17 16:29:38"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

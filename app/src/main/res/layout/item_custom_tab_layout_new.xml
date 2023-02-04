@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/item_custom_tab_icon"
+        android:layout_width="35px"
+        android:layout_height="35px"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/item_custom_tab_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="27px"
+        android:layout_marginLeft="8px"
+        android:textColor="#333333"
+        />
+
+    <TextView
+        android:id="@+id/item_custom_tab_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="27px"
+        android:text="new"
+        android:textStyle="italic"
+        android:layout_marginLeft="8px"
+        android:textColor="#f00"
+        />
+
+</com.zhy.autolayout.AutoLinearLayout>

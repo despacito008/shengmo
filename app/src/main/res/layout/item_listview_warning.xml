@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_click_bg_selector"
+    android:paddingLeft="15dp">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/item_listview_warning_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/item_listview_warning_online"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/bg_user_online"
+                android:layout_alignParentRight="true"
+                />
+            <ImageView
+                android:id="@+id/item_listview_warning_vip"
+                android:layout_width="35px"
+                android:layout_height="35px"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@mipmap/vip"
+                android:visibility="invisible"
+                />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/item_listview_warning_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textColor="#333333"
+                    android:textSize="28px"
+                    android:layout_gravity="center_vertical"
+                    />
+                <ImageView
+                    android:id="@+id/item_listview_warning_shiming"
+                    android:layout_width="25px"
+                    android:layout_height="20px"
+                    android:layout_marginLeft="3dip"
+                    android:src="@drawable/ic_zipai"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical"
+                    />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <include layout="@layout/layout_user_normal_info"/>
+
+            <TextView
+                android:textColor="@color/lightGray"
+                android:textSize="12dp"
+                android:id="@+id/tv_user_info_ban_time"
+                android:paddingVertical="5dp"
+                tools:text="封禁时间：2020-10-10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/item_listview_warning_ban_dynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:visibility="visible"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/tv_item_ban_dynamic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f41314"
+                    android:text="已禁动态"
+                    android:gravity="bottom"
+                    android:textSize="13dp" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/item_listview_warning_ban_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:visibility="visible"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_item_ban_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f41314"
+                    android:text="已禁资料"
+                    android:gravity="bottom"
+                    android:textSize="13dp" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/item_listview_warning_ban_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:visibility="visible"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/tv_item_ban_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f41314"
+                    android:text="已禁聊天"
+                    android:gravity="bottom"
+                    android:textSize="13dp" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/item_listview_warning_ban_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:visibility="visible"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_item_ban_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f41314"
+                    android:text="已禁账号"
+                    android:gravity="bottom"
+                    android:textSize="13dp" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/item_listview_warning_ban_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:visibility="visible"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/tv_item_ban_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f41314"
+                    android:text="已禁设备"
+                    android:gravity="bottom"
+                    android:textSize="13dp" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_listview_warning_ban_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:visibility="visible"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/tv_item_ban_live"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f41314"
+                    android:text="已禁直播"
+                    android:gravity="bottom"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_listview_warning_ban_watch_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:visibility="visible"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/tv_item_ban_watch_live"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f41314"
+                    android:text="禁看直播"
+                    android:gravity="bottom"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guide_line_h_1"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guide_line_h_2"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.525"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guide_line_h_3"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.875"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="10dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_1"
+                app:layout_constraintTop_toTopOf="@id/tv_user_info_height"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_2"
+                android:background="#e5e5e5"
+                android:layout_width="0.5dp"
+                android:layout_height="19dp"/>
+
+            <View
+                android:layout_marginTop="10dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_2"
+                app:layout_constraintTop_toTopOf="@id/tv_user_info_height"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_3"
+                android:background="#e5e5e5"
+                android:layout_width="0.5dp"
+                android:layout_height="19dp"/>
+
+
+            <View
+                android:layout_marginTop="10dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_1"
+                app:layout_constraintTop_toTopOf="@id/tv_user_info_salary"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_2"
+                android:background="#e5e5e5"
+                android:layout_width="0.5dp"
+                android:layout_height="19dp"/>
+
+            <View
+                android:layout_marginTop="10dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_2"
+                app:layout_constraintTop_toTopOf="@id/tv_user_info_salary"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_3"
+                android:background="#e5e5e5"
+                android:layout_width="0.5dp"
+                android:layout_height="19dp"/>
+
+
+            <View
+                android:layout_marginTop="10dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_1"
+                app:layout_constraintTop_toTopOf="@id/tv_user_info_sex_orientation"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_2"
+                android:background="#e5e5e5"
+                android:layout_width="0.5dp"
+                android:layout_height="19dp"/>
+
+            <View
+                android:layout_marginTop="10dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_2"
+                app:layout_constraintTop_toTopOf="@id/tv_user_info_sex_orientation"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_3"
+                android:background="#e5e5e5"
+                android:layout_width="0.5dp"
+                android:layout_height="19dp"/>
+
+
+            <View
+                android:layout_marginTop="10dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_1"
+                app:layout_constraintTop_toTopOf="@id/tv_user_info_degree"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_2"
+                android:background="#e5e5e5"
+                android:layout_width="0.5dp"
+                android:layout_height="19dp"/>
+
+
+            <View
+                android:id="@+id/view_line_role"
+                android:layout_marginTop="10dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_2"
+                app:layout_constraintTop_toTopOf="@id/tv_user_info_degree"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_3"
+                android:background="#e5e5e5"
+                android:layout_width="0.5dp"
+                android:layout_height="19dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_user_info_height"
+                tools:text="175cm"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_1"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_1"
+                android:layout_marginTop="30dp"
+                style="@style/user_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="身高"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_height"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_1"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_1"
+                style="@style/user_info_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_user_info_weight"
+                tools:text="60kg"
+                app:layout_constraintTop_toTopOf="@id/tv_user_info_height"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_2"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_2"
+                style="@style/user_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="体重"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_weight"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_2"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_2"
+                style="@style/user_info_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_user_info_education"
+                tools:text="本科"
+                app:layout_constraintTop_toTopOf="@id/tv_user_info_height"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_3"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_3"
+                style="@style/user_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="学历"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_education"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_3"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_3"
+                style="@style/user_info_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_user_info_salary"
+                tools:text="2千以下"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_height"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_1"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_1"
+                android:layout_marginTop="33dp"
+                style="@style/user_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="月薪"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_salary"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_1"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_1"
+                style="@style/user_info_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_user_info_constellation"
+                tools:text="金牛座"
+                app:layout_constraintTop_toTopOf="@id/tv_user_info_salary"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_2"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_2"
+                style="@style/user_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="星座"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_constellation"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_2"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_2"
+                style="@style/user_info_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_user_info_sex_orientation"
+                tools:text="男/女/CDTS"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_salary"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_1"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_1"
+                android:layout_marginTop="40dp"
+                style="@style/user_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="取向"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_sex_orientation"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_1"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_1"
+                style="@style/user_info_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_user_info_contact_time"
+                tools:text="2年"
+                app:layout_constraintTop_toTopOf="@id/tv_user_info_sex_orientation"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_2"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_2"
+                style="@style/user_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_user_info_contact_txt"
+                android:text="接触时间"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_contact_time"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_2"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_2"
+                style="@style/user_info_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_user_info_contact_practice"
+                tools:text="有"
+                app:layout_constraintTop_toTopOf="@id/tv_user_info_sex_orientation"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_3"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_3"
+                style="@style/user_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_user_info_contact_practice_txt"
+                android:text="实践"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_contact_practice"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_3"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_3"
+                style="@style/user_info_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:id="@+id/tv_user_info_degree"
+                tools:text="轻"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_sex_orientation"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_1"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_1"
+                android:layout_marginTop="33dp"
+                style="@style/user_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_user_info_degree_txt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="100dp"
+                android:text="程度"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_degree"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_1"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_1"
+                style="@style/user_info_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_user_info_want"
+                tools:text="聊天/结婚"
+                app:layout_constraintTop_toTopOf="@id/tv_user_info_degree"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_2"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_2"
+                style="@style/user_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_user_info_want_txt"
+                android:text="想找"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_want"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_2"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_2"
+                style="@style/user_info_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:id="@+id/tv_user_info_attribute"
+                tools:text="聊天/结婚"
+                app:layout_constraintTop_toTopOf="@id/tv_user_info_degree"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_3"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_3"
+                style="@style/user_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:id="@+id/tv_user_info_attribute_txt"
+                android:text="属性"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_attribute"
+                app:layout_constraintLeft_toLeftOf="@id/guide_line_h_3"
+                app:layout_constraintRight_toRightOf="@id/guide_line_h_3"
+                style="@style/user_info_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </FrameLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <LinearLayout
+        android:paddingHorizontal="15dp"
+        android:background="@drawable/dashang_black_bg"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.85"
+        android:layout_height="wrap_content">
+        
+        
+        <LinearLayout
+            android:paddingVertical="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"/>
+            
+            <TextView
+                android:id="@+id/tv_pop_send_gift_normal"
+                android:textColor="@color/white"
+                android:text="送礼物"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_pop_send_gift_free"
+                android:textColor="@color/white"
+                android:text="送免费礼物"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            
+        </LinearLayout>
+        
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager_pop_send_gift"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"/>
+        
+        <LinearLayout
+            android:gravity="center"
+            android:minHeight="20dp"
+            android:paddingVertical="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.aiwujie.shengmo.view.indicator.CircleIndicator
+
+                android:id="@+id/indicator_pop_send_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <ImageView
+                android:layout_marginRight="6dp"
+                android:src="@drawable/ranking_beans"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+
+            <TextView
+                android:text="我的魔豆"
+                android:textSize="13dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_pop_send_gift_beans"
+                tools:text="6000"
+                android:textSize="13dp"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_pop_send_gift_buy"
+                android:paddingLeft="10dp"
+                android:textColor="#afff"
+                android:textSize="13dp"
+                android:text="充值"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/arrow_right"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

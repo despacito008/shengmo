@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="SpUsage,ContentDescription,RtlHardcoded,HardcodedText,DisableBaselineAlignment"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/view_pop_sign_in_bg"
+        android:background="@drawable/ic_sign_in_bg"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintDimensionRatio="330:475"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <View
+        android:id="@+id/view_sign_in_white"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_round_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.82"
+        app:layout_constraintDimensionRatio="305:320"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_line_1"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_line_2"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_line_3"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_line_4"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_line_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_line_6"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <View
+        android:background="@drawable/ic_sign_in_item_bg_1"
+        android:id="@+id/view_day_one"
+        app:layout_constraintWidth_percent="0.16"
+        app:layout_constraintDimensionRatio="65:80"
+        app:layout_constraintLeft_toLeftOf="@id/guide_line_1"
+        app:layout_constraintRight_toRightOf="@id/guide_line_1"
+        app:layout_constraintTop_toTopOf="@id/guide_line_5"
+        app:layout_constraintBottom_toBottomOf="@id/guide_line_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <View
+        android:background="@drawable/ic_sign_in_item_bg_1"
+        android:id="@+id/view_day_two"
+        app:layout_constraintWidth_percent="0.16"
+        app:layout_constraintDimensionRatio="65:80"
+        app:layout_constraintLeft_toLeftOf="@id/guide_line_2"
+        app:layout_constraintRight_toRightOf="@id/guide_line_2"
+        app:layout_constraintTop_toTopOf="@id/view_day_one"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <View
+        android:background="@drawable/ic_sign_in_item_bg_1"
+        android:id="@+id/view_day_three"
+        app:layout_constraintWidth_percent="0.16"
+        app:layout_constraintDimensionRatio="65:80"
+        app:layout_constraintLeft_toLeftOf="@id/guide_line_3"
+        app:layout_constraintRight_toRightOf="@id/guide_line_3"
+        app:layout_constraintTop_toTopOf="@id/view_day_one"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <View
+        android:background="@drawable/ic_sign_in_item_bg_2"
+        android:id="@+id/view_day_four"
+        app:layout_constraintWidth_percent="0.16"
+        app:layout_constraintDimensionRatio="65:80"
+        app:layout_constraintLeft_toLeftOf="@id/guide_line_4"
+        app:layout_constraintRight_toRightOf="@id/guide_line_4"
+        app:layout_constraintTop_toTopOf="@id/view_day_one"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <View
+        android:background="@drawable/ic_sign_in_item_bg_1"
+        android:id="@+id/view_day_five"
+        app:layout_constraintWidth_percent="0.16"
+        app:layout_constraintDimensionRatio="65:80"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_one"
+        app:layout_constraintRight_toRightOf="@id/view_day_two"
+        app:layout_constraintTop_toTopOf="@id/guide_line_6"
+        app:layout_constraintBottom_toBottomOf="@id/guide_line_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <View
+        android:background="@drawable/ic_sign_in_item_bg_1"
+        android:id="@+id/view_day_six"
+        app:layout_constraintWidth_percent="0.16"
+        app:layout_constraintDimensionRatio="65:80"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_two"
+        app:layout_constraintRight_toRightOf="@id/view_day_three"
+        app:layout_constraintTop_toTopOf="@id/view_day_five"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_five"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <View
+        android:background="@drawable/ic_sign_in_item_bg_2"
+        android:id="@+id/view_day_seven"
+        app:layout_constraintWidth_percent="0.16"
+        app:layout_constraintDimensionRatio="65:80"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_three"
+        app:layout_constraintRight_toRightOf="@id/view_day_four"
+        app:layout_constraintTop_toTopOf="@id/view_day_five"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_five"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+    <ImageView
+        app:layout_constraintVertical_bias="0.4"
+        android:src="@mipmap/presentnew28"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_one"
+        app:layout_constraintRight_toRightOf="@id/view_day_one"
+        app:layout_constraintTop_toTopOf="@id/view_day_one"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        app:layout_constraintVertical_bias="0.4"
+        android:src="@mipmap/presentnew29"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_two"
+        app:layout_constraintRight_toRightOf="@id/view_day_two"
+        app:layout_constraintTop_toTopOf="@id/view_day_two"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_two"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        app:layout_constraintVertical_bias="0.4"
+        android:src="@mipmap/presentnew30"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_three"
+        app:layout_constraintRight_toRightOf="@id/view_day_three"
+        app:layout_constraintTop_toTopOf="@id/view_day_three"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_three"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        app:layout_constraintVertical_bias="0.4"
+        android:src="@drawable/ic_sign_in_box_small"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_four"
+        app:layout_constraintRight_toRightOf="@id/view_day_four"
+        app:layout_constraintTop_toTopOf="@id/view_day_four"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_four"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        app:layout_constraintVertical_bias="0.4"
+        android:src="@mipmap/yptong"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_five"
+        app:layout_constraintRight_toRightOf="@id/view_day_five"
+        app:layout_constraintTop_toTopOf="@id/view_day_five"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_five"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        app:layout_constraintVertical_bias="0.4"
+        android:src="@mipmap/sanzhangyoupiao"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_six"
+        app:layout_constraintRight_toRightOf="@id/view_day_six"
+        app:layout_constraintTop_toTopOf="@id/view_day_six"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_six"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        app:layout_constraintVertical_bias="0.4"
+        android:src="@drawable/ic_sign_in_box_big"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_seven"
+        app:layout_constraintRight_toRightOf="@id/view_day_seven"
+        app:layout_constraintTop_toTopOf="@id/view_day_seven"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_seven"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/view_day_one"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_one"
+        android:textStyle="italic"
+        android:layout_marginLeft="2dp"
+        android:text="1"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/view_day_two"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_two"
+        android:textStyle="italic"
+        android:layout_marginLeft="2dp"
+        android:text="2"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/view_day_three"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_three"
+        android:textStyle="italic"
+        android:layout_marginLeft="2dp"
+        android:text="3"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/view_day_four"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_four"
+        android:textStyle="italic"
+        android:layout_marginLeft="2dp"
+        android:text="4"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/view_day_five"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_five"
+        android:textStyle="italic"
+        android:layout_marginLeft="2dp"
+        android:text="5"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/view_day_six"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_six"
+        android:textStyle="italic"
+        android:layout_marginLeft="2dp"
+        android:text="6"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/view_day_seven"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_seven"
+        android:textStyle="italic"
+        android:layout_marginLeft="2dp"
+        android:text="7"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:includeFontPadding="false"
+        android:text="1魅力"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_one"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_one"
+        app:layout_constraintRight_toRightOf="@id/view_day_one"
+        android:textSize="11dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:includeFontPadding="false"
+        android:text="3魅力"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_two"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_two"
+        app:layout_constraintRight_toRightOf="@id/view_day_two"
+        android:textSize="11dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:includeFontPadding="false"
+        android:text="5魅力"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_three"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_three"
+        app:layout_constraintRight_toRightOf="@id/view_day_three"
+        android:textSize="11dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:includeFontPadding="false"
+        android:text=" --- "
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_four"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_four"
+        app:layout_constraintRight_toRightOf="@id/view_day_four"
+        android:textSize="11dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:includeFontPadding="false"
+        android:text="1张"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_five"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_five"
+        app:layout_constraintRight_toRightOf="@id/view_day_five"
+        android:textSize="11dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:includeFontPadding="false"
+        android:text="3张"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_six"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_six"
+        app:layout_constraintRight_toRightOf="@id/view_day_six"
+        android:textSize="11dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:includeFontPadding="false"
+        android:text=" ---  "
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/view_day_seven"
+        app:layout_constraintBottom_toBottomOf="@id/view_day_seven"
+        app:layout_constraintRight_toRightOf="@id/view_day_seven"
+        android:textSize="11dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    
+    <LinearLayout
+        app:layout_constraintLeft_toLeftOf="@id/view_day_one"
+        app:layout_constraintRight_toRightOf="@id/view_day_one"
+        app:layout_constraintTop_toBottomOf="@id/view_day_one"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_day_one"
+            android:src="@drawable/ic_sign_in_done"
+            android:layout_marginRight="5dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"/>
+        <TextView
+            android:text="幸运草"
+            android:includeFontPadding="false"
+            android:textColor="@color/darkGray"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_constraintLeft_toLeftOf="@id/view_day_two"
+        app:layout_constraintRight_toRightOf="@id/view_day_two"
+        app:layout_constraintTop_toBottomOf="@id/view_day_two"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_day_two"
+            android:src="@drawable/ic_sign_in_done"
+            android:layout_marginRight="5dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"/>
+        <TextView
+            android:text="糖果"
+            android:includeFontPadding="false"
+            android:textColor="@color/darkGray"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_constraintLeft_toLeftOf="@id/view_day_three"
+        app:layout_constraintRight_toRightOf="@id/view_day_three"
+        app:layout_constraintTop_toBottomOf="@id/view_day_three"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_day_three"
+            android:src="@drawable/ic_sign_in_done"
+            android:layout_marginRight="5dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"/>
+        <TextView
+            android:text="玩具狗"
+            android:includeFontPadding="false"
+            android:textColor="@color/darkGray"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_constraintLeft_toLeftOf="@id/view_day_four"
+        app:layout_constraintRight_toRightOf="@id/view_day_four"
+        app:layout_constraintTop_toBottomOf="@id/view_day_four"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_day_four"
+            android:src="@drawable/ic_sign_in_done"
+            android:layout_marginRight="5dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"/>
+        <TextView
+            android:text="抽奖礼包"
+            android:includeFontPadding="false"
+            android:textColor="@color/darkGray"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_constraintLeft_toLeftOf="@id/view_day_five"
+        app:layout_constraintRight_toRightOf="@id/view_day_five"
+        app:layout_constraintTop_toBottomOf="@id/view_day_five"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_day_five"
+            android:src="@drawable/ic_sign_in_done"
+            android:layout_marginRight="5dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"/>
+        <TextView
+            android:text="通用邮票"
+            android:includeFontPadding="false"
+            android:textColor="@color/darkGray"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_constraintLeft_toLeftOf="@id/view_day_six"
+        app:layout_constraintRight_toRightOf="@id/view_day_six"
+        app:layout_constraintTop_toBottomOf="@id/view_day_six"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_day_six"
+            android:src="@drawable/ic_sign_in_done"
+            android:layout_marginRight="5dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"/>
+        <TextView
+            android:text="任务邮票"
+            android:includeFontPadding="false"
+            android:textColor="@color/darkGray"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_constraintLeft_toLeftOf="@id/view_day_seven"
+        app:layout_constraintRight_toRightOf="@id/view_day_seven"
+        app:layout_constraintTop_toBottomOf="@id/view_day_seven"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_day_seven"
+            android:src="@drawable/ic_sign_in_done"
+            android:layout_marginRight="5dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"/>
+        <TextView
+            android:text="抽奖大礼箱"
+            android:includeFontPadding="false"
+            android:textColor="@color/darkGray"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:textSize="15dp"
+        android:id="@+id/tv_sign_in_sign"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="签到领取"
+        app:layout_constraintLeft_toLeftOf="@id/view_pop_sign_in_bg"
+        app:layout_constraintRight_toRightOf="@id/view_pop_sign_in_bg"
+        app:layout_constraintBottom_toBottomOf="@id/view_pop_sign_in_bg"
+        app:layout_constraintTop_toTopOf="@id/view_pop_sign_in_bg"
+        app:layout_constraintVertical_bias="0.95"
+        android:background="@drawable/ic_sign_in_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:text="已签到-天"
+        android:id="@+id/tv_sign_in_day"
+        app:layout_constraintLeft_toLeftOf="@id/view_pop_sign_in_bg"
+        app:layout_constraintRight_toRightOf="@id/view_pop_sign_in_bg"
+        app:layout_constraintBottom_toTopOf="@id/view_sign_in_white"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_sign_in_close"
+        android:padding="5dp"
+        android:tint="@color/white"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_normal_close"
+        app:layout_constraintRight_toRightOf="@id/view_sign_in_white"
+        app:layout_constraintTop_toTopOf="@id/view_pop_sign_in_bg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_daily_sign_result"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#d000"
+        app:layout_constraintLeft_toLeftOf="@id/view_pop_sign_in_bg"
+        app:layout_constraintRight_toRightOf="@id/view_pop_sign_in_bg"
+        app:layout_constraintTop_toTopOf="@id/view_pop_sign_in_bg"
+        app:layout_constraintBottom_toBottomOf="@id/view_pop_sign_in_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/iv_daily_sign_result"
+            android:layout_gravity="center"
+            tools:src="@mipmap/presentnew01"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:id="@+id/tv_daily_sign_result"
+            android:paddingVertical="30dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:text="恭喜你获得棒棒糖"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

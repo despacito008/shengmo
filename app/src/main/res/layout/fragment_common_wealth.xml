@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        app:layout_heightPercent="13%w">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="公益"
+            android:textColor="#333333"
+            app:layout_textSizePercent="35%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+ <!--   <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F7F7F7" />-->
+
+    <ScrollView
+        android:id="@+id/mFragmentDiscovery_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.android.percent.support.PercentFrameLayout
+                android:id="@+id/mFragmentDiscovery_framlayout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:layout_heightPercent="42.67%w"
+                app:layout_widthPercent="100%w">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/mFragmentDiscovery_banner01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:indicator_drawable_selected="@mipmap/bannerpointpurple"
+                    app:indicator_drawable_unselected="@mipmap/bannerpointgray"
+                    app:indicator_height="8dp"
+                    app:indicator_width="8dp" />
+            </com.zhy.android.percent.support.PercentFrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:visibility="gone"
+                android:background="#F8F8F8" />
+
+            <LinearLayout
+                android:id="@+id/ll_topnew"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="14px"
+                    android:layout_height="14px"
+                    android:background="@mipmap/yuandian"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/tv_topnew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <com.aiwujie.shengmo.customview.MyGridview
+                android:id="@+id/mFragmentDiscovery_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#333333"
+                android:numColumns="4"
+                android:paddingTop="10sp"
+                android:outlineProvider="none"></com.aiwujie.shengmo.customview.MyGridview>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#333333" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="9dp"
+                android:background="#333333" />
+
+            <com.aiwujie.shengmo.customview.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#333333"
+                android:orientation="horizontal"
+                app:layout_heightPercent="9%w">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/mFragmentDiscovery_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="#333333"
+                    android:scrollbars="none" />
+            </com.aiwujie.shengmo.customview.PercentLinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="#333333" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#F8F8F8" />
+
+            <LinearLayout
+                android:background="#f5f5f5"
+                android:id="@+id/ll_morenews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="爱无界公益"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:textColor="#c450d6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="更多"/>
+
+
+
+                <ImageView
+                    android:padding="9dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ziyou"/>
+            </LinearLayout>
+
+
+            <com.aiwujie.shengmo.customview.MyListView
+                android:id="@+id/mFragmentDiscovery_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:divider="#f8f8f8"
+                android:dividerHeight="1dp"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:background="#f5f5f5"
+                android:id="@+id/ll_moreproblems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="圣魔资讯"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+
+
+                <TextView
+                    android:textColor="#c450d6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"/>
+
+
+
+
+                <ImageView
+                    android:padding="9dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ziyou"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F8F8F8" />
+
+            <com.aiwujie.shengmo.customview.MyGridview
+                android:id="@+id/mFragmentDiscovery_gridview02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F8F8F8"
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:verticalSpacing="1dp"></com.aiwujie.shengmo.customview.MyGridview>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F8F8F8" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/mCommenWealth_chat_all_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/mCommenWealth_chat_ll01"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_marginRightPercent="3%w"
+                        app:layout_widthPercent="20%w">
+
+                        <com.zhy.android.percent.support.PercentRelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            app:layout_heightPercent="80%w"
+                            app:layout_widthPercent="80%w">
+
+                            <ImageView
+                                android:id="@+id/mCommenWealth_icon01"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/morentouxiang" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:src="@mipmap/guanfangbiaozhi"
+                                app:layout_heightPercent="30%w"
+                                app:layout_widthPercent="30%w" />
+                        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                        <TextView
+                            android:id="@+id/mCommenWealth_name01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            app:layout_textSizePercent="15%w" />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/mCommenWealth_chat_ll02"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_marginLeftPercent="3%w"
+                        app:layout_marginRightPercent="3%w"
+                        app:layout_widthPercent="20%w">
+
+                        <com.zhy.android.percent.support.PercentRelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            app:layout_heightPercent="80%w"
+                            app:layout_widthPercent="80%w">
+
+                            <ImageView
+                                android:id="@+id/mCommenWealth_icon02"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/morentouxiang" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:src="@mipmap/guanfangbiaozhi"
+                                app:layout_heightPercent="30%w"
+                                app:layout_widthPercent="30%w" />
+                        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                        <TextView
+                            android:id="@+id/mCommenWealth_name02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            app:layout_textSizePercent="15%w" />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/mCommenWealth_chat_ll03"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_marginLeftPercent="3%w"
+                        app:layout_widthPercent="20%w">
+
+                        <com.zhy.android.percent.support.PercentRelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            app:layout_heightPercent="80%w"
+                            app:layout_widthPercent="80%w">
+
+                            <ImageView
+                                android:id="@+id/mCommenWealth_icon03"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/morentouxiang" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:src="@mipmap/guanfangbiaozhi"
+                                app:layout_heightPercent="30%w"
+                                app:layout_widthPercent="30%w" />
+                        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                        <TextView
+                            android:id="@+id/mCommenWealth_name03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            app:layout_textSizePercent="15%w" />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:id="@+id/mCommenWealth_chat_ll04"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_marginLeftPercent="3%w"
+                        app:layout_widthPercent="20%w">
+
+                        <com.zhy.android.percent.support.PercentRelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            app:layout_heightPercent="80%w"
+                            app:layout_widthPercent="80%w">
+
+                            <ImageView
+                                android:id="@+id/mCommenWealth_icon04"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/morentouxiang" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:src="@mipmap/guanfangbiaozhi"
+                                app:layout_heightPercent="30%w"
+                                app:layout_widthPercent="30%w" />
+                        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                        <TextView
+                            android:id="@+id/mCommenWealth_name04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            app:layout_textSizePercent="15%w" />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/item_redwomen_tv_bg"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                app:layout_heightPercent="9%w">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/gongyishouji"
+                    app:layout_heightPercent="75%h"
+                    app:layout_widthPercent="75%h" />
+
+                <TextView
+                    android:id="@+id/mCommenWealth_telephone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:text="13436537298"
+                    app:layout_textSizePercent="35%h" />
+
+                <TextView
+                    android:id="@+id/mCommenWealth_QQ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:text="   举报邮箱:"
+                    app:layout_textSizePercent="35%h" />
+
+                <TextView
+                    android:id="@+id/mCommenWealth_cellphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:text="619885516@qq.com"
+                    app:layout_textSizePercent="35%h" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="违法和不良信息举报电话:010-56405100"
+                android:textColor="#707070"
+                app:layout_textSizePercent="3%w" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="中国多元人群健康公益交流平台"
+                android:textColor="#707070"
+                app:layout_textSizePercent="3%w" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="北京市通州区疾控中心合作单位"
+                android:textColor="#707070"
+                app:layout_textSizePercent="3%w" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="京ICP备:16047950号  京公网安备:11010502034234"
+                android:textColor="#707070"
+                app:layout_textSizePercent="3%w" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </ScrollView>
+</com.zhy.android.percent.support.PercentLinearLayout>

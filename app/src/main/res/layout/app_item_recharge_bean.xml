@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingVertical="5dp"
+    android:id="@+id/ll_item_recharge_bean"
+    android:background="@drawable/selector_item_message_stamp_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_item_recharge_beans"
+        tools:text="60魔豆"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textColor="@color/titleBlack"
+        android:paddingVertical="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_item_recharge_price"
+        tools:text="¥6"
+        android:textColor="@color/normalGray"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:paddingVertical="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

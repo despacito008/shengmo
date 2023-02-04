@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:paddingVertical="12dp"
+    android:paddingHorizontal="10dp"
+    android:background="@drawable/item_click_bg_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_item_group_invite_state"
+        tools:src="@mipmap/atweixuanzhong"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+
+    <FrameLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.aiwujie.shengmo.view.CircleImageView
+            android:id="@+id/iv_item_group_invite_icon"
+            tools:src="@mipmap/morentouxiang"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+        <ImageView
+            android:id="@+id/iv_item_group_invite_level"
+            tools:src="@drawable/user_svip"
+            android:layout_gravity="bottom|right"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_item_group_invite_name"
+        android:layout_marginLeft="15dp"
+        tools:text="天下寒士俱欢颜"
+        android:textSize="16dp"
+        android:textColor="@color/titleBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

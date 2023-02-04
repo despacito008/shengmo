@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:visibility="gone"
+        android:background="#DDDDDD"/>
+
+    <FrameLayout
+        android:layout_marginVertical="10dp"
+        android:id="@+id/item_other_group_header_ll01"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <View
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_topic_tab_bottom"
+            android:layout_width="57dp"
+            android:layout_height="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="Ta创建的群组"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="@color/titleBlack"
+            />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="#DDDDDD"/>
+    <com.aiwujie.shengmo.customview.MyListView
+        android:id="@+id/item_other_group_header_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#dddddd"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="none"/>
+
+    <FrameLayout
+        android:layout_marginVertical="10dp"
+        android:id="@+id/item_other_group_header_ll02"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <View
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_topic_tab_bottom"
+            android:layout_width="57dp"
+            android:layout_height="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="Ta加入的群组"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="@color/titleBlack" />
+
+
+    </FrameLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

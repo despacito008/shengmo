@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="12dp"
+    android:paddingHorizontal="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/partTranslucent">
+
+    <ImageView
+        android:id="@+id/iv_item_live_user_icon"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:background="#6cf"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        android:id="@+id/iv_item_live_user_identity"
+        app:layout_constraintWidth_percent="0.07"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintBottom_toBottomOf="@id/iv_item_live_user_icon"
+        app:layout_constraintLeft_toLeftOf="@id/iv_item_live_user_icon"
+        tools:src="@drawable/user_vip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        tools:background="#6cf"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/iv_item_live_user_icon"
+        app:layout_constraintLeft_toRightOf="@id/iv_item_live_user_icon"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="15dp"
+        tools:text="海岛的秋天"
+        android:id="@+id/tv_item_live_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        app:layout_constraintVertical_bias="0.65"
+        android:id="@+id/iv_item_live_user_info"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_live_user_name"
+        app:layout_constraintTop_toTopOf="@id/iv_item_live_user_icon"
+        app:layout_constraintBottom_toBottomOf="@id/iv_item_live_user_icon"
+        android:layout_width="12dp"
+        android:layout_height="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_live_user_info"
+        app:layout_constraintLeft_toRightOf="@id/iv_item_live_user_info"
+        app:layout_constraintTop_toTopOf="@id/iv_item_live_user_info"
+        app:layout_constraintBottom_toBottomOf="@id/iv_item_live_user_info"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:includeFontPadding="false"
+        android:layout_marginLeft="5dp"
+        tools:text="历史最高2700人观看"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_item_live_user_time"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_live_user_name"
+        app:layout_constraintBottom_toBottomOf="@id/iv_item_live_user_icon"
+        android:layout_width="12dp"
+        android:layout_height="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_live_user_address"
+        app:layout_constraintLeft_toRightOf="@id/iv_item_live_user_time"
+        app:layout_constraintTop_toTopOf="@id/iv_item_live_user_time"
+        app:layout_constraintBottom_toBottomOf="@id/iv_item_live_user_time"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:includeFontPadding="false"
+        android:layout_marginLeft="5dp"
+        tools:text="已直播1小时23分钟"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_item_live_control_status"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="3dp"
+        android:gravity="center"
+        android:background="@drawable/live_manager_list_item_custom_btn"
+        app:layout_constraintBottom_toBottomOf="@id/iv_item_live_user_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_item_live_user_icon"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:text="解除场控"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_limit_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="10"
+        android:gravity="top"
+        android:paddingVertical="10dp"
+        android:background="@color/transparent"
+        android:textColor="@color/titleBlack"
+        android:textColorHint="@color/normalGray"
+        tools:hint="请输入文字" />
+
+    <TextView
+        android:id="@+id/tv_limit_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingVertical="12dp"
+        tools:text="0/10000" />
+
+
+</LinearLayout>

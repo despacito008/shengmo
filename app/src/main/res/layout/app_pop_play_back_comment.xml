@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="#66c"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:paddingVertical="5dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/bg_top_round_white"
+        app:layout_constraintHeight_percent="0.75"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/tv_pop_num"
+            tools:text="共有24条评论"
+            android:paddingVertical="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/normalGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refresh_pop_comment"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_pop_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <TextView
+            android:id="@+id/tv_pop_comment"
+            android:background="@drawable/bg_round_gray"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/normalGray"
+            android:textSize="15dp"
+            android:text="点击输入你的评论"
+            android:paddingVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

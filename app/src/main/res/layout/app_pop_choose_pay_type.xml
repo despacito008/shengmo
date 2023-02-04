@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="#999"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:background="@drawable/bg_top_round_gray"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="15dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="选择支付方式"
+            android:layout_marginVertical="5dp"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/ll_pay_by_beans"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/bg_round_white"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ranking_beans"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_pay_by_beans"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="15dp"
+                android:text="魔豆支付"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pay_by_we_chat"
+            android:paddingHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/bg_round_white"
+            android:paddingVertical="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/weixin2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_marginHorizontal="10dp"
+                android:textSize="15dp"
+                android:text="微信支付"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pay_by_ali"
+            android:paddingHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/bg_round_white"
+            android:paddingVertical="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_withdraw_ali_pay"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_marginHorizontal="10dp"
+                android:textSize="15dp"
+                android:text="支付宝支付"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

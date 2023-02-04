@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:id="@+id/layout_user_normal_info"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp">
+
+            <LinearLayout
+                android:id="@+id/ll_layout_user_normal_info_sex_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/live_top_tool_bar_sex"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_layout_user_normal_info_sex"
+                    tools:src="@mipmap/san"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_layout_user_normal_info_age"
+                    android:layout_width="wrap_content"
+                    android:paddingHorizontal="3dp"
+                    android:layout_height="wrap_content"
+                    android:text="33"
+                    android:textColor="@color/white"
+                    android:textSize="9dp" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/tv_layout_user_normal_info_role"
+                android:layout_width="wrap_content"
+                android:paddingHorizontal="5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/live_top_tool_bar_sex"
+                android:layout_marginLeft="@dimen/small_image_left_margin"
+                android:text="慕"
+                android:paddingVertical="1dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"
+                android:textSize="9dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_layout_user_normal_info_wealth"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:background="@drawable/item_caifuzhi_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:paddingVertical="2.5dp"
+                android:paddingHorizontal="5.5dp"
+                android:background="@drawable/bg_user_wealth"
+                android:id="@+id/iv_layout_user_normal_info_wealth"
+                android:src="@drawable/user_wealth"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:includeFontPadding="false"
+                tools:text="10000"
+                android:textSize="9dp"
+                android:textColor="#febf3b"
+                android:id="@+id/tv_layout_user_normal_info_wealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_layout_user_normal_info_charm"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:background="@drawable/item_meilizhi_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:paddingVertical="2.5dp"
+                android:paddingHorizontal="5.5dp"
+                android:background="@drawable/bg_user_info_charm"
+                android:id="@+id/iv_layout_user_normal_info_charm"
+                android:src="@drawable/user_charm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:includeFontPadding="false"
+                tools:text="10000"
+                android:textSize="9dp"
+                android:textColor="@color/thumbOrange"
+                android:id="@+id/tv_layout_user_normal_info_charm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

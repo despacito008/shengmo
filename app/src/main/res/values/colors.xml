@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingDefaultResource">
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGray">#33000000</color>
+    <color name="red_light">#ffff4444</color>
+    <color name="red">#ffff0000</color>
+    <color name="red2">#FD493A</color>
+    <color name="blue_light">#ff33b5e5</color>
+    <color name="purple_main">#db57f3</color>
+    <color name="title_color">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray_color">#dddddd</color>
+    <color name="yellff">#ff9d00</color>
+    <color name="kongbai">#00ffffff</color>
+    <color name="tongyong">#ffc450d6</color>
+    <color name="bai">#ffffffff</color>
+    <color name="black">#000</color>
+    <color name="blackGray">#111</color>
+    <color name="titleBlack">#131415</color>
+    <color name="darkGray">#333</color>
+    <color name="normalGray">#666</color>
+    <color name="alphaNormalGray">#6666</color>
+    <color name="lightGray">#999</color>
+    <color name="line_gray">#ffe5e5e5</color>
+    <color name="alphaLightGray">#3999</color>
+    <color name="tim_tip_gray">#999</color>
+    <color name="colorGray4">#787878</color>
+    <color name="colorTransparentBlack">#44777777</color>
+    <color name="minGray">#F5F5F5</color>
+    <color name="normalPurple">#db57f3</color>
+    <color name="redBaoOrange">#F66340</color>
+    <color name="color_purple_DB57F3">#DB57F3</color>
+    <color name="gray_999">#999999</color>
+    <color name="redOrange">#ff615c</color>
+    <color name="chatWrite">#fbf8fb</color>
+    <color name="boyColor">#42aeff</color>
+    <color name="girlColor">#ff71bf</color>
+    <color name="cdtColor">#db57f3</color>
+    <color name="thumbOrange">#ff7857</color>
+    <color name="vipTitleColor">#161415</color>
+    <color name="wealthColor">#ffc600</color>
+    <color name="wealthBgColor">#efb970</color>
+    <color name="charmColor">#ff7857</color>
+    <color name="charmBgColor">#ed8980</color>
+    <color name="purpleColor">#E676FA</color>
+    <color name="bind_common_bg_purple">#DB57F3</color>
+
+    <color name="withdraw_ing">#999</color>
+    <color name="withdraw_suc">#24d657</color>
+    <color name="withdraw_fail">#f41314</color>
+    <!--dialog统一样式-->
+    <color name="bg_dialog_color">#5000</color>
+    <color name="gray_text">#e5e5e5</color>
+
+    <color name="color_anchor_level">#c065fd</color>
+    <color name="color_audience_level">#ffa935</color>
+
+    <color name="liveBoyColor">#87d7fe</color>
+    <color name="liveGirlColor">#fcabd0</color>
+    <color name="liveCdtColor">#e8b6ff</color>
+
+    <color name="liveLevelUserColor">#ff9600</color>
+    <color name="liveLevelAnchorColor">#5500BA</color>
+
+    <color name="highEndPink">#ff55a5</color>
+
+    <color name="color_pay_normal">#eee</color>
+    <color name="color_pay_weChat">#6c0</color>
+    <color name="color_pay_aliPay">#6cf</color>
+
+    <color name="synthesis_orange">#ffe508</color>
+
+
+    <color name="btn_nan_open_high">#87D7FE</color>
+    <color name="btn_nv_open_high">#FEB3D6</color>
+
+    <color name="color_open_rule">#72C3FF</color>
+    <color name="color_unopen_rule">#666666</color>
+
+
+    <color name="color_high_title">#ADADAD</color>
+    <color name="blur_color">#90dddddd</color>
+    <color name="bg_color">#fafafa</color>
+
+    <color name="water_blue">#66ccff</color>
+    <color name="link_status">#646464</color>
+
+
+</resources>

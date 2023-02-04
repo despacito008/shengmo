@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aiwujie.shengmo.customview.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.aiwujie.shengmo.activity.AddUserActivity">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="13%w"
+        android:background="#FFFFFF"
+        >
+        <ImageView
+            android:id="@+id/mAlert_Setting_return"
+            android:layout_width="40dp"
+            app:layout_heightPercent="50%"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:src="@mipmap/return_back"
+            android:layout_marginLeft="12dip"
+            android:textColor="#4b4b4b"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加新账号"
+            android:textColor="#333333"
+            app:layout_textSizePercent="35%"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="10dp"
+        android:text="最多只能添加五个账号"
+        android:paddingLeft="20dp"/>
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:padding="14dp"/>
+        <EditText
+            android:textSize="16sp"
+            android:background="#fff"
+            android:id="@+id/user_idya"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="手机号/邮箱"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"/>
+    <LinearLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:textColor="#000"
+            android:padding="14dp"/>
+
+
+        <EditText
+            android:textSize="16sp"
+            android:background="#fff"
+            android:id="@+id/user_passya"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="密码"/>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/loginya"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%"
+        android:layout_marginTop="20dip"
+        app:layout_marginLeftPercent="4%"
+        app:layout_marginRightPercent="4%"
+        app:layout_textSizePercent="3%"
+        android:textColor="#FFFFFF"
+        android:text="@string/login"
+        android:background="@drawable/item_login_btn2"
+        />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/kuai_ll"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_marginLeftPercent="4%"
+        app:layout_marginRightPercent="4%"
+        app:layout_marginBottomPercent="2%"
+        android:layout_above="@+id/login_ll">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="5"
+            android:background="#DDDDDD"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加快捷登录"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:textColor="#646464"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="5"
+            android:background="#DDDDDD"
+            android:layout_gravity="center_vertical"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/login_ll"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_marginLeftPercent="4%"
+        app:layout_marginRightPercent="4%"
+        app:layout_marginBottomPercent="3%"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/mLogin_iv_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/qqicon"/>
+        <ImageView
+            android:id="@+id/mLogin_iv_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/weixinicon"/>
+        <ImageView
+            android:id="@+id/mLogin_iv_wb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/weiboicon"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.aiwujie.shengmo.customview.PercentLinearLayout>

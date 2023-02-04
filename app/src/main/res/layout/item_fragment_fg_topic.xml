@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8f8"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_normal_empty"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mDynamic_topic_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        android:background="#FFFFFF"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mDynamic_topic_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</LinearLayout>

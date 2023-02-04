@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="5dp"
+    android:paddingVertical="5dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:id="@+id/ll_item_play_back_episode"
+    tools:background="@drawable/bg_round_episode_playing"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:textSize="16dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="15dp"
+        tools:text="这是一集的标题"
+        android:id="@+id/tv_item_play_back_episode"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginRight="10dp"
+        android:id="@+id/iv_item_play_back_episode"
+        android:src="@drawable/ic_episode_play_normal"
+        android:layout_width="18dp"
+        android:layout_height="18dp"/>
+
+</LinearLayout>

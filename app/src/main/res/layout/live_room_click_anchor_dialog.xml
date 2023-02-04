@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/tv_live_room_tip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_live_room_click_anchor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/report_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_live_room_tip"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:text="举报"
+            android:layout_margin="@dimen/page_margin" />
+
+        <TextView
+            tools:text="禁言"
+            android:id="@+id/is_speaking"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_live_room_tip"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:layout_margin="@dimen/page_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_live_room_tip"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_marginTop="45dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/tv_anchor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/live_auth_require"
+                android:textStyle="bold"
+                android:textColor="#ff131415"
+                android:textSize="14dp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_anchor_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:textColor="#555555"
+                android:textSize="12dp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_anchor_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID:823734874384"
+                android:padding="5dp"
+                android:textColor="#555555"
+                android:textSize="12dp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_anchor_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="43|180cm|70kg|0"
+                android:textColor="#555555"
+                android:textSize="12dp" />
+
+            <include
+                android:layout_marginVertical="15dp"
+                layout="@layout/layout_user_card_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/tv_anchor_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="河南 开封"
+                android:textColor="@color/lightGray"
+                android:textSize="12dp"
+                android:padding="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_gray"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_bind_ic_card_info"
+                android:paddingVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_anchor_myself"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_anchor_myself"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/normalGray"
+                    android:textSize="14dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"/>
+                <View
+                    android:id="@+id/view_line_one"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_gray"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tv_anchor_ante"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_anchor_ante"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/normalGray"
+                    android:textSize="14dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:id="@+id/view_line_two"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_gray"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tv_anchor_manager"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_anchor_manager"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/normalGray"
+                    android:textSize="14dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:id="@+id/view_line_three"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_gray"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tv_anchor_follow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/live_follow"
+                    android:textColor="@color/normalGray"
+                    android:textSize="14dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_gray"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <com.tencent.liteav.audiosettingkit.CircleImageView
+        android:id="@+id/img_live_room_cover"
+        android:padding="1dp"
+        android:background="@drawable/bg_live_room_cover"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/live_ic_avatar"
+        app:layout_constraintBottom_toTopOf="@id/tv_live_room_tip"
+        app:layout_constraintTop_toTopOf="@id/tv_live_room_tip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/item_identity_icon"
+        android:layout_width="24dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/user_svip"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintBottom_toBottomOf="@id/img_live_room_cover"
+        app:layout_constraintRight_toRightOf="@id/img_live_room_cover" />
+
+
+</android.support.constraint.ConstraintLayout>
+   

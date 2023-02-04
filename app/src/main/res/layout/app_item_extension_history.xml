@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginHorizontal="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_round_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_item_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="13dp"
+        android:textColor="@color/darkGray"
+        android:paddingVertical="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="推广记录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_item_look"
+        android:layout_marginLeft="10dp"
+        android:textSize="13dp"
+        android:textColor="@color/water_blue"
+        android:paddingVertical="5dp"
+        app:layout_constraintTop_toTopOf="@id/tv_item_title"
+        app:layout_constraintBottom_toBottomOf="@id/tv_item_title"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:text="查看详情 >"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:background="@color/line_gray"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_title"
+        app:layout_constraintRight_toRightOf="@id/tv_item_look"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_title"
+        android:layout_width="0dp"
+        android:layout_height="1px"/>
+
+
+    <ImageView
+        android:id="@+id/iv_item_icon"
+        tools:background="#6cf"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.22"
+        app:layout_constraintDimensionRatio="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_num"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toTopOf="@id/iv_item_icon"
+        app:layout_constraintBottom_toTopOf="@id/tv_item_time"
+        app:layout_constraintLeft_toRightOf="@id/iv_item_icon"
+        tools:text="2333人看到"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_item_time"
+        tools:text="开启时间：2022-05-05 10:22:22"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_num"
+        app:layout_constraintBottom_toBottomOf="@id/iv_item_icon"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>

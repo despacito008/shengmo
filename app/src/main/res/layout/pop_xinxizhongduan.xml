@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relative_xinxizhongduan"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+     >
+
+<RadioGroup 
+    android:id="@+id/rg_suozaidi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RadioButton 
+        android:id="@+id/rb_zonghe"
+        android:layout_width="match_parent"
+           android:layout_height="40dp"
+       android:textSize="14sp"
+
+        android:text="所有人可见"
+        android:button="@null"
+        android:checked="false"
+         android:background="@drawable/shape_xlist_item_min"
+         android:paddingLeft="12dp"
+         android:paddingRight="13dp"
+        android:textColor="@drawable/bg_text"
+        />
+     <RadioButton 
+          android:id="@+id/rb_zuijin"
+        android:layout_width="match_parent"
+           android:layout_height="40dp"
+         android:textSize="14sp"
+ android:background="@drawable/shape_xlist_item_min"       
+   android:text="好友/VIP可见"
+        android:button="@null"
+        android:checked="false"
+         android:paddingLeft="12dp"
+         android:paddingRight="13dp"
+         android:textColor="@drawable/bg_text"
+        />
+</RadioGroup>
+
+</RelativeLayout>

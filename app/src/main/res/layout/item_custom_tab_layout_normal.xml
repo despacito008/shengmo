@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tv_normal_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="3dp"
+        android:textSize="13.5dp"
+        android:text="赠送礼物"
+        android:gravity="center"
+        android:paddingVertical="3dp"
+        android:paddingHorizontal="15dp"
+        tools:background="@drawable/bg_user_info_sex_cdts"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_gravity="right|top"
+        android:id="@+id/tv_tab_red_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:background="@drawable/item_messagecount_bg"
+        android:textColor="#FFFFFF"
+        android:singleLine="true"
+        android:text="99"
+        />
+
+</FrameLayout>

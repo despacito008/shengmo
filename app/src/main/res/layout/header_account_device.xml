@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_account_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="id："
+        android:textColor="@color/colorGray4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_account_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="账号："
+        android:textColor="@color/colorGray4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_account_uid" />
+
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账号111:"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/tv_account_str"
+        app:layout_constraintLeft_toRightOf="@id/tv_account_str"
+        app:layout_constraintTop_toTopOf="@id/tv_account_str" />
+
+    <TextView
+        android:id="@+id/tv_phone_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="手机："
+        android:textColor="@color/colorGray4"
+        app:layout_constraintLeft_toLeftOf="@id/tv_account_str"
+        app:layout_constraintTop_toBottomOf="@id/tv_account_str" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":1111"
+        android:textIsSelectable="true"
+        android:textColor="@color/purple_main"
+        app:layout_constraintBottom_toBottomOf="@id/tv_phone_str"
+        app:layout_constraintLeft_toRightOf="@id/tv_phone_str"
+        app:layout_constraintTop_toTopOf="@id/tv_phone_str" />
+
+    <TextView
+        android:id="@+id/tv_email_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="邮箱："
+        android:textColor="@color/colorGray4"
+        app:layout_constraintLeft_toLeftOf="@id/tv_phone_str"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone_str" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":1111"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/tv_email_str"
+        app:layout_constraintLeft_toRightOf="@id/tv_email_str"
+        app:layout_constraintTop_toTopOf="@id/tv_email_str" />
+    <TextView
+        android:id="@+id/tv_type_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="机型："
+        android:textColor="@color/colorGray4"
+        app:layout_constraintLeft_toLeftOf="@id/tv_email_str"
+        app:layout_constraintTop_toBottomOf="@id/tv_email_str" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":1111"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/tv_type_str"
+        app:layout_constraintLeft_toRightOf="@id/tv_type_str"
+        app:layout_constraintTop_toTopOf="@id/tv_type_str" />
+    <TextView
+        android:id="@+id/tv_phone_model_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="系统："
+        android:textColor="@color/colorGray4"
+        app:layout_constraintLeft_toLeftOf="@id/tv_type_str"
+        app:layout_constraintTop_toBottomOf="@id/tv_type_str" />
+
+    <TextView
+        android:id="@+id/tv_phone_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":1111"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/tv_phone_model_str"
+        app:layout_constraintLeft_toRightOf="@id/tv_phone_model_str"
+        app:layout_constraintTop_toTopOf="@id/tv_phone_model_str" />
+
+    <TextView
+        android:id="@+id/tv_phone_version_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="版本："
+        android:textColor="@color/colorGray4"
+        app:layout_constraintLeft_toLeftOf="@id/tv_phone_model_str"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone_model_str" />
+
+    <TextView
+        android:id="@+id/tv_phone_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":1111"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/tv_phone_version_str"
+        app:layout_constraintLeft_toRightOf="@id/tv_phone_version_str"
+        app:layout_constraintTop_toTopOf="@id/tv_phone_version_str" />
+
+    <TextView
+        android:id="@+id/tv_time_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="时间："
+        android:textColor="@color/colorGray4"
+        app:layout_constraintLeft_toLeftOf="@id/tv_phone_version_str"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone_version_str" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/tv_time_str"
+        app:layout_constraintLeft_toRightOf="@id/tv_time_str"
+        app:layout_constraintTop_toTopOf="@id/tv_time_str" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/ll_account_invite"
+        app:layout_constraintTop_toBottomOf="@id/tv_time_str"
+        app:layout_constraintLeft_toLeftOf="@id/tv_phone_model_str"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:id="@+id/tv_time_str2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="邀请人："
+        android:textColor="@color/colorGray4"
+        app:layout_constraintLeft_toLeftOf="@id/tv_phone_model_str"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone_version_str" />
+
+        <TextView
+            tools:text="娃哈哈"
+            android:id="@+id/tv_account_invite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_main"
+            app:layout_constraintBottom_toBottomOf="@id/tv_time_str"
+            app:layout_constraintLeft_toRightOf="@id/tv_time_str"
+            app:layout_constraintTop_toTopOf="@id/tv_time_str" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/ll_account_invite_user"
+        app:layout_constraintTop_toBottomOf="@id/ll_account_invite"
+        app:layout_constraintLeft_toLeftOf="@id/tv_phone_model_str"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邀请："
+            android:textColor="@color/colorGray4"
+            app:layout_constraintLeft_toLeftOf="@id/tv_phone_model_str"
+            app:layout_constraintTop_toBottomOf="@id/tv_phone_version_str" />
+
+        <TextView
+            tools:text="3人"
+            android:id="@+id/tv_account_invite_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_main"
+            app:layout_constraintBottom_toBottomOf="@id/tv_time_str"
+            app:layout_constraintLeft_toRightOf="@id/tv_time_str"
+            app:layout_constraintTop_toTopOf="@id/tv_time_str" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_history_address"
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ll_account_invite_user"
+        app:layout_constraintLeft_toLeftOf="@id/tv_time_str"
+
+        />
+
+</android.support.constraint.ConstraintLayout>

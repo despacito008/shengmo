@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include layout="@layout/app_layout_normal_user_info"/>
+
+    <LinearLayout
+        android:paddingVertical="8dp"
+        android:paddingRight="10dp"
+        android:layout_width="125dp"
+        android:layout_gravity="center|right"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@drawable/ic_push_dynamic_rocket"
+            android:layout_width="30dp"
+            android:layout_height="40dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_gravity="right"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_dynamic_push_top_info"
+                android:textSize="12dp"
+                tools:text="1次/10卡/1时"
+                android:textColor="@color/redOrange"
+                android:paddingVertical="5dp"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:paddingVertical="5dp"
+                android:id="@+id/tv_item_dynamic_push_top_charm"
+                android:textSize="12dp"
+                tools:text="+100魅力值"
+                android:textColor="@color/redOrange"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_normal_title_bar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:background="@color/line_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingHorizontal="18dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingVertical="10dp"
+                android:background="@drawable/bg_round_purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_call_num"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textSize="35dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingVertical="3dp"
+                    android:textColor="@color/white"
+                    android:text="剩余呼唤次数"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_call_buy"
+                    android:background="@drawable/bg_round_white"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:gravity="center"
+                    android:text="购买呼唤"
+                    android:textColor="@color/purple_main"
+                    android:paddingVertical="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_call_start"
+                android:gravity="center"
+                android:paddingVertical="16dp"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/bg_round_purple"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:text="开启呼唤"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/bg_round_white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:textColor="@color/normalGray"
+                    android:paddingVertical="10dp"
+                    android:text="产品介绍"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:background="@color/line_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+
+                <TextView
+                    android:id="@+id/tv_call_tips"
+                    tools:text="@string/live_auth_tip"
+                    android:paddingVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:id="@+id/ll_conversation_call_list"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/bg_round_white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:textColor="@color/normalGray"
+                    android:paddingVertical="10dp"
+                    android:text="推广记录"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:background="@color/line_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tv_conversation_call_bao"
+                    android:text="10 倍曝光"
+                    android:textSize="13.5dp"
+                    android:textColor="@color/darkGray"
+                    android:paddingVertical="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_conversation_call_num"
+                    tools:text="呼唤期间已被2356人看到"
+                    android:paddingVertical="5dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/darkGray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_conversation_call_time"
+                    tools:text="2022-06-06 11:32:37"
+                    android:textSize="12dp"
+                    android:textColor="@color/lightGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@color/normalGray"
+                    android:textSize="13dp"
+                    android:background="@drawable/bg_round_gray"
+                    android:layout_marginVertical="8dp"
+                    android:paddingVertical="12dp"
+                    android:gravity="center"
+                    android:text="推广详情"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_call_question"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="6dp"
+                android:background="@drawable/bg_round_white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:textColor="@color/normalGray"
+                    android:text="常见问题"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:padding="2dp"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_call_limit"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="6dp"
+                android:background="@drawable/bg_round_white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:textColor="@color/normalGray"
+                    android:text="推广要求"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:padding="2dp"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

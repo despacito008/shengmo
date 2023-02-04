@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.hjq.shape.layout.ShapeLinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    app:shape="rectangle"
+                    app:shape_radius="10dp"
+                    app:shape_shadowColor="#66131415"
+                    app:shape_shadowSize="1dp"
+                    app:shape_solidColor="#fff"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="53dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UnusedAttribute" >
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_marginTop="55dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_marginRight="6dp"
+                            android:src="@drawable/ic_auth_sign_left"
+                            android:layout_width="9dp"
+                            android:layout_height="9dp"/>
+
+                        <TextView
+                            android:text="专属特权"
+                            android:textColor="#c89d58"
+                            android:textSize="14dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_marginLeft="6dp"
+                            android:src="@drawable/ic_auth_sign_right"
+                            android:layout_width="9dp"
+                            android:layout_height="9dp"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_marginHorizontal="30dp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/ic_auth_sign"
+                                android:layout_width="43dp"
+                                android:layout_height="43dp"/>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:textColor="@color/darkGray"
+                                android:text="昵称右侧点亮身份认证蓝色图标"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginHorizontal="30dp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/ic_auth_more"
+                                android:layout_width="43dp"
+                                android:layout_height="43dp"/>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:textColor="@color/darkGray"
+                                android:text="更多特权敬请期待"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </com.hjq.shape.layout.ShapeLinearLayout>
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="温馨提示："
+                    android:textSize="12dp"
+                    android:textColor="@color/normalGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="1.身份认证仅用于个人认证，其他用户不可查看，提交后48小时内进行审核。\n
+2.请确保上传身份证信息清晰并与本人一致，否则将不予通过，已通过者发现后将会被取消认证标识。"
+                    android:textColor="@color/lightGray"
+                    android:textSize="12dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    tools:src="@drawable/icon_add"
+                    android:id="@+id/mPhotorz_icon"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/mPhotorz_vip"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="bottom|right"
+                    android:scaleType="fitXY" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+    <Button
+        android:id="@+id/mPhotorz_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/bg_user_info_sex_cdts"
+        android:text="开启身份认证"
+        android:textColor="#FFFFFF"
+        app:layout_textSizePercent="4%w"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>

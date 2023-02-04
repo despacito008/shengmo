@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="@string/purchase_record_tips"
+        android:layout_width="match_parent"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/purple_main"
+        android:textSize="13dp"
+        android:background="@color/line_gray"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>

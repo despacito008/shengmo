@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="5dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.tencent.qcloud.tim.tuikit.live.component.common.CircleImageView
+        android:id="@+id/iv_item_request_link_icon"
+        tools:src="@drawable/user_manager"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_request_link_name"
+        android:layout_marginLeft="5dp"
+        android:paddingVertical="5dp"
+        android:textColor="@color/titleBlack"
+        android:textSize="15dp"
+        tools:text="特别的你"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_item_request_link_agree"
+        android:layout_marginLeft="10dp"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:text="同意"
+        android:background="@drawable/bg_round_request_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:background="@drawable/bg_round_gray_home"
+        android:id="@+id/tv_item_request_link_reject"
+        android:layout_marginLeft="15dp"
+        android:paddingVertical="8dp"
+        android:textColor="@color/titleBlack"
+        android:paddingHorizontal="10dp"
+        android:textSize="15dp"
+        android:text="拒绝"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

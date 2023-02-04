@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="SpUsage,ContentDescription,RtlHardcoded,HardcodedText"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/view_item_vip_center_bg"
+        android:background="@drawable/bg_vip_center_item_choose"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="7.5dp"
+        app:layout_constraintDimensionRatio="165:102"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_vip_center_name"
+        android:includeFontPadding="false"
+        android:textSize="14dp"
+        android:textColor="@color/titleBlack"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        tools:text="1个月"
+        app:layout_constraintTop_toTopOf="@id/view_item_vip_center_bg"
+        app:layout_constraintLeft_toLeftOf="@id/view_item_vip_center_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_item_vip_center_rmb"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_vip_center_name"
+        app:layout_constraintTop_toTopOf="@id/view_item_vip_center_bg"
+        app:layout_constraintBottom_toBottomOf="@id/view_item_vip_center_bg"
+        app:layout_constraintVertical_bias="0.6"
+        android:textColor="#c89d58"
+        android:textSize="12dp"
+        android:text="¥"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginLeft="3dp"
+        android:textStyle="bold"
+        android:includeFontPadding="false"
+        android:id="@+id/tv_item_vip_center_price"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintTop_toTopOf="@id/tv_item_vip_center_rmb"
+        app:layout_constraintLeft_toRightOf="@id/tv_item_vip_center_rmb"
+        app:layout_constraintBottom_toBottomOf="@id/tv_item_vip_center_rmb"
+        app:layout_constraintVertical_bias="0.6"
+        android:textColor="#c89d58"
+        android:textSize="23dp"
+        tools:text="30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_item_vip_center_original_price"
+        tools:text="原价：50元"
+        android:textSize="12dp"
+        android:textColor="#adadad"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintLeft_toRightOf="@id/tv_item_vip_center_price"
+        app:layout_constraintBottom_toBottomOf="@id/tv_item_vip_center_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:background="#adadad"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_vip_center_original_price"
+        app:layout_constraintRight_toRightOf="@id/tv_item_vip_center_original_price"
+        app:layout_constraintTop_toTopOf="@id/tv_item_vip_center_original_price"
+        app:layout_constraintBottom_toBottomOf="@id/tv_item_vip_center_original_price"
+        android:layout_width="0dp"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_vip_center_info"
+        android:textSize="12dp"
+        android:textColor="@color/lightGray"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_vip_center_price"
+        app:layout_constraintBottom_toBottomOf="@id/view_item_vip_center_bg"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_vip_center_name"
+        tools:text="31天超值特权"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_item_vip_center_discount"
+        android:includeFontPadding="false"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="7dp"
+        android:background="@drawable/bg_item_vip_center_discount"
+        app:layout_constraintTop_toTopOf="@id/view_item_vip_center_bg"
+        app:layout_constraintRight_toRightOf="@id/view_item_vip_center_bg"
+        tools:text="优惠10%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>

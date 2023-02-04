@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/layout_user_avatar"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+
+    <LinearLayout
+        android:paddingVertical="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingRight="5dp"
+                android:id="@+id/tv_layout_user_normal_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/titleBlack"
+                android:textSize="15dp"
+                android:gravity="center"
+                tools:text="平生不愿风雨飘摇" />
+
+            <TextView
+                android:paddingRight="5dp"
+                android:id="@+id/tv_layout_user_normal_info_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/normalGray"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:visibility="gone"
+                tools:text="平生不愿风雨飘摇" />
+
+            <ImageView
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:id="@+id/iv_layout_user_normal_info_auth_pic"
+                android:src="@drawable/ic_zipai"
+                android:layout_width="16dp"
+                android:layout_marginHorizontal="3dp"
+                android:layout_height="16dp"/>
+
+            <ImageView
+                android:visibility="gone"
+                tools:visibility="gone"
+                android:id="@+id/iv_layout_user_normal_info_auth_card"
+                android:layout_marginHorizontal="3dp"
+                android:src="@drawable/ic_ziliao"
+                android:layout_width="16dp"
+                android:layout_height="16dp"/>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <android.support.constraint.ConstraintLayout
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:id="@+id/constraint_layout_audience_level"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_live_audience_level"
+                        app:layout_constraintTop_toTopOf="@id/iv_live_audience_level"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_live_audience_level"
+                        tools:text="5"
+                        android:includeFontPadding="false"
+                        android:textSize="11dp"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="2dp"
+                        android:layout_marginTop="2dp"
+                        app:layout_constraintLeft_toRightOf="@id/iv_live_audience_level"
+                        android:textColor="@color/color_audience_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:id="@+id/view_live_audience_level"
+                        android:background="@drawable/bg_round_info_audience_level"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_live_audience_level"
+                        app:layout_constraintLeft_toLeftOf="@id/iv_live_audience_level"
+                        app:layout_constraintRight_toRightOf="@id/tv_live_audience_level"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="12dp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_live_audience_level"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:src="@drawable/ic_live_audience_level"
+                        android:layout_width="18dp"
+                        android:layout_height="14dp"/>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:id="@+id/constraint_layout_anchor_level"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_live_anchor_level"
+                        app:layout_constraintTop_toTopOf="@id/iv_live_anchor_level"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_live_anchor_level"
+                        tools:text="10"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="2dp"
+                        android:includeFontPadding="false"
+                        app:layout_constraintHorizontal_bias="0.3"
+                        android:textSize="11dp"
+                        app:layout_constraintLeft_toRightOf="@id/iv_live_anchor_level"
+                        android:textColor="@color/color_anchor_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:id="@+id/view_live_anchor_level"
+                        android:background="@drawable/bg_round_info_anchor_level"
+                        app:layout_constraintTop_toTopOf="@id/iv_live_anchor_level"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_live_anchor_level"
+                        app:layout_constraintLeft_toLeftOf="@id/iv_live_anchor_level"
+                        app:layout_constraintRight_toRightOf="@id/tv_live_anchor_level"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="12dp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_live_anchor_level"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:src="@drawable/ic_info_anchor_level"
+                        android:layout_width="16dp"
+                        android:layout_height="12dp"/>
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/layout_user_normal_info"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

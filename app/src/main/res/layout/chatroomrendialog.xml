@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chatroom_dialogshape"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+
+
+            <TextView
+                android:id="@+id/item_gzfshy_listview_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:text="昵称昵称"/>
+
+            <ImageView
+                android:id="@+id/item_gzfshy_listview_shiming"
+                android:layout_width="18dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:src="@mipmap/renzheng"
+                android:visibility="invisible" />
+            <ImageView
+                android:id="@+id/item_gzfshy_listview_online"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:src="@mipmap/lvdian"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/item_gzfshy_listview_Sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="5dp"
+                    android:drawableLeft="@mipmap/san"
+                    android:drawablePadding="3dp"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:textSize="10sp"
+                    android:text="11111"
+                    android:gravity="center_vertical"
+                    />
+                <TextView
+                    android:id="@+id/item_gzfshy_listview_role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:textSize="10sp"
+                    />
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/item_dynamic_listview_ll_richCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/item_caifuzhi_bg"
+                    android:layout_marginRight="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/caifuzhi"
+                        android:scaleType="fitXY"
+                        />
+                    <TextView
+                        android:id="@+id/item_dynamic_listview_richCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="111"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:textColor="#febf3b"
+                        android:textSize="10sp"/>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/item_dynamic_listview_ll_beautyCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/item_meilizhi_bg"
+                    >
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/meilizhi"
+                        android:scaleType="fitXY"
+                        />
+                    <TextView
+                        android:id="@+id/item_dynamic_listview_beautyCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="111"
+                        android:textColor="#f56684"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:textSize="10sp"/>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_zijibuxian"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_songli"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:background="@drawable/chatroomanniudialogshape"
+                android:text="送礼"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tv_guanzhu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:background="@drawable/chatroomanniudialogshape"
+                android:text="关注"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tv_atta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:background="@drawable/chatroomanniudialogshape"
+                android:text=" @ 他 "
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/guanlill"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_upmai1"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_upmai"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:background="@drawable/chatroomanniudialogshape"
+                android:text="上麦"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_upmai2"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_chatroomjinyan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:background="@drawable/chatroomanniudialogshape"
+                android:text="禁言"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tv_chatroomtichu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:background="@drawable/chatroomanniudialogshape"
+                android:text="踢出"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_gzfshy_listview_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/liaotianshi"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

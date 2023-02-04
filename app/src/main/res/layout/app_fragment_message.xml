@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/cl_fragment_message_title_bar"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/tv_fragment_message_group_square"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+           android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:text="@string/group_square"
+            android:textSize="14dp"
+            android:textColor="@color/normalGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/iv_fragment_message_more"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingHorizontal="15dp"
+            android:src="@mipmap/sandian"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"/>
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_line_notice"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_line_link"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_line_message"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            tools:textStyle="bold"
+            android:id="@+id/tv_fragment_message_notice"
+            tools:textColor="#000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="@id/guide_line_notice"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_notice"
+            android:text="@string/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_fragment_message_message"
+            tools:textColor="@color/lightGray"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="@id/guide_line_message"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_message"
+            android:text="@string/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_fragment_message_link"
+            tools:textColor="@color/lightGray"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="@id/guide_line_link"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_link"
+            android:text="@string/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/bottom_bar_message_notice"
+            app:layout_constraintRight_toRightOf="@id/guide_line_notice"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_notice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/bg_round_titleblack"
+            android:layout_width="15dp"
+            android:layout_height="4dp"/>
+
+        <View
+            android:id="@+id/bottom_bar_message_message"
+            app:layout_constraintRight_toRightOf="@id/guide_line_message"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_message"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/bg_round_titleblack"
+            android:layout_width="15dp"
+            android:layout_height="4dp"/>
+
+        <View
+            android:id="@+id/bottom_bar_message_link"
+            app:layout_constraintRight_toRightOf="@id/guide_line_link"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_link"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/bg_round_titleblack"
+            android:layout_width="15dp"
+            android:layout_height="4dp"/>
+
+        <TextView
+            android:minWidth="18dp"
+            android:id="@+id/tv_fragment_message_notice_unread"
+            app:layout_constraintVertical_bias="0.19"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_notice"
+            android:gravity="center"
+            android:paddingHorizontal="3dp"
+            tools:text="63"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_bg_message_red_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"/>
+
+        <TextView
+            android:minWidth="18dp"
+            android:id="@+id/tv_fragment_message_message_unread"
+            app:layout_constraintVertical_bias="0.19"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_message"
+            android:gravity="center"
+            android:paddingHorizontal="3dp"
+            tools:text="99"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_bg_message_red_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="15dp"
+    tools:background="#61c"
+    android:paddingVertical="7.5dp"
+    android:elevation="1dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="SpUsage,ContentDescription,RtlHardcoded,HardcodedText"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/view_item_dynamic_push_bg"
+        android:background="@drawable/bg_dynamic_push_item_normal"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintDimensionRatio="351:67"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_item_dynamic_push_name"
+        android:textStyle="bold"
+        tools:text="1张"
+        android:layout_marginLeft="23dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tv_item_dynamic_push_average_price"
+        app:layout_constraintLeft_toLeftOf="@id/view_item_dynamic_push_bg"
+        android:textColor="@color/titleBlack"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:includeFontPadding="false"
+        android:id="@+id/tv_item_dynamic_push_price"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@id/view_item_dynamic_push_bg"
+        android:layout_marginRight="21dp"
+        tools:text="30"
+        android:textColor="#86a5ff"
+        android:textSize="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3.5dp"
+        android:text="¥"
+        app:layout_constraintRight_toLeftOf="@id/tv_item_dynamic_push_price"
+        app:layout_constraintBottom_toBottomOf="@id/tv_item_dynamic_push_price"
+        android:textColor="#86a5ff"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_item_dynamic_push_rocket"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/ic_push_dynamic_rocket"
+        android:layout_width="15dp"
+        android:layout_height="24dp"/>
+
+
+    <TextView
+        android:visibility="visible"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/lightGray"
+        android:textSize="12dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_dynamic_push_name"
+        app:layout_constraintBottom_toBottomOf="@id/view_item_dynamic_push_bg"
+        android:id="@+id/tv_item_dynamic_push_average_price"
+        tools:text="(仅27/张)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:visibility="visible"
+        android:textColor="@color/lightGray"
+        android:textSize="12dp"
+        app:layout_constraintLeft_toRightOf="@id/tv_item_dynamic_push_average_price"
+        app:layout_constraintBottom_toBottomOf="@id/tv_item_dynamic_push_average_price"
+        android:id="@+id/tv_item_dynamic_push_original_price"
+        tools:text="原价：40元"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_item_dynamic_push_discount"
+        android:paddingVertical="1.5dp"
+        android:paddingHorizontal="7.5dp"
+        tools:text="75折"
+        android:background="@drawable/bg_dynamic_push_discount"
+        app:layout_constraintTop_toTopOf="@id/tv_item_dynamic_push_name"
+        app:layout_constraintBottom_toBottomOf="@id/tv_item_dynamic_push_name"
+        app:layout_constraintLeft_toRightOf="@id/tv_item_dynamic_push_name"
+        android:layout_marginLeft="22dp"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:background="@color/normalGray"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_dynamic_push_original_price"
+        app:layout_constraintRight_toRightOf="@id/tv_item_dynamic_push_original_price"
+        app:layout_constraintTop_toTopOf="@id/tv_item_dynamic_push_original_price"
+        app:layout_constraintBottom_toBottomOf="@id/tv_item_dynamic_push_original_price"
+        android:layout_width="0dp"
+        android:layout_height="1dp"/>
+
+    <android.support.constraint.Group
+        android:id="@+id/group_item_dynamic_push"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tv_item_dynamic_push_original_price,tv_item_dynamic_push_average_price,tv_item_dynamic_push_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>

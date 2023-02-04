@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_fragment_user_live_play_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_user_play_back"
+        android:visibility="visible"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/layout_normal_empty"/>
+
+            <LinearLayout
+                android:id="@+id/ll_user_play_back_empty"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="成为加点主播可以录制回放"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="20dp"
+                    android:textSize="13dp"
+                    android:textColor="@color/normalGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_apply_recommend_anchor"
+                    android:layout_marginTop="10dp"
+                    android:text="申请加点主播"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="20dp"
+                    android:textSize="13dp"
+                    android:background="@drawable/bg_round_purple_home"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

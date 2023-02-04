@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aiwujie.shengmo.customview.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        app:layout_heightPercent="13%w"
+        >
+
+        <ImageView
+            android:id="@+id/iv_location_info_return"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:gravity="center_vertical"
+            android:src="@mipmap/return_back"
+            android:text="@string/regist"
+            android:textColor="#4b4b4b"
+            app:layout_heightPercent="50%"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="位置详情"
+            android:textColor="#333333"
+            app:layout_textSizePercent="35%"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#4b4b4b"
+            app:layout_textSizePercent="30%"
+            app:layout_widthPercent="12%"
+            />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map_view_location_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</com.aiwujie.shengmo.customview.PercentLinearLayout>

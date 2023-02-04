@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#000"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <View
+        android:id="@+id/view_pop_share_pic_bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/bg_top_round_white"
+        app:layout_constraintDimensionRatio="375:190"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_pop_share_pic_bottom_tips"
+        android:paddingVertical="15dp"
+        android:text="邀请码已复制，请粘贴给好友"
+        android:textSize="14dp"
+        android:textColor="@color/titleBlack"
+        app:layout_constraintLeft_toLeftOf="@id/view_pop_share_pic_bottom"
+        app:layout_constraintRight_toRightOf="@id/view_pop_share_pic_bottom"
+        app:layout_constraintTop_toTopOf="@id/view_pop_share_pic_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/ll_pop_share_way"
+        app:layout_constraintLeft_toLeftOf="@id/view_pop_share_pic_bottom"
+        app:layout_constraintRight_toRightOf="@id/view_pop_share_pic_bottom"
+        app:layout_constraintTop_toBottomOf="@id/tv_pop_share_pic_bottom_tips"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_pop_share_wechat"
+            android:paddingVertical="5dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_wechat"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <TextView
+                android:paddingVertical="10dp"
+                android:textColor="@color/normalGray"
+                android:textSize="12dp"
+                android:text="微信好友"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pop_share_wechat_circle"
+            android:paddingVertical="5dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_wechat_circle"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <TextView
+                android:paddingVertical="10dp"
+                android:textColor="@color/normalGray"
+                android:textSize="12dp"
+                android:text="朋友圈"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pop_share_qq"
+            android:paddingVertical="5dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_qq"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <TextView
+                android:paddingVertical="10dp"
+                android:textColor="@color/normalGray"
+                android:textSize="12dp"
+                android:text="QQ好友"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pop_share_qq_zone"
+            android:paddingVertical="5dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_qq_zone"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <TextView
+                android:paddingVertical="10dp"
+                android:textColor="@color/normalGray"
+                android:textSize="12dp"
+                android:text="QQ空间"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pop_share_download"
+            android:paddingVertical="5dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_weibo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <TextView
+                android:paddingVertical="10dp"
+                android:textColor="@color/normalGray"
+                android:textSize="12dp"
+                android:text="微博"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <View
+        app:layout_constraintTop_toBottomOf="@id/ll_pop_share_way"
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_pop_share_pic_cancel"
+        android:textSize="12dp"
+        android:textColor="@color/normalGray"
+        android:text="@string/cancel"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/ll_pop_share_way"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_item_pop_normal_menu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:textSize="16dp"
+        android:textColor="@color/purple_main"
+        tools:text="普通条目"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/iv_item_pop_normal_menu"
+        tools:src="@drawable/user_vip"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_item_pop_normal_menu"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_pop_normal_menu_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#e4e4e4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</android.support.constraint.ConstraintLayout>

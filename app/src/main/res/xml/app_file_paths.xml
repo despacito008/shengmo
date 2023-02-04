@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+    <external-path path="Android/data/com.aiwujie.shengmo/" name="files_root" />
+    <external-path path="." name="external_storage_root" />
+</paths>

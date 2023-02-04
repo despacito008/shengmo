@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.aiwujie.shengmo.view.roundview.RoundConstraintLayout
+        app:rTopLeftRadius="10dp"
+        app:rTopRightRadius="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        app:layout_constraintHeight_percent="0.8"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:src="@drawable/ic_lottery_draw_bg"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <ImageView
+            android:id="@+id/iv_pop_lottery_draw_tip"
+            android:src="@drawable/ic_lottery_draw_tip"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintDimensionRatio="48:14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/cl_lottery_draw_panel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_pop_lottery_draw_bean"
+            android:paddingVertical="6dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="@id/iv_pop_lottery_draw_tip"
+            app:layout_constraintTop_toBottomOf="@id/iv_pop_lottery_draw_tip"
+            app:layout_constraintBottom_toTopOf="@id/cl_lottery_draw_panel"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/bg_round_lottery_draw_btn_bean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_pop_lottery_draw_bean"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="我的魔豆：0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/arrow_right"
+                android:tint="@color/white"
+                android:layout_width="8dp"
+                android:layout_height="11dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            app:layout_constraintTop_toTopOf="@id/ll_pop_lottery_draw_bean"
+            app:layout_constraintBottom_toBottomOf="@id/ll_pop_lottery_draw_bean"
+            app:layout_constraintLeft_toRightOf="@id/ll_pop_lottery_draw_bean"
+            android:layout_marginLeft="15dp"
+            android:paddingVertical="6dp"
+            android:paddingHorizontal="12dp"
+            android:id="@+id/tv_pop_lottery_draw_synthesis"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:text="合成"
+            android:background="@drawable/bg_round_lottery_draw_btn_bean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_pop_lottery_draw_rule"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:text="规则"
+            android:paddingHorizontal="17dp"
+            android:paddingVertical="13dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.98"
+            app:layout_constraintVertical_bias="0.02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_pop_lottery_draw_record"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:text="抽奖明细"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="3dp"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tv_pop_lottery_draw_synthesis"
+            app:layout_constraintTop_toTopOf="@id/ll_pop_lottery_draw_bean"
+            app:layout_constraintBottom_toBottomOf="@id/ll_pop_lottery_draw_bean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_lottery_draw_panel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ic_lottery_draw_big_big"
+            app:layout_constraintDimensionRatio="363:448"
+            android:layout_width="0dp"
+            app:layout_constraintHeight_percent="0.7"
+            android:layout_height="0dp">
+
+<!--            <TextView-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintVertical_bias="0.02"-->
+<!--                android:text="恭喜海龟先生抽中了城堡（99999魔豆）"-->
+<!--                android:layout_width="0dp"-->
+<!--                app:layout_constraintWidth_percent="0.65"-->
+<!--                app:layout_constraintHorizontal_bias="0.6"-->
+<!--                android:textSize="12dp"-->
+<!--                android:singleLine="true"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:layout_height="wrap_content">-->
+<!--            </TextView>-->
+
+            <com.aiwujie.shengmo.kt.ui.view.ScrollMarqueeView
+                android:id="@+id/marquee_view_lottery_draw"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.02"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.65"
+                app:layout_constraintHorizontal_bias="0.6"
+                android:singleLine="true"
+                android:scrollHorizontally="true"
+                android:layout_height="wrap_content"/>
+
+
+            <com.aiwujie.shengmo.view.luckydraw.LuckyDrawLayout
+                android:id="@+id/luck_layout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.93"
+                app:layout_constraintVertical_bias="0.4"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+                <com.aiwujie.shengmo.view.luckydraw.LuckyDrawView
+                    android:id="@+id/lucky_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
+            </com.aiwujie.shengmo.view.luckydraw.LuckyDrawLayout>
+
+            <TextView
+                android:id="@+id/tv_pop_lottery_draw_slogan"
+                app:layout_constraintLeft_toLeftOf="@id/luck_layout"
+                app:layout_constraintRight_toRightOf="@id/luck_layout"
+                app:layout_constraintTop_toTopOf="@id/luck_layout"
+                app:layout_constraintBottom_toBottomOf="@id/luck_layout"
+                android:background="@drawable/ic_lottery_draw_get_tip_nine"
+                android:gravity="center"
+                android:text="20魔豆夺取52000魔豆"
+                android:paddingTop="3dp"
+                android:paddingBottom="6dp"
+                android:paddingHorizontal="5dp"
+                android:includeFontPadding="false"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                app:layout_constraintVertical_bias="0.35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_start_lottery_draw_ten"
+                android:background="@drawable/bg_round_lottery_draw_btn_red"
+                app:layout_constraintWidth_percent="0.38"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="137:36"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.985"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="10连抽/200魔豆"
+                android:textSize="13.5dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/tv_start_lottery_draw_hundred"
+                android:background="@drawable/bg_round_lottery_draw_btn_red"
+                app:layout_constraintWidth_percent="0.38"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="137:36"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.985"
+                android:text="100连抽/2000魔豆"
+                android:textSize="13.5dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pop_lottery_draw_record"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/bg_round_lottery_record"
+            android:visibility="gone"
+            tools:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_pop_lottery_draw_record_return"
+                    android:rotation="180"
+                    android:tint="@color/white"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="60dp"
+                    android:scaleType="fitEnd"
+                    android:paddingVertical="5dp"
+                    android:layout_height="35dp"/>
+                <TextView
+                    android:paddingVertical="15dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/white"
+                    android:text="抽奖明细"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:visibility="invisible"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/refresh_pop_lottery_draw_record"
+                app:srlEnablePreviewInEditMode="false"
+               android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="0dp">
+                <FrameLayout
+                    android:id="@+id/fl_pop_lottery_draw_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_pop_lottery_draw_record"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </FrameLayout>
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pop_lottery_draw_rule"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/bg_round_lottery_record"
+            android:visibility="gone"
+            tools:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_pop_lottery_draw_rule_return"
+                    android:rotation="180"
+                    android:tint="@color/white"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="60dp"
+                    android:scaleType="fitEnd"
+                    android:paddingVertical="5dp"
+                    android:layout_height="35dp"/>
+                <TextView
+                    android:paddingVertical="15dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/white"
+                    android:text="抽奖规则"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:visibility="invisible"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:id="@+id/tv_item_lottery_draw_rule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <com.aiwujie.shengmo.kt.ui.view.GiftSynthesisView
+            android:id="@+id/gift_synthesis_view"
+            android:visibility="visible"
+            tools:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/ll_pop_lottery_draw_result"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:background="#d000"
+            android:visibility="gone"
+            tools:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:layout_weight="1"
+                android:layout_width="1px"
+                android:layout_height="0dp"/>
+            <TextView
+                android:id="@+id/tv_pop_lottery_draw_result_tip"
+                android:paddingVertical="10dp"
+                android:textSize="22dp"
+                android:textColor="@color/white"
+                android:text="恭喜您获得"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_pop_lottery_draw_result"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                />
+
+            <TextView
+                android:id="@+id/tv_pop_lottery_draw_result"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_round_lottery_draw_confirm"
+                android:text="确定"
+                android:textSize="15dp"
+                android:paddingHorizontal="36dp"
+                android:paddingVertical="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_weight="1"
+                android:layout_width="1px"
+                android:layout_height="0dp"/>
+
+        </LinearLayout>
+
+
+    </com.aiwujie.shengmo.view.roundview.RoundConstraintLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_marginTopPercent="8%w"
+        app:layout_marginBottomPercent="6%w"
+        >
+
+        <TextView
+            android:id="@+id/redwomen_dialog_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:text="非牵线会员或未通过牵线会员资料审核！"
+            android:layout_gravity="center"
+            app:layout_textSizePercent="5.5%w"
+            app:layout_marginLeftPercent="10%w"
+            app:layout_marginRightPercent="10%w"
+            />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_marginBottomPercent="3%w"
+        >
+        <TextView
+            android:id="@+id/redwomen_dialog_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确定"
+            android:gravity="center"
+            android:background="@drawable/item_gv_bg_zi"
+            android:textColor="#FFFFFF"
+            android:padding="6dp"
+            app:layout_textSizePercent="5%w"
+            app:layout_marginLeftPercent="10%w"
+            app:layout_marginRightPercent="10%w"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

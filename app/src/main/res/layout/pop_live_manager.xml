@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_xinxizhongduan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource"
+    android:background="@drawable/bg_live_send_gift_pop"
+    android:paddingHorizontal="10dp"
+    android:layout_gravity="bottom"
+    android:gravity="bottom">
+
+    <RadioGroup
+        android:layout_marginTop="15dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:id="@+id/rg_control_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@null"
+        android:layout_centerInParent="true"
+        >
+
+        <RadioButton
+            android:gravity="center"
+            android:id="@+id/rb_set_control"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_rb_top_button"
+            android:button="@null"
+            android:checked="false"
+            android:text="设为场控"
+            android:textColor="@drawable/bg_text"
+            android:textSize="18sp"
+            android:layout_marginBottom="0.1dp"/>
+
+        <RadioButton
+            android:gravity="center"
+            android:id="@+id/rb_control_list"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_xlist_item_min"
+            android:button="@null"
+            android:checked="false"
+            android:text="场控列表"
+            android:textColor="@drawable/bg_text"
+            android:textSize="18sp"
+            android:layout_marginBottom="0.1dp"/>
+
+        <RadioButton
+            android:gravity="center"
+            android:id="@+id/rb_current_no_speak"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_xlist_item_min"
+            android:button="@null"
+            android:checked="false"
+            android:text="本场禁言"
+            android:textColor="@drawable/bg_text"
+            android:textSize="18sp"
+            android:layout_marginBottom="0.1dp"/>
+
+        <RadioButton
+            android:gravity="center"
+            android:id="@+id/rb_no_speak_forever"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_rb_bottom_button"
+            android:button="@null"
+            android:checked="false"
+            android:text="永久禁言"
+            android:textColor="@drawable/bg_text"
+            android:textSize="18sp"
+            android:layout_marginBottom="0.1dp"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_round_white"
+        android:textColor="@color/normalPurple"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:text="@string/cancel"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

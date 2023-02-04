@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingVertical="10dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_item_at_group_check"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/atweixuanzhong"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+    <ImageView
+        android:id="@+id/iv_item_at_group_icon"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/morentouxiang"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:textSize="16dp"
+        android:textColor="@color/titleBlack"
+        android:id="@+id/tv_item_at_group_name"
+        android:layout_marginLeft="20dp"
+        tools:text="群组名字"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="35dp"
+            tools:background="#6cf"
+            android:id="@+id/iv_ya"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerInParent="true"/>
+
+
+        <TextView
+            android:layout_marginTop="18dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/tv_asd"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="111"/>
+
+
+    <View
+        android:visibility="visible"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="2px"/>
+
+    </LinearLayout>
+
+    <ImageView
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:id="@+id/iv_red_bao_header_over"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_over_date"
+        app:layout_constraintWidth_percent="0.25"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+</android.support.constraint.ConstraintLayout>

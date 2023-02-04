@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_edit">
+
+    <com.tencent.qcloud.tim.tuikit.live.modules.liveroom.TUILiveRoomAudienceLayout
+        android:id="@+id/layout_room_audience"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<fragment
+        tools:layout="@layout/app_fragment_live_room"
+        android:layout_marginHorizontal="10dp"
+        android:name="com.tencent.qcloud.tim.tuikit.live.modules.liveroom.ui.LiveRoomAudienceFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+</FrameLayout>

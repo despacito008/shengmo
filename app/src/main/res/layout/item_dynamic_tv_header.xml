@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/item_dynamic_tv_header_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:gravity="center"
+        android:text="仅显示认证会员、VIP会员发布的动态"
+        android:textSize="25px"
+        android:textColor="#747474"
+        android:background="#F7F7F7"
+        />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="#1000"
+    tools:ignore="SpUsage,ContentDescription,RtlHardcoded,HardcodedText,DisableBaselineAlignment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/view_pop_push_top_bg"
+        android:background="@drawable/bg_round_white"
+        app:layout_constraintWidth_percent="0.813"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="305:504"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/ll_pop_push_top_bg"
+        android:background="@drawable/bg_round_white"
+        app:layout_constraintWidth_percent="0.813"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_pop_push_top_name"
+            android:layout_marginTop="18dp"
+            android:text="推顶卡"
+            android:textSize="15dp"
+            android:textColor="@color/titleBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/iv_pop_push_top_rocket"
+                android:src="@drawable/ic_push_top_rocket"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_pop_push_top_rocket"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/ic_push_top_rocket"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+                <ImageView
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/ic_push_top_rocket"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_pop_push_top_balance"
+            tools:text="剩余 22 张推顶卡"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:textColor="@color/titleBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:background="@drawable/bg_vip_center_item_normal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="使用数量"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/titleBlack"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:inputType="number"
+                android:gravity="right"
+                android:minWidth="30dp"
+                android:id="@+id/et_pop_push_top_num"
+                android:hint="0"
+                android:text="1"
+                android:textColor="#86a5ff"
+                android:background="@color/transparent"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingVertical="5dp"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="被推顶者增加"
+                android:textSize="12dp"
+                android:textColor="@color/normalGray"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_pop_push_top_charm"
+                android:text="100 魅力值"
+                android:textSize="12dp"
+                android:textColor="@color/normalGray"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_pop_push_top_time_tips"
+            android:textSize="12dp"
+            android:textColor="@color/titleBlack"
+            android:layout_marginTop="20dp"
+            android:text="定时自动推顶间隔时长"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_pop_push_top"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:id="@+id/ll_pop_push_top_open"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:id="@+id/iv_pop_push_top_open"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/yuandiantaozi"
+                />
+            <TextView
+                android:includeFontPadding="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lightGray"
+                android:text="推顶可选是否上大喇叭"
+                android:layout_gravity="center_vertical"
+                android:textSize="11dp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_pop_push_top_confirm"
+            android:layout_marginBottom="30dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_user_info_sex_cdts"
+            android:gravity="center"
+            android:layout_width="163dp"
+            android:layout_height="33dp"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

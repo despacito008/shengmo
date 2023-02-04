@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.aiwujie.shengmo.activity.WelcomBannerActivity">
+    <ImageView
+        android:id="@+id/mWelcom_banner_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/huanyingye"
+        />
+    <TextView
+        android:id="@+id/mWelcom_banner_count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25px"
+        android:layout_marginRight="25px"
+        android:background="@drawable/bg_start_page_circle"
+        android:textColor="@android:color/white"
+        android:textSize="26px"
+        />
+</com.zhy.autolayout.AutoRelativeLayout>

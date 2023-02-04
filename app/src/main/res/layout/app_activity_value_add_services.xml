@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_normal_title_bar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_call"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="6dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:background="#1f3c42"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:src="@drawable/ic_my_fee_link"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="呼唤"
+            android:letterSpacing="0.3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:tint="@color/white"
+            android:src="@drawable/arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_push_top"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="6dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:background="#72a373"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:src="@drawable/ic_my_push"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="推顶"
+            android:letterSpacing="0.3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:tint="@color/white"
+            android:src="@drawable/arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_stamp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="6dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:background="#323f52"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_my_stamp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="邮票"
+            android:letterSpacing="0.3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:tint="@color/white"
+            android:src="@drawable/arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fans_club"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="6dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:background="#c6bf9c"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:src="@mipmap/icon_redwomen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="粉丝团"
+            android:letterSpacing="0.3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:tint="@color/white"
+            android:src="@drawable/arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

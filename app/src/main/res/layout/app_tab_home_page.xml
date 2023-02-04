@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iv_tab_home_page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        android:src="@drawable/rb_side_selector"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+    <TextView
+        android:id="@+id/tv_tab_home_page"
+        tools:text="身边"
+        app:layout_constraintTop_toBottomOf="@id/iv_tab_home_page"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="11.5dp"
+        android:paddingVertical="2dp"
+        android:textColor="@color/color_home_page_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_tab_home_page_red_dot"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="2dp"
+        app:layout_constraintLeft_toLeftOf="@id/iv_tab_home_page"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:textColor="@color/white"
+        android:paddingVertical="1dp"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="2dp"
+        android:textSize="10dp"
+        android:text="6"
+        android:minWidth="15dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:gravity="center"
+        android:background="@drawable/item_messagecount_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>

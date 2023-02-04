@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_punishment_publicity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_item_punishment"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:layout_marginVertical="10dp"
+        android:elevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            tools:background="#6cf"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/item_listview_warning_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/item_listview_warning_vip"
+                android:layout_width="35px"
+                android:layout_height="35px"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@mipmap/vip"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/item_listview_warning_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    tools:text="用户昵称"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/normalGray"
+                    android:textSize="14dp"
+                    android:layout_gravity="center_vertical" />
+
+                <ImageView
+                    android:id="@+id/item_listview_warning_shiming"
+                    android:layout_width="13dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="3dip"
+                    android:src="@mipmap/renzheng"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/item_listview_warning_ban_dynamic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:visibility="visible">
+                    <TextView
+                        android:id="@+id/tv_punishment_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f41314"
+                        android:text="已禁动态"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="7dp"
+                        android:layout_height="1dp"
+                        android:background="#f41314"
+                        />
+
+
+                    <TextView
+                        tools:text="两周"
+                        android:textColor="#f41314"
+                        android:textSize="14dp"
+                        android:id="@+id/tv_punishment_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:visibility="visible"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/layout_user_normal_info" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_punishment_date"
+                    tools:text="处罚开始时间"
+                    android:textSize="12dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/lightGray"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:paddingHorizontal="5dp"
+                    android:text="编辑"
+                    android:textColor="#666"
+                    android:textSize="12dp"
+                    android:id="@+id/tv_punishment_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginVertical="10dp"
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_punishment_reason"
+        android:textColor="@color/darkGray"
+        tools:text="动态评论发布大量外部链接，封禁动态两周"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/rv_punishment_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</FrameLayout>

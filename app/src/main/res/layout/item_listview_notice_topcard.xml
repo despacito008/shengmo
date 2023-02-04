@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="#123"
+    android:orientation="vertical">
+
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/ll_item_listview_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            tools:text="好好先生"
+            android:id="@+id/item_listview_notice_vip_sendname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/purple_main"
+            android:textSize="14dp" />
+
+        <TextView
+            android:textColor="#FEBF3B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="  推顶了  "
+            android:textSize="14dp" />
+
+        <TextView
+            tools:text="听雨眠"
+            android:id="@+id/item_listview_notice_vip_receivename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/purple_main"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="  的动态  "
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
+
+        <TextView
+            android:visibility="invisible"
+            tools:text=""
+            android:id="@+id/item_listview_notice_vip_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#FEBF3B"
+            android:textSize="14dp" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        app:layout_constraintLeft_toLeftOf="@id/item_listview_notice_vip_sendicon"
+        app:layout_constraintRight_toRightOf="@id/item_listview_notice_vip_sendicon"
+        app:layout_constraintTop_toTopOf="@id/item_listview_notice_vip_sendicon"
+        app:layout_constraintBottom_toBottomOf="@id/item_listview_notice_vip_sendicon"
+        android:background="@drawable/ic_give_bg"
+        android:layout_width="66dp"
+        android:layout_height="66dp"/>
+
+    <View
+        app:layout_constraintLeft_toLeftOf="@id/item_listview_notice_vip_othericon"
+        app:layout_constraintRight_toRightOf="@id/item_listview_notice_vip_othericon"
+        app:layout_constraintTop_toTopOf="@id/item_listview_notice_vip_othericon"
+        app:layout_constraintBottom_toBottomOf="@id/item_listview_notice_vip_othericon"
+        android:background="@drawable/ic_give_bg"
+        android:layout_width="66dp"
+        android:layout_height="66dp"/>
+
+    <View
+        app:layout_constraintLeft_toLeftOf="@id/item_listview_notice_vip_icon"
+        app:layout_constraintRight_toRightOf="@id/item_listview_notice_vip_icon"
+        app:layout_constraintTop_toTopOf="@id/item_listview_notice_vip_icon"
+        app:layout_constraintBottom_toBottomOf="@id/item_listview_notice_vip_icon"
+        android:background="@drawable/ic_give_heart"
+        android:layout_width="66dp"
+        android:layout_height="66dp"/>
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/item_listview_notice_vip_sendicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="23dp"
+        android:src="@mipmap/morentouxiang"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/item_listview_notice_vip_sendtime"
+        app:layout_constraintTop_toBottomOf="@id/ll_item_listview_name"
+        android:id="@+id/item_listview_notice_vip_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/morentouxiang" />
+
+    <ImageView
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_listview_notice_vip_sendicon"
+        app:layout_constraintBottom_toBottomOf="@id/item_listview_notice_vip_sendicon"
+        android:id="@+id/item_listview_notice_vip_othericon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="23dp"
+        android:src="@mipmap/morentouxiang" />
+
+
+    <TextView
+        android:alpha="0.6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_listview_notice_vip_sendicon"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/item_listview_notice_vip_sendtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="10分钟前"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp" />
+
+
+    <View
+        android:background="@drawable/ic_give_send"
+        app:layout_constraintLeft_toLeftOf="@id/item_listview_notice_vip_sendicon"
+        app:layout_constraintRight_toRightOf="@id/item_listview_notice_vip_icon"
+        app:layout_constraintTop_toTopOf="@id/item_listview_notice_vip_sendicon"
+        app:layout_constraintBottom_toBottomOf="@id/item_listview_notice_vip_sendicon"
+        android:layout_width="43dp"
+        android:layout_height="9dp"/>
+
+    <View
+        android:background="@drawable/ic_give_send"
+        app:layout_constraintLeft_toLeftOf="@id/item_listview_notice_vip_icon"
+        app:layout_constraintRight_toRightOf="@id/item_listview_notice_vip_othericon"
+        app:layout_constraintTop_toTopOf="@id/item_listview_notice_vip_sendicon"
+        app:layout_constraintBottom_toBottomOf="@id/item_listview_notice_vip_sendicon"
+        android:layout_width="43dp"
+        android:layout_height="9dp"/>
+
+</android.support.constraint.ConstraintLayout>

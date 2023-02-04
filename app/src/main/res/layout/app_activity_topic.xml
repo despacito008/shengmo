@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_normal_titlebar" />
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/srl_activity_topic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnablePreviewInEditMode="false">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:id="@+id/crl_activity_topic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.AppBarLayout
+                    android:elevation="0dp"
+                    android:id="@+id/app_bar_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.constraint.ConstraintLayout
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_collapseMode="parallax"
+                        app:layout_collapseParallaxMultiplier="0.0">
+
+                        <ImageView
+                            android:id="@+id/iv_activity_topic_bg"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:visibility="gone"
+                            android:alpha="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="#790bbf"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/bg_topic_bg_mask"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/iv_activity_topic_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="25dp"
+                            tools:background="#6cf"
+                            app:layout_constraintBottom_toTopOf="@id/tv_activity_topic"
+                            app:layout_constraintDimensionRatio="1:1"
+                            app:layout_constraintLeft_toLeftOf="@id/tv_activity_topic"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintWidth_percent="0.2" />
+
+
+                        <TextView
+                            android:layout_marginTop="25dp"
+                            android:id="@+id/tv_activity_topic"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginHorizontal="15dp"
+                            android:letterSpacing="0.05"
+                            android:lineSpacingExtra="1dp"
+                            tools:text="顾名思义：我的“神圣”的一面，与“魔鬼”的一面。每个人，都有两面性甚至多面性（不一定单指“斯慕双向”），这是个人人皆可参加的话"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            app:layout_constraintBottom_toTopOf="@id/rv_activity_topic_top"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/iv_activity_topic_icon" />
+
+
+                        <TextView
+                            android:id="@+id/tv_activity_topic_title"
+                            app:layout_constraintVertical_bias="0.1"
+                            app:layout_constraintBottom_toBottomOf="@id/iv_activity_topic_icon"
+                            app:layout_constraintTop_toTopOf="@id/iv_activity_topic_icon"
+                            app:layout_constraintLeft_toRightOf="@id/iv_activity_topic_icon"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            tools:text="#我的圣与魔～我的多面性#"
+                            android:layout_marginRight="15dp"
+                            app:layout_constraintRight_toRightOf="parent"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/tv_activity_topic_visit"
+                            app:layout_constraintVertical_bias="0.9"
+                            app:layout_constraintBottom_toBottomOf="@id/iv_activity_topic_icon"
+                            app:layout_constraintTop_toTopOf="@id/iv_activity_topic_icon"
+                            app:layout_constraintLeft_toRightOf="@id/iv_activity_topic_icon"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            tools:text="17000 来访"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/tv_activity_topic_dynamic"
+                            app:layout_constraintBottom_toBottomOf="@id/tv_activity_topic_visit"
+                            app:layout_constraintTop_toTopOf="@id/tv_activity_topic_visit"
+                            app:layout_constraintLeft_toRightOf="@id/tv_activity_topic_visit"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            tools:text="17000 动态"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/tv_activity_topic_join"
+                            app:layout_constraintBottom_toBottomOf="@id/tv_activity_topic_visit"
+                            app:layout_constraintTop_toTopOf="@id/tv_activity_topic_visit"
+                            app:layout_constraintLeft_toRightOf="@id/tv_activity_topic_dynamic"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            tools:text="17000 参与"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:paddingTop="10dp"
+                            android:paddingHorizontal="10dp"
+                            android:visibility="visible"
+                            android:background="@drawable/bg_topic_tab"
+                            android:id="@+id/rv_activity_topic_top"
+                            app:layout_constraintBottom_toTopOf="@id/view_activity_topic_top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <View
+                            android:id="@+id/view_activity_topic_top"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:background="#e8e8e8"
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"/>
+
+                    </android.support.constraint.ConstraintLayout>
+                    
+
+
+                    <android.support.design.widget.TabLayout
+                        app:tabIndicatorHeight="0dp"
+                        android:id="@+id/tab_layout_activity_topic"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@color/white"
+                        app:tabGravity="fill"
+                        app:tabBackground="@color/transparent"
+                        app:layout_scrollFlags="snap"
+                        app:tabIndicatorColor="#ffb1e6"
+                        tools:background="#2cf" />
+
+                </android.support.design.widget.AppBarLayout>
+
+                <com.aiwujie.shengmo.view.DisallowViewPager
+                    android:id="@+id/view_pager_activity_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_activity_topic_bottom"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginHorizontal="18dp"
+            android:id="@+id/iv_activity_topic_follow"
+            android:layout_width="112dp"
+            android:layout_height="44dp"
+            android:src="@mipmap/guanzhuhuati"
+            />
+
+        <ImageView
+            android:layout_marginHorizontal="18dp"
+            android:id="@+id/iv_activity_topic_join"
+            android:layout_width="112dp"
+            android:layout_height="44dp"
+            android:src="@mipmap/canyuhuati"
+
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_gravity="right|bottom"
+        android:id="@+id/iv_activity_topic_go_top"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:src="@mipmap/dingbu"
+        tools:visibility="visible"
+        android:visibility="gone"
+        />
+
+
+</FrameLayout>

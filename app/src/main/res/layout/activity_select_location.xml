@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/ll_select_location_title_bar"
+        android:gravity="center_vertical"
+        tools:background="#16cf"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_select_location_cancel"
+            android:textSize="15dp"
+            android:text="@string/cancel"
+            android:textColor="@color/darkGray"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_select_location_title"
+            android:textSize="15dp"
+            android:text="@string/location"
+            android:textColor="@color/darkGray"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_select_location_confirm"
+            android:textSize="15dp"
+            android:text="@string/confirm"
+            android:textColor="@color/darkGray"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <com.amap.api.maps2d.MapView
+        tools:background="#6cf"
+        android:id="@+id/map_view_location"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/rv_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_location_address"
+        tools:text="具体地址"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="5dp"
+        android:textSize="18dp"
+        android:textColor="@color/darkGray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

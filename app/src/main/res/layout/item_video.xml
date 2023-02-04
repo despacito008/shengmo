@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.aiwujie.shengmo.view.love.Love
+        android:id="@+id/love"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/flVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:keepScreenOn="true" />
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_play"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/ivCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:background="@drawable/gradient_video_top"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/gradient_video_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="视频好看吗？快来评论吧~"
+            android:paddingLeft="15dp"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#80ffffff"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_centerVertical="true"
+            android:background="#40ffffff"
+            app:layout_constraintBottom_toTopOf="@id/tvComment"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <com.aiwujie.shengmo.videoplay.view.VideoLoadingProgressbar
+            android:id="@+id/pbLoading"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@id/tvComment"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:background="@drawable/item_icon_bg"
+            android:src="@mipmap/morentouxiang"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="@id/tvNickname"
+            app:layout_constraintTop_toTopOf="@id/tvNickname"
+            app:layout_constraintRight_toLeftOf="@id/tvNickname"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_vip_flag"
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1"
+            tools:src="@drawable/user_vip_year"
+            app:layout_constraintBottom_toBottomOf="@id/iv_head"
+            app:layout_constraintRight_toRightOf="@id/iv_head"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_attention"
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:padding="2dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:src="@mipmap/icon_add"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintBottom_toBottomOf="@id/tvNickname"
+            app:layout_constraintTop_toTopOf="@id/tvNickname"
+            app:layout_constraintLeft_toRightOf="@id/tvNickname" />
+
+        <TextView
+            android:id="@+id/tvNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="11111111"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintRight_toLeftOf="@id/iv_attention"
+            app:layout_constraintBottom_toTopOf="@id/tv_content"
+
+            app:layout_constraintLeft_toRightOf="@id/iv_head" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="..."
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@id/viewLine"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintWidth_percent="0.6" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:padding="5dp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintRight_toRightOf="parent"
+           android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toTopOf="@id/iv_head"
+            android:src="@mipmap/icon_more"
+             />
+        <ImageView
+            android:id="@+id/iv_share"
+            android:padding="5dp"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintRight_toRightOf="@id/iv_more"
+            app:layout_constraintLeft_toLeftOf="@+id/iv_more"
+            app:layout_constraintBottom_toTopOf="@id/iv_more"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/icon_share"
+            />
+        <TextView
+            android:id="@+id/tv_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="@id/iv_more"
+            app:layout_constraintLeft_toLeftOf="@+id/iv_more"
+            app:layout_constraintBottom_toTopOf="@id/iv_share"
+            android:text="12"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/white"/>
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:padding="5dp"
+            app:layout_constraintRight_toRightOf="@id/iv_more"
+            app:layout_constraintLeft_toLeftOf="@+id/iv_more"
+            app:layout_constraintBottom_toTopOf="@id/tv_comment_num"
+            android:layout_marginBottom="3dp"
+            android:src="@mipmap/icon_comment"
+            />
+
+        <TextView
+            android:id="@+id/tv_red_heart_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="@id/iv_more"
+            app:layout_constraintLeft_toLeftOf="@+id/iv_more"
+            app:layout_constraintBottom_toTopOf="@id/iv_comment"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"
+            android:text="11"
+            android:textColor="@android:color/white"/>
+        <ImageView
+            android:id="@+id/iv_red_heart"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:padding="3dp"
+            app:layout_constraintRight_toRightOf="@id/iv_more"
+            app:layout_constraintLeft_toLeftOf="@+id/iv_more"
+            app:layout_constraintBottom_toTopOf="@id/tv_red_heart_num"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/icon_red_heart_unchecked"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+    </com.aiwujie.shengmo.view.love.Love>
+</RelativeLayout>

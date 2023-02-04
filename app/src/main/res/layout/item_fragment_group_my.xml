@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    >
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_qunweihu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#f4f4f4"
+        android:textColor="@color/tongyong"
+        android:text="群组维护禁言中,只开放个别官方群"/>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/mFragment_group_my_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        ptr:ptrHeaderTextColor="#FFFFFF"
+        ptr:ptrDrawable="@mipmap/loading"
+        android:dividerHeight="0dp"
+        android:divider="#fff"
+        ptr:ptrScrollingWhileRefreshingEnabled="true"
+        >
+        <!--<com.aiwujie.shengmo.customview.MyListView-->
+            <!--android:id="@+id/mFragment_group_my_listview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scrollbars="none">-->
+
+        <!--</com.aiwujie.shengmo.customview.MyListView>-->
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

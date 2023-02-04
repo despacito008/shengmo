@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_at_fans"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.aiwujie.shengmo.activity.AtFansActivity">
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="13%w"
+        android:background="#FFFFFF">
+        <TextView
+            android:id="@+id/mAt_fans_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_textSizePercent="30%"
+            android:text="取消"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dip"
+            android:textColor="#4b4b4b"
+            android:layout_centerVertical="true"/>
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提醒谁看"
+            android:layout_centerInParent="true"
+            android:textColor="#333333"
+            app:layout_textSizePercent="35%"/>
+        <TextView
+            android:id="@+id/mAt_fans_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_textSizePercent="30%"
+            android:text="确定"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dip"
+            android:textColor="#4b4b4b"
+            android:layout_centerVertical="true"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"/>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mStampBill_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10.5%w"
+        android:background="#FFFFFF"
+        app:tabIndicatorColor="@color/purple_main"
+        app:tabSelectedTextColor="@color/purple_main"
+        app:tabTextColor="#555555"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mStampBill_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

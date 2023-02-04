@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@drawable/ic_gift_top_bg"
+            app:layout_constraintDimensionRatio="375:169"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_line_1"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_line_2"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+       <TextView
+           android:text="0"
+           android:id="@+id/tv_fragment_gift_num"
+           tools:text="666"
+           android:includeFontPadding="false"
+           app:layout_constraintLeft_toLeftOf="@id/guide_line_1"
+           app:layout_constraintRight_toRightOf="@id/guide_line_1"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintVertical_bias="0.1"
+           android:textColor="@color/white"
+           android:textSize="16dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="0"
+            android:id="@+id/tv_fragment_gift_bean_balance"
+            tools:text="666"
+            android:includeFontPadding="false"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_1"
+            app:layout_constraintRight_toRightOf="@id/guide_line_1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="0"
+            android:id="@+id/tv_fragment_gift_free"
+            tools:text="666"
+            android:includeFontPadding="false"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_1"
+            app:layout_constraintRight_toRightOf="@id/guide_line_1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.7"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="0"
+            android:id="@+id/tv_fragment_gift_charm"
+            tools:text="666"
+            android:includeFontPadding="false"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_2"
+            app:layout_constraintRight_toRightOf="@id/guide_line_2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="0"
+            android:id="@+id/tv_fragment_gift_bean_used"
+            tools:text="666"
+            android:includeFontPadding="false"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_2"
+            app:layout_constraintRight_toRightOf="@id/guide_line_2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="0"
+            android:id="@+id/tv_fragment_gift_pushed"
+            tools:text="666"
+            android:includeFontPadding="false"
+            app:layout_constraintLeft_toLeftOf="@id/guide_line_2"
+            app:layout_constraintRight_toRightOf="@id/guide_line_2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.7"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:includeFontPadding="false"
+            app:layout_constraintLeft_toLeftOf="@id/tv_fragment_gift_num"
+            app:layout_constraintRight_toRightOf="@id/tv_fragment_gift_num"
+            app:layout_constraintTop_toBottomOf="@id/tv_fragment_gift_num"
+            android:layout_marginTop="2dp"
+            android:text="礼物数"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:includeFontPadding="false"
+            app:layout_constraintLeft_toLeftOf="@id/tv_fragment_gift_charm"
+            app:layout_constraintRight_toRightOf="@id/tv_fragment_gift_charm"
+            app:layout_constraintTop_toBottomOf="@id/tv_fragment_gift_charm"
+            android:layout_marginTop="2dp"
+            android:text="魅力值"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:includeFontPadding="false"
+            app:layout_constraintLeft_toLeftOf="@id/tv_fragment_gift_bean_balance"
+            app:layout_constraintRight_toRightOf="@id/tv_fragment_gift_bean_balance"
+            app:layout_constraintTop_toBottomOf="@id/tv_fragment_gift_bean_balance"
+            android:layout_marginTop="2dp"
+            android:text="可用银魔豆"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:includeFontPadding="false"
+            app:layout_constraintLeft_toLeftOf="@id/tv_fragment_gift_bean_used"
+            app:layout_constraintRight_toRightOf="@id/tv_fragment_gift_bean_used"
+            app:layout_constraintTop_toBottomOf="@id/tv_fragment_gift_bean_used"
+            android:layout_marginTop="2dp"
+            android:text="已用银魔豆"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:includeFontPadding="false"
+            app:layout_constraintLeft_toLeftOf="@id/tv_fragment_gift_free"
+            app:layout_constraintRight_toRightOf="@id/tv_fragment_gift_free"
+            app:layout_constraintTop_toBottomOf="@id/tv_fragment_gift_free"
+            android:layout_marginTop="5dp"
+            android:text="免费礼物（魅力值）"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:includeFontPadding="false"
+            app:layout_constraintLeft_toLeftOf="@id/tv_fragment_gift_pushed"
+            app:layout_constraintRight_toRightOf="@id/tv_fragment_gift_pushed"
+            app:layout_constraintTop_toBottomOf="@id/tv_fragment_gift_pushed"
+            android:layout_marginTop="2dp"
+            android:text="被推顶（次/魅力值）"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_fragment_gift"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+
+        <TextView
+            android:id="@+id/tv_fragment_gift_exchange"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:background="@drawable/bg_vip_center_buy_money"
+            android:gravity="center"
+            android:text="银魔豆兑换金魔豆"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_fragment_gift_withdraw"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:background="@drawable/bg_vip_center_buy_money"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:text="提现"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

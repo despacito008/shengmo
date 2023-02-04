@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="live_enter_room_fail">您已经在别的房间了！</string>
+    <string name="unbind_manager">解除场控</string>
+    <string name="bind_manager">设置场控</string>
+    <string name="local_no_talking">本场禁言</string>
+    <string name="forever_no_talking">解除禁言</string>
+    <string name="unbind_no_talking">解除禁言</string>
+    <string name="no_anchor_list">还没有主播开播哟~</string>
+    <string name="no_follow_list">您还没有关注任何主播哟~</string>
+</resources>

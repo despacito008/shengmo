@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/layout_normal_titlebar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="编辑头像"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/mEdit_personmsg_icon"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/editPerson_none"
+                    android:src="@mipmap/morentouxiang" />
+
+                <ImageView
+                    android:id="@+id/editPerson_none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/rightjian" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:id="@+id/mEdit_personmsg_llXc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="相册"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="（请勿上传大尺度图片及调教照）"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/mEdit_personmsg_isOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/morentouxiang"
+                    android:text="已开放"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/rightjian" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd" />
+
+            <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+                android:id="@+id/ninelayout_edit_photo"
+                style="@style/WrapWrap"
+                android:layout_margin="10dp"
+                android:visibility="visible"
+                app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+                app:bga_snpl_deleteDrawableOverlapQuarter="false"
+                app:bga_snpl_editable="true"
+                app:bga_snpl_itemCornerRadius="0dp"
+                app:bga_snpl_itemSpanCount="3"
+                app:bga_snpl_itemWhiteSpacing="4dp"
+                app:bga_snpl_itemWidth="0dp"
+                app:bga_snpl_maxItemCount="9"
+                app:bga_snpl_otherWhiteSpacing="0dp"
+                app:bga_snpl_placeholderDrawable="@mipmap/bga_pp_ic_holder_dark"
+                app:bga_snpl_plusDrawable="@mipmap/bga_pp_ic_plus"
+                app:bga_snpl_plusEnable="true"
+                app:bga_snpl_sortable="true" />
+
+
+            <LinearLayout
+                android:id="@+id/mEdit_personmsg_VipLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F8F8F8"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/mEdit_auth_btn01"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/item_photo_auth_selector"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:text="相册所有人可见"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/mEdit_auth_btn02"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/item_photo_auth_selector"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:text="相册好友会员可见"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="昵称"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mEdit_personmsg_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="9"
+                    android:clickable="false"
+                    android:gravity="center_vertical|right"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/darkGray"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@mipmap/rightjian" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="center|right"
+                android:text="普通用户每月可修改1次昵称，VIP会员可修改3次"
+                android:textColor="@color/darkGray"
+                android:textSize="11sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="我的签名"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mEdit_personmsg_qianming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="9"
+                    android:gravity="center_vertical|right"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@mipmap/rightjian" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="出生日期"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mEdit_personmsg_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="9"
+                    android:gravity="center_vertical|right"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@mipmap/rightjian" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="身高体重"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mEdit_personmsg_heightAndweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="9"
+                    android:gravity="center_vertical|right"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@mipmap/rightjian" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="性别"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+
+                <com.donkingliang.labels.LabelsView
+                    android:id="@+id/sexLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:labelBackground="@drawable/bg_lable_class"
+                    app:labelTextColor="@drawable/bg_lable_text_color"
+                    app:labelTextPaddingBottom="4dp"
+                    app:labelTextPaddingLeft="20dp"
+                    app:labelTextPaddingRight="20dp"
+                    app:labelTextPaddingTop="4dp"
+                    app:labelTextSize="14sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:lineMargin="10dp"
+                    app:selectType="SINGLE_IRREVOCABLY"
+                    app:wordMargin="7dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="如需修改请认证后联系客服"
+                android:textSize="11sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="性取向"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:text="(可多选)"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+
+                <com.donkingliang.labels.LabelsView
+                    android:id="@+id/sexToLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:labelBackground="@drawable/bg_lable_class"
+                    app:labelTextColor="@drawable/bg_lable_text_color"
+                    app:labelTextPaddingBottom="4dp"
+                    app:labelTextPaddingLeft="20dp"
+                    app:labelTextPaddingRight="20dp"
+                    app:labelTextPaddingTop="4dp"
+                    app:labelTextSize="14sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:lineMargin="10dp"
+                    app:selectType="MULTI"
+                    app:minSelect="1"
+                    app:wordMargin="7dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="系统会智能展示符合您性取向的人和动态"
+                android:textSize="11sp" />
+
+
+            <LinearLayout
+                android:id="@+id/gay_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="属性"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <com.donkingliang.labels.LabelsView
+                    android:id="@+id/gayLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:labelBackground="@drawable/bg_lable_class"
+                    app:labelTextColor="@drawable/bg_lable_text_color"
+                    app:labelTextPaddingBottom="4dp"
+                    app:labelTextPaddingLeft="20dp"
+                    app:labelTextPaddingRight="20dp"
+                    app:labelTextPaddingTop="4dp"
+                    app:labelTextSize="14sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:lineMargin="10dp"
+                    app:selectType="SINGLE"
+                    app:wordMargin="7dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:id="@+id/les_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="属性"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <com.donkingliang.labels.LabelsView
+                    android:id="@+id/lesLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:labelBackground="@drawable/bg_lable_class"
+                    app:labelTextColor="@drawable/bg_lable_text_color"
+                    app:labelTextPaddingBottom="4dp"
+                    app:labelTextPaddingLeft="20dp"
+                    app:labelTextPaddingRight="20dp"
+                    app:labelTextPaddingTop="4dp"
+                    app:labelTextSize="14sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:lineMargin="10dp"
+                    app:selectType="SINGLE"
+                    app:wordMargin="7dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="角色"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+
+                <com.donkingliang.labels.LabelsView
+                    android:id="@+id/roleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:labelBackground="@drawable/bg_lable_class"
+                    app:labelTextColor="@drawable/bg_lable_text_color"
+                    app:labelTextPaddingBottom="4dp"
+                    app:labelTextPaddingLeft="20dp"
+                    app:labelTextPaddingRight="20dp"
+                    app:labelTextPaddingTop="4dp"
+                    app:labelTextSize="14sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:lineMargin="10dp"
+                    app:selectType="SINGLE_IRREVOCABLY"
+                    app:wordMargin="7dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:id="@+id/howlong_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:text="接触多久"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical|right"
+                        android:text="单选"
+                        android:textColor="#B7B7B7"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.donkingliang.labels.LabelsView
+                    android:id="@+id/timesLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:labelBackground="@drawable/bg_lable_class"
+                    app:labelTextColor="@drawable/bg_lable_text_color"
+                    app:labelTextPaddingBottom="4dp"
+                    app:labelTextPaddingLeft="20dp"
+                    app:labelTextPaddingRight="20dp"
+                    app:labelTextPaddingTop="4dp"
+                    app:labelTextSize="14sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:lineMargin="10dp"
+                    app:selectType="SINGLE_IRREVOCABLY"
+                    app:wordMargin="7dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/havetry_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="有无实践过"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical|right"
+                        android:text="单选"
+                        android:textColor="#B7B7B7"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/havetry_btn_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal">
+
+                    <com.donkingliang.labels.LabelsView
+                        android:id="@+id/haveLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        app:labelBackground="@drawable/bg_lable_class"
+                        app:labelTextColor="@drawable/bg_lable_text_color"
+                        app:labelTextPaddingBottom="4dp"
+                        app:labelTextPaddingLeft="20dp"
+                        app:labelTextPaddingRight="20dp"
+                        app:labelTextPaddingTop="4dp"
+                        app:labelTextSize="14sp"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:lineMargin="10dp"
+                        app:selectType="SINGLE_IRREVOCABLY"
+                        app:wordMargin="7dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/level_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:text="程度"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:text="(可多选)"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical|right"
+                        android:text="可多选"
+                        android:textColor="#B7B7B7"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.donkingliang.labels.LabelsView
+                    android:id="@+id/levelLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    app:labelBackground="@drawable/bg_lable_class"
+                    app:labelTextColor="@drawable/bg_lable_text_color"
+                    app:labelTextPaddingBottom="4dp"
+                    app:labelTextPaddingLeft="20dp"
+                    app:labelTextPaddingRight="20dp"
+                    app:labelTextPaddingTop="4dp"
+                    app:labelTextSize="14sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:lineMargin="10dp"
+                    app:selectType="MULTI"
+                    app:minSelect="1"
+                    app:wordMargin="7dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="我想找"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:text="(可多选)"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical|right"
+                    android:text="可多选"
+                    android:textColor="#B7B7B7"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <com.donkingliang.labels.LabelsView
+                android:id="@+id/wantLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                app:labelBackground="@drawable/bg_lable_class"
+                app:labelTextColor="@drawable/bg_lable_text_color"
+                app:labelTextPaddingBottom="4dp"
+                app:labelTextPaddingLeft="20dp"
+                app:labelTextPaddingRight="20dp"
+                app:labelTextPaddingTop="4dp"
+                app:labelTextSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:lineMargin="10dp"
+                app:selectType="MULTI"
+                app:minSelect ="1"
+                app:wordMargin="7dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="我的学历"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical|right"
+                    android:text="单选"
+                    android:textColor="#B7B7B7"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <com.donkingliang.labels.LabelsView
+                android:id="@+id/degreeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                app:labelBackground="@drawable/bg_lable_class"
+                app:labelTextColor="@drawable/bg_lable_text_color"
+                app:labelTextPaddingBottom="4dp"
+                app:labelTextPaddingLeft="20dp"
+                app:labelTextPaddingRight="20dp"
+                app:labelTextPaddingTop="4dp"
+                app:labelTextSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:lineMargin="10dp"
+                app:selectType="SINGLE_IRREVOCABLY"
+                app:wordMargin="7dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+
+                    android:gravity="center_vertical"
+                    android:text="我的月薪"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical|right"
+                    android:text="单选"
+                    android:textColor="#B7B7B7" />
+            </LinearLayout>
+
+
+            <com.donkingliang.labels.LabelsView
+                android:id="@+id/moneyLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                app:labelBackground="@drawable/bg_lable_class"
+                app:labelTextColor="@drawable/bg_lable_text_color"
+                app:labelTextPaddingBottom="4dp"
+                app:labelTextPaddingLeft="20dp"
+                app:labelTextPaddingRight="20dp"
+                app:labelTextPaddingTop="4dp"
+                app:labelTextSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:lineMargin="10dp"
+                app:selectType="SINGLE_IRREVOCABLY"
+                app:wordMargin="7dp" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

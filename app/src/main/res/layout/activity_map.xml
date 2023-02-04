@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.aiwujie.shengmo.activity.MapActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_map_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:id="@+id/iv_map_return"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:paddingVertical="5dp"
+            android:paddingLeft="15dp"
+            android:src="@drawable/normal_back" />
+
+        <RelativeLayout
+            android:id="@+id/map_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/mMap_iv_search"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/shousuoiv"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/mMap_et_llSearch"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/mMap_et_search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="9"
+                    android:background="@drawable/item_search_bg"
+                    android:drawableLeft="@mipmap/sousuo"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/shousuoiv"
+                    android:textCursorDrawable="@null"
+                    app:layout_heightPercent="7%w"
+                    app:layout_marginLeftPercent="5%"
+                    app:layout_marginRightPercent="5%"
+                    app:layout_textSizePercent="3.5%w" />
+
+                <TextView
+                    android:id="@+id/mMap_iv_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="12dip"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#b73acb"
+                    android:textSize="13dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mMap_btn_ck"
+        android:layout_below="@+id/ll_map_top" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/map_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/mMap_btn_ck"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_main"
+        android:text="查看"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+</RelativeLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:background="#F8F8F8"
+                                                     android:fitsSystemWindows="true"
+                                                     android:orientation="vertical"
+                                                     tools:context="com.aiwujie.shengmo.activity.MakeGroupFailActivity">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        app:layout_heightPercent="13%w"
+        >
+
+        <ImageView
+            android:id="@+id/mMakeGroupFail_return"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:gravity="center_vertical"
+            android:src="@mipmap/return_back"
+            app:layout_heightPercent="50%"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="建群失败"
+            android:textColor="#333333"
+            app:layout_textSizePercent="35%"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="群组创建条件:"
+        android:textColor="#555555"
+        app:layout_textSizePercent="4%w"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+    android:id="@+id/mMake_group_bindingPhone"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_heightPercent="7%"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    >
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="4"
+    android:text="绑定手机号"
+    app:layout_textSizePercent="4%w"
+    android:layout_marginLeft="15dp"
+    android:gravity="center_vertical"
+    android:textColor="#555555"/>
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.1"
+    android:layout_marginRight="10dp"
+    android:src="@mipmap/rightjian"
+    android:layout_gravity="center_vertical"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F8F8F8"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/mMake_group_openVip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_heightPercent="7%"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="VIP会员可立即创建500人群"
+            android:textColor="#555555"
+            app:layout_textSizePercent="4%w"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.1"
+            android:src="@mipmap/rightjian"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F8F8F8"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/mMake_group_openYearVip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_heightPercent="7%"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="年费VIP会员可立即创建1000人群"
+            android:textColor="#555555"
+            app:layout_textSizePercent="4%w"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.1"
+            android:src="@mipmap/rightjian"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F8F8F8"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/mMake_group_openSvip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_heightPercent="7%"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="SVIP会员可立即创建1500人群"
+            android:textColor="#555555"
+            app:layout_textSizePercent="4%w"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.1"
+            android:src="@mipmap/rightjian"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F8F8F8"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/mMake_group_openYearSvip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_heightPercent="7%"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="年费SVIP可立即创建2000人群"
+            android:textColor="#555555"
+            app:layout_textSizePercent="4%w"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.1"
+            android:src="@mipmap/rightjian"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F8F8F8"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/mMake_group_netRule"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_heightPercent="7%"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="《互联网群组信息服务管理规定》"
+            android:textColor="#555555"
+            app:layout_textSizePercent="4%w"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.1"
+            android:src="@mipmap/rightjian"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>
