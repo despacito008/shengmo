@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 3.1.0">
+
+    <issue
+        id="DefaultLocale"
+        severity="Warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        category="Correctness"
+        priority="6"
+        summary="Implied default locale in case conversion"
+        explanation="Calling `String#toLowerCase()` or `#toUpperCase()` **without specifying an explicit locale** is a common source of bugs. The reason for that is that those methods will use the current locale on the user&apos;s device, and even though the code appears to work correctly when you are developing the app, it will fail in some locales. For example, in the Turkish locale, the uppercase replacement for `i` is **not** `I`.&#xA;&#xA;If you want the methods to just perform ASCII replacement, for example to convert an enum name, call `String#toUpperCase(Locale.US)` instead. If you really want to use the current locale, call `String#toUpperCase(Locale.getDefault())` instead."
+        url="http://developer.android.com/reference/java/util/Locale.html#default_locale"
+        urls="http://developer.android.com/reference/java/util/Locale.html#default_locale"
+        errorLine1="            params.put(&quot;capital&quot;, capital.name().toLowerCase());"
+        errorLine2="                                                 ~~~~~~~~~~~">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\java\com\sina\weibo\sdk\openapi\legacy\CommonAPI.java"
+            line="85"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="OldTargetApi"
+        severity="Warning"
+        message="Not targeting the latest versions of Android; compatibility &#xA;modes apply. Consider testing and updating this version. &#xA;Consult the android.os.Build.VERSION_CODES javadoc for details."
+        category="Correctness"
+        priority="6"
+        summary="Target SDK attribute is not targeting latest version"
+        explanation="When your application runs on a version of Android that is more recent than your `targetSdkVersion` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdkVersion` is less than 14, your app may get an option button in the UI.&#xA;&#xA;To fix this issue, set the `targetSdkVersion` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        url="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        urls="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        errorLine1="        targetSdkVersion 18"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\build.gradle"
+            line="9"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="GradleDynamicVersion"
+        severity="Warning"
+        message="Avoid using + in version numbers; can lead to unpredictable and unrepeatable builds (com.android.support:support-v4:19.+)"
+        category="Correctness"
+        priority="4"
+        summary="Gradle Dynamic Version"
+        explanation="Using `+` in dependencies lets you automatically pick up the latest available version rather than a specific, named version. However, this is not recommended; your builds are not repeatable; you may have tested with a slightly different version than what the build server used. (Using a dynamic version as the major version number is more problematic than using it in the minor version position.)"
+        errorLine1="    compile &apos;com.android.support:support-v4:19.+&apos;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\build.gradle"
+            line="21"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="TrustAllX509TrustManager"
+        severity="Warning"
+        message="`checkClientTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers"
+        category="Security"
+        priority="6"
+        summary="Insecure TLS/SSL trust manager"
+        explanation="This check looks for X509TrustManager implementations whose `checkServerTrusted` or `checkClientTrusted` methods do nothing (thus trusting any certificate chain) which could result in insecure network traffic caused by trusting arbitrary TLS/SSL certificates presented by peers.">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\com\sina\weibo\sdk\statistic\SSLSocketFactoryImp$1.class"/>
+    </issue>
+
+    <issue
+        id="TrustAllX509TrustManager"
+        severity="Warning"
+        message="`checkServerTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers"
+        category="Security"
+        priority="6"
+        summary="Insecure TLS/SSL trust manager"
+        explanation="This check looks for X509TrustManager implementations whose `checkServerTrusted` or `checkClientTrusted` methods do nothing (thus trusting any certificate chain) which could result in insecure network traffic caused by trusting arbitrary TLS/SSL certificates presented by peers.">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\com\sina\weibo\sdk\statistic\SSLSocketFactoryImp$1.class"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        severity="Warning"
+        message="This folder configuration (`v11`) is unnecessary; `minSdkVersion` is 15. Merge all the resources in this folder into `values`."
+        category="Performance"
+        priority="6"
+        summary="Obsolete SDK_INT Version Check"
+        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for.&#xA;&#xA;Similarly, it also looks for resources in `-vNN` folders, such as `values-v14` where the version qualifier is less than or equal to the `minSdkVersion`, where the contents should be merged into the best folder."
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\values-v11"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        severity="Warning"
+        message="This folder configuration (`v14`) is unnecessary; `minSdkVersion` is 15. Merge all the resources in this folder into `values`."
+        category="Performance"
+        priority="6"
+        summary="Obsolete SDK_INT Version Check"
+        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for.&#xA;&#xA;Similarly, it also looks for resources in `-vNN` folders, such as `values-v14` where the version qualifier is less than or equal to the `minSdkVersion`, where the contents should be merged into the best folder."
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\values-v14"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.com_sina_weibo_sdk_button_grey` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; >"
+        errorLine2="^"
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable\com_sina_weibo_sdk_button_grey.xml"
+            line="18"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.dimen.activity_horizontal_margin` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;dimen name=&quot;activity_horizontal_margin&quot;>16dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\values\dimens.xml"
+            line="23"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.dimen.activity_vertical_margin` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;dimen name=&quot;activity_vertical_margin&quot;>16dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\values\dimens.xml"
+            line="24"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ic_com_sina_weibo_sdk_button_grey_focused` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable-hdpi\ic_com_sina_weibo_sdk_button_grey_focused.9.png"/>
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable-mdpi\ic_com_sina_weibo_sdk_button_grey_focused.9.png"/>
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable-xhdpi\ic_com_sina_weibo_sdk_button_grey_focused.9.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ic_com_sina_weibo_sdk_button_grey_normal` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable-hdpi\ic_com_sina_weibo_sdk_button_grey_normal.9.png"/>
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable-mdpi\ic_com_sina_weibo_sdk_button_grey_normal.9.png"/>
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable-xhdpi\ic_com_sina_weibo_sdk_button_grey_normal.9.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ic_com_sina_weibo_sdk_button_grey_pressed` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable-hdpi\ic_com_sina_weibo_sdk_button_grey_pressed.9.png"/>
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable-mdpi\ic_com_sina_weibo_sdk_button_grey_pressed.9.png"/>
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable-xhdpi\ic_com_sina_weibo_sdk_button_grey_pressed.9.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ic_com_sina_weibo_sdk_login_with_text` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable-hdpi\ic_com_sina_weibo_sdk_login_with_text.png"/>
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable-ldpi\ic_com_sina_weibo_sdk_login_with_text.png"/>
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable-mdpi\ic_com_sina_weibo_sdk_login_with_text.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.com_sina_weibo_sdk_login` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;com_sina_weibo_sdk_login&quot;>登录&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\values\strings.xml"
+            line="20"
+            column="13"/>
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\values-en\strings.xml"
+            line="20"
+            column="13"/>
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\values-zh-rTW\strings.xml"
+            line="20"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.style.AppBaseTheme` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;style name=&quot;AppBaseTheme&quot; parent=&quot;android:Theme.Light&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\values\styles.xml"
+            line="24"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.style.AppTheme` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;style name=&quot;AppTheme&quot; parent=&quot;AppBaseTheme&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\values\styles.xml"
+            line="33"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.com_sina_weibo_sdk_blue` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1=" &lt;color name=&quot;com_sina_weibo_sdk_blue&quot;>#3B5998&lt;/color>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\values\styles.xml"
+            line="37"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.dimen.com_sina_weibo_sdk_loginview_padding` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="  &lt;dimen name=&quot;com_sina_weibo_sdk_loginview_padding&quot;>12dip&lt;/dimen>"
+        errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\values\styles.xml"
+            line="41"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.style.com_sina_weibo_sdk_loginview_default_style` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;style name=&quot;com_sina_weibo_sdk_loginview_default_style&quot; parent=&quot;@android:style/Widget.Button&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\values\styles.xml"
+            line="48"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.style.com_sina_weibo_sdk_loginview_silver_style` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;style name=&quot;com_sina_weibo_sdk_loginview_silver_style&quot; parent=&quot;@android:style/Widget.Button&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\values\styles.xml"
+            line="65"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        severity="Warning"
+        message="Missing the following drawables in `drawable-xhdpi`: ic_com_sina_weibo_sdk_login_with_text.png (found in drawable-hdpi, drawable-mdpi)"
+        category="Usability:Icons"
+        priority="4"
+        summary="Icon densities validation"
+        explanation="Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.&#xA;&#xA;Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html"
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable-xhdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        severity="Warning"
+        message="Missing the following drawables in `drawable-xxhdpi`: ic_com_sina_weibo_sdk_button_blue_focused.9.png, ic_com_sina_weibo_sdk_button_blue_normal.9.png, ic_com_sina_weibo_sdk_button_blue_pressed.9.png, ic_com_sina_weibo_sdk_button_grey_focused.9.png, ic_com_sina_weibo_sdk_button_grey_normal.9.png... (3 more)"
+        category="Usability:Icons"
+        priority="4"
+        summary="Icon densities validation"
+        explanation="Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.&#xA;&#xA;Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html"
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable-xxhdpi"/>
+    </issue>
+
+    <issue
+        id="IconDuplicates"
+        severity="Warning"
+        message="The following unrelated icon files have identical contents: ic_com_sina_weibo_sdk_login_button_with_frame_logo_focused.png, ic_com_sina_weibo_sdk_login_button_with_frame_logo_pressed.png"
+        category="Usability:Icons"
+        priority="3"
+        summary="Duplicated icons under different names"
+        explanation="If an icon is repeated under different names, you can consolidate and just use one of the icons and delete the others to make your application smaller. However, duplicated icons usually are not intentional and can sometimes point to icons that were accidentally overwritten or accidentally not updated.">
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable-mdpi\ic_com_sina_weibo_sdk_login_button_with_frame_logo_pressed.png"/>
+        <location
+            file="C:\Android\WorkSpace\AiWuJie\newshengmo\weiboSDK\src\main\res\drawable-mdpi\ic_com_sina_weibo_sdk_login_button_with_frame_logo_focused.png"/>
+    </issue>
+
+</issues>
