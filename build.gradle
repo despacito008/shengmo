@@ -1,0 +1,71 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version='1.3.0'
+    repositories {
+        //jcenter()
+        maven {
+            url "https://jitpack.io"
+        }
+        mavenCentral()
+        google()
+        maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven{ url 'http://maven.aliyun.com/nexus/content/repositories/central/'}
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        jcenter { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+    }
+    apply from: 'thirdparty-lib/config.gradle'
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.0'
+        //classpath 'com.android.tools.build:gradle:3.6.3'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0+'
+        //classpath 'com.github.dcendents:android-maven-gradle-plugin:1.3'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath 'com.antfortune.freeline:gradle:0.8.8'
+        //Packer插件
+        classpath 'com.mcxiaoke.gradle:packer-ng:1.0.8'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.0'
+        classpath "gradle.plugin.ua.eshepelyuk:ManifestClasspath:1.0.0"
+    }
+}
+
+allprojects {
+    repositories {
+        //jcenter()
+
+        mavenCentral()
+        google()
+        maven { url "http://maven.aliyun.com/nexus/content/repositories/releases" }
+        maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven{ url 'http://maven.aliyun.com/nexus/content/repositories/central/'}
+        jcenter { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+
+        maven {
+            url "https://jitpack.io"
+        }
+//        flatDir {
+//            dirs project(':tuikit').file('libs')  //将xxx替换为引入aar文件的module名
+//        }
+    }
+}
+
+ext {
+    compileSdkVersion = 28
+    minSdkVersion = 19
+    targetSdkVersion = 28
+    versionCode = 1
+    versionName = "5.4.666"
+    abiFilters = ['armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'] //['armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64']
+    arguments = "-DANDROID_STL=c++_static"
+    cppFlags = "-std=c++11"
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

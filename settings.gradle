@@ -1,0 +1,15 @@
+include ':tiui'//include ':live'
+include ':tuikit-live'
+include ':tuikit'//include ':tuikit'//include ':tuikit'
+include ':timeselector', ':androidPullToRefresh', ':alertview',':ninegridview'
+include ':weiboSDK',':app'
+include ':AliyunVideoCommon'//公共模块，主要为工具类
+include ':AlivcMedia'//媒体库模块
+include ':AliyunSVideoBase'//短视频基础包
+include ':AliyunFileDownLoader'
+include ':AliyunSvideoMusic'
+include ':AliyunRecorder:record'
+include ':AliyunCrop:crop'//裁剪ui模块
+include ':AliyunEditor'//编辑
+//include ':beauty'//腾讯直播美颜
+//include ':lvb'//腾讯直播推拉流

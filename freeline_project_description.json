@@ -1,0 +1,437 @@
+{
+    "android_gradle_plugin_version": "2.1.0",
+    "apk_path": "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\outputs\\apk\\app-debug.apk",
+    "apt": {
+        "app": {
+            "aptArgs": [
+                
+            ],
+            "aptOutput": "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\generated\\source\\apt\\debug",
+            "disableDiscovery": false,
+            "enabled": true,
+            "processor": null,
+            "processorPath": "C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.squareup.okhttp\\okhttp\\2.7.5\\7a15a7db50f86c4b64aa3367424a60e3a325b8f1\\okhttp-2.7.5.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\weiboSDK\\unspecified\\jars\\libs\\weibosdkcore_release.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\IMKit\\unspecified\\jars\\libs\\AMap_2DMap_V2.9.0_20160525.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.zhy\\autolayout\\1.4.5\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\libs\\open_sdk_r5781.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\multidex\\1.0.1\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\IMKit\\unspecified\\jars\\libs\\Rong_IMKit.jar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.squareup.okhttp3\\okhttp\\3.4.1\\c7c4f9e35c2fd5900da24f9872e3971801f08ce0\\okhttp-3.4.1.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.github.ybq\\Android-SpinKit\\1.1.0\\jars\\classes.jar;D:\\androidstudio\\android-sdk-windows\\extras\\android\\m2repository\\com\\android\\support\\support-annotations\\25.3.1\\support-annotations-25.3.1.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\IMKit\\unspecified\\jars\\libs\\AMap_Search_V3.4.0_20160811.jar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.tencent.mm.opensdk\\wechat-sdk-android-without-mta\\1.0.2\\e8db000948e58e4ef6b7a1a54e92e7040e7037d5\\wechat-sdk-android-without-mta-1.0.2.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\sticker\\unspecified\\jars\\libs\\BQMMRongCloudPlugin-v1.0.6.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.dingmouren.fallingview\\fallingview\\1.0.2\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.jaeger.statusbaruitl\\library\\1.3.0\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\libs\\alipaySdk-20170922.jar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.google.code.gson\\gson\\2.8.0\\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\\gson-2.8.0.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\libs\\mta-sdk-1.6.2.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-core-ui\\25.3.1\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\animated-vector-drawable\\25.3.1\\jars\\classes.jar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.squareup.leakcanary\\leakcanary-watcher\\1.5.4\\5e3dadce30fd748563219945d867a2e96f287931\\leakcanary-watcher-1.5.4.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\IMKit\\unspecified\\jars\\libs\\AMap_Channel_Location_V1.4.0_20160708.jar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.squareup.haha\\haha\\2.0.3\\640a438d2d415c056ca6a673ac26b183b044e160\\haha-2.0.3.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\id.zelory\\compressor\\2.1.0\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\androidPullToRefresh\\unspecified\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\me.leolin\\ShortcutBadger\\1.1.19\\jars\\classes.jar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.jakewharton\\butterknife-annotations\\8.4.0\\ea392375cf9ff59234a82e7928a204215ccc98cd\\butterknife-annotations-8.4.0.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\weiboSDK\\unspecified\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\IMLib\\unspecified\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.jakewharton\\butterknife\\8.4.0\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.youth.banner\\banner\\1.4.9\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\ninegridview\\unspecified\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.antfortune.freeline\\runtime\\0.8.8\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\CallKit\\unspecified\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.squareup.leakcanary\\leakcanary-analyzer\\1.5.4\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\CallLib\\unspecified\\jars\\libs\\CallEngine_Agora.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\libs\\MiPush_SDK_Client_3_2_2.jar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\org.greenrobot\\eventbus\\3.0.0\\ddd99896e9569eaababbe81b35d80e1b91c4ad85\\eventbus-3.0.0.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\libs\\HwPushSDK_v2.7-3.05.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\cn.bingoogolapple\\bga-photopicker\\1.2.2\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\CallLib\\unspecified\\jars\\libs\\agora-rtc-sdk.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\cn.bingoogolapple\\bga-adapter\\1.1.5\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.takwolf.android\\lock9view\\0.0.11\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-v4\\25.3.1\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-fragment\\25.3.1\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-core-utils\\25.3.1\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\pub.devrel\\easypermissions\\0.2.1\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.zhy\\percent-support-extends\\1.0.1\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.feezu.liuli\\timeselector\\1.1.1\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\CallLib\\unspecified\\jars\\libs\\Rong_CallLib.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\IMLib\\unspecified\\jars\\libs\\Rong_IMLib.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\recyclerview-v7\\24.2.1\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\IMKit\\unspecified\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\IMKit\\unspecified\\jars\\libs\\AMap_Location_V3.3.0_20170118.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.dinuscxj\\ellipsizetextview\\1.0.5\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.0\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\CallLib\\unspecified\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-vector-drawable\\25.3.1\\jars\\classes.jar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.github.bumptech.glide\\glide\\3.7.0\\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\\glide-3.7.0.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\25.3.1\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.github.yalantis\\ucrop\\2.2.1\\jars\\classes.jar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\io.reactivex.rxjava2\\rxjava\\2.1.0\\2fdf84dedcaaeabb9d70cde9dbb8aad4eccb80a1\\rxjava-2.1.0.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-media-compat\\25.3.1\\jars\\classes.jar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\org.reactivestreams\\reactive-streams\\1.0.0\\14b8c877d98005ba3941c9257cfe09f6ed0e0d74\\reactive-streams-1.0.0.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.squareup.leakcanary\\leakcanary-android\\1.5.4\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.github.bumptech.glide\\okhttp-integration\\1.3.1\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\shengmo\\sticker\\unspecified\\jars\\classes.jar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.squareup.okio\\okio\\1.9.0\\f824591a0016efbaeddb8300bee54832a1398cfa\\okio-1.9.0.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\jp.wasabeef\\glide-transformations\\2.0.2\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.3\\jars\\classes.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\weiboSDK\\libs\\weibosdkcore_release.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\sticker\\libs\\BQMMRongCloudPlugin-v1.0.6.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\IMLib\\libs\\Rong_IMLib.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit\\src\\main\\libs\\AMap_2DMap_V2.9.0_20160525.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit\\src\\main\\libs\\AMap_Channel_Location_V1.4.0_20160708.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit\\src\\main\\libs\\AMap_Location_V3.3.0_20170118.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit\\src\\main\\libs\\AMap_Search_V3.4.0_20160811.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit\\src\\main\\libs\\Rong_IMKit.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\CallLib\\libs\\agora-rtc-sdk.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\CallLib\\libs\\CallEngine_Agora.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\CallLib\\libs\\Rong_CallLib.jar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.jakewharton\\butterknife-compiler\\8.4.0\\22f40cd3f01849c6deeab0a755d2082b2624581\\butterknife-compiler-8.4.0.jar;D:\\Users\\AndroidStudioProjects\\shengmo\\timeselector\\build\\outputs\\aar\\timeselector-release.aar;D:\\Users\\AndroidStudioProjects\\shengmo\\androidPullToRefresh\\build\\outputs\\aar\\androidPullToRefresh-release.aar;D:\\Users\\AndroidStudioProjects\\shengmo\\weiboSDK\\build\\outputs\\aar\\weiboSDK-release.aar;D:\\Users\\AndroidStudioProjects\\shengmo\\alertview\\build\\outputs\\aar\\alertview-release.aar;D:\\Users\\AndroidStudioProjects\\shengmo\\sticker\\build\\outputs\\aar\\sticker-release.aar;D:\\Users\\AndroidStudioProjects\\shengmo\\IMLib\\build\\outputs\\aar\\IMLib-release.aar;D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit\\build\\outputs\\aar\\IMKit-release.aar;D:\\Users\\AndroidStudioProjects\\shengmo\\CallLib\\build\\outputs\\aar\\CallLib-release.aar;D:\\Users\\AndroidStudioProjects\\shengmo\\CallKit\\build\\outputs\\aar\\CallKit-release.aar;D:\\androidstudio\\android-sdk-windows\\extras\\android\\m2repository\\com\\android\\support\\appcompat-v7\\25.3.1\\appcompat-v7-25.3.1.aar;D:\\androidstudio\\android-sdk-windows\\extras\\android\\m2repository\\com\\android\\support\\recyclerview-v7\\24.2.1\\recyclerview-v7-24.2.1.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.jakewharton\\butterknife\\8.4.0\\6c39334929311ff90a06c67ca310db1342fe2b6a\\butterknife-8.4.0.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.github.bumptech.glide\\okhttp-integration\\1.3.1\\fc66c9a4f8d95fefd60369a02f2aaa0e3f79ae52\\okhttp-integration-1.3.1.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\pub.devrel\\easypermissions\\0.2.1\\488940648a2fefa2090e8d34189a4824d63cbf6e\\easypermissions-0.2.1.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\cn.bingoogolapple\\bga-adapter\\1.1.5\\b5ae528e6782d75db30a98c1c033c063d6deee8\\bga-adapter-1.1.5.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\cn.bingoogolapple\\bga-photopicker\\1.2.2\\a58851265b4ffb93622176e37f2053e3c452b7c7\\bga-photopicker-1.2.2.aar;D:\\androidstudio\\android-sdk-windows\\extras\\android\\m2repository\\com\\android\\support\\multidex\\1.0.1\\multidex-1.0.1.aar;D:\\androidstudio\\android-sdk-windows\\extras\\android\\m2repository\\com\\android\\support\\design\\24.2.0\\design-24.2.0.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.takwolf.android\\lock9view\\0.0.11\\edd0494103c899cee346ca42e60fe37f644e71a0\\lock9view-0.0.11.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.github.yalantis\\ucrop\\2.2.1\\494aff7e9497220ebda3baf218676bb7a67b083c\\ucrop-2.2.1.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\id.zelory\\compressor\\2.1.0\\e222c8cbfe83495a5df64de8212195b82d0cd034\\compressor-2.1.0.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.dingmouren.fallingview\\fallingview\\1.0.2\\701857e189fc336157e53006e96aaea543647f10\\fallingview-1.0.2.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.jaeger.statusbaruitl\\library\\1.3.0\\f6340e06e9752c8fb46ba389fc4394d3d501c59\\library-1.3.0.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.github.ybq\\Android-SpinKit\\1.1.0\\b77ddede986672f7dced28b433ad7126e6fad2bb\\Android-SpinKit-1.1.0.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.youth.banner\\banner\\1.4.9\\e1a9067b5a4a2bb01c8d8f035dfcdf9150280cec\\banner-1.4.9.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.zhy\\percent-support-extends\\1.0.1\\6829c773dd5e800bbbc454d4e5621fb585cab0cd\\percent-support-extends-1.0.1.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.zhy\\autolayout\\1.4.5\\855ed5d944e0b602acc5c387c287111fb4ef6c4c\\autolayout-1.4.5.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\jp.wasabeef\\glide-transformations\\2.0.2\\6020b0beb90c3bb067a7234587643a38e1d8edd\\glide-transformations-2.0.2.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\me.leolin\\ShortcutBadger\\1.1.19\\682abe30d9c72b91e07183f1951b251ffd6f8aba\\ShortcutBadger-1.1.19.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.dinuscxj\\ellipsizetextview\\1.0.5\\dce9bd4de0c2d3effb127e93a91bd92837b4e411\\ellipsizetextview-1.0.5.aar;D:\\Users\\AndroidStudioProjects\\shengmo\\ninegridview\\build\\outputs\\aar\\ninegridview-release.aar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.google.auto\\auto-common\\0.6\\cf7212b0f8bfef12657b942df8f4f2cf032d3f41\\auto-common-0.6.jar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.google.auto.service\\auto-service\\1.0-rc2\\51033a5b8fcf7039159e35b6878f106ccd5fb35f\\auto-service-1.0-rc2.jar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.squareup\\javapoet\\1.7.0\\4fdcf1fc27c1a8f55d1109df986c923152f07759\\javapoet-1.7.0.jar;C:\\Users\\29024\\.gradle\\caches\\modules-2\\files-2.1\\com.google.guava\\guava\\18.0\\cce0823396aa693798f8882e64213b1772032b09\\guava-18.0.jar;D:\\androidstudio\\android-sdk-windows\\extras\\android\\m2repository\\com\\android\\support\\support-vector-drawable\\25.3.1\\support-vector-drawable-25.3.1.aar;D:\\androidstudio\\android-sdk-windows\\extras\\android\\m2repository\\com\\android\\support\\animated-vector-drawable\\25.3.1\\animated-vector-drawable-25.3.1.aar;D:\\androidstudio\\android-sdk-windows\\extras\\android\\m2repository\\com\\android\\support\\support-v4\\25.3.1\\support-v4-25.3.1.aar;D:\\androidstudio\\android-sdk-windows\\extras\\android\\m2repository\\com\\android\\support\\support-media-compat\\25.3.1\\support-media-compat-25.3.1.aar;D:\\androidstudio\\android-sdk-windows\\extras\\android\\m2repository\\com\\android\\support\\support-core-utils\\25.3.1\\support-core-utils-25.3.1.aar;D:\\androidstudio\\android-sdk-windows\\extras\\android\\m2repository\\com\\android\\support\\support-fragment\\25.3.1\\support-fragment-25.3.1.aar;D:\\androidstudio\\android-sdk-windows\\extras\\android\\m2repository\\com\\android\\support\\support-compat\\25.3.1\\support-compat-25.3.1.aar;D:\\androidstudio\\android-sdk-windows\\extras\\android\\m2repository\\com\\android\\support\\support-core-ui\\25.3.1\\support-core-ui-25.3.1.aar"
+        }
+    },
+    "apt_libraries": {
+        "dagger": false,
+        "butterknife": true
+    },
+    "auto_dependency": true,
+    "build_cache_dir": "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\freeline",
+    "build_directory": "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build",
+    "build_script": "gradlew.bat :app:assembleDebug",
+    "build_script_work_directory": "",
+    "build_tools_directory": "D:\\androidstudio\\android-sdk-windows\\build-tools\\24.0.2",
+    "build_tools_version": "24.0.2",
+    "check_sources_md5": [
+        
+    ],
+    "compile_sdk_directory": "D:\\androidstudio\\android-sdk-windows\\platforms\\android-25",
+    "compile_sdk_version": "android-25",
+    "databinding": [
+        
+    ],
+    "databinding_compiler_jar": "",
+    "databinding_modules": [
+        
+    ],
+    "debug_package": "com.aiwujie.shengmo",
+    "exclude_dep_res_paths": [
+        
+    ],
+    "extra_dep_res_paths": [
+        
+    ],
+    "freeline_cache_dir": "D:\\Users\\AndroidStudioProjects\\shengmo",
+    "freeline_gradle_plugin_version": "0.8.8",
+    "ignore_resource_ids": [
+        "avd_hide_password_1",
+        "avd_hide_password_2",
+        "avd_hide_password_3",
+        "avd_show_password_1",
+        "avd_show_password_2",
+        "avd_show_password_3"
+    ],
+    "java_home": "C:\\Program Files\\Java\\jdk1.8.0_65",
+    "launcher": "com.aiwujie.shengmo.activity.WelcomeActivity",
+    "main_assets_directory": [
+        "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\debug\\assets",
+        "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\main\\assets"
+    ],
+    "main_jniLibs_directory": [
+        "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\debug\\jniLibs",
+        "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\libs"
+    ],
+    "main_jni_directory": [
+        "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\debug\\jni",
+        "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\main\\jni"
+    ],
+    "main_manifest_path": "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\main\\AndroidManifest.xml",
+    "main_project_dir": "app",
+    "main_project_name": "app",
+    "main_r_path": "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\build\\generated\\source\\r\\debug\\R.java",
+    "main_res_directory": [
+        "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\debug\\res",
+        "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\main\\res"
+    ],
+    "main_src_directory": [
+        "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\debug\\java",
+        "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\main\\java"
+    ],
+    "module_dependencies": {
+        "CallKit": [
+            "IMKit",
+            "CallLib"
+        ],
+        "CallLib": [
+            
+        ],
+        "IMKit": [
+            "IMLib"
+        ],
+        "IMLib": [
+            
+        ],
+        "alertview": [
+            
+        ],
+        "androidPullToRefresh": [
+            
+        ],
+        "app": [
+            "timeselector",
+            "androidPullToRefresh",
+            "weiboSDK",
+            "alertview",
+            "sticker",
+            "IMLib",
+            "IMKit",
+            "CallLib",
+            "CallKit",
+            "ninegridview"
+        ],
+        "ninegridview": [
+            "alertview"
+        ],
+        "sticker": [
+            
+        ],
+        "timeselector": [
+            
+        ],
+        "weiboSDK": [
+            
+        ]
+    },
+    "modules": [
+        {
+            "name": "app",
+            "path": "D:\\Users\\AndroidStudioProjects\\shengmo\\app"
+        },
+        {
+            "name": "timeselector",
+            "path": "D:\\Users\\AndroidStudioProjects\\shengmo\\timeselector"
+        },
+        {
+            "name": "androidPullToRefresh",
+            "path": "D:\\Users\\AndroidStudioProjects\\shengmo\\androidPullToRefresh"
+        },
+        {
+            "name": "weiboSDK",
+            "path": "D:\\Users\\AndroidStudioProjects\\shengmo\\weiboSDK"
+        },
+        {
+            "name": "alertview",
+            "path": "D:\\Users\\AndroidStudioProjects\\shengmo\\alertview"
+        },
+        {
+            "name": "sticker",
+            "path": "D:\\Users\\AndroidStudioProjects\\shengmo\\sticker"
+        },
+        {
+            "name": "IMLib",
+            "path": "D:\\Users\\AndroidStudioProjects\\shengmo\\IMLib"
+        },
+        {
+            "name": "IMKit",
+            "path": "D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit"
+        },
+        {
+            "name": "CallLib",
+            "path": "D:\\Users\\AndroidStudioProjects\\shengmo\\CallLib"
+        },
+        {
+            "name": "CallKit",
+            "path": "D:\\Users\\AndroidStudioProjects\\shengmo\\CallKit"
+        },
+        {
+            "name": "ninegridview",
+            "path": "D:\\Users\\AndroidStudioProjects\\shengmo\\ninegridview"
+        }
+    ],
+    "package": "com.aiwujie.shengmo",
+    "product_flavor": "",
+    "project_source_sets": {
+        "CallKit": {
+            "main_assets_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallKit\\src\\release\\assets",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallKit\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallKit\\src\\release\\jniLibs",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallKit\\src\\main\\jniLibs"
+            ],
+            "main_jni_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallKit\\src\\release\\jni",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallKit\\src\\main\\jni"
+            ],
+            "main_manifest_path": "D:\\Users\\AndroidStudioProjects\\shengmo\\CallKit\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallKit\\src\\release\\res",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallKit\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallKit\\src\\release\\java",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallKit\\src\\main\\java"
+            ]
+        },
+        "CallLib": {
+            "main_assets_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallLib\\src\\release\\assets",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallLib\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallLib\\src\\release\\jniLibs",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallLib\\libs"
+            ],
+            "main_jni_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallLib\\src\\release\\jni",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallLib\\src\\main\\jni"
+            ],
+            "main_manifest_path": "D:\\Users\\AndroidStudioProjects\\shengmo\\CallLib\\AndroidManifest.xml",
+            "main_res_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallLib\\src\\release\\res",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallLib\\res"
+            ],
+            "main_src_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallLib\\src\\release\\java",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\CallLib\\src\\main\\java"
+            ]
+        },
+        "IMKit": {
+            "main_assets_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit\\src\\release\\assets",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit\\src\\release\\jniLibs",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit\\src\\main\\libs"
+            ],
+            "main_jni_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit\\src\\release\\jni"
+            ],
+            "main_manifest_path": "D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit\\src\\release\\res",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit\\src\\release\\java",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMKit\\src\\main\\java"
+            ]
+        },
+        "IMLib": {
+            "main_assets_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMLib\\src\\release\\assets",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMLib\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMLib\\src\\release\\jniLibs",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMLib\\libs"
+            ],
+            "main_jni_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMLib\\src\\release\\jni",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMLib\\src\\main\\jni"
+            ],
+            "main_manifest_path": "D:\\Users\\AndroidStudioProjects\\shengmo\\IMLib\\AndroidManifest.xml",
+            "main_res_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMLib\\src\\release\\res",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMLib\\res"
+            ],
+            "main_src_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMLib\\src\\release\\java",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\IMLib\\src\\main\\java"
+            ]
+        },
+        "alertview": {
+            "main_assets_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\alertview\\src\\release\\assets",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\alertview\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\alertview\\src\\release\\jniLibs",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\alertview\\src\\main\\jniLibs"
+            ],
+            "main_jni_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\alertview\\src\\release\\jni",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\alertview\\src\\main\\jni"
+            ],
+            "main_manifest_path": "D:\\Users\\AndroidStudioProjects\\shengmo\\alertview\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\alertview\\src\\release\\res",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\alertview\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\alertview\\src\\release\\java",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\alertview\\src\\main\\java"
+            ]
+        },
+        "androidPullToRefresh": {
+            "main_assets_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\androidPullToRefresh\\src\\release\\assets",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\androidPullToRefresh\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\androidPullToRefresh\\src\\release\\jniLibs",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\androidPullToRefresh\\src\\main\\jniLibs"
+            ],
+            "main_jni_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\androidPullToRefresh\\src\\release\\jni",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\androidPullToRefresh\\src\\main\\jni"
+            ],
+            "main_manifest_path": "D:\\Users\\AndroidStudioProjects\\shengmo\\androidPullToRefresh\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\androidPullToRefresh\\src\\release\\res",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\androidPullToRefresh\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\androidPullToRefresh\\src\\release\\java",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\androidPullToRefresh\\src\\main\\java"
+            ]
+        },
+        "app": {
+            "main_assets_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\debug\\assets",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\debug\\jniLibs",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\libs"
+            ],
+            "main_jni_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\debug\\jni",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\main\\jni"
+            ],
+            "main_manifest_path": "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\debug\\res",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\debug\\java",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\app\\src\\main\\java"
+            ]
+        },
+        "ninegridview": {
+            "main_assets_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\ninegridview\\src\\release\\assets",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\ninegridview\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\ninegridview\\src\\release\\jniLibs",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\ninegridview\\src\\main\\jniLibs"
+            ],
+            "main_jni_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\ninegridview\\src\\release\\jni",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\ninegridview\\src\\main\\jni"
+            ],
+            "main_manifest_path": "D:\\Users\\AndroidStudioProjects\\shengmo\\ninegridview\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\ninegridview\\src\\release\\res",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\ninegridview\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\ninegridview\\src\\release\\java",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\ninegridview\\src\\main\\java"
+            ]
+        },
+        "sticker": {
+            "main_assets_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\sticker\\src\\release\\assets",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\sticker\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\sticker\\src\\release\\jniLibs",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\sticker\\src\\main\\jniLibs"
+            ],
+            "main_jni_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\sticker\\src\\release\\jni",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\sticker\\src\\main\\jni"
+            ],
+            "main_manifest_path": "D:\\Users\\AndroidStudioProjects\\shengmo\\sticker\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\sticker\\src\\release\\res",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\sticker\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\sticker\\src\\release\\java",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\sticker\\src\\main\\java"
+            ]
+        },
+        "timeselector": {
+            "main_assets_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\timeselector\\src\\release\\assets",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\timeselector\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\timeselector\\src\\release\\jniLibs",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\timeselector\\src\\main\\jniLibs"
+            ],
+            "main_jni_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\timeselector\\src\\release\\jni",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\timeselector\\src\\main\\jni"
+            ],
+            "main_manifest_path": "D:\\Users\\AndroidStudioProjects\\shengmo\\timeselector\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\timeselector\\src\\release\\res",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\timeselector\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\timeselector\\src\\release\\java",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\timeselector\\src\\main\\java"
+            ]
+        },
+        "weiboSDK": {
+            "main_assets_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\weiboSDK\\src\\release\\assets",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\weiboSDK\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\weiboSDK\\src\\release\\jniLibs",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\weiboSDK\\src\\main\\jniLibs"
+            ],
+            "main_jni_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\weiboSDK\\src\\release\\jni",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\weiboSDK\\src\\main\\jni"
+            ],
+            "main_manifest_path": "D:\\Users\\AndroidStudioProjects\\shengmo\\weiboSDK\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\weiboSDK\\src\\release\\res",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\weiboSDK\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\weiboSDK\\src\\release\\java",
+                "D:\\Users\\AndroidStudioProjects\\shengmo\\weiboSDK\\src\\main\\java"
+            ]
+        }
+    },
+    "project_type": "gradle",
+    "retrolambda": {
+        
+    },
+    "root_dir": "D:\\Users\\AndroidStudioProjects\\shengmo",
+    "sdk_directory": "D:\\androidstudio\\android-sdk-windows",
+    "use_jdk8": false,
+    "use_system_gradle": false
+}
